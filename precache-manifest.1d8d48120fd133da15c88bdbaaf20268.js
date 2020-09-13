@@ -4,7 +4,7 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/heroicons-for-elm/favicon.ico"
   },
   {
-    "revision": "8459773c4b24afbca1060f6ae5fc0b9f",
+    "revision": "042789688c6f1144fc937b64ac5ed94c",
     "url": "/heroicons-for-elm/index.html"
   },
   {
@@ -20,16 +20,16 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/heroicons-for-elm/meta-image.png"
   },
   {
-    "revision": "a1d2e79b564780ef9973",
-    "url": "/heroicons-for-elm/static/css/main.7bce78b5.chunk.css"
+    "revision": "499198fbbe182a98a7ac",
+    "url": "/heroicons-for-elm/static/css/main.5fa75919.chunk.css"
   },
   {
     "revision": "39c594365d6b6646ed91",
     "url": "/heroicons-for-elm/static/css/vendors~main.d55a7715.chunk.css"
   },
   {
-    "revision": "a1d2e79b564780ef9973",
-    "url": "/heroicons-for-elm/static/js/main.a1d2e79b.chunk.js"
+    "revision": "499198fbbe182a98a7ac",
+    "url": "/heroicons-for-elm/static/js/main.499198fb.chunk.js"
   },
   {
     "revision": "e3b644db3393feebd61a",

@@ -1,7 +1,7 @@
 {
-  "main.css": "/heroicons-for-elm/static/css/main.7bce78b5.chunk.css",
-  "main.js": "/heroicons-for-elm/static/js/main.a1d2e79b.chunk.js",
-  "main.js.map": "/heroicons-for-elm/static/js/main.a1d2e79b.chunk.js.map",
+  "main.css": "/heroicons-for-elm/static/css/main.5fa75919.chunk.css",
+  "main.js": "/heroicons-for-elm/static/js/main.499198fb.chunk.js",
+  "main.js.map": "/heroicons-for-elm/static/js/main.499198fb.chunk.js.map",
   "runtime~main.js": "/heroicons-for-elm/static/js/runtime~main.e3b644db.js",
   "runtime~main.js.map": "/heroicons-for-elm/static/js/runtime~main.e3b644db.js.map",
   "vendors~main.css": "/heroicons-for-elm/static/css/vendors~main.d55a7715.chunk.css",
@@ -13,5 +13,5 @@
   "logo.svg": "/heroicons-for-elm/logo.svg",
   "manifest.json": "/heroicons-for-elm/manifest.json",
   "meta-image.png": "/heroicons-for-elm/meta-image.png",
-  "precache-manifest.6151341049fb03f6bddce7f3647a585c.js": "/heroicons-for-elm/precache-manifest.6151341049fb03f6bddce7f3647a585c.js"
+  "precache-manifest.1d8d48120fd133da15c88bdbaaf20268.js": "/heroicons-for-elm/precache-manifest.1d8d48120fd133da15c88bdbaaf20268.js"
 }
