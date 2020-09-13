@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/4.3.1/workbox-sw.js");
 
 importScripts(
-  "/heroicons-for-elm/precache-manifest.f76bebb17be119260f1561482802e5a8.js"
+  "/heroicons-for-elm/precache-manifest.0db1ea61610ae41cbba5938f9f7a0ac4.js"
 );
 
 workbox.core.skipWaiting();
