@@ -358,7 +358,7 @@ viewNav =
                     , text " Package"
                     ]
               }
-            , { href = "https://github.com/jasonliang512/elm-heroicons-gallery"
+            , { href = "https://github.com/jasonliang512/heroicons-for-elm"
               , view = [ text "GitHub" ]
               }
             ]

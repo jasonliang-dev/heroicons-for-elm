@@ -1,4 +1,7 @@
 {
+  "scripts": {
+    "deploy": "elm-app build && gh-pages -d build"
+  },
   "devDependencies": {
     "postcss-loader": "^3.0.0",
     "raw-loader": "^4.0.0",

@@ -1,7 +1,7 @@
 const merge = require("webpack-merge")
 
 module.exports = {
-  homepage: "https://jasonliang512.github.io/",
+  homepage: "https://jasonliang512.github.io/heroicons-for-elm",
   configureWebpack: (config, env) => {
     return merge(config, {
       module: {
