@@ -16,10 +16,6 @@ module.exports = {
                 }
               }
             ]
-          },
-          {
-            test: /\.yaml$/,
-            loader: "raw-loader"
           }
         ]
       }
