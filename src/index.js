@@ -1,5 +1,5 @@
 import "tippy.js/dist/tippy.css"
-import "tippy.js/animations/shift-away.css"
+import "tippy.js/animations/shift-away-subtle.css"
 import "./main.css"
 import { Elm } from "./Main.elm"
 import * as serviceWorker from "./serviceWorker"
@@ -30,7 +30,7 @@ app.ports.makeTippy.subscribe(function (content) {
       content,
       hideOnClick: false,
       placement: "bottom",
-      animation: "shift-away",
+      animation: "shift-away-subtle",
       theme: "tailwind"
     })[0]
   })

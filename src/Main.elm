@@ -56,10 +56,10 @@ type alias Model =
     }
 
 
-initStyle : { backdropStyle : List Animation.Property, modalStyle : List Animation.Property }
-initStyle =
+initAnimationStyle : { backdropStyle : List Animation.Property, modalStyle : List Animation.Property }
+initAnimationStyle =
     { backdropStyle = [ Animation.opacity 0.0 ]
-    , modalStyle = [ Animation.opacity 0.0, Animation.scale 0.9 ]
+    , modalStyle = [ Animation.opacity 0.0, Animation.scale 1.05 ]
     }
 
 
@@ -79,8 +79,8 @@ init =
             , onAs = SetSvgAttrsAs
             , onExposing = SetSvgAttrsExposing
             }
-      , backdropStyle = Animation.style initStyle.backdropStyle
-      , modalStyle = Animation.style initStyle.modalStyle
+      , backdropStyle = Animation.style initAnimationStyle.backdropStyle
+      , modalStyle = Animation.style initAnimationStyle.modalStyle
       }
     , Cmd.none
     )
@@ -107,11 +107,15 @@ type Msg
 
 update : Msg -> Model -> ( Model, Cmd Msg )
 update msg model =
+    let
+        initialTippy =
+            "Copy SVG"
+    in
     case msg of
         ShowModal icon ->
             let
                 openSpring =
-                    Animation.spring { stiffness = 550, damping = 30 }
+                    Animation.spring { stiffness = 500, damping = 28 }
             in
             ( { model
                 | modalFor = Just icon
@@ -130,22 +134,22 @@ update msg model =
                         ]
                         model.modalStyle
               }
-            , makeTippy "Copy SVG"
+            , makeTippy initialTippy
             )
 
         HideModal ->
             let
                 closeSpring =
-                    Animation.spring { stiffness = 800, damping = 36 }
+                    Animation.spring { stiffness = 600, damping = 30 }
             in
             ( { model
                 | backdropStyle =
                     Animation.interrupt
-                        [ Animation.toWith closeSpring initStyle.backdropStyle ]
+                        [ Animation.toWith closeSpring initAnimationStyle.backdropStyle ]
                         model.backdropStyle
                 , modalStyle =
                     Animation.interrupt
-                        [ Animation.toWith closeSpring initStyle.modalStyle
+                        [ Animation.toWith closeSpring initAnimationStyle.modalStyle
                         , Animation.Messenger.send DestroyModal
                         ]
                         model.modalStyle
@@ -165,7 +169,7 @@ update msg model =
                     model.svgImportStyle
             in
             ( { model | svgImportStyle = { old | withAs = str } }
-            , Cmd.none
+            , setTippyContent initialTippy
             )
 
         SetSvgExposing str ->
@@ -174,7 +178,7 @@ update msg model =
                     model.svgImportStyle
             in
             ( { model | svgImportStyle = { old | withExposing = str } }
-            , Cmd.none
+            , setTippyContent initialTippy
             )
 
         SetSvgAttrsAs str ->
@@ -183,7 +187,7 @@ update msg model =
                     model.svgAttrsImportStyle
             in
             ( { model | svgAttrsImportStyle = { old | withAs = str } }
-            , Cmd.none
+            , setTippyContent initialTippy
             )
 
         SetSvgAttrsExposing str ->
@@ -192,7 +196,7 @@ update msg model =
                     model.svgAttrsImportStyle
             in
             ( { model | svgAttrsImportStyle = { old | withExposing = str } }
-            , Cmd.none
+            , setTippyContent initialTippy
             )
 
         CopyToClipboard str ->
@@ -241,7 +245,13 @@ view model =
                         [ Heroicons.Solid.heart [] ]
                     ]
                 , p [ class "text-3xl font-bold text-blue-200" ]
-                    [ text "Easy and ready to use svg icons for Elm." ]
+                    [a
+                        [ class "inline-flex rounded px-2 bg-blue-450 text-blue-100 hover:bg-blue-400 hover:text-white transition duration-150"
+                        , href "https://package.elm-lang.org/packages/elm/svg/latest/"
+                        ]
+                        [ small [] [ code [] [ text "elm/svg" ] ] ]
+                    , text " icons for your Elm project"
+                    ]
                 ]
             ]
         , main_ [ class "container px-8 pb-20 mx-auto" ]
@@ -263,21 +273,19 @@ view model =
                     |> List.any (List.any (String.contains model.search))
               then
                 div
-                    [ class "grid grid-flow-col grid-rows-2 grid-cols-2 gap-x-16 gap-y-8 items-start"
+                    [ class "grid grid-flow-col grid-rows-2 grid-cols-2 gap-x-16 gap-y-6 items-start"
                     , style "grid-template-rows" "auto auto"
                     ]
                     [ viewIcons
-                        { heading = "Medium"
-                        , subHeader = "2px stroke weight, 24x24 bounding box"
-                        , lead = "For primary navigation and marketing sections, designed to be rendered at 24x24."
+                        { heading = "Outline"
+                        , subHeader = "Medium icons with 2px stroke and 24x24 bounding box."
                         , size = "24px"
                         , search = model.search
                         , icons = Gallery.Outline.model
                         }
                     , viewIcons
-                        { heading = "Small"
-                        , subHeader = "Solid fill, 20x20 bounding box"
-                        , lead = "For buttons, form elements, and to support text, designed to be rendered at 20x20."
+                        { heading = "Solid"
+                        , subHeader = "Small icons with solid fill and 20x20 bounding box."
                         , size = "20px"
                         , search = model.search
                         , icons = Gallery.Solid.model
@@ -286,16 +294,10 @@ view model =
 
               else
                 div [ class "text-center py-24" ]
-                    [ h2 [ class "text-gray-900 text-2xl font-bold mb-1" ]
+                    [ h2 [ class "text-gray-700 text-2xl font-bold mb-1" ]
                         [ text
-                            ("Sorry! I could"
-                                ++ String.fromChar (Char.fromCode 39)
-                                ++ "t find anything for "
-                                ++ String.fromChar (Char.fromCode 8220)
-                                ++ model.search
-                                ++ String.fromChar (Char.fromCode 8221)
-                                ++ "."
-                            )
+                            "Sorry! I could't find anything for "
+                        , span [ class "text-gray-900" ] [ text model.search ]
                         ]
                     , p [ class "text-lg text-gray-600" ]
                         [ text "Is there an icon missing? Let me know by "
@@ -304,17 +306,34 @@ view model =
                             , href "https://github.com/jasonliang512/elm-heroicons-gallery/issues"
                             ]
                             [ text "opening an issue on GitHub" ]
-                        , text "."
+                        , text "!"
                         ]
                     ]
             ]
         , footer [ class "bg-gray-100 text-gray-600 flex border-t border-gray-300 py-12" ]
-            [ div [ class "container px-8 mx-auto" ]
-                [ a
-                    [ class "hover:underline hover:text-gray-700"
-                    , href "https://github.com/jasonliang512/elm-heroicons-gallery"
+            [ div [ class "flex space-x-8 container px-8 mx-auto" ]
+                [ span []
+                    [ a
+                        [ class "hover:underline font-bold"
+                        , href "https://github.com/tailwindlabs/heroicons"
+                        ]
+                        [ text "Heroicons" ]
+                    , text " by "
+                    , a
+                        [ class "text-elm-blue hover:underline"
+                        , href "https://twitter.com/steveschoger"
+                        ]
+                        [ text "Steve Schoger" ]
                     ]
-                    [ text "Page Source" ]
+                , span []
+                    [ span [ class "font-bold" ] [ text "Heroicons For Elm" ]
+                    , text " by "
+                    , a
+                        [ class "text-elm-blue hover:underline"
+                        , href "https://github.com/jasonliang512"
+                        ]
+                        [ text "Jason Liang" ]
+                    ]
                 ]
             ]
         , case model.modalFor of
@@ -334,7 +353,10 @@ viewNav =
               , view = [ text "Original Heroicons" ]
               }
             , { href = "https://package.elm-lang.org/packages/jasonliang512/elm-heroicons/latest/"
-              , view = [ code [ class "text-sm" ] [ text "elm-herocions" ], text " Package" ]
+              , view =
+                    [ code [ class "text-sm" ] [ text "elm-herocions" ]
+                    , text " Package"
+                    ]
               }
             , { href = "https://github.com/jasonliang512/elm-heroicons-gallery"
               , view = [ text "GitHub" ]
@@ -344,7 +366,7 @@ viewNav =
         viewLink link =
             li []
                 [ a
-                    [ class "text-blue-200 hover:text-white transition duration-150"
+                    [ class "group text-blue-200 hover:text-white transition duration-150"
                     , href link.href
                     ]
                     link.view
@@ -359,22 +381,20 @@ viewNav =
 viewIcons :
     { heading : String
     , subHeader : String
-    , lead : String
     , size : String
     , search : String
     , icons : List (Gallery.Icon Msg)
     }
     -> Html Msg
-viewIcons { heading, subHeader, lead, size, search, icons } =
+viewIcons { heading, subHeader, size, search, icons } =
     let
         viewIconKeyed icon =
             ( icon.name, lazy (viewIcon size search) icon )
     in
     section [ class "contents" ]
-        [ header [ class "flex flex-wrap items-baseline" ]
-            [ h2 [ class "font-medium text-gray-900 flex-none text-lg mr-3" ] [ text heading ]
-            , p [ class "font-medium text-gray-500 text-sm mb-2" ] [ text subHeader ]
-            , p [ class "text-gray-600 text-sm" ] [ text lead ]
+        [ div []
+            [ h2 [ class "font-medium text-gray-900 flex-none text-lg mr-3 mb-1" ] [ text heading ]
+            , p [ class "font-medium text-gray-600 text-sm" ] [ text subHeader ]
             ]
         , Keyed.ul
             [ class "w-full grid grid-cols-3 gap-8" ]
