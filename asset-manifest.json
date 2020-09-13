@@ -1,0 +1,17 @@
+{
+  "main.css": "/heroicons-for-elm/static/css/main.7bce78b5.chunk.css",
+  "main.js": "/heroicons-for-elm/static/js/main.06e701af.chunk.js",
+  "main.js.map": "/heroicons-for-elm/static/js/main.06e701af.chunk.js.map",
+  "runtime~main.js": "/heroicons-for-elm/static/js/runtime~main.e3b644db.js",
+  "runtime~main.js.map": "/heroicons-for-elm/static/js/runtime~main.e3b644db.js.map",
+  "vendors~main.css": "/heroicons-for-elm/static/css/vendors~main.d55a7715.chunk.css",
+  "vendors~main.js": "/heroicons-for-elm/static/js/vendors~main.39c59436.chunk.js",
+  "vendors~main.js.map": "/heroicons-for-elm/static/js/vendors~main.39c59436.chunk.js.map",
+  "./service-worker.js": "/heroicons-for-elm/./service-worker.js",
+  "favicon.ico": "/heroicons-for-elm/favicon.ico",
+  "index.html": "/heroicons-for-elm/index.html",
+  "logo.svg": "/heroicons-for-elm/logo.svg",
+  "manifest.json": "/heroicons-for-elm/manifest.json",
+  "meta-image.png": "/heroicons-for-elm/meta-image.png",
+  "precache-manifest.f76bebb17be119260f1561482802e5a8.js": "/heroicons-for-elm/precache-manifest.f76bebb17be119260f1561482802e5a8.js"
+}
