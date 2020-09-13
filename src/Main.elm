@@ -231,7 +231,7 @@ view model =
         [ header [ class "bg-elm-blue text-white" ]
             [ div [ class "container mx-auto px-8" ]
                 [ div [ class "border-b border-blue-600 flex items-center py-4" ]
-                    [ span [ class "font-bold text-2xl mr-auto" ] [ text "Heroicons For Elm" ]
+                    [ span [ class "font-bold text-2xl mr-auto" ] [ text "Heroicons for Elm" ]
                     , viewNav
                     ]
                 ]
@@ -326,7 +326,7 @@ view model =
                         [ text "Steve Schoger" ]
                     ]
                 , span []
-                    [ span [ class "font-bold" ] [ text "Heroicons For Elm" ]
+                    [ span [ class "font-bold" ] [ text "Heroicons for Elm" ]
                     , text " by "
                     , a
                         [ class "text-elm-blue hover:underline"
