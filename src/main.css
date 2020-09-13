@@ -13,6 +13,11 @@
 @tailwind components;
 @tailwind utilities;
 
+/* fix placeholder opacity on firefox */
+::placeholder {
+  opacity: 1;
+}
+
 .elm-syntax-highlight-fix pre {
   @apply overflow-x-auto text-xs rounded-md p-4 font-bold;
 }

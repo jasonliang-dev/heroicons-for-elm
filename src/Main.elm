@@ -235,17 +235,17 @@ view model =
                     , viewNav
                     ]
                 ]
-            , div [ class "text-center pt-12 pb-20" ]
-                [ h1 [ class "text-4xl font-bold inline-flex items-center" ]
+            , div [ class "text-center pt-12 pb-20 px-8" ]
+                [ h1 [ class "text-2xl sm:text-4xl font-bold inline-flex items-center" ]
                     [ text "Elm + Heroicons ="
                     , span
-                        [ class "inline-block ml-3 w-12 h-12"
+                        [ class "inline-block ml-1 sm:ml-3 w-8 h-8 sm:w-12 sm:h-12"
                         , attribute "aria-label" "Love"
                         ]
                         [ Heroicons.Solid.heart [] ]
                     ]
-                , p [ class "text-3xl font-bold text-blue-200" ]
-                    [a
+                , p [ class "text-2xl sm:text-3xl font-bold text-blue-200" ]
+                    [ a
                         [ class "inline-flex rounded px-2 bg-blue-450 text-blue-100 hover:bg-blue-400 hover:text-white transition duration-150"
                         , href "https://package.elm-lang.org/packages/elm/svg/latest/"
                         ]
@@ -257,10 +257,13 @@ view model =
         , main_ [ class "container px-8 pb-20 mx-auto" ]
             [ div [ class "flex justify-center my-12" ]
                 [ label [ class "w-full max-w-xl flex items-center rounded-lg px-4 bg-gray-200 focus-within:shadow-outline focus-within:bg-white transition duration-150" ]
-                    [ span [ class "inline-block w-6 h-6 mr-2 text-gray-600" ]
+                    [ span
+                        [ class "inline-block w-6 h-6 mr-2 text-gray-600"
+                        , attribute "aria-label" "Search"
+                        ]
                         [ Heroicons.Outline.search [] ]
                     , input
-                        [ class "w-full py-4 bg-gray-200 text-gray-700 placeholder-gray-700 focus:bg-white focus:outline-none transition duration-150"
+                        [ class "w-full py-4 bg-gray-200 text-gray-700 placeholder-gray-600 placeholder-opacity-100 focus:bg-white focus:outline-none transition duration-150"
                         , placeholder "Search all icons"
                         , onInput SetSearch
                         , value model.search
@@ -273,7 +276,7 @@ view model =
                     |> List.any (List.any (String.contains model.search))
               then
                 div
-                    [ class "grid grid-flow-col grid-rows-2 grid-cols-2 gap-x-16 gap-y-6 items-start"
+                    [ class "grid grid-flow-col grid-rows-2 grid-cols-2 gap-x-8 sm:gap-x-16 gap-y-4 md:gap-y-6 items-start"
                     , style "grid-template-rows" "auto auto"
                     ]
                     [ viewIcons
@@ -294,9 +297,8 @@ view model =
 
               else
                 div [ class "text-center py-24" ]
-                    [ h2 [ class "text-gray-700 text-2xl font-bold mb-1" ]
-                        [ text
-                            "Sorry! I could't find anything for "
+                    [ h2 [ class "text-gray-700 text-2xl font-bold mb-1 break-words" ]
+                        [ text "Sorry! I could't find anything for "
                         , span [ class "text-gray-900" ] [ text model.search ]
                         ]
                     , p [ class "text-lg text-gray-600" ]
@@ -311,7 +313,7 @@ view model =
                     ]
             ]
         , footer [ class "bg-gray-100 text-gray-600 flex border-t border-gray-300 py-12" ]
-            [ div [ class "flex space-x-8 container px-8 mx-auto" ]
+            [ div [ class "flex flex-col sm:flex-row space-y-1 sm:space-y-0 sm:space-x-8 container px-8 mx-auto" ]
                 [ span []
                     [ a
                         [ class "hover:underline font-bold"
@@ -351,20 +353,23 @@ viewNav =
         navLinks =
             [ { href = "https://heroicons.com/"
               , view = [ text "Original Heroicons" ]
+              , parentAttrs = [ class "hidden md:block" ]
               }
             , { href = "https://package.elm-lang.org/packages/jasonliang512/elm-heroicons/latest/"
               , view =
                     [ code [ class "text-sm" ] [ text "elm-herocions" ]
                     , text " Package"
                     ]
+              , parentAttrs = [ class "hidden md:block" ]
               }
             , { href = "https://github.com/jasonliang512/heroicons-for-elm"
               , view = [ text "GitHub" ]
+              , parentAttrs = []
               }
             ]
 
         viewLink link =
-            li []
+            li link.parentAttrs
                 [ a
                     [ class "group text-blue-200 hover:text-white transition duration-150"
                     , href link.href
@@ -393,11 +398,11 @@ viewIcons { heading, subHeader, size, search, icons } =
     in
     section [ class "contents" ]
         [ div []
-            [ h2 [ class "font-medium text-gray-900 flex-none text-lg mr-3 mb-1" ] [ text heading ]
-            , p [ class "font-medium text-gray-600 text-sm" ] [ text subHeader ]
+            [ h2 [ class "font-medium text-gray-900 flex-none text-lg mr-3" ] [ text heading ]
+            , p [ class "hidden md:block mt-1 font-medium text-gray-600 text-sm" ] [ text subHeader ]
             ]
         , Keyed.ul
-            [ class "w-full grid grid-cols-3 gap-8" ]
+            [ class "w-full grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 sm:gap-8" ]
             (List.map viewIconKeyed icons)
         ]
 
@@ -425,7 +430,7 @@ viewIcon size search icon =
                 ]
                 [ icon.viewIcon [] ]
             ]
-        , span [ class "text-gray-600 text-sm" ] [ text icon.name ]
+        , span [ class "text-gray-600 text-sm text-center" ] [ text icon.name ]
         ]
 
 
