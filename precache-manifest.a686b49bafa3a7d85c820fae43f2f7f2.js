@@ -4,7 +4,7 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/heroicons-for-elm/favicon.ico"
   },
   {
-    "revision": "e00e5851cf615aa0c059cbb3a3e7b9ef",
+    "revision": "db1ac3a08bac50c0abf9dc23e365c384",
     "url": "/heroicons-for-elm/index.html"
   },
   {
