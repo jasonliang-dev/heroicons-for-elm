@@ -1,15 +1,10 @@
-import "highlight.js/styles/atom-one-dark.css"
 import "tippy.js/dist/tippy.css"
 import "tippy.js/animations/shift-away.css"
 import "./main.css"
 import { Elm } from "./Main.elm"
 import * as serviceWorker from "./serviceWorker"
 import copy from "copy-to-clipboard"
-import hljs from "highlight.js/lib/core"
-import highlightElm from "highlight.js/lib/languages/elm"
 import tippy from "tippy.js"
-
-hljs.registerLanguage("elm", highlightElm)
 
 const requestAnimationFrame =
   window.requestAnimationFrame ||
@@ -22,16 +17,6 @@ const app = Elm.Main.init({
 })
 
 serviceWorker.unregister()
-
-app.ports.iconCodeChange.subscribe(function () {
-  /*
-  requestAnimationFrame(function () {
-    document.querySelectorAll("pre code").forEach((block) => {
-      hljs.highlightBlock(block)
-    })
-  })
-  */
-})
 
 app.ports.copy.subscribe(function (text) {
   copy(text, { format: "text/plain" })

@@ -11,9 +11,13 @@
             "elm/html": "1.0.0",
             "elm/json": "1.1.2",
             "elm/svg": "1.0.1",
-            "jasonliang512/elm-heroicons": "2.4.0"
+            "jasonliang512/elm-heroicons": "2.4.0",
+            "mdgriffith/elm-style-animation": "4.0.0",
+            "pablohirafuji/elm-syntax-highlight": "3.4.0"
         },
         "indirect": {
+            "elm/parser": "1.1.0",
+            "elm/regex": "1.0.0",
             "elm/time": "1.0.0",
             "elm/url": "1.0.0",
             "elm/virtual-dom": "1.0.2"

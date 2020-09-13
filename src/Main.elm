@@ -1,5 +1,7 @@
 port module Main exposing (..)
 
+import Animation
+import Animation.Messenger
 import Browser
 import Browser.Events as Events
 import Gallery
@@ -11,15 +13,13 @@ import Html exposing (..)
 import Html.Attributes exposing (..)
 import Html.Events exposing (..)
 import Html.Keyed as Keyed
-import Html.Lazy exposing (lazy)
+import Html.Lazy exposing (lazy, lazy3)
 import Json.Decode as Decode
+import SyntaxHighlight
 
 
 
 ---- PORTS ----
-
-
-port iconCodeChange : () -> Cmd msg
 
 
 port copy : String -> Cmd msg
@@ -51,6 +51,15 @@ type alias Model =
     , search : String
     , svgImportStyle : ImportStyle
     , svgAttrsImportStyle : ImportStyle
+    , backdropStyle : Animation.Messenger.State Msg
+    , modalStyle : Animation.Messenger.State Msg
+    }
+
+
+initStyle : { backdropStyle : List Animation.Property, modalStyle : List Animation.Property }
+initStyle =
+    { backdropStyle = [ Animation.opacity 0.0 ]
+    , modalStyle = [ Animation.opacity 0.0, Animation.scale 0.9 ]
     }
 
 
@@ -70,6 +79,8 @@ init =
             , onAs = SetSvgAttrsAs
             , onExposing = SetSvgAttrsExposing
             }
+      , backdropStyle = Animation.style initStyle.backdropStyle
+      , modalStyle = Animation.style initStyle.modalStyle
       }
     , Cmd.none
     )
@@ -80,13 +91,16 @@ init =
 
 
 type Msg
-    = SetModalFor (Maybe (Gallery.Icon Msg))
+    = ShowModal (Gallery.Icon Msg)
+    | HideModal
+    | DestroyModal
     | SetSearch String
     | SetSvgAs String
     | SetSvgExposing String
     | SetSvgAttrsAs String
     | SetSvgAttrsExposing String
     | CopyToClipboard String
+    | Animate Animation.Msg
     | IgnoreKeyboard
     | NoOp
 
@@ -94,18 +108,53 @@ type Msg
 update : Msg -> Model -> ( Model, Cmd Msg )
 update msg model =
     case msg of
-        SetModalFor maybeIcon ->
-            ( { model | modalFor = maybeIcon }
-            , case maybeIcon of
-                Just _ ->
-                    Cmd.batch
-                        [ iconCodeChange ()
-                        , makeTippy "Copy SVG"
+        ShowModal icon ->
+            let
+                openSpring =
+                    Animation.spring { stiffness = 550, damping = 30 }
+            in
+            ( { model
+                | modalFor = Just icon
+                , backdropStyle =
+                    Animation.interrupt
+                        [ Animation.toWith
+                            openSpring
+                            [ Animation.opacity 1.0 ]
                         ]
-
-                Nothing ->
-                    freeTippy ()
+                        model.backdropStyle
+                , modalStyle =
+                    Animation.interrupt
+                        [ Animation.toWith
+                            openSpring
+                            [ Animation.opacity 1.0, Animation.scale 1.0 ]
+                        ]
+                        model.modalStyle
+              }
+            , makeTippy "Copy SVG"
             )
+
+        HideModal ->
+            let
+                closeSpring =
+                    Animation.spring { stiffness = 800, damping = 36 }
+            in
+            ( { model
+                | backdropStyle =
+                    Animation.interrupt
+                        [ Animation.toWith closeSpring initStyle.backdropStyle ]
+                        model.backdropStyle
+                , modalStyle =
+                    Animation.interrupt
+                        [ Animation.toWith closeSpring initStyle.modalStyle
+                        , Animation.Messenger.send DestroyModal
+                        ]
+                        model.modalStyle
+              }
+            , Cmd.none
+            )
+
+        DestroyModal ->
+            ( { model | modalFor = Nothing }, freeTippy () )
 
         SetSearch str ->
             ( { model | search = str }, Cmd.none )
@@ -148,6 +197,18 @@ update msg model =
 
         CopyToClipboard str ->
             ( model, Cmd.batch [ copy str, setTippyContent "Copied!" ] )
+
+        Animate animMsg ->
+            let
+                ( backdropStyle, backdropCmd ) =
+                    Animation.Messenger.update animMsg model.backdropStyle
+
+                ( modalStyle, modalCmd ) =
+                    Animation.Messenger.update animMsg model.modalStyle
+            in
+            ( { model | backdropStyle = backdropStyle, modalStyle = modalStyle }
+            , Cmd.batch [ backdropCmd, modalCmd ]
+            )
 
         IgnoreKeyboard ->
             ( model, Cmd.none )
@@ -238,7 +299,10 @@ view model =
                         ]
                     , p [ class "text-lg text-gray-600" ]
                         [ text "Is there an icon missing? Let me know by "
-                        , a [ class "text-elm-blue hover:underline", href "#" ]
+                        , a
+                            [ class "text-elm-blue hover:underline"
+                            , href "https://github.com/jasonliang512/elm-heroicons-gallery/issues"
+                            ]
                             [ text "opening an issue on GitHub" ]
                         , text "."
                         ]
@@ -248,14 +312,14 @@ view model =
             [ div [ class "container px-8 mx-auto" ]
                 [ a
                     [ class "hover:underline hover:text-gray-700"
-                    , href "#"
+                    , href "https://github.com/jasonliang512/elm-heroicons-gallery"
                     ]
                     [ text "Page Source" ]
                 ]
             ]
         , case model.modalFor of
             Just icon ->
-                viewModal model.svgImportStyle model.svgAttrsImportStyle icon
+                viewModal model icon
 
             Nothing ->
                 text ""
@@ -272,27 +336,23 @@ viewNav =
             , { href = "https://package.elm-lang.org/packages/jasonliang512/elm-heroicons/latest/"
               , view = [ code [ class "text-sm" ] [ text "elm-herocions" ], text " Package" ]
               }
-            , { href = "#"
+            , { href = "https://github.com/jasonliang512/elm-heroicons-gallery"
               , view = [ text "GitHub" ]
               }
             ]
+
+        viewLink link =
+            li []
+                [ a
+                    [ class "text-blue-200 hover:text-white transition duration-150"
+                    , href link.href
+                    ]
+                    link.view
+                ]
     in
     nav []
         [ Keyed.ul [ class "flex justify-end space-x-8" ]
-            (List.map
-                (\link ->
-                    ( link.href
-                    , li []
-                        [ a
-                            [ class "text-blue-200 hover:text-white transition duration-150"
-                            , href link.href
-                            ]
-                            link.view
-                        ]
-                    )
-                )
-                navLinks
-            )
+            (List.map (\link -> ( link.href, viewLink link )) navLinks)
         ]
 
 
@@ -335,7 +395,7 @@ viewIcon size search icon =
         )
         [ button
             [ class "w-full h-24 flex items-center justify-center rounded-md border-2 border-gray-200 text-gray-600 hover:text-elm-blue hover:border-elm-blue hover:bg-blue-100 focus:shadow-outline focus:outline-none transition duration-150"
-            , onClick (SetModalFor (Just icon))
+            , onClick (ShowModal icon)
             , type_ "button"
             ]
             [ span
@@ -349,97 +409,118 @@ viewIcon size search icon =
         ]
 
 
-viewModal : ImportStyle -> ImportStyle -> Gallery.Icon Msg -> Html Msg
-viewModal svgImportStyle svgAttrsImportStyle icon =
+viewModal :
+    { a
+        | svgImportStyle : ImportStyle
+        , svgAttrsImportStyle : ImportStyle
+        , backdropStyle : Animation.Messenger.State Msg
+        , modalStyle : Animation.Messenger.State Msg
+    }
+    -> Gallery.Icon Msg
+    -> Html Msg
+viewModal { svgImportStyle, svgAttrsImportStyle, backdropStyle, modalStyle } icon =
     div [ class "fixed z-10 inset-0 overflow-y-auto" ]
-        [ div [ class "flex items-end justify-center min-h-screen pt-4 px-4 pb-20 text-center sm:block sm:p-0" ]
-            [ div [ class "fixed inset-0 transition-opacity" ]
+        [ div [ class "min-h-screen text-center p-0" ]
+            [ div (class "fixed inset-0 transition-opacity" :: Animation.render backdropStyle)
                 [ button
-                    [ class "absolute inset-0 w-screen h-screen bg-gray-400 opacity-75 cursor-default"
+                    [ class "absolute inset-0 w-screen h-screen bg-gray-300 opacity-75 cursor-default"
                     , type_ "button"
                     , tabindex -1
-                    , onClick (SetModalFor Nothing)
+                    , onClick HideModal
                     ]
                     []
                 ]
-            , span [ class "hidden sm:inline-block sm:align-middle sm:h-screen" ] []
+            , span [ class "inline-block align-middle h-screen" ] []
             , div
-                [ attribute "aria-labelledby" "modal-headline"
-                , attribute "aria-modal" "true"
-                , attribute "role" "dialog"
-                , class "relative inline-block align-bottom bg-white rounded-lg text-left shadow-xl transform transition-all sm:my-8 sm:align-middle sm:max-w-2xl sm:w-full"
+                (Animation.render modalStyle
+                    ++ [ attribute "aria-labelledby" "modal-headline"
+                       , attribute "aria-modal" "true"
+                       , attribute "role" "dialog"
+                       , class "relative inline-block bg-white rounded-lg text-left shadow-xl transition-all my-8 align-middle max-w-2xl w-full"
+                       ]
+                )
+                [ lazy3 viewModalContent svgImportStyle svgAttrsImportStyle icon ]
+            ]
+        ]
+
+
+viewModalContent : ImportStyle -> ImportStyle -> Gallery.Icon Msg -> Html Msg
+viewModalContent svgImportStyle svgAttrsImportStyle icon =
+    div [ class "contents" ]
+        [ button
+            [ class "absolute right-0 top-0 -mt-3 -mr-3 w-8 h-8 flex items-center justify-center shadow hover:shadow-md rounded-full bg-white text-red-500 hover:text-red-700 focus:outline-none focus:shadow-outline transition duration-150"
+            , type_ "button"
+            , onClick HideModal
+            ]
+            [ span [ class "inline-block w-5 h-5" ] [ Heroicons.Solid.x [] ] ]
+        , div [ class "bg-white p-6 pb-4 rounded-t-lg" ]
+            [ h3
+                [ class "text-lg leading-6 font-medium text-gray-900 mb-2"
+                , id "modal-headline"
                 ]
+                [ text "Icon usage" ]
+            , div [ class "mb-4" ]
+                [ p [ class "leading-tight text-sm text-gray-600" ]
+                    [ text "Copy this Elm code and paste it in your project:" ]
+                ]
+            , div [ class "relative mb-6" ]
                 [ button
-                    [ class "absolute right-0 top-0 -mt-3 -mr-3 w-8 h-8 flex items-center justify-center shadow hover:shadow-md rounded-full bg-white text-red-500 hover:text-red-700 focus:outline-none focus:shadow-outline transition duration-150"
+                    [ class "absolute right-0 bottom-0 rounded-full bg-elm-blue text-white flex items-center justify-center w-8 h-8 -mb-2 -mr-4 shadow hover:shadow-lg focus:outline-none focus:shadow-outline transition duration-150"
                     , type_ "button"
-                    , onClick (SetModalFor Nothing)
+                    , attribute "aria-label" "Copy elm code"
+                    , attribute "data-tippy" ""
+                    , onClick
+                        (CopyToClipboard
+                            (treeToString svgImportStyle
+                                svgAttrsImportStyle
+                                icon.tree
+                            )
+                        )
                     ]
-                    [ span [ class "inline-block w-5 h-5" ] [ Heroicons.Solid.x [] ] ]
-                , div [ class "bg-white px-4 pt-5 pb-4 sm:p-6 sm:pb-4 rounded-t-lg" ]
-                    [ h3
-                        [ class "text-lg leading-6 font-medium text-gray-900 mb-2"
-                        , id "modal-headline"
+                    [ span
+                        [ class "inline-block"
+                        , style "width" "20px"
+                        , style "height" "20px"
                         ]
-                        [ text "Icon usage" ]
-                    , div [ class "mb-4" ]
-                        [ p [ class "leading-tight text-sm text-gray-600" ]
-                            [ text "Copy this Elm code and paste it in your project:" ]
-                        ]
-                    , div [ class "relative mb-6" ]
-                        [ button
-                            [ class "absolute right-0 bottom-0 rounded-full bg-elm-blue text-white flex items-center justify-center w-8 h-8 -mb-2 -mr-4 shadow hover:shadow-lg focus:outline-none focus:shadow-outline transition duration-150"
-                            , type_ "button"
-                            , attribute "aria-label" "Copy elm code"
-                            , attribute "data-tippy" ""
-                            , onClick
-                                (CopyToClipboard
-                                    (treeToString svgImportStyle
-                                        svgAttrsImportStyle
-                                        icon.tree
-                                    )
-                                )
-                            ]
-                            [ span
-                                [ class "inline-block"
-                                , style "width" "20px"
-                                , style "height" "20px"
-                                ]
-                                [ Heroicons.Solid.clipboard [] ]
-                            ]
-                        , pre [ class "overflow-x-auto text-xs font-bold rounded-md p-4 bg-gray-800 text-gray-200" ]
-                            [ code [ class "language-elm" ]
-                                [ text (importStyleToString "Svg" svgImportStyle ++ "\n")
-                                , text (importStyleToString "Svg.Attributes" svgAttrsImportStyle ++ "\n\n")
-                                , text "view : Html msg\n"
-                                , text
-                                    ("view = \n    "
-                                        ++ treeToString svgImportStyle
+                        [ Heroicons.Solid.clipboard [] ]
+                    ]
+                , div [ class "elm-syntax-highlight-fix" ]
+                    [ SyntaxHighlight.useTheme SyntaxHighlight.oneDark
+                    , codeStateToString svgImportStyle svgAttrsImportStyle icon
+                        |> SyntaxHighlight.elm
+                        |> Result.map (SyntaxHighlight.toBlockHtml Nothing)
+                        |> Result.withDefault
+                            (pre []
+                                [ code []
+                                    [ text
+                                        (codeStateToString
+                                            svgImportStyle
                                             svgAttrsImportStyle
-                                            icon.tree
-                                    )
+                                            icon
+                                        )
+                                    ]
                                 ]
-                            ]
-                        ]
-                    , h3 [ class "text-lg leading-6 font-medium text-gray-900 mb-3" ]
-                        [ text "How are you importing "
-                        , code [ class "text-sm code" ] [ text "elm/svg" ]
-                        , text "?"
-                        ]
-                    , div [ class "space-y-1" ]
-                        [ viewImportStyle "Svg           " svgImportStyle
-                        , viewImportStyle "Svg.Attributes" svgAttrsImportStyle
-                        ]
+                            )
                     ]
-                , div [ class "bg-gray-100 px-4 py-3 sm:px-6 sm:flex sm:flex-row-reverse rounded-b-lg" ]
-                    [ span [ class "mt-3 flex w-full rounded-md shadow-sm sm:mt-0 sm:w-auto" ]
-                        [ button
-                            [ class "inline-flex justify-center w-full rounded-md border border-gray-300 px-4 py-2 bg-white text-base leading-6 font-medium text-gray-700 shadow-sm hover:text-gray-500 focus:outline-none focus:border-blue-300 focus:shadow-outline-blue transition ease-in-out duration-150 sm:text-sm sm:leading-5"
-                            , type_ "button"
-                            , onClick (SetModalFor Nothing)
-                            ]
-                            [ text "Close" ]
-                        ]
+                ]
+            , h3 [ class "text-lg leading-6 font-medium text-gray-900 mb-3" ]
+                [ text "How are you importing "
+                , code [ class "text-sm bg-gray-200 text-gray-800 font-bold" ] [ text "elm/svg" ]
+                , text "?"
+                ]
+            , div [ class "space-y-1" ]
+                [ viewImportStyle "Svg           " svgImportStyle
+                , viewImportStyle "Svg.Attributes" svgAttrsImportStyle
+                ]
+            ]
+        , div [ class "bg-gray-100 px-6 py-3 flex flex-row-reverse rounded-b-lg" ]
+            [ span [ class "flex rounded-md shadow-sm mt-0" ]
+                [ button
+                    [ class "inline-flex justify-center w-full rounded-md border border-gray-300 px-4 py-2 bg-white font-medium text-gray-700 shadow-sm hover:text-gray-500 focus:outline-none focus:border-blue-300 focus:shadow-outline-blue transition ease-in-out duration-150 text-sm leading-5"
+                    , type_ "button"
+                    , onClick HideModal
                     ]
+                    [ text "Close" ]
                 ]
             ]
         ]
@@ -447,12 +528,16 @@ viewModal svgImportStyle svgAttrsImportStyle icon =
 
 viewImportStyle : String -> ImportStyle -> Html Msg
 viewImportStyle moduleName { withAs, withExposing, onAs, onExposing } =
-    div [ class "text-xs text-gray-600 flex space-x-2 w-100" ]
+    let
+        inputClassShared =
+            "flex-auto w-0 min-w-0 rounded px-2 py-1 font-mono text-gray-600 focus:text-gray-800 bg-gray-200 border border-gray-200 focus:border-gray-400 transition duration-150 focus:outline-none"
+    in
+    div [ class "text-xs text-gray-600 flex space-x-2" ]
         [ label [ class "flex items-center flex-auto" ]
             [ code [ class "whitespace-pre mr-2" ]
                 [ text ("import " ++ moduleName ++ " as") ]
             , input
-                [ class "input-text"
+                [ class inputClassShared
                 , type_ "text"
                 , value withAs
                 , onInput onAs
@@ -462,7 +547,7 @@ viewImportStyle moduleName { withAs, withExposing, onAs, onExposing } =
         , label [ class "flex items-center flex-auto" ]
             [ code [ class "whitespace-pre mr-1" ] [ text "exposing (" ]
             , input
-                [ class "input-text"
+                [ class inputClassShared
                 , type_ "text"
                 , value withExposing
                 , onInput onExposing
@@ -479,12 +564,18 @@ viewImportStyle moduleName { withAs, withExposing, onAs, onExposing } =
 
 subscriptions : Model -> Sub Msg
 subscriptions model =
-    case model.modalFor of
-        Just _ ->
-            Events.onKeyDown keyHandle
+    Sub.batch
+        [ case model.modalFor of
+            Just _ ->
+                Events.onKeyDown keyHandle
 
-        Nothing ->
-            Sub.none
+            Nothing ->
+                Sub.none
+        , Animation.subscription Animate
+            [ model.backdropStyle
+            , model.modalStyle
+            ]
+        ]
 
 
 keyHandle : Decode.Decoder Msg
@@ -493,10 +584,10 @@ keyHandle =
         toMsg key =
             case key of
                 "Esc" ->
-                    SetModalFor Nothing
+                    HideModal
 
                 "Escape" ->
-                    SetModalFor Nothing
+                    HideModal
 
                 _ ->
                     IgnoreKeyboard
@@ -592,6 +683,18 @@ treeToString svgImportStyle svgAttrsImportStyle (Gallery.XMLTree tree) =
                 (treeToString svgImportStyle svgAttrsImportStyle)
                 tree.children
             )
+
+
+codeStateToString : ImportStyle -> ImportStyle -> Gallery.Icon msg -> String
+codeStateToString svgImportStyle svgAttrsImportStyle icon =
+    importStyleToString "Svg" svgImportStyle
+        ++ "\n"
+        ++ importStyleToString "Svg.Attributes" svgAttrsImportStyle
+        ++ "\n\nicon : Html msg\n"
+        ++ "icon = \n    "
+        ++ treeToString svgImportStyle
+            svgAttrsImportStyle
+            icon.tree
 
 
 

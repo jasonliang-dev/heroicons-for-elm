@@ -13,18 +13,8 @@
 @tailwind components;
 @tailwind utilities;
 
-.code {
-  @apply bg-gray-200 text-gray-800 font-bold;
-}
-
-.input-text {
-  @apply flex-auto w-0 min-w-0 rounded px-2 py-1 font-mono;
-  @apply text-gray-600 bg-gray-200 border border-gray-200;
-  @apply transition duration-150;
-}
-
-.input-text:focus {
-  @apply border-gray-400 text-gray-800 outline-none;
+.elm-syntax-highlight-fix pre {
+  @apply overflow-x-auto text-xs rounded-md p-4 font-bold;
 }
 
 .tippy-box[data-theme~="tailwind"] {
