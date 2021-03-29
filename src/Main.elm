@@ -305,7 +305,7 @@ view model =
                         [ text "Is there an icon missing? Let me know by "
                         , a
                             [ class "text-elm-blue hover:underline"
-                            , href "https://github.com/jasonliang512/elm-heroicons-gallery/issues"
+                            , href "https://github.com/jasonliang-dev/elm-heroicons-gallery/issues"
                             ]
                             [ text "opening an issue on GitHub" ]
                         , text "!"
@@ -332,7 +332,7 @@ view model =
                     , text " by "
                     , a
                         [ class "text-elm-blue hover:underline"
-                        , href "https://github.com/jasonliang512"
+                        , href "https://github.com/jasonliang-dev"
                         ]
                         [ text "Jason Liang" ]
                     ]
@@ -355,14 +355,14 @@ viewNav =
               , view = [ text "Original Heroicons" ]
               , parentAttrs = [ class "hidden md:block" ]
               }
-            , { href = "https://package.elm-lang.org/packages/jasonliang512/elm-heroicons/latest/"
+            , { href = "https://package.elm-lang.org/packages/jasonliang-dev/elm-heroicons/latest/"
               , view =
                     [ code [ class "text-sm" ] [ text "elm-herocions" ]
                     , text " Package"
                     ]
               , parentAttrs = [ class "hidden md:block" ]
               }
-            , { href = "https://github.com/jasonliang512/heroicons-for-elm"
+            , { href = "https://github.com/jasonliang-dev/heroicons-for-elm"
               , view = [ text "GitHub" ]
               , parentAttrs = []
               }

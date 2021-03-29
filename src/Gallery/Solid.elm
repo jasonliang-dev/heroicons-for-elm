@@ -251,22 +251,6 @@ model =
                     ]
                 }
       }
-    , { name = "arrows-expand"
-      , tags = []
-      , viewIcon = arrowsExpand
-      , tree =
-            XMLTree
-                { tag = "svg"
-                , attributes = [ ( "viewBox", "0 0 19 20" ), ( "fill", "currentColor" ) ]
-                , children =
-                    [ XMLTree
-                        { tag = "path"
-                        , attributes = [ ( "stroke", "#374151" ), ( "strokeLinecap", "round" ), ( "strokeLinejoin", "round" ), ( "strokeWidth", "2" ), ( "d", "M3 8V4m0 0h4M3 4l4 4m8 0V4m0 0h-4m4 0l-4 4m-8 4v4m0 0h4m-4 0l4-4m8 4l-4-4m4 4v-4m0 4h-4" ) ]
-                        , children = []
-                        }
-                    ]
-                }
-      }
     , { name = "arrow-up"
       , tags = []
       , viewIcon = arrowUp
@@ -278,6 +262,22 @@ model =
                     [ XMLTree
                         { tag = "path"
                         , attributes = [ ( "fillRule", "evenodd" ), ( "d", "M3.293 9.707a1 1 0 010-1.414l6-6a1 1 0 011.414 0l6 6a1 1 0 01-1.414 1.414L11 5.414V17a1 1 0 11-2 0V5.414L4.707 9.707a1 1 0 01-1.414 0z" ), ( "clipRule", "evenodd" ) ]
+                        , children = []
+                        }
+                    ]
+                }
+      }
+    , { name = "arrows-expand"
+      , tags = []
+      , viewIcon = arrowsExpand
+      , tree =
+            XMLTree
+                { tag = "svg"
+                , attributes = [ ( "viewBox", "0 0 19 20" ), ( "fill", "currentColor" ) ]
+                , children =
+                    [ XMLTree
+                        { tag = "path"
+                        , attributes = [ ( "stroke", "#374151" ), ( "strokeLinecap", "round" ), ( "strokeLinejoin", "round" ), ( "strokeWidth", "2" ), ( "d", "M3 8V4m0 0h4M3 4l4 4m8 0V4m0 0h-4m4 0l-4 4m-8 4v4m0 0h4m-4 0l4-4m8 4l-4-4m4 4v-4m0 4h-4" ) ]
                         , children = []
                         }
                     ]
@@ -379,6 +379,22 @@ model =
                     ]
                 }
       }
+    , { name = "book-open"
+      , tags = []
+      , viewIcon = bookOpen
+      , tree =
+            XMLTree
+                { tag = "svg"
+                , attributes = [ ( "viewBox", "0 0 20 20" ), ( "fill", "currentColor" ) ]
+                , children =
+                    [ XMLTree
+                        { tag = "path"
+                        , attributes = [ ( "d", "M9 4.804A7.968 7.968 0 005.5 4c-1.255 0-2.443.29-3.5.804v10A7.969 7.969 0 015.5 14c1.669 0 3.218.51 4.5 1.385A7.962 7.962 0 0114.5 14c1.255 0 2.443.29 3.5.804v-10A7.968 7.968 0 0014.5 4c-1.255 0-2.443.29-3.5.804V12a1 1 0 11-2 0V4.804z" ) ]
+                        , children = []
+                        }
+                    ]
+                }
+      }
     , { name = "bookmark-alt"
       , tags = []
       , viewIcon = bookmarkAlt
@@ -406,22 +422,6 @@ model =
                     [ XMLTree
                         { tag = "path"
                         , attributes = [ ( "d", "M5 4a2 2 0 012-2h6a2 2 0 012 2v14l-5-2.5L5 18V4z" ) ]
-                        , children = []
-                        }
-                    ]
-                }
-      }
-    , { name = "book-open"
-      , tags = []
-      , viewIcon = bookOpen
-      , tree =
-            XMLTree
-                { tag = "svg"
-                , attributes = [ ( "viewBox", "0 0 20 20" ), ( "fill", "currentColor" ) ]
-                , children =
-                    [ XMLTree
-                        { tag = "path"
-                        , attributes = [ ( "d", "M9 4.804A7.968 7.968 0 005.5 4c-1.255 0-2.443.29-3.5.804v10A7.969 7.969 0 015.5 14c1.669 0 3.218.51 4.5 1.385A7.962 7.962 0 0114.5 14c1.255 0 2.443.29 3.5.804v-10A7.968 7.968 0 0014.5 4c-1.255 0-2.443.29-3.5.804V12a1 1 0 11-2 0V4.804z" ) ]
                         , children = []
                         }
                     ]
@@ -936,22 +936,6 @@ model =
                     ]
                 }
       }
-    , { name = "cloud"
-      , tags = []
-      , viewIcon = cloud
-      , tree =
-            XMLTree
-                { tag = "svg"
-                , attributes = [ ( "viewBox", "0 0 20 20" ), ( "fill", "currentColor" ) ]
-                , children =
-                    [ XMLTree
-                        { tag = "path"
-                        , attributes = [ ( "d", "M5.5 16a3.5 3.5 0 01-.369-6.98 4 4 0 117.753-1.977A4.5 4.5 0 1113.5 16h-8z" ) ]
-                        , children = []
-                        }
-                    ]
-                }
-      }
     , { name = "cloud-upload"
       , tags = []
       , viewIcon = cloudUpload
@@ -968,6 +952,22 @@ model =
                     , XMLTree
                         { tag = "path"
                         , attributes = [ ( "d", "M9 13h2v5a1 1 0 11-2 0v-5z" ) ]
+                        , children = []
+                        }
+                    ]
+                }
+      }
+    , { name = "cloud"
+      , tags = []
+      , viewIcon = cloud
+      , tree =
+            XMLTree
+                { tag = "svg"
+                , attributes = [ ( "viewBox", "0 0 20 20" ), ( "fill", "currentColor" ) ]
+                , children =
+                    [ XMLTree
+                        { tag = "path"
+                        , attributes = [ ( "d", "M5.5 16a3.5 3.5 0 01-.369-6.98 4 4 0 117.753-1.977A4.5 4.5 0 1113.5 16h-8z" ) ]
                         , children = []
                         }
                     ]
@@ -1058,22 +1058,6 @@ model =
                     ]
                 }
       }
-    , { name = "cube"
-      , tags = []
-      , viewIcon = cube
-      , tree =
-            XMLTree
-                { tag = "svg"
-                , attributes = [ ( "viewBox", "0 0 20 20" ), ( "fill", "currentColor" ) ]
-                , children =
-                    [ XMLTree
-                        { tag = "path"
-                        , attributes = [ ( "d", "M11 17a1 1 0 001.447.894l4-2A1 1 0 0017 15V9.236a1 1 0 00-1.447-.894l-4 2a1 1 0 00-.553.894V17zM15.211 6.276a1 1 0 000-1.788l-4.764-2.382a1 1 0 00-.894 0L4.789 4.488a1 1 0 000 1.788l4.764 2.382a1 1 0 00.894 0l4.764-2.382zM4.447 8.342A1 1 0 003 9.236V15a1 1 0 00.553.894l4 2A1 1 0 009 17v-5.764a1 1 0 00-.553-.894l-4-2z" ) ]
-                        , children = []
-                        }
-                    ]
-                }
-      }
     , { name = "cube-transparent"
       , tags = []
       , viewIcon = cubeTransparent
@@ -1085,6 +1069,22 @@ model =
                     [ XMLTree
                         { tag = "path"
                         , attributes = [ ( "fillRule", "evenodd" ), ( "d", "M9.504 1.132a1 1 0 01.992 0l1.75 1a1 1 0 11-.992 1.736L10 3.152l-1.254.716a1 1 0 11-.992-1.736l1.75-1zM5.618 4.504a1 1 0 01-.372 1.364L5.016 6l.23.132a1 1 0 11-.992 1.736L4 7.723V8a1 1 0 01-2 0V6a.996.996 0 01.52-.878l1.734-.99a1 1 0 011.364.372zm8.764 0a1 1 0 011.364-.372l1.733.99A1.002 1.002 0 0118 6v2a1 1 0 11-2 0v-.277l-.254.145a1 1 0 11-.992-1.736l.23-.132-.23-.132a1 1 0 01-.372-1.364zm-7 4a1 1 0 011.364-.372L10 8.848l1.254-.716a1 1 0 11.992 1.736L11 10.58V12a1 1 0 11-2 0v-1.42l-1.246-.712a1 1 0 01-.372-1.364zM3 11a1 1 0 011 1v1.42l1.246.712a1 1 0 11-.992 1.736l-1.75-1A1 1 0 012 14v-2a1 1 0 011-1zm14 0a1 1 0 011 1v2a1 1 0 01-.504.868l-1.75 1a1 1 0 11-.992-1.736L16 13.42V12a1 1 0 011-1zm-9.618 5.504a1 1 0 011.364-.372l.254.145V16a1 1 0 112 0v.277l.254-.145a1 1 0 11.992 1.736l-1.735.992a.995.995 0 01-1.022 0l-1.735-.992a1 1 0 01-.372-1.364z" ), ( "clipRule", "evenodd" ) ]
+                        , children = []
+                        }
+                    ]
+                }
+      }
+    , { name = "cube"
+      , tags = []
+      , viewIcon = cube
+      , tree =
+            XMLTree
+                { tag = "svg"
+                , attributes = [ ( "viewBox", "0 0 20 20" ), ( "fill", "currentColor" ) ]
+                , children =
+                    [ XMLTree
+                        { tag = "path"
+                        , attributes = [ ( "d", "M11 17a1 1 0 001.447.894l4-2A1 1 0 0017 15V9.236a1 1 0 00-1.447-.894l-4 2a1 1 0 00-.553.894V17zM15.211 6.276a1 1 0 000-1.788l-4.764-2.382a1 1 0 00-.894 0L4.789 4.488a1 1 0 000 1.788l4.764 2.382a1 1 0 00.894 0l4.764-2.382zM4.447 8.342A1 1 0 003 9.236V15a1 1 0 00.553.894l4 2A1 1 0 009 17v-5.764a1 1 0 00-.553-.894l-4-2z" ) ]
                         , children = []
                         }
                     ]
@@ -1387,22 +1387,6 @@ model =
                     ]
                 }
       }
-    , { name = "document"
-      , tags = [ "sim" ]
-      , viewIcon = document
-      , tree =
-            XMLTree
-                { tag = "svg"
-                , attributes = [ ( "viewBox", "0 0 20 20" ), ( "fill", "currentColor" ) ]
-                , children =
-                    [ XMLTree
-                        { tag = "path"
-                        , attributes = [ ( "fillRule", "evenodd" ), ( "d", "M4 4a2 2 0 012-2h4.586A2 2 0 0112 2.586L15.414 6A2 2 0 0116 7.414V16a2 2 0 01-2 2H6a2 2 0 01-2-2V4z" ), ( "clipRule", "evenodd" ) ]
-                        , children = []
-                        }
-                    ]
-                }
-      }
     , { name = "document-text"
       , tags = []
       , viewIcon = documentText
@@ -1414,6 +1398,22 @@ model =
                     [ XMLTree
                         { tag = "path"
                         , attributes = [ ( "fillRule", "evenodd" ), ( "d", "M4 4a2 2 0 012-2h4.586A2 2 0 0112 2.586L15.414 6A2 2 0 0116 7.414V16a2 2 0 01-2 2H6a2 2 0 01-2-2V4zm2 6a1 1 0 011-1h6a1 1 0 110 2H7a1 1 0 01-1-1zm1 3a1 1 0 100 2h6a1 1 0 100-2H7z" ), ( "clipRule", "evenodd" ) ]
+                        , children = []
+                        }
+                    ]
+                }
+      }
+    , { name = "document"
+      , tags = [ "sim" ]
+      , viewIcon = document
+      , tree =
+            XMLTree
+                { tag = "svg"
+                , attributes = [ ( "viewBox", "0 0 20 20" ), ( "fill", "currentColor" ) ]
+                , children =
+                    [ XMLTree
+                        { tag = "path"
+                        , attributes = [ ( "fillRule", "evenodd" ), ( "d", "M4 4a2 2 0 012-2h4.586A2 2 0 0112 2.586L15.414 6A2 2 0 0116 7.414V16a2 2 0 01-2 2H6a2 2 0 01-2-2V4z" ), ( "clipRule", "evenodd" ) ]
                         , children = []
                         }
                     ]
@@ -3587,22 +3587,6 @@ model =
                     ]
                 }
       }
-    , { name = "users"
-      , tags = []
-      , viewIcon = users
-      , tree =
-            XMLTree
-                { tag = "svg"
-                , attributes = [ ( "viewBox", "0 0 20 20" ), ( "fill", "currentColor" ) ]
-                , children =
-                    [ XMLTree
-                        { tag = "path"
-                        , attributes = [ ( "d", "M9 6a3 3 0 11-6 0 3 3 0 016 0zM17 6a3 3 0 11-6 0 3 3 0 016 0zM12.93 17c.046-.327.07-.66.07-1a6.97 6.97 0 00-1.5-4.33A5 5 0 0119 16v1h-6.07zM6 11a5 5 0 015 5v1H1v-1a5 5 0 015-5z" ) ]
-                        , children = []
-                        }
-                    ]
-                }
-      }
     , { name = "user"
       , tags = []
       , viewIcon = user
@@ -3614,6 +3598,22 @@ model =
                     [ XMLTree
                         { tag = "path"
                         , attributes = [ ( "fillRule", "evenodd" ), ( "d", "M10 9a3 3 0 100-6 3 3 0 000 6zm-7 9a7 7 0 1114 0H3z" ), ( "clipRule", "evenodd" ) ]
+                        , children = []
+                        }
+                    ]
+                }
+      }
+    , { name = "users"
+      , tags = []
+      , viewIcon = users
+      , tree =
+            XMLTree
+                { tag = "svg"
+                , attributes = [ ( "viewBox", "0 0 20 20" ), ( "fill", "currentColor" ) ]
+                , children =
+                    [ XMLTree
+                        { tag = "path"
+                        , attributes = [ ( "d", "M9 6a3 3 0 11-6 0 3 3 0 016 0zM17 6a3 3 0 11-6 0 3 3 0 016 0zM12.93 17c.046-.327.07-.66.07-1a6.97 6.97 0 00-1.5-4.33A5 5 0 0119 16v1h-6.07zM6 11a5 5 0 015 5v1H1v-1a5 5 0 015-5z" ) ]
                         , children = []
                         }
                     ]

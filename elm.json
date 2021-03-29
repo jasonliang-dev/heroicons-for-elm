@@ -11,7 +11,7 @@
             "elm/html": "1.0.0",
             "elm/json": "1.1.2",
             "elm/svg": "1.0.1",
-            "jasonliang512/elm-heroicons": "2.4.0",
+            "jasonliang-dev/elm-heroicons": "1.0.3",
             "mdgriffith/elm-style-animation": "4.0.0",
             "pablohirafuji/elm-syntax-highlight": "3.4.0"
         },
