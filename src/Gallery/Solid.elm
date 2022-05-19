@@ -12,7 +12,7 @@ model =
       , tree =
             XMLTree
                 { tag = "svg"
-                , attributes = [ ( "viewBox", "0 0 20 20" ), ( "fill", "currentColor" ) ]
+                , attributes = [ ( "viewBox", "0 0 20 20" ), ( "fill", "currentColor" ), ( "aria-hidden", "true" ) ]
                 , children =
                     [ XMLTree
                         { tag = "path"
@@ -28,7 +28,7 @@ model =
       , tree =
             XMLTree
                 { tag = "svg"
-                , attributes = [ ( "viewBox", "0 0 20 20" ), ( "fill", "currentColor" ) ]
+                , attributes = [ ( "viewBox", "0 0 20 20" ), ( "fill", "currentColor" ), ( "aria-hidden", "true" ) ]
                 , children =
                     [ XMLTree
                         { tag = "path"
@@ -44,7 +44,7 @@ model =
       , tree =
             XMLTree
                 { tag = "svg"
-                , attributes = [ ( "viewBox", "0 0 20 20" ), ( "fill", "currentColor" ) ]
+                , attributes = [ ( "viewBox", "0 0 20 20" ), ( "fill", "currentColor" ), ( "aria-hidden", "true" ) ]
                 , children =
                     [ XMLTree
                         { tag = "path"
@@ -60,7 +60,7 @@ model =
       , tree =
             XMLTree
                 { tag = "svg"
-                , attributes = [ ( "viewBox", "0 0 20 20" ), ( "fill", "currentColor" ) ]
+                , attributes = [ ( "viewBox", "0 0 20 20" ), ( "fill", "currentColor" ), ( "aria-hidden", "true" ) ]
                 , children =
                     [ XMLTree
                         { tag = "path"
@@ -81,7 +81,7 @@ model =
       , tree =
             XMLTree
                 { tag = "svg"
-                , attributes = [ ( "viewBox", "0 0 20 20" ), ( "fill", "currentColor" ) ]
+                , attributes = [ ( "viewBox", "0 0 20 20" ), ( "fill", "currentColor" ), ( "aria-hidden", "true" ) ]
                 , children =
                     [ XMLTree
                         { tag = "path"
@@ -97,7 +97,7 @@ model =
       , tree =
             XMLTree
                 { tag = "svg"
-                , attributes = [ ( "viewBox", "0 0 20 20" ), ( "fill", "currentColor" ) ]
+                , attributes = [ ( "viewBox", "0 0 20 20" ), ( "fill", "currentColor" ), ( "aria-hidden", "true" ) ]
                 , children =
                     [ XMLTree
                         { tag = "path"
@@ -113,7 +113,7 @@ model =
       , tree =
             XMLTree
                 { tag = "svg"
-                , attributes = [ ( "viewBox", "0 0 20 20" ), ( "fill", "currentColor" ) ]
+                , attributes = [ ( "viewBox", "0 0 20 20" ), ( "fill", "currentColor" ), ( "aria-hidden", "true" ) ]
                 , children =
                     [ XMLTree
                         { tag = "path"
@@ -129,7 +129,7 @@ model =
       , tree =
             XMLTree
                 { tag = "svg"
-                , attributes = [ ( "viewBox", "0 0 20 20" ), ( "fill", "currentColor" ) ]
+                , attributes = [ ( "viewBox", "0 0 20 20" ), ( "fill", "currentColor" ), ( "aria-hidden", "true" ) ]
                 , children =
                     [ XMLTree
                         { tag = "path"
@@ -145,7 +145,7 @@ model =
       , tree =
             XMLTree
                 { tag = "svg"
-                , attributes = [ ( "viewBox", "0 0 20 20" ), ( "fill", "currentColor" ) ]
+                , attributes = [ ( "viewBox", "0 0 20 20" ), ( "fill", "currentColor" ), ( "aria-hidden", "true" ) ]
                 , children =
                     [ XMLTree
                         { tag = "path"
@@ -161,7 +161,7 @@ model =
       , tree =
             XMLTree
                 { tag = "svg"
-                , attributes = [ ( "viewBox", "0 0 20 20" ), ( "fill", "currentColor" ) ]
+                , attributes = [ ( "viewBox", "0 0 20 20" ), ( "fill", "currentColor" ), ( "aria-hidden", "true" ) ]
                 , children =
                     [ XMLTree
                         { tag = "path"
@@ -177,7 +177,7 @@ model =
       , tree =
             XMLTree
                 { tag = "svg"
-                , attributes = [ ( "viewBox", "0 0 20 20" ), ( "fill", "currentColor" ) ]
+                , attributes = [ ( "viewBox", "0 0 20 20" ), ( "fill", "currentColor" ), ( "aria-hidden", "true" ) ]
                 , children =
                     [ XMLTree
                         { tag = "path"
@@ -193,7 +193,7 @@ model =
       , tree =
             XMLTree
                 { tag = "svg"
-                , attributes = [ ( "viewBox", "0 0 20 20" ), ( "fill", "currentColor" ) ]
+                , attributes = [ ( "viewBox", "0 0 20 20" ), ( "fill", "currentColor" ), ( "aria-hidden", "true" ) ]
                 , children =
                     [ XMLTree
                         { tag = "path"
@@ -209,7 +209,7 @@ model =
       , tree =
             XMLTree
                 { tag = "svg"
-                , attributes = [ ( "viewBox", "0 0 20 20" ), ( "fill", "currentColor" ) ]
+                , attributes = [ ( "viewBox", "0 0 20 20" ), ( "fill", "currentColor" ), ( "aria-hidden", "true" ) ]
                 , children =
                     [ XMLTree
                         { tag = "path"
@@ -225,7 +225,7 @@ model =
       , tree =
             XMLTree
                 { tag = "svg"
-                , attributes = [ ( "viewBox", "0 0 20 20" ), ( "fill", "currentColor" ) ]
+                , attributes = [ ( "viewBox", "0 0 20 20" ), ( "fill", "currentColor" ), ( "aria-hidden", "true" ) ]
                 , children =
                     [ XMLTree
                         { tag = "path"
@@ -241,11 +241,75 @@ model =
       , tree =
             XMLTree
                 { tag = "svg"
-                , attributes = [ ( "viewBox", "0 0 20 20" ), ( "fill", "currentColor" ) ]
+                , attributes = [ ( "viewBox", "0 0 20 20" ), ( "fill", "currentColor" ), ( "aria-hidden", "true" ) ]
                 , children =
                     [ XMLTree
                         { tag = "path"
                         , attributes = [ ( "fillRule", "evenodd" ), ( "d", "M10.293 3.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z" ), ( "clipRule", "evenodd" ) ]
+                        , children = []
+                        }
+                    ]
+                }
+      }
+    , { name = "arrow-sm-down"
+      , tags = []
+      , viewIcon = arrowSmDown
+      , tree =
+            XMLTree
+                { tag = "svg"
+                , attributes = [ ( "viewBox", "0 0 20 20" ), ( "fill", "currentColor" ), ( "aria-hidden", "true" ) ]
+                , children =
+                    [ XMLTree
+                        { tag = "path"
+                        , attributes = [ ( "fillRule", "evenodd" ), ( "d", "M14.707 10.293a1 1 0 010 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 111.414-1.414L9 12.586V5a1 1 0 012 0v7.586l2.293-2.293a1 1 0 011.414 0z" ), ( "clipRule", "evenodd" ) ]
+                        , children = []
+                        }
+                    ]
+                }
+      }
+    , { name = "arrow-sm-left"
+      , tags = []
+      , viewIcon = arrowSmLeft
+      , tree =
+            XMLTree
+                { tag = "svg"
+                , attributes = [ ( "viewBox", "0 0 20 20" ), ( "fill", "currentColor" ), ( "aria-hidden", "true" ) ]
+                , children =
+                    [ XMLTree
+                        { tag = "path"
+                        , attributes = [ ( "fillRule", "evenodd" ), ( "d", "M9.707 14.707a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414l4-4a1 1 0 011.414 1.414L7.414 9H15a1 1 0 110 2H7.414l2.293 2.293a1 1 0 010 1.414z" ), ( "clipRule", "evenodd" ) ]
+                        , children = []
+                        }
+                    ]
+                }
+      }
+    , { name = "arrow-sm-right"
+      , tags = []
+      , viewIcon = arrowSmRight
+      , tree =
+            XMLTree
+                { tag = "svg"
+                , attributes = [ ( "viewBox", "0 0 20 20" ), ( "fill", "currentColor" ), ( "aria-hidden", "true" ) ]
+                , children =
+                    [ XMLTree
+                        { tag = "path"
+                        , attributes = [ ( "fillRule", "evenodd" ), ( "d", "M10.293 5.293a1 1 0 011.414 0l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414-1.414L12.586 11H5a1 1 0 110-2h7.586l-2.293-2.293a1 1 0 010-1.414z" ), ( "clipRule", "evenodd" ) ]
+                        , children = []
+                        }
+                    ]
+                }
+      }
+    , { name = "arrow-sm-up"
+      , tags = []
+      , viewIcon = arrowSmUp
+      , tree =
+            XMLTree
+                { tag = "svg"
+                , attributes = [ ( "viewBox", "0 0 20 20" ), ( "fill", "currentColor" ), ( "aria-hidden", "true" ) ]
+                , children =
+                    [ XMLTree
+                        { tag = "path"
+                        , attributes = [ ( "fillRule", "evenodd" ), ( "d", "M5.293 9.707a1 1 0 010-1.414l4-4a1 1 0 011.414 0l4 4a1 1 0 01-1.414 1.414L11 7.414V15a1 1 0 11-2 0V7.414L6.707 9.707a1 1 0 01-1.414 0z" ), ( "clipRule", "evenodd" ) ]
                         , children = []
                         }
                     ]
@@ -257,7 +321,7 @@ model =
       , tree =
             XMLTree
                 { tag = "svg"
-                , attributes = [ ( "viewBox", "0 0 20 20" ), ( "fill", "currentColor" ) ]
+                , attributes = [ ( "viewBox", "0 0 20 20" ), ( "fill", "currentColor" ), ( "aria-hidden", "true" ) ]
                 , children =
                     [ XMLTree
                         { tag = "path"
@@ -273,23 +337,23 @@ model =
       , tree =
             XMLTree
                 { tag = "svg"
-                , attributes = [ ( "viewBox", "0 0 19 20" ), ( "fill", "currentColor" ) ]
+                , attributes = [ ( "viewBox", "0 0 20 20" ), ( "fill", "currentColor" ), ( "aria-hidden", "true" ) ]
                 , children =
                     [ XMLTree
                         { tag = "path"
-                        , attributes = [ ( "stroke", "#374151" ), ( "strokeLinecap", "round" ), ( "strokeLinejoin", "round" ), ( "strokeWidth", "2" ), ( "d", "M3 8V4m0 0h4M3 4l4 4m8 0V4m0 0h-4m4 0l-4 4m-8 4v4m0 0h4m-4 0l4-4m8 4l-4-4m4 4v-4m0 4h-4" ) ]
+                        , attributes = [ ( "fillRule", "evenodd" ), ( "d", "M3 4a1 1 0 011-1h4a1 1 0 010 2H6.414l2.293 2.293a1 1 0 01-1.414 1.414L5 6.414V8a1 1 0 01-2 0V4zm9 1a1 1 0 110-2h4a1 1 0 011 1v4a1 1 0 11-2 0V6.414l-2.293 2.293a1 1 0 11-1.414-1.414L13.586 5H12zm-9 7a1 1 0 112 0v1.586l2.293-2.293a1 1 0 011.414 1.414L6.414 15H8a1 1 0 110 2H4a1 1 0 01-1-1v-4zm13-1a1 1 0 011 1v4a1 1 0 01-1 1h-4a1 1 0 110-2h1.586l-2.293-2.293a1 1 0 011.414-1.414L15 13.586V12a1 1 0 011-1z" ), ( "clipRule", "evenodd" ) ]
                         , children = []
                         }
                     ]
                 }
       }
     , { name = "at-symbol"
-      , tags = [ "email" ]
+      , tags = [ "email", "@" ]
       , viewIcon = atSymbol
       , tree =
             XMLTree
                 { tag = "svg"
-                , attributes = [ ( "viewBox", "0 0 20 20" ), ( "fill", "currentColor" ) ]
+                , attributes = [ ( "viewBox", "0 0 20 20" ), ( "fill", "currentColor" ), ( "aria-hidden", "true" ) ]
                 , children =
                     [ XMLTree
                         { tag = "path"
@@ -305,7 +369,7 @@ model =
       , tree =
             XMLTree
                 { tag = "svg"
-                , attributes = [ ( "viewBox", "0 0 20 20" ), ( "fill", "currentColor" ) ]
+                , attributes = [ ( "viewBox", "0 0 20 20" ), ( "fill", "currentColor" ), ( "aria-hidden", "true" ) ]
                 , children =
                     [ XMLTree
                         { tag = "path"
@@ -321,7 +385,7 @@ model =
       , tree =
             XMLTree
                 { tag = "svg"
-                , attributes = [ ( "viewBox", "0 0 20 20" ), ( "fill", "currentColor" ) ]
+                , attributes = [ ( "viewBox", "0 0 20 20" ), ( "fill", "currentColor" ), ( "aria-hidden", "true" ) ]
                 , children =
                     [ XMLTree
                         { tag = "path"
@@ -337,7 +401,7 @@ model =
       , tree =
             XMLTree
                 { tag = "svg"
-                , attributes = [ ( "viewBox", "0 0 20 20" ), ( "fill", "currentColor" ) ]
+                , attributes = [ ( "viewBox", "0 0 20 20" ), ( "fill", "currentColor" ), ( "aria-hidden", "true" ) ]
                 , children =
                     [ XMLTree
                         { tag = "path"
@@ -353,7 +417,7 @@ model =
       , tree =
             XMLTree
                 { tag = "svg"
-                , attributes = [ ( "viewBox", "0 0 20 20" ), ( "fill", "currentColor" ) ]
+                , attributes = [ ( "viewBox", "0 0 20 20" ), ( "fill", "currentColor" ), ( "aria-hidden", "true" ) ]
                 , children =
                     [ XMLTree
                         { tag = "path"
@@ -369,7 +433,7 @@ model =
       , tree =
             XMLTree
                 { tag = "svg"
-                , attributes = [ ( "viewBox", "0 0 20 20" ), ( "fill", "currentColor" ) ]
+                , attributes = [ ( "viewBox", "0 0 20 20" ), ( "fill", "currentColor" ), ( "aria-hidden", "true" ) ]
                 , children =
                     [ XMLTree
                         { tag = "path"
@@ -385,7 +449,7 @@ model =
       , tree =
             XMLTree
                 { tag = "svg"
-                , attributes = [ ( "viewBox", "0 0 20 20" ), ( "fill", "currentColor" ) ]
+                , attributes = [ ( "viewBox", "0 0 20 20" ), ( "fill", "currentColor" ), ( "aria-hidden", "true" ) ]
                 , children =
                     [ XMLTree
                         { tag = "path"
@@ -401,7 +465,7 @@ model =
       , tree =
             XMLTree
                 { tag = "svg"
-                , attributes = [ ( "viewBox", "0 0 20 20" ), ( "fill", "currentColor" ) ]
+                , attributes = [ ( "viewBox", "0 0 20 20" ), ( "fill", "currentColor" ), ( "aria-hidden", "true" ) ]
                 , children =
                     [ XMLTree
                         { tag = "path"
@@ -417,7 +481,7 @@ model =
       , tree =
             XMLTree
                 { tag = "svg"
-                , attributes = [ ( "viewBox", "0 0 20 20" ), ( "fill", "currentColor" ) ]
+                , attributes = [ ( "viewBox", "0 0 20 20" ), ( "fill", "currentColor" ), ( "aria-hidden", "true" ) ]
                 , children =
                     [ XMLTree
                         { tag = "path"
@@ -433,7 +497,7 @@ model =
       , tree =
             XMLTree
                 { tag = "svg"
-                , attributes = [ ( "viewBox", "0 0 20 20" ), ( "fill", "currentColor" ) ]
+                , attributes = [ ( "viewBox", "0 0 20 20" ), ( "fill", "currentColor" ), ( "aria-hidden", "true" ) ]
                 , children =
                     [ XMLTree
                         { tag = "path"
@@ -454,7 +518,7 @@ model =
       , tree =
             XMLTree
                 { tag = "svg"
-                , attributes = [ ( "viewBox", "0 0 20 20" ), ( "fill", "currentColor" ) ]
+                , attributes = [ ( "viewBox", "0 0 20 20" ), ( "fill", "currentColor" ), ( "aria-hidden", "true" ) ]
                 , children =
                     [ XMLTree
                         { tag = "path"
@@ -470,7 +534,7 @@ model =
       , tree =
             XMLTree
                 { tag = "svg"
-                , attributes = [ ( "viewBox", "0 0 20 20" ), ( "fill", "currentColor" ) ]
+                , attributes = [ ( "viewBox", "0 0 20 20" ), ( "fill", "currentColor" ), ( "aria-hidden", "true" ) ]
                 , children =
                     [ XMLTree
                         { tag = "path"
@@ -486,7 +550,7 @@ model =
       , tree =
             XMLTree
                 { tag = "svg"
-                , attributes = [ ( "viewBox", "0 0 20 20" ), ( "fill", "currentColor" ) ]
+                , attributes = [ ( "viewBox", "0 0 20 20" ), ( "fill", "currentColor" ), ( "aria-hidden", "true" ) ]
                 , children =
                     [ XMLTree
                         { tag = "path"
@@ -502,7 +566,7 @@ model =
       , tree =
             XMLTree
                 { tag = "svg"
-                , attributes = [ ( "viewBox", "0 0 20 20" ), ( "fill", "currentColor" ) ]
+                , attributes = [ ( "viewBox", "0 0 20 20" ), ( "fill", "currentColor" ), ( "aria-hidden", "true" ) ]
                 , children =
                     [ XMLTree
                         { tag = "path"
@@ -513,12 +577,12 @@ model =
                 }
       }
     , { name = "cash"
-      , tags = [ "money", "payment", "bill" ]
+      , tags = [ "money", "payment", "bill", "price" ]
       , viewIcon = cash
       , tree =
             XMLTree
                 { tag = "svg"
-                , attributes = [ ( "viewBox", "0 0 20 20" ), ( "fill", "currentColor" ) ]
+                , attributes = [ ( "viewBox", "0 0 20 20" ), ( "fill", "currentColor" ), ( "aria-hidden", "true" ) ]
                 , children =
                     [ XMLTree
                         { tag = "path"
@@ -529,12 +593,12 @@ model =
                 }
       }
     , { name = "chart-bar"
-      , tags = [ "graph", "stats", "statistics" ]
+      , tags = [ "graph", "stats", "statistics", "analytics" ]
       , viewIcon = chartBar
       , tree =
             XMLTree
                 { tag = "svg"
-                , attributes = [ ( "viewBox", "0 0 20 20" ), ( "fill", "currentColor" ) ]
+                , attributes = [ ( "viewBox", "0 0 20 20" ), ( "fill", "currentColor" ), ( "aria-hidden", "true" ) ]
                 , children =
                     [ XMLTree
                         { tag = "path"
@@ -545,12 +609,12 @@ model =
                 }
       }
     , { name = "chart-pie"
-      , tags = [ "graph", "stats", "statistics" ]
+      , tags = [ "graph", "stats", "statistics", "analytics" ]
       , viewIcon = chartPie
       , tree =
             XMLTree
                 { tag = "svg"
-                , attributes = [ ( "viewBox", "0 0 20 20" ), ( "fill", "currentColor" ) ]
+                , attributes = [ ( "viewBox", "0 0 20 20" ), ( "fill", "currentColor" ), ( "aria-hidden", "true" ) ]
                 , children =
                     [ XMLTree
                         { tag = "path"
@@ -571,7 +635,7 @@ model =
       , tree =
             XMLTree
                 { tag = "svg"
-                , attributes = [ ( "viewBox", "0 0 20 20" ), ( "fill", "currentColor" ) ]
+                , attributes = [ ( "viewBox", "0 0 20 20" ), ( "fill", "currentColor" ), ( "aria-hidden", "true" ) ]
                 , children =
                     [ XMLTree
                         { tag = "path"
@@ -582,12 +646,12 @@ model =
                 }
       }
     , { name = "chat-alt-2"
-      , tags = [ "speech", "bubble", "comment", "response", "message" ]
+      , tags = [ "speech", "bubble", "comment", "response", "message", "discussion" ]
       , viewIcon = chatAlt2
       , tree =
             XMLTree
                 { tag = "svg"
-                , attributes = [ ( "viewBox", "0 0 20 20" ), ( "fill", "currentColor" ) ]
+                , attributes = [ ( "viewBox", "0 0 20 20" ), ( "fill", "currentColor" ), ( "aria-hidden", "true" ) ]
                 , children =
                     [ XMLTree
                         { tag = "path"
@@ -603,12 +667,12 @@ model =
                 }
       }
     , { name = "chat-alt"
-      , tags = [ "speech", "bubble", "comment", "response", "message" ]
+      , tags = [ "speech", "bubble", "comment", "response", "message", "discussion" ]
       , viewIcon = chatAlt
       , tree =
             XMLTree
                 { tag = "svg"
-                , attributes = [ ( "viewBox", "0 0 20 20" ), ( "fill", "currentColor" ) ]
+                , attributes = [ ( "viewBox", "0 0 20 20" ), ( "fill", "currentColor" ), ( "aria-hidden", "true" ) ]
                 , children =
                     [ XMLTree
                         { tag = "path"
@@ -624,7 +688,7 @@ model =
       , tree =
             XMLTree
                 { tag = "svg"
-                , attributes = [ ( "viewBox", "0 0 20 20" ), ( "fill", "currentColor" ) ]
+                , attributes = [ ( "viewBox", "0 0 20 20" ), ( "fill", "currentColor" ), ( "aria-hidden", "true" ) ]
                 , children =
                     [ XMLTree
                         { tag = "path"
@@ -640,7 +704,7 @@ model =
       , tree =
             XMLTree
                 { tag = "svg"
-                , attributes = [ ( "viewBox", "0 0 20 20" ), ( "fill", "currentColor" ) ]
+                , attributes = [ ( "viewBox", "0 0 20 20" ), ( "fill", "currentColor" ), ( "aria-hidden", "true" ) ]
                 , children =
                     [ XMLTree
                         { tag = "path"
@@ -656,7 +720,7 @@ model =
       , tree =
             XMLTree
                 { tag = "svg"
-                , attributes = [ ( "viewBox", "0 0 20 20" ), ( "fill", "currentColor" ) ]
+                , attributes = [ ( "viewBox", "0 0 20 20" ), ( "fill", "currentColor" ), ( "aria-hidden", "true" ) ]
                 , children =
                     [ XMLTree
                         { tag = "path"
@@ -672,7 +736,7 @@ model =
       , tree =
             XMLTree
                 { tag = "svg"
-                , attributes = [ ( "viewBox", "0 0 20 20" ), ( "fill", "currentColor" ) ]
+                , attributes = [ ( "viewBox", "0 0 20 20" ), ( "fill", "currentColor" ), ( "aria-hidden", "true" ) ]
                 , children =
                     [ XMLTree
                         { tag = "path"
@@ -688,7 +752,7 @@ model =
       , tree =
             XMLTree
                 { tag = "svg"
-                , attributes = [ ( "viewBox", "0 0 20 20" ), ( "fill", "currentColor" ) ]
+                , attributes = [ ( "viewBox", "0 0 20 20" ), ( "fill", "currentColor" ), ( "aria-hidden", "true" ) ]
                 , children =
                     [ XMLTree
                         { tag = "path"
@@ -704,7 +768,7 @@ model =
       , tree =
             XMLTree
                 { tag = "svg"
-                , attributes = [ ( "viewBox", "0 0 20 20" ), ( "fill", "currentColor" ) ]
+                , attributes = [ ( "viewBox", "0 0 20 20" ), ( "fill", "currentColor" ), ( "aria-hidden", "true" ) ]
                 , children =
                     [ XMLTree
                         { tag = "path"
@@ -725,7 +789,7 @@ model =
       , tree =
             XMLTree
                 { tag = "svg"
-                , attributes = [ ( "viewBox", "0 0 20 20" ), ( "fill", "currentColor" ) ]
+                , attributes = [ ( "viewBox", "0 0 20 20" ), ( "fill", "currentColor" ), ( "aria-hidden", "true" ) ]
                 , children =
                     [ XMLTree
                         { tag = "path"
@@ -741,7 +805,7 @@ model =
       , tree =
             XMLTree
                 { tag = "svg"
-                , attributes = [ ( "viewBox", "0 0 20 20" ), ( "fill", "currentColor" ) ]
+                , attributes = [ ( "viewBox", "0 0 20 20" ), ( "fill", "currentColor" ), ( "aria-hidden", "true" ) ]
                 , children =
                     [ XMLTree
                         { tag = "path"
@@ -757,7 +821,7 @@ model =
       , tree =
             XMLTree
                 { tag = "svg"
-                , attributes = [ ( "viewBox", "0 0 20 20" ), ( "fill", "currentColor" ) ]
+                , attributes = [ ( "viewBox", "0 0 20 20" ), ( "fill", "currentColor" ), ( "aria-hidden", "true" ) ]
                 , children =
                     [ XMLTree
                         { tag = "path"
@@ -773,7 +837,7 @@ model =
       , tree =
             XMLTree
                 { tag = "svg"
-                , attributes = [ ( "viewBox", "0 0 20 20" ), ( "fill", "currentColor" ) ]
+                , attributes = [ ( "viewBox", "0 0 20 20" ), ( "fill", "currentColor" ), ( "aria-hidden", "true" ) ]
                 , children =
                     [ XMLTree
                         { tag = "path"
@@ -789,7 +853,7 @@ model =
       , tree =
             XMLTree
                 { tag = "svg"
-                , attributes = [ ( "viewBox", "0 0 20 20" ), ( "fill", "currentColor" ) ]
+                , attributes = [ ( "viewBox", "0 0 20 20" ), ( "fill", "currentColor" ), ( "aria-hidden", "true" ) ]
                 , children =
                     [ XMLTree
                         { tag = "path"
@@ -805,7 +869,7 @@ model =
       , tree =
             XMLTree
                 { tag = "svg"
-                , attributes = [ ( "viewBox", "0 0 20 20" ), ( "fill", "currentColor" ) ]
+                , attributes = [ ( "viewBox", "0 0 20 20" ), ( "fill", "currentColor" ), ( "aria-hidden", "true" ) ]
                 , children =
                     [ XMLTree
                         { tag = "path"
@@ -826,7 +890,7 @@ model =
       , tree =
             XMLTree
                 { tag = "svg"
-                , attributes = [ ( "viewBox", "0 0 20 20" ), ( "fill", "currentColor" ) ]
+                , attributes = [ ( "viewBox", "0 0 20 20" ), ( "fill", "currentColor" ), ( "aria-hidden", "true" ) ]
                 , children =
                     [ XMLTree
                         { tag = "path"
@@ -847,7 +911,7 @@ model =
       , tree =
             XMLTree
                 { tag = "svg"
-                , attributes = [ ( "viewBox", "0 0 20 20" ), ( "fill", "currentColor" ) ]
+                , attributes = [ ( "viewBox", "0 0 20 20" ), ( "fill", "currentColor" ), ( "aria-hidden", "true" ) ]
                 , children =
                     [ XMLTree
                         { tag = "path"
@@ -868,7 +932,7 @@ model =
       , tree =
             XMLTree
                 { tag = "svg"
-                , attributes = [ ( "viewBox", "0 0 20 20" ), ( "fill", "currentColor" ) ]
+                , attributes = [ ( "viewBox", "0 0 20 20" ), ( "fill", "currentColor" ), ( "aria-hidden", "true" ) ]
                 , children =
                     [ XMLTree
                         { tag = "path"
@@ -889,7 +953,7 @@ model =
       , tree =
             XMLTree
                 { tag = "svg"
-                , attributes = [ ( "viewBox", "0 0 20 20" ), ( "fill", "currentColor" ) ]
+                , attributes = [ ( "viewBox", "0 0 20 20" ), ( "fill", "currentColor" ), ( "aria-hidden", "true" ) ]
                 , children =
                     [ XMLTree
                         { tag = "path"
@@ -910,7 +974,7 @@ model =
       , tree =
             XMLTree
                 { tag = "svg"
-                , attributes = [ ( "viewBox", "0 0 20 20" ), ( "fill", "currentColor" ) ]
+                , attributes = [ ( "viewBox", "0 0 20 20" ), ( "fill", "currentColor" ), ( "aria-hidden", "true" ) ]
                 , children =
                     [ XMLTree
                         { tag = "path"
@@ -926,7 +990,7 @@ model =
       , tree =
             XMLTree
                 { tag = "svg"
-                , attributes = [ ( "viewBox", "0 0 20 20" ), ( "fill", "currentColor" ) ]
+                , attributes = [ ( "viewBox", "0 0 20 20" ), ( "fill", "currentColor" ), ( "aria-hidden", "true" ) ]
                 , children =
                     [ XMLTree
                         { tag = "path"
@@ -942,7 +1006,7 @@ model =
       , tree =
             XMLTree
                 { tag = "svg"
-                , attributes = [ ( "viewBox", "0 0 20 20" ), ( "fill", "currentColor" ) ]
+                , attributes = [ ( "viewBox", "0 0 20 20" ), ( "fill", "currentColor" ), ( "aria-hidden", "true" ) ]
                 , children =
                     [ XMLTree
                         { tag = "path"
@@ -963,7 +1027,7 @@ model =
       , tree =
             XMLTree
                 { tag = "svg"
-                , attributes = [ ( "viewBox", "0 0 20 20" ), ( "fill", "currentColor" ) ]
+                , attributes = [ ( "viewBox", "0 0 20 20" ), ( "fill", "currentColor" ), ( "aria-hidden", "true" ) ]
                 , children =
                     [ XMLTree
                         { tag = "path"
@@ -979,7 +1043,7 @@ model =
       , tree =
             XMLTree
                 { tag = "svg"
-                , attributes = [ ( "viewBox", "0 0 20 20" ), ( "fill", "currentColor" ) ]
+                , attributes = [ ( "viewBox", "0 0 20 20" ), ( "fill", "currentColor" ), ( "aria-hidden", "true" ) ]
                 , children =
                     [ XMLTree
                         { tag = "path"
@@ -995,7 +1059,7 @@ model =
       , tree =
             XMLTree
                 { tag = "svg"
-                , attributes = [ ( "viewBox", "0 0 20 20" ), ( "fill", "currentColor" ) ]
+                , attributes = [ ( "viewBox", "0 0 20 20" ), ( "fill", "currentColor" ), ( "aria-hidden", "true" ) ]
                 , children =
                     [ XMLTree
                         { tag = "path"
@@ -1011,7 +1075,7 @@ model =
       , tree =
             XMLTree
                 { tag = "svg"
-                , attributes = [ ( "viewBox", "0 0 20 20" ), ( "fill", "currentColor" ) ]
+                , attributes = [ ( "viewBox", "0 0 20 20" ), ( "fill", "currentColor" ), ( "aria-hidden", "true" ) ]
                 , children =
                     [ XMLTree
                         { tag = "path"
@@ -1027,7 +1091,7 @@ model =
       , tree =
             XMLTree
                 { tag = "svg"
-                , attributes = [ ( "viewBox", "0 0 20 20" ), ( "fill", "currentColor" ) ]
+                , attributes = [ ( "viewBox", "0 0 20 20" ), ( "fill", "currentColor" ), ( "aria-hidden", "true" ) ]
                 , children =
                     [ XMLTree
                         { tag = "path"
@@ -1038,12 +1102,12 @@ model =
                 }
       }
     , { name = "credit-card"
-      , tags = [ "money", "payment", "debit" ]
+      , tags = [ "money", "payment", "debit", "price" ]
       , viewIcon = creditCard
       , tree =
             XMLTree
                 { tag = "svg"
-                , attributes = [ ( "viewBox", "0 0 20 20" ), ( "fill", "currentColor" ) ]
+                , attributes = [ ( "viewBox", "0 0 20 20" ), ( "fill", "currentColor" ), ( "aria-hidden", "true" ) ]
                 , children =
                     [ XMLTree
                         { tag = "path"
@@ -1064,7 +1128,7 @@ model =
       , tree =
             XMLTree
                 { tag = "svg"
-                , attributes = [ ( "viewBox", "0 0 20 20" ), ( "fill", "currentColor" ) ]
+                , attributes = [ ( "viewBox", "0 0 20 20" ), ( "fill", "currentColor" ), ( "aria-hidden", "true" ) ]
                 , children =
                     [ XMLTree
                         { tag = "path"
@@ -1080,7 +1144,7 @@ model =
       , tree =
             XMLTree
                 { tag = "svg"
-                , attributes = [ ( "viewBox", "0 0 20 20" ), ( "fill", "currentColor" ) ]
+                , attributes = [ ( "viewBox", "0 0 20 20" ), ( "fill", "currentColor" ), ( "aria-hidden", "true" ) ]
                 , children =
                     [ XMLTree
                         { tag = "path"
@@ -1091,12 +1155,12 @@ model =
                 }
       }
     , { name = "currency-bangladeshi"
-      , tags = [ "money", "payment" ]
+      , tags = [ "money", "payment", "price" ]
       , viewIcon = currencyBangladeshi
       , tree =
             XMLTree
                 { tag = "svg"
-                , attributes = [ ( "viewBox", "0 0 20 20" ), ( "fill", "currentColor" ) ]
+                , attributes = [ ( "viewBox", "0 0 20 20" ), ( "fill", "currentColor" ), ( "aria-hidden", "true" ) ]
                 , children =
                     [ XMLTree
                         { tag = "path"
@@ -1107,12 +1171,12 @@ model =
                 }
       }
     , { name = "currency-dollar"
-      , tags = [ "money", "payment", "usd" ]
+      , tags = [ "money", "payment", "usd", "price" ]
       , viewIcon = currencyDollar
       , tree =
             XMLTree
                 { tag = "svg"
-                , attributes = [ ( "viewBox", "0 0 20 20" ), ( "fill", "currentColor" ) ]
+                , attributes = [ ( "viewBox", "0 0 20 20" ), ( "fill", "currentColor" ), ( "aria-hidden", "true" ) ]
                 , children =
                     [ XMLTree
                         { tag = "path"
@@ -1128,12 +1192,12 @@ model =
                 }
       }
     , { name = "currency-euro"
-      , tags = [ "money", "payment", "eur", "euro" ]
+      , tags = [ "money", "payment", "eur", "euro", "price" ]
       , viewIcon = currencyEuro
       , tree =
             XMLTree
                 { tag = "svg"
-                , attributes = [ ( "viewBox", "0 0 20 20" ), ( "fill", "currentColor" ) ]
+                , attributes = [ ( "viewBox", "0 0 20 20" ), ( "fill", "currentColor" ), ( "aria-hidden", "true" ) ]
                 , children =
                     [ XMLTree
                         { tag = "path"
@@ -1144,12 +1208,12 @@ model =
                 }
       }
     , { name = "currency-pound"
-      , tags = [ "money", "payment", "gbp" ]
+      , tags = [ "money", "payment", "gbp", "price" ]
       , viewIcon = currencyPound
       , tree =
             XMLTree
                 { tag = "svg"
-                , attributes = [ ( "viewBox", "0 0 20 20" ), ( "fill", "currentColor" ) ]
+                , attributes = [ ( "viewBox", "0 0 20 20" ), ( "fill", "currentColor" ), ( "aria-hidden", "true" ) ]
                 , children =
                     [ XMLTree
                         { tag = "path"
@@ -1160,12 +1224,12 @@ model =
                 }
       }
     , { name = "currency-rupee"
-      , tags = [ "money", "payment", "inr" ]
+      , tags = [ "money", "payment", "inr", "price" ]
       , viewIcon = currencyRupee
       , tree =
             XMLTree
                 { tag = "svg"
-                , attributes = [ ( "viewBox", "0 0 20 20" ), ( "fill", "currentColor" ) ]
+                , attributes = [ ( "viewBox", "0 0 20 20" ), ( "fill", "currentColor" ), ( "aria-hidden", "true" ) ]
                 , children =
                     [ XMLTree
                         { tag = "path"
@@ -1176,12 +1240,12 @@ model =
                 }
       }
     , { name = "currency-yen"
-      , tags = [ "money", "payment" ]
+      , tags = [ "money", "payment", "price" ]
       , viewIcon = currencyYen
       , tree =
             XMLTree
                 { tag = "svg"
-                , attributes = [ ( "viewBox", "0 0 20 20" ), ( "fill", "currentColor" ) ]
+                , attributes = [ ( "viewBox", "0 0 20 20" ), ( "fill", "currentColor" ), ( "aria-hidden", "true" ) ]
                 , children =
                     [ XMLTree
                         { tag = "path"
@@ -1197,7 +1261,7 @@ model =
       , tree =
             XMLTree
                 { tag = "svg"
-                , attributes = [ ( "viewBox", "0 0 20 20" ), ( "fill", "currentColor" ) ]
+                , attributes = [ ( "viewBox", "0 0 20 20" ), ( "fill", "currentColor" ), ( "aria-hidden", "true" ) ]
                 , children =
                     [ XMLTree
                         { tag = "path"
@@ -1208,12 +1272,12 @@ model =
                 }
       }
     , { name = "database"
-      , tags = [ "storage" ]
+      , tags = [ "storage", "collection" ]
       , viewIcon = database
       , tree =
             XMLTree
                 { tag = "svg"
-                , attributes = [ ( "viewBox", "0 0 20 20" ), ( "fill", "currentColor" ) ]
+                , attributes = [ ( "viewBox", "0 0 20 20" ), ( "fill", "currentColor" ), ( "aria-hidden", "true" ) ]
                 , children =
                     [ XMLTree
                         { tag = "path"
@@ -1239,7 +1303,7 @@ model =
       , tree =
             XMLTree
                 { tag = "svg"
-                , attributes = [ ( "viewBox", "0 0 20 20" ), ( "fill", "currentColor" ) ]
+                , attributes = [ ( "viewBox", "0 0 20 20" ), ( "fill", "currentColor" ), ( "aria-hidden", "true" ) ]
                 , children =
                     [ XMLTree
                         { tag = "path"
@@ -1250,12 +1314,12 @@ model =
                 }
       }
     , { name = "device-mobile"
-      , tags = [ "phone" ]
+      , tags = [ "phone", "smartphone", "iphone", "android" ]
       , viewIcon = deviceMobile
       , tree =
             XMLTree
                 { tag = "svg"
-                , attributes = [ ( "viewBox", "0 0 20 20" ), ( "fill", "currentColor" ) ]
+                , attributes = [ ( "viewBox", "0 0 20 20" ), ( "fill", "currentColor" ), ( "aria-hidden", "true" ) ]
                 , children =
                     [ XMLTree
                         { tag = "path"
@@ -1266,12 +1330,12 @@ model =
                 }
       }
     , { name = "device-tablet"
-      , tags = [ "ipad" ]
+      , tags = [ "ipad", "kindle" ]
       , viewIcon = deviceTablet
       , tree =
             XMLTree
                 { tag = "svg"
-                , attributes = [ ( "viewBox", "0 0 20 20" ), ( "fill", "currentColor" ) ]
+                , attributes = [ ( "viewBox", "0 0 20 20" ), ( "fill", "currentColor" ), ( "aria-hidden", "true" ) ]
                 , children =
                     [ XMLTree
                         { tag = "path"
@@ -1287,7 +1351,7 @@ model =
       , tree =
             XMLTree
                 { tag = "svg"
-                , attributes = [ ( "viewBox", "0 0 20 20" ), ( "fill", "currentColor" ) ]
+                , attributes = [ ( "viewBox", "0 0 20 20" ), ( "fill", "currentColor" ), ( "aria-hidden", "true" ) ]
                 , children =
                     [ XMLTree
                         { tag = "path"
@@ -1303,7 +1367,7 @@ model =
       , tree =
             XMLTree
                 { tag = "svg"
-                , attributes = [ ( "viewBox", "0 0 20 20" ), ( "fill", "currentColor" ) ]
+                , attributes = [ ( "viewBox", "0 0 20 20" ), ( "fill", "currentColor" ), ( "aria-hidden", "true" ) ]
                 , children =
                     [ XMLTree
                         { tag = "path"
@@ -1319,7 +1383,7 @@ model =
       , tree =
             XMLTree
                 { tag = "svg"
-                , attributes = [ ( "viewBox", "0 0 20 20" ), ( "fill", "currentColor" ) ]
+                , attributes = [ ( "viewBox", "0 0 20 20" ), ( "fill", "currentColor" ), ( "aria-hidden", "true" ) ]
                 , children =
                     [ XMLTree
                         { tag = "path"
@@ -1340,7 +1404,7 @@ model =
       , tree =
             XMLTree
                 { tag = "svg"
-                , attributes = [ ( "viewBox", "0 0 20 20" ), ( "fill", "currentColor" ) ]
+                , attributes = [ ( "viewBox", "0 0 20 20" ), ( "fill", "currentColor" ), ( "aria-hidden", "true" ) ]
                 , children =
                     [ XMLTree
                         { tag = "path"
@@ -1356,7 +1420,7 @@ model =
       , tree =
             XMLTree
                 { tag = "svg"
-                , attributes = [ ( "viewBox", "0 0 20 20" ), ( "fill", "currentColor" ) ]
+                , attributes = [ ( "viewBox", "0 0 20 20" ), ( "fill", "currentColor" ), ( "aria-hidden", "true" ) ]
                 , children =
                     [ XMLTree
                         { tag = "path"
@@ -1372,7 +1436,7 @@ model =
       , tree =
             XMLTree
                 { tag = "svg"
-                , attributes = [ ( "viewBox", "0 0 20 20" ), ( "fill", "currentColor" ) ]
+                , attributes = [ ( "viewBox", "0 0 20 20" ), ( "fill", "currentColor" ), ( "aria-hidden", "true" ) ]
                 , children =
                     [ XMLTree
                         { tag = "path"
@@ -1393,7 +1457,7 @@ model =
       , tree =
             XMLTree
                 { tag = "svg"
-                , attributes = [ ( "viewBox", "0 0 20 20" ), ( "fill", "currentColor" ) ]
+                , attributes = [ ( "viewBox", "0 0 20 20" ), ( "fill", "currentColor" ), ( "aria-hidden", "true" ) ]
                 , children =
                     [ XMLTree
                         { tag = "path"
@@ -1404,12 +1468,12 @@ model =
                 }
       }
     , { name = "document"
-      , tags = [ "sim" ]
+      , tags = [ "sim", "pdf" ]
       , viewIcon = document
       , tree =
             XMLTree
                 { tag = "svg"
-                , attributes = [ ( "viewBox", "0 0 20 20" ), ( "fill", "currentColor" ) ]
+                , attributes = [ ( "viewBox", "0 0 20 20" ), ( "fill", "currentColor" ), ( "aria-hidden", "true" ) ]
                 , children =
                     [ XMLTree
                         { tag = "path"
@@ -1425,7 +1489,7 @@ model =
       , tree =
             XMLTree
                 { tag = "svg"
-                , attributes = [ ( "viewBox", "0 0 20 20" ), ( "fill", "currentColor" ) ]
+                , attributes = [ ( "viewBox", "0 0 20 20" ), ( "fill", "currentColor" ), ( "aria-hidden", "true" ) ]
                 , children =
                     [ XMLTree
                         { tag = "path"
@@ -1441,7 +1505,7 @@ model =
       , tree =
             XMLTree
                 { tag = "svg"
-                , attributes = [ ( "viewBox", "0 0 20 20" ), ( "fill", "currentColor" ) ]
+                , attributes = [ ( "viewBox", "0 0 20 20" ), ( "fill", "currentColor" ), ( "aria-hidden", "true" ) ]
                 , children =
                     [ XMLTree
                         { tag = "path"
@@ -1457,7 +1521,7 @@ model =
       , tree =
             XMLTree
                 { tag = "svg"
-                , attributes = [ ( "viewBox", "0 0 20 20" ), ( "fill", "currentColor" ) ]
+                , attributes = [ ( "viewBox", "0 0 20 20" ), ( "fill", "currentColor" ), ( "aria-hidden", "true" ) ]
                 , children =
                     [ XMLTree
                         { tag = "path"
@@ -1473,7 +1537,7 @@ model =
       , tree =
             XMLTree
                 { tag = "svg"
-                , attributes = [ ( "viewBox", "0 0 20 20" ), ( "fill", "currentColor" ) ]
+                , attributes = [ ( "viewBox", "0 0 20 20" ), ( "fill", "currentColor" ), ( "aria-hidden", "true" ) ]
                 , children =
                     [ XMLTree
                         { tag = "path"
@@ -1489,7 +1553,7 @@ model =
       , tree =
             XMLTree
                 { tag = "svg"
-                , attributes = [ ( "viewBox", "0 0 20 20" ), ( "fill", "currentColor" ) ]
+                , attributes = [ ( "viewBox", "0 0 20 20" ), ( "fill", "currentColor" ), ( "aria-hidden", "true" ) ]
                 , children =
                     [ XMLTree
                         { tag = "path"
@@ -1510,7 +1574,7 @@ model =
       , tree =
             XMLTree
                 { tag = "svg"
-                , attributes = [ ( "viewBox", "0 0 20 20" ), ( "fill", "currentColor" ) ]
+                , attributes = [ ( "viewBox", "0 0 20 20" ), ( "fill", "currentColor" ), ( "aria-hidden", "true" ) ]
                 , children =
                     [ XMLTree
                         { tag = "path"
@@ -1526,7 +1590,7 @@ model =
       , tree =
             XMLTree
                 { tag = "svg"
-                , attributes = [ ( "viewBox", "0 0 20 20" ), ( "fill", "currentColor" ) ]
+                , attributes = [ ( "viewBox", "0 0 20 20" ), ( "fill", "currentColor" ), ( "aria-hidden", "true" ) ]
                 , children =
                     [ XMLTree
                         { tag = "path"
@@ -1542,7 +1606,7 @@ model =
       , tree =
             XMLTree
                 { tag = "svg"
-                , attributes = [ ( "viewBox", "0 0 20 20" ), ( "fill", "currentColor" ) ]
+                , attributes = [ ( "viewBox", "0 0 20 20" ), ( "fill", "currentColor" ), ( "aria-hidden", "true" ) ]
                 , children =
                     [ XMLTree
                         { tag = "path"
@@ -1558,7 +1622,7 @@ model =
       , tree =
             XMLTree
                 { tag = "svg"
-                , attributes = [ ( "viewBox", "0 0 20 20" ), ( "fill", "currentColor" ) ]
+                , attributes = [ ( "viewBox", "0 0 20 20" ), ( "fill", "currentColor" ), ( "aria-hidden", "true" ) ]
                 , children =
                     [ XMLTree
                         { tag = "path"
@@ -1574,7 +1638,7 @@ model =
       , tree =
             XMLTree
                 { tag = "svg"
-                , attributes = [ ( "viewBox", "0 0 20 20" ), ( "fill", "currentColor" ) ]
+                , attributes = [ ( "viewBox", "0 0 20 20" ), ( "fill", "currentColor" ), ( "aria-hidden", "true" ) ]
                 , children =
                     [ XMLTree
                         { tag = "path"
@@ -1595,7 +1659,7 @@ model =
       , tree =
             XMLTree
                 { tag = "svg"
-                , attributes = [ ( "viewBox", "0 0 20 20" ), ( "fill", "currentColor" ) ]
+                , attributes = [ ( "viewBox", "0 0 20 20" ), ( "fill", "currentColor" ), ( "aria-hidden", "true" ) ]
                 , children =
                     [ XMLTree
                         { tag = "path"
@@ -1616,7 +1680,7 @@ model =
       , tree =
             XMLTree
                 { tag = "svg"
-                , attributes = [ ( "viewBox", "0 0 20 20" ), ( "fill", "currentColor" ) ]
+                , attributes = [ ( "viewBox", "0 0 20 20" ), ( "fill", "currentColor" ), ( "aria-hidden", "true" ) ]
                 , children =
                     [ XMLTree
                         { tag = "path"
@@ -1637,7 +1701,7 @@ model =
       , tree =
             XMLTree
                 { tag = "svg"
-                , attributes = [ ( "viewBox", "0 0 20 20" ), ( "fill", "currentColor" ) ]
+                , attributes = [ ( "viewBox", "0 0 20 20" ), ( "fill", "currentColor" ), ( "aria-hidden", "true" ) ]
                 , children =
                     [ XMLTree
                         { tag = "path"
@@ -1648,12 +1712,12 @@ model =
                 }
       }
     , { name = "film"
-      , tags = [ "movie" ]
+      , tags = [ "movie", "cinema" ]
       , viewIcon = film
       , tree =
             XMLTree
                 { tag = "svg"
-                , attributes = [ ( "viewBox", "0 0 20 20" ), ( "fill", "currentColor" ) ]
+                , attributes = [ ( "viewBox", "0 0 20 20" ), ( "fill", "currentColor" ), ( "aria-hidden", "true" ) ]
                 , children =
                     [ XMLTree
                         { tag = "path"
@@ -1669,7 +1733,7 @@ model =
       , tree =
             XMLTree
                 { tag = "svg"
-                , attributes = [ ( "viewBox", "0 0 20 20" ), ( "fill", "currentColor" ) ]
+                , attributes = [ ( "viewBox", "0 0 20 20" ), ( "fill", "currentColor" ), ( "aria-hidden", "true" ) ]
                 , children =
                     [ XMLTree
                         { tag = "path"
@@ -1685,7 +1749,7 @@ model =
       , tree =
             XMLTree
                 { tag = "svg"
-                , attributes = [ ( "viewBox", "0 0 20 20" ), ( "fill", "currentColor" ) ]
+                , attributes = [ ( "viewBox", "0 0 20 20" ), ( "fill", "currentColor" ), ( "aria-hidden", "true" ) ]
                 , children =
                     [ XMLTree
                         { tag = "path"
@@ -1711,7 +1775,7 @@ model =
       , tree =
             XMLTree
                 { tag = "svg"
-                , attributes = [ ( "viewBox", "0 0 20 20" ), ( "fill", "currentColor" ) ]
+                , attributes = [ ( "viewBox", "0 0 20 20" ), ( "fill", "currentColor" ), ( "aria-hidden", "true" ) ]
                 , children =
                     [ XMLTree
                         { tag = "path"
@@ -1727,7 +1791,7 @@ model =
       , tree =
             XMLTree
                 { tag = "svg"
-                , attributes = [ ( "viewBox", "0 0 20 20" ), ( "fill", "currentColor" ) ]
+                , attributes = [ ( "viewBox", "0 0 20 20" ), ( "fill", "currentColor" ), ( "aria-hidden", "true" ) ]
                 , children =
                     [ XMLTree
                         { tag = "path"
@@ -1743,16 +1807,11 @@ model =
       , tree =
             XMLTree
                 { tag = "svg"
-                , attributes = [ ( "viewBox", "0 0 20 20" ), ( "fill", "currentColor" ) ]
+                , attributes = [ ( "viewBox", "0 0 20 20" ), ( "fill", "currentColor" ), ( "aria-hidden", "true" ) ]
                 , children =
                     [ XMLTree
                         { tag = "path"
-                        , attributes = [ ( "d", "M2 6a2 2 0 012-2h5l2 2h5a2 2 0 012 2v6a2 2 0 01-2 2H4a2 2 0 01-2-2V6z" ) ]
-                        , children = []
-                        }
-                    , XMLTree
-                        { tag = "path"
-                        , attributes = [ ( "stroke", "#fff" ), ( "strokeLinecap", "round" ), ( "strokeLinejoin", "round" ), ( "strokeWidth", "2" ), ( "d", "M8 11h4m-2-2v4" ) ]
+                        , attributes = [ ( "fillRule", "evenodd" ), ( "d", "M4 4a2 2 0 00-2 2v8a2 2 0 002 2h12a2 2 0 002-2V8a2 2 0 00-2-2h-5L9 4H4zm7 5a1 1 0 10-2 0v1H8a1 1 0 100 2h1v1a1 1 0 102 0v-1h1a1 1 0 100-2h-1V9z" ) ]
                         , children = []
                         }
                     ]
@@ -1764,16 +1823,11 @@ model =
       , tree =
             XMLTree
                 { tag = "svg"
-                , attributes = [ ( "viewBox", "0 0 20 20" ), ( "fill", "currentColor" ) ]
+                , attributes = [ ( "viewBox", "0 0 20 20" ), ( "fill", "currentColor" ), ( "aria-hidden", "true" ) ]
                 , children =
                     [ XMLTree
                         { tag = "path"
-                        , attributes = [ ( "d", "M2 6a2 2 0 012-2h5l2 2h5a2 2 0 012 2v6a2 2 0 01-2 2H4a2 2 0 01-2-2V6z" ) ]
-                        , children = []
-                        }
-                    , XMLTree
-                        { tag = "path"
-                        , attributes = [ ( "stroke", "#fff" ), ( "strokeLinecap", "round" ), ( "strokeLinejoin", "round" ), ( "strokeWidth", "2" ), ( "d", "M10 9v4m0 0l-2-2m2 2l2-2" ) ]
+                        , attributes = [ ( "fillRule", "evenodd" ), ( "d", "M4 4a2 2 0 00-2 2v8a2 2 0 002 2h12a2 2 0 002-2V8a2 2 0 00-2-2h-5L9 4H4zm7 5a1 1 0 10-2 0v1.586l-.293-.293a1 1 0 10-1.414 1.414l2 2 .002.002a.997.997 0 001.41 0l.002-.002 2-2a1 1 0 00-1.414-1.414l-.293.293V9z" ) ]
                         , children = []
                         }
                     ]
@@ -1785,7 +1839,7 @@ model =
       , tree =
             XMLTree
                 { tag = "svg"
-                , attributes = [ ( "viewBox", "0 0 20 20" ), ( "fill", "currentColor" ) ]
+                , attributes = [ ( "viewBox", "0 0 20 20" ), ( "fill", "currentColor" ), ( "aria-hidden", "true" ) ]
                 , children =
                     [ XMLTree
                         { tag = "path"
@@ -1806,16 +1860,11 @@ model =
       , tree =
             XMLTree
                 { tag = "svg"
-                , attributes = [ ( "viewBox", "0 0 20 20" ), ( "fill", "currentColor" ) ]
+                , attributes = [ ( "viewBox", "0 0 20 20" ), ( "fill", "currentColor" ), ( "aria-hidden", "true" ) ]
                 , children =
                     [ XMLTree
                         { tag = "path"
-                        , attributes = [ ( "d", "M2 6a2 2 0 012-2h5l2 2h5a2 2 0 012 2v6a2 2 0 01-2 2H4a2 2 0 01-2-2V6z" ) ]
-                        , children = []
-                        }
-                    , XMLTree
-                        { tag = "path"
-                        , attributes = [ ( "stroke", "#fff" ), ( "strokeLinecap", "round" ), ( "strokeLinejoin", "round" ), ( "strokeWidth", "2" ), ( "d", "M8 11h4" ) ]
+                        , attributes = [ ( "fillRule", "evenodd" ), ( "d", "M4 4a2 2 0 00-2 2v8a2 2 0 002 2h12a2 2 0 002-2V8a2 2 0 00-2-2h-5L9 4H4zm4 6a1 1 0 100 2h4a1 1 0 100-2H8z" ) ]
                         , children = []
                         }
                     ]
@@ -1827,7 +1876,7 @@ model =
       , tree =
             XMLTree
                 { tag = "svg"
-                , attributes = [ ( "viewBox", "0 0 20 20" ), ( "fill", "currentColor" ) ]
+                , attributes = [ ( "viewBox", "0 0 20 20" ), ( "fill", "currentColor" ), ( "aria-hidden", "true" ) ]
                 , children =
                     [ XMLTree
                         { tag = "path"
@@ -1843,7 +1892,7 @@ model =
       , tree =
             XMLTree
                 { tag = "svg"
-                , attributes = [ ( "viewBox", "0 0 20 20" ), ( "fill", "currentColor" ) ]
+                , attributes = [ ( "viewBox", "0 0 20 20" ), ( "fill", "currentColor" ), ( "aria-hidden", "true" ) ]
                 , children =
                     [ XMLTree
                         { tag = "path"
@@ -1864,7 +1913,7 @@ model =
       , tree =
             XMLTree
                 { tag = "svg"
-                , attributes = [ ( "viewBox", "0 0 20 20" ), ( "fill", "currentColor" ) ]
+                , attributes = [ ( "viewBox", "0 0 20 20" ), ( "fill", "currentColor" ), ( "aria-hidden", "true" ) ]
                 , children =
                     [ XMLTree
                         { tag = "path"
@@ -1880,7 +1929,7 @@ model =
       , tree =
             XMLTree
                 { tag = "svg"
-                , attributes = [ ( "viewBox", "0 0 20 20" ), ( "fill", "currentColor" ) ]
+                , attributes = [ ( "viewBox", "0 0 20 20" ), ( "fill", "currentColor" ), ( "aria-hidden", "true" ) ]
                 , children =
                     [ XMLTree
                         { tag = "path"
@@ -1896,7 +1945,7 @@ model =
       , tree =
             XMLTree
                 { tag = "svg"
-                , attributes = [ ( "viewBox", "0 0 20 20" ), ( "fill", "currentColor" ) ]
+                , attributes = [ ( "viewBox", "0 0 20 20" ), ( "fill", "currentColor" ), ( "aria-hidden", "true" ) ]
                 , children =
                     [ XMLTree
                         { tag = "path"
@@ -1912,7 +1961,7 @@ model =
       , tree =
             XMLTree
                 { tag = "svg"
-                , attributes = [ ( "viewBox", "0 0 20 20" ), ( "fill", "currentColor" ) ]
+                , attributes = [ ( "viewBox", "0 0 20 20" ), ( "fill", "currentColor" ), ( "aria-hidden", "true" ) ]
                 , children =
                     [ XMLTree
                         { tag = "path"
@@ -1923,12 +1972,12 @@ model =
                 }
       }
     , { name = "heart"
-      , tags = [ "love" ]
+      , tags = [ "love", "relationship" ]
       , viewIcon = heart
       , tree =
             XMLTree
                 { tag = "svg"
-                , attributes = [ ( "viewBox", "0 0 20 20" ), ( "fill", "currentColor" ) ]
+                , attributes = [ ( "viewBox", "0 0 20 20" ), ( "fill", "currentColor" ), ( "aria-hidden", "true" ) ]
                 , children =
                     [ XMLTree
                         { tag = "path"
@@ -1944,7 +1993,7 @@ model =
       , tree =
             XMLTree
                 { tag = "svg"
-                , attributes = [ ( "viewBox", "0 0 20 20" ), ( "fill", "currentColor" ) ]
+                , attributes = [ ( "viewBox", "0 0 20 20" ), ( "fill", "currentColor" ), ( "aria-hidden", "true" ) ]
                 , children =
                     [ XMLTree
                         { tag = "path"
@@ -1960,7 +2009,7 @@ model =
       , tree =
             XMLTree
                 { tag = "svg"
-                , attributes = [ ( "viewBox", "0 0 20 20" ), ( "fill", "currentColor" ) ]
+                , attributes = [ ( "viewBox", "0 0 20 20" ), ( "fill", "currentColor" ), ( "aria-hidden", "true" ) ]
                 , children =
                     [ XMLTree
                         { tag = "path"
@@ -1976,7 +2025,7 @@ model =
       , tree =
             XMLTree
                 { tag = "svg"
-                , attributes = [ ( "viewBox", "0 0 20 20" ), ( "fill", "currentColor" ) ]
+                , attributes = [ ( "viewBox", "0 0 20 20" ), ( "fill", "currentColor" ), ( "aria-hidden", "true" ) ]
                 , children =
                     [ XMLTree
                         { tag = "path"
@@ -1997,7 +2046,7 @@ model =
       , tree =
             XMLTree
                 { tag = "svg"
-                , attributes = [ ( "viewBox", "0 0 20 20" ), ( "fill", "currentColor" ) ]
+                , attributes = [ ( "viewBox", "0 0 20 20" ), ( "fill", "currentColor" ), ( "aria-hidden", "true" ) ]
                 , children =
                     [ XMLTree
                         { tag = "path"
@@ -2013,7 +2062,7 @@ model =
       , tree =
             XMLTree
                 { tag = "svg"
-                , attributes = [ ( "viewBox", "0 0 20 20" ), ( "fill", "currentColor" ) ]
+                , attributes = [ ( "viewBox", "0 0 20 20" ), ( "fill", "currentColor" ), ( "aria-hidden", "true" ) ]
                 , children =
                     [ XMLTree
                         { tag = "path"
@@ -2029,7 +2078,7 @@ model =
       , tree =
             XMLTree
                 { tag = "svg"
-                , attributes = [ ( "viewBox", "0 0 20 20" ), ( "fill", "currentColor" ) ]
+                , attributes = [ ( "viewBox", "0 0 20 20" ), ( "fill", "currentColor" ), ( "aria-hidden", "true" ) ]
                 , children =
                     [ XMLTree
                         { tag = "path"
@@ -2045,7 +2094,7 @@ model =
       , tree =
             XMLTree
                 { tag = "svg"
-                , attributes = [ ( "viewBox", "0 0 20 20" ), ( "fill", "currentColor" ) ]
+                , attributes = [ ( "viewBox", "0 0 20 20" ), ( "fill", "currentColor" ), ( "aria-hidden", "true" ) ]
                 , children =
                     [ XMLTree
                         { tag = "path"
@@ -2061,7 +2110,7 @@ model =
       , tree =
             XMLTree
                 { tag = "svg"
-                , attributes = [ ( "viewBox", "0 0 20 20" ), ( "fill", "currentColor" ) ]
+                , attributes = [ ( "viewBox", "0 0 20 20" ), ( "fill", "currentColor" ), ( "aria-hidden", "true" ) ]
                 , children =
                     [ XMLTree
                         { tag = "path"
@@ -2077,7 +2126,7 @@ model =
       , tree =
             XMLTree
                 { tag = "svg"
-                , attributes = [ ( "viewBox", "0 0 20 20" ), ( "fill", "currentColor" ) ]
+                , attributes = [ ( "viewBox", "0 0 20 20" ), ( "fill", "currentColor" ), ( "aria-hidden", "true" ) ]
                 , children =
                     [ XMLTree
                         { tag = "path"
@@ -2088,12 +2137,12 @@ model =
                 }
       }
     , { name = "link"
-      , tags = [ "url", "attachment" ]
+      , tags = [ "url", "attachment", "connect" ]
       , viewIcon = link
       , tree =
             XMLTree
                 { tag = "svg"
-                , attributes = [ ( "viewBox", "0 0 20 20" ), ( "fill", "currentColor" ) ]
+                , attributes = [ ( "viewBox", "0 0 20 20" ), ( "fill", "currentColor" ), ( "aria-hidden", "true" ) ]
                 , children =
                     [ XMLTree
                         { tag = "path"
@@ -2104,12 +2153,12 @@ model =
                 }
       }
     , { name = "location-marker"
-      , tags = [ "pin" ]
+      , tags = [ "pin", "map-marker" ]
       , viewIcon = locationMarker
       , tree =
             XMLTree
                 { tag = "svg"
-                , attributes = [ ( "viewBox", "0 0 20 20" ), ( "fill", "currentColor" ) ]
+                , attributes = [ ( "viewBox", "0 0 20 20" ), ( "fill", "currentColor" ), ( "aria-hidden", "true" ) ]
                 , children =
                     [ XMLTree
                         { tag = "path"
@@ -2125,7 +2174,7 @@ model =
       , tree =
             XMLTree
                 { tag = "svg"
-                , attributes = [ ( "viewBox", "0 0 20 20" ), ( "fill", "currentColor" ) ]
+                , attributes = [ ( "viewBox", "0 0 20 20" ), ( "fill", "currentColor" ), ( "aria-hidden", "true" ) ]
                 , children =
                     [ XMLTree
                         { tag = "path"
@@ -2141,7 +2190,7 @@ model =
       , tree =
             XMLTree
                 { tag = "svg"
-                , attributes = [ ( "viewBox", "0 0 20 20" ), ( "fill", "currentColor" ) ]
+                , attributes = [ ( "viewBox", "0 0 20 20" ), ( "fill", "currentColor" ), ( "aria-hidden", "true" ) ]
                 , children =
                     [ XMLTree
                         { tag = "path"
@@ -2152,12 +2201,12 @@ model =
                 }
       }
     , { name = "login"
-      , tags = [ "enter" ]
+      , tags = [ "enter", "authentication" ]
       , viewIcon = login
       , tree =
             XMLTree
                 { tag = "svg"
-                , attributes = [ ( "viewBox", "0 0 20 20" ), ( "fill", "currentColor" ) ]
+                , attributes = [ ( "viewBox", "0 0 20 20" ), ( "fill", "currentColor" ), ( "aria-hidden", "true" ) ]
                 , children =
                     [ XMLTree
                         { tag = "path"
@@ -2168,12 +2217,12 @@ model =
                 }
       }
     , { name = "logout"
-      , tags = [ "exit" ]
+      , tags = [ "exit", "authentication" ]
       , viewIcon = logout
       , tree =
             XMLTree
                 { tag = "svg"
-                , attributes = [ ( "viewBox", "0 0 20 20" ), ( "fill", "currentColor" ) ]
+                , attributes = [ ( "viewBox", "0 0 20 20" ), ( "fill", "currentColor" ), ( "aria-hidden", "true" ) ]
                 , children =
                     [ XMLTree
                         { tag = "path"
@@ -2189,7 +2238,7 @@ model =
       , tree =
             XMLTree
                 { tag = "svg"
-                , attributes = [ ( "viewBox", "0 0 20 20" ), ( "fill", "currentColor" ) ]
+                , attributes = [ ( "viewBox", "0 0 20 20" ), ( "fill", "currentColor" ), ( "aria-hidden", "true" ) ]
                 , children =
                     [ XMLTree
                         { tag = "path"
@@ -2205,7 +2254,7 @@ model =
       , tree =
             XMLTree
                 { tag = "svg"
-                , attributes = [ ( "viewBox", "0 0 20 20" ), ( "fill", "currentColor" ) ]
+                , attributes = [ ( "viewBox", "0 0 20 20" ), ( "fill", "currentColor" ), ( "aria-hidden", "true" ) ]
                 , children =
                     [ XMLTree
                         { tag = "path"
@@ -2226,7 +2275,7 @@ model =
       , tree =
             XMLTree
                 { tag = "svg"
-                , attributes = [ ( "viewBox", "0 0 20 20" ), ( "fill", "currentColor" ) ]
+                , attributes = [ ( "viewBox", "0 0 20 20" ), ( "fill", "currentColor" ), ( "aria-hidden", "true" ) ]
                 , children =
                     [ XMLTree
                         { tag = "path"
@@ -2242,7 +2291,7 @@ model =
       , tree =
             XMLTree
                 { tag = "svg"
-                , attributes = [ ( "viewBox", "0 0 20 20" ), ( "fill", "currentColor" ) ]
+                , attributes = [ ( "viewBox", "0 0 20 20" ), ( "fill", "currentColor" ), ( "aria-hidden", "true" ) ]
                 , children =
                     [ XMLTree
                         { tag = "path"
@@ -2258,7 +2307,7 @@ model =
       , tree =
             XMLTree
                 { tag = "svg"
-                , attributes = [ ( "viewBox", "0 0 20 20" ), ( "fill", "currentColor" ) ]
+                , attributes = [ ( "viewBox", "0 0 20 20" ), ( "fill", "currentColor" ), ( "aria-hidden", "true" ) ]
                 , children =
                     [ XMLTree
                         { tag = "path"
@@ -2274,7 +2323,7 @@ model =
       , tree =
             XMLTree
                 { tag = "svg"
-                , attributes = [ ( "viewBox", "0 0 20 20" ), ( "fill", "currentColor" ) ]
+                , attributes = [ ( "viewBox", "0 0 20 20" ), ( "fill", "currentColor" ), ( "aria-hidden", "true" ) ]
                 , children =
                     [ XMLTree
                         { tag = "path"
@@ -2290,7 +2339,7 @@ model =
       , tree =
             XMLTree
                 { tag = "svg"
-                , attributes = [ ( "viewBox", "0 0 20 20" ), ( "fill", "currentColor" ) ]
+                , attributes = [ ( "viewBox", "0 0 20 20" ), ( "fill", "currentColor" ), ( "aria-hidden", "true" ) ]
                 , children =
                     [ XMLTree
                         { tag = "path"
@@ -2306,7 +2355,7 @@ model =
       , tree =
             XMLTree
                 { tag = "svg"
-                , attributes = [ ( "viewBox", "0 0 20 20" ), ( "fill", "currentColor" ) ]
+                , attributes = [ ( "viewBox", "0 0 20 20" ), ( "fill", "currentColor" ), ( "aria-hidden", "true" ) ]
                 , children =
                     [ XMLTree
                         { tag = "path"
@@ -2322,7 +2371,7 @@ model =
       , tree =
             XMLTree
                 { tag = "svg"
-                , attributes = [ ( "viewBox", "0 0 20 20" ), ( "fill", "currentColor" ) ]
+                , attributes = [ ( "viewBox", "0 0 20 20" ), ( "fill", "currentColor" ), ( "aria-hidden", "true" ) ]
                 , children =
                     [ XMLTree
                         { tag = "path"
@@ -2338,7 +2387,7 @@ model =
       , tree =
             XMLTree
                 { tag = "svg"
-                , attributes = [ ( "viewBox", "0 0 20 20" ), ( "fill", "currentColor" ) ]
+                , attributes = [ ( "viewBox", "0 0 20 20" ), ( "fill", "currentColor" ), ( "aria-hidden", "true" ) ]
                 , children =
                     [ XMLTree
                         { tag = "path"
@@ -2354,7 +2403,7 @@ model =
       , tree =
             XMLTree
                 { tag = "svg"
-                , attributes = [ ( "viewBox", "0 0 20 20" ), ( "fill", "currentColor" ) ]
+                , attributes = [ ( "viewBox", "0 0 20 20" ), ( "fill", "currentColor" ), ( "aria-hidden", "true" ) ]
                 , children =
                     [ XMLTree
                         { tag = "path"
@@ -2370,7 +2419,7 @@ model =
       , tree =
             XMLTree
                 { tag = "svg"
-                , attributes = [ ( "viewBox", "0 0 20 20" ), ( "fill", "currentColor" ) ]
+                , attributes = [ ( "viewBox", "0 0 20 20" ), ( "fill", "currentColor" ), ( "aria-hidden", "true" ) ]
                 , children =
                     [ XMLTree
                         { tag = "path"
@@ -2386,7 +2435,7 @@ model =
       , tree =
             XMLTree
                 { tag = "svg"
-                , attributes = [ ( "viewBox", "0 0 20 20" ), ( "fill", "currentColor" ) ]
+                , attributes = [ ( "viewBox", "0 0 20 20" ), ( "fill", "currentColor" ), ( "aria-hidden", "true" ) ]
                 , children =
                     [ XMLTree
                         { tag = "path"
@@ -2402,7 +2451,7 @@ model =
       , tree =
             XMLTree
                 { tag = "svg"
-                , attributes = [ ( "viewBox", "0 0 20 20" ), ( "fill", "currentColor" ) ]
+                , attributes = [ ( "viewBox", "0 0 20 20" ), ( "fill", "currentColor" ), ( "aria-hidden", "true" ) ]
                 , children =
                     [ XMLTree
                         { tag = "path"
@@ -2418,7 +2467,7 @@ model =
       , tree =
             XMLTree
                 { tag = "svg"
-                , attributes = [ ( "viewBox", "0 0 20 20" ), ( "fill", "currentColor" ) ]
+                , attributes = [ ( "viewBox", "0 0 20 20" ), ( "fill", "currentColor" ), ( "aria-hidden", "true" ) ]
                 , children =
                     [ XMLTree
                         { tag = "path"
@@ -2439,7 +2488,7 @@ model =
       , tree =
             XMLTree
                 { tag = "svg"
-                , attributes = [ ( "viewBox", "0 0 20 20" ), ( "fill", "currentColor" ) ]
+                , attributes = [ ( "viewBox", "0 0 20 20" ), ( "fill", "currentColor" ), ( "aria-hidden", "true" ) ]
                 , children =
                     [ XMLTree
                         { tag = "path"
@@ -2455,7 +2504,7 @@ model =
       , tree =
             XMLTree
                 { tag = "svg"
-                , attributes = [ ( "viewBox", "0 0 20 20" ), ( "fill", "currentColor" ) ]
+                , attributes = [ ( "viewBox", "0 0 20 20" ), ( "fill", "currentColor" ), ( "aria-hidden", "true" ) ]
                 , children =
                     [ XMLTree
                         { tag = "path"
@@ -2466,12 +2515,12 @@ model =
                 }
       }
     , { name = "paper-clip"
-      , tags = [ "document" ]
+      , tags = [ "document", "attachment" ]
       , viewIcon = paperClip
       , tree =
             XMLTree
                 { tag = "svg"
-                , attributes = [ ( "viewBox", "0 0 20 20" ), ( "fill", "currentColor" ) ]
+                , attributes = [ ( "viewBox", "0 0 20 20" ), ( "fill", "currentColor" ), ( "aria-hidden", "true" ) ]
                 , children =
                     [ XMLTree
                         { tag = "path"
@@ -2487,7 +2536,7 @@ model =
       , tree =
             XMLTree
                 { tag = "svg"
-                , attributes = [ ( "viewBox", "0 0 20 20" ), ( "fill", "currentColor" ) ]
+                , attributes = [ ( "viewBox", "0 0 20 20" ), ( "fill", "currentColor" ), ( "aria-hidden", "true" ) ]
                 , children =
                     [ XMLTree
                         { tag = "path"
@@ -2503,7 +2552,7 @@ model =
       , tree =
             XMLTree
                 { tag = "svg"
-                , attributes = [ ( "viewBox", "0 0 20 20" ), ( "fill", "currentColor" ) ]
+                , attributes = [ ( "viewBox", "0 0 20 20" ), ( "fill", "currentColor" ), ( "aria-hidden", "true" ) ]
                 , children =
                     [ XMLTree
                         { tag = "path"
@@ -2524,7 +2573,7 @@ model =
       , tree =
             XMLTree
                 { tag = "svg"
-                , attributes = [ ( "viewBox", "0 0 20 20" ), ( "fill", "currentColor" ) ]
+                , attributes = [ ( "viewBox", "0 0 20 20" ), ( "fill", "currentColor" ), ( "aria-hidden", "true" ) ]
                 , children =
                     [ XMLTree
                         { tag = "path"
@@ -2540,7 +2589,7 @@ model =
       , tree =
             XMLTree
                 { tag = "svg"
-                , attributes = [ ( "viewBox", "0 0 20 20" ), ( "fill", "currentColor" ) ]
+                , attributes = [ ( "viewBox", "0 0 20 20" ), ( "fill", "currentColor" ), ( "aria-hidden", "true" ) ]
                 , children =
                     [ XMLTree
                         { tag = "path"
@@ -2561,7 +2610,7 @@ model =
       , tree =
             XMLTree
                 { tag = "svg"
-                , attributes = [ ( "viewBox", "0 0 20 20" ), ( "fill", "currentColor" ) ]
+                , attributes = [ ( "viewBox", "0 0 20 20" ), ( "fill", "currentColor" ), ( "aria-hidden", "true" ) ]
                 , children =
                     [ XMLTree
                         { tag = "path"
@@ -2582,7 +2631,7 @@ model =
       , tree =
             XMLTree
                 { tag = "svg"
-                , attributes = [ ( "viewBox", "0 0 20 20" ), ( "fill", "currentColor" ) ]
+                , attributes = [ ( "viewBox", "0 0 20 20" ), ( "fill", "currentColor" ), ( "aria-hidden", "true" ) ]
                 , children =
                     [ XMLTree
                         { tag = "path"
@@ -2603,7 +2652,7 @@ model =
       , tree =
             XMLTree
                 { tag = "svg"
-                , attributes = [ ( "viewBox", "0 0 20 20" ), ( "fill", "currentColor" ) ]
+                , attributes = [ ( "viewBox", "0 0 20 20" ), ( "fill", "currentColor" ), ( "aria-hidden", "true" ) ]
                 , children =
                     [ XMLTree
                         { tag = "path"
@@ -2619,7 +2668,7 @@ model =
       , tree =
             XMLTree
                 { tag = "svg"
-                , attributes = [ ( "viewBox", "0 0 20 20" ), ( "fill", "currentColor" ) ]
+                , attributes = [ ( "viewBox", "0 0 20 20" ), ( "fill", "currentColor" ), ( "aria-hidden", "true" ) ]
                 , children =
                     [ XMLTree
                         { tag = "path"
@@ -2635,7 +2684,7 @@ model =
       , tree =
             XMLTree
                 { tag = "svg"
-                , attributes = [ ( "viewBox", "0 0 20 20" ), ( "fill", "currentColor" ) ]
+                , attributes = [ ( "viewBox", "0 0 20 20" ), ( "fill", "currentColor" ), ( "aria-hidden", "true" ) ]
                 , children =
                     [ XMLTree
                         { tag = "path"
@@ -2651,7 +2700,7 @@ model =
       , tree =
             XMLTree
                 { tag = "svg"
-                , attributes = [ ( "viewBox", "0 0 20 20" ), ( "fill", "currentColor" ) ]
+                , attributes = [ ( "viewBox", "0 0 20 20" ), ( "fill", "currentColor" ), ( "aria-hidden", "true" ) ]
                 , children =
                     [ XMLTree
                         { tag = "path"
@@ -2667,7 +2716,7 @@ model =
       , tree =
             XMLTree
                 { tag = "svg"
-                , attributes = [ ( "viewBox", "0 0 20 20" ), ( "fill", "currentColor" ) ]
+                , attributes = [ ( "viewBox", "0 0 20 20" ), ( "fill", "currentColor" ), ( "aria-hidden", "true" ) ]
                 , children =
                     [ XMLTree
                         { tag = "path"
@@ -2678,16 +2727,16 @@ model =
                 }
       }
     , { name = "plus"
-      , tags = [ "add", "create" ]
+      , tags = [ "add", "create", "new" ]
       , viewIcon = plus
       , tree =
             XMLTree
                 { tag = "svg"
-                , attributes = [ ( "viewBox", "0 0 20 20" ), ( "fill", "currentColor" ) ]
+                , attributes = [ ( "viewBox", "0 0 20 20" ), ( "fill", "currentColor" ), ( "aria-hidden", "true" ) ]
                 , children =
                     [ XMLTree
                         { tag = "path"
-                        , attributes = [ ( "fillRule", "evenodd" ), ( "d", "M10 5a1 1 0 011 1v3h3a1 1 0 110 2h-3v3a1 1 0 11-2 0v-3H6a1 1 0 110-2h3V6a1 1 0 011-1z" ), ( "clipRule", "evenodd" ) ]
+                        , attributes = [ ( "fillRule", "evenodd" ), ( "d", "M10 3a1 1 0 011 1v5h5a1 1 0 110 2h-5v5a1 1 0 11-2 0v-5H4a1 1 0 110-2h5V4a1 1 0 011-1z" ), ( "clipRule", "evenodd" ) ]
                         , children = []
                         }
                     ]
@@ -2699,7 +2748,7 @@ model =
       , tree =
             XMLTree
                 { tag = "svg"
-                , attributes = [ ( "viewBox", "0 0 20 20" ), ( "fill", "currentColor" ) ]
+                , attributes = [ ( "viewBox", "0 0 20 20" ), ( "fill", "currentColor" ), ( "aria-hidden", "true" ) ]
                 , children =
                     [ XMLTree
                         { tag = "path"
@@ -2715,7 +2764,7 @@ model =
       , tree =
             XMLTree
                 { tag = "svg"
-                , attributes = [ ( "viewBox", "0 0 20 20" ), ( "fill", "currentColor" ) ]
+                , attributes = [ ( "viewBox", "0 0 20 20" ), ( "fill", "currentColor" ), ( "aria-hidden", "true" ) ]
                 , children =
                     [ XMLTree
                         { tag = "path"
@@ -2731,7 +2780,7 @@ model =
       , tree =
             XMLTree
                 { tag = "svg"
-                , attributes = [ ( "viewBox", "0 0 20 20" ), ( "fill", "currentColor" ) ]
+                , attributes = [ ( "viewBox", "0 0 20 20" ), ( "fill", "currentColor" ), ( "aria-hidden", "true" ) ]
                 , children =
                     [ XMLTree
                         { tag = "path"
@@ -2742,12 +2791,12 @@ model =
                 }
       }
     , { name = "puzzle"
-      , tags = [ "jigsaw" ]
+      , tags = [ "jigsaw", "piece", "add-on", "addon", "game" ]
       , viewIcon = puzzle
       , tree =
             XMLTree
                 { tag = "svg"
-                , attributes = [ ( "viewBox", "0 0 20 20" ), ( "fill", "currentColor" ) ]
+                , attributes = [ ( "viewBox", "0 0 20 20" ), ( "fill", "currentColor" ), ( "aria-hidden", "true" ) ]
                 , children =
                     [ XMLTree
                         { tag = "path"
@@ -2763,7 +2812,7 @@ model =
       , tree =
             XMLTree
                 { tag = "svg"
-                , attributes = [ ( "viewBox", "0 0 20 20" ), ( "fill", "currentColor" ) ]
+                , attributes = [ ( "viewBox", "0 0 20 20" ), ( "fill", "currentColor" ), ( "aria-hidden", "true" ) ]
                 , children =
                     [ XMLTree
                         { tag = "path"
@@ -2784,7 +2833,7 @@ model =
       , tree =
             XMLTree
                 { tag = "svg"
-                , attributes = [ ( "viewBox", "0 0 20 20" ), ( "fill", "currentColor" ) ]
+                , attributes = [ ( "viewBox", "0 0 20 20" ), ( "fill", "currentColor" ), ( "aria-hidden", "true" ) ]
                 , children =
                     [ XMLTree
                         { tag = "path"
@@ -2800,7 +2849,7 @@ model =
       , tree =
             XMLTree
                 { tag = "svg"
-                , attributes = [ ( "viewBox", "0 0 20 20" ), ( "fill", "currentColor" ) ]
+                , attributes = [ ( "viewBox", "0 0 20 20" ), ( "fill", "currentColor" ), ( "aria-hidden", "true" ) ]
                 , children =
                     [ XMLTree
                         { tag = "path"
@@ -2816,7 +2865,7 @@ model =
       , tree =
             XMLTree
                 { tag = "svg"
-                , attributes = [ ( "viewBox", "0 0 20 20" ), ( "fill", "currentColor" ) ]
+                , attributes = [ ( "viewBox", "0 0 20 20" ), ( "fill", "currentColor" ), ( "aria-hidden", "true" ) ]
                 , children =
                     [ XMLTree
                         { tag = "path"
@@ -2832,7 +2881,7 @@ model =
       , tree =
             XMLTree
                 { tag = "svg"
-                , attributes = [ ( "viewBox", "0 0 20 20" ), ( "fill", "currentColor" ) ]
+                , attributes = [ ( "viewBox", "0 0 20 20" ), ( "fill", "currentColor" ), ( "aria-hidden", "true" ) ]
                 , children =
                     [ XMLTree
                         { tag = "path"
@@ -2843,12 +2892,12 @@ model =
                 }
       }
     , { name = "reply"
-      , tags = [ "answer" ]
+      , tags = [ "answer", "message" ]
       , viewIcon = reply
       , tree =
             XMLTree
                 { tag = "svg"
-                , attributes = [ ( "viewBox", "0 0 20 20" ), ( "fill", "currentColor" ) ]
+                , attributes = [ ( "viewBox", "0 0 20 20" ), ( "fill", "currentColor" ), ( "aria-hidden", "true" ) ]
                 , children =
                     [ XMLTree
                         { tag = "path"
@@ -2864,7 +2913,7 @@ model =
       , tree =
             XMLTree
                 { tag = "svg"
-                , attributes = [ ( "viewBox", "0 0 20 20" ), ( "fill", "currentColor" ) ]
+                , attributes = [ ( "viewBox", "0 0 20 20" ), ( "fill", "currentColor" ), ( "aria-hidden", "true" ) ]
                 , children =
                     [ XMLTree
                         { tag = "path"
@@ -2875,12 +2924,12 @@ model =
                 }
       }
     , { name = "rss"
-      , tags = [ "feed" ]
+      , tags = [ "feed", "news", "blog" ]
       , viewIcon = rss
       , tree =
             XMLTree
                 { tag = "svg"
-                , attributes = [ ( "viewBox", "0 0 20 20" ), ( "fill", "currentColor" ) ]
+                , attributes = [ ( "viewBox", "0 0 20 20" ), ( "fill", "currentColor" ), ( "aria-hidden", "true" ) ]
                 , children =
                     [ XMLTree
                         { tag = "path"
@@ -2901,7 +2950,7 @@ model =
       , tree =
             XMLTree
                 { tag = "svg"
-                , attributes = [ ( "viewBox", "0 0 20 20" ), ( "fill", "currentColor" ) ]
+                , attributes = [ ( "viewBox", "0 0 20 20" ), ( "fill", "currentColor" ), ( "aria-hidden", "true" ) ]
                 , children =
                     [ XMLTree
                         { tag = "path"
@@ -2922,7 +2971,7 @@ model =
       , tree =
             XMLTree
                 { tag = "svg"
-                , attributes = [ ( "viewBox", "0 0 20 20" ), ( "fill", "currentColor" ) ]
+                , attributes = [ ( "viewBox", "0 0 20 20" ), ( "fill", "currentColor" ), ( "aria-hidden", "true" ) ]
                 , children =
                     [ XMLTree
                         { tag = "path"
@@ -2938,7 +2987,7 @@ model =
       , tree =
             XMLTree
                 { tag = "svg"
-                , attributes = [ ( "viewBox", "0 0 20 20" ), ( "fill", "currentColor" ) ]
+                , attributes = [ ( "viewBox", "0 0 20 20" ), ( "fill", "currentColor" ), ( "aria-hidden", "true" ) ]
                 , children =
                     [ XMLTree
                         { tag = "path"
@@ -2954,7 +3003,7 @@ model =
       , tree =
             XMLTree
                 { tag = "svg"
-                , attributes = [ ( "viewBox", "0 0 20 20" ), ( "fill", "currentColor" ) ]
+                , attributes = [ ( "viewBox", "0 0 20 20" ), ( "fill", "currentColor" ), ( "aria-hidden", "true" ) ]
                 , children =
                     [ XMLTree
                         { tag = "path"
@@ -2975,7 +3024,7 @@ model =
       , tree =
             XMLTree
                 { tag = "svg"
-                , attributes = [ ( "viewBox", "0 0 20 20" ), ( "fill", "currentColor" ) ]
+                , attributes = [ ( "viewBox", "0 0 20 20" ), ( "fill", "currentColor" ), ( "aria-hidden", "true" ) ]
                 , children =
                     [ XMLTree
                         { tag = "path"
@@ -2991,12 +3040,12 @@ model =
                 }
       }
     , { name = "search"
-      , tags = [ "magnifier" ]
+      , tags = [ "magnifier", "magnifying glass" ]
       , viewIcon = search
       , tree =
             XMLTree
                 { tag = "svg"
-                , attributes = [ ( "viewBox", "0 0 20 20" ), ( "fill", "currentColor" ) ]
+                , attributes = [ ( "viewBox", "0 0 20 20" ), ( "fill", "currentColor" ), ( "aria-hidden", "true" ) ]
                 , children =
                     [ XMLTree
                         { tag = "path"
@@ -3012,7 +3061,7 @@ model =
       , tree =
             XMLTree
                 { tag = "svg"
-                , attributes = [ ( "viewBox", "0 0 20 20" ), ( "fill", "currentColor" ) ]
+                , attributes = [ ( "viewBox", "0 0 20 20" ), ( "fill", "currentColor" ), ( "aria-hidden", "true" ) ]
                 , children =
                     [ XMLTree
                         { tag = "path"
@@ -3028,7 +3077,7 @@ model =
       , tree =
             XMLTree
                 { tag = "svg"
-                , attributes = [ ( "viewBox", "0 0 20 20" ), ( "fill", "currentColor" ) ]
+                , attributes = [ ( "viewBox", "0 0 20 20" ), ( "fill", "currentColor" ), ( "aria-hidden", "true" ) ]
                 , children =
                     [ XMLTree
                         { tag = "path"
@@ -3044,7 +3093,7 @@ model =
       , tree =
             XMLTree
                 { tag = "svg"
-                , attributes = [ ( "viewBox", "0 0 20 20" ), ( "fill", "currentColor" ) ]
+                , attributes = [ ( "viewBox", "0 0 20 20" ), ( "fill", "currentColor" ), ( "aria-hidden", "true" ) ]
                 , children =
                     [ XMLTree
                         { tag = "path"
@@ -3060,7 +3109,7 @@ model =
       , tree =
             XMLTree
                 { tag = "svg"
-                , attributes = [ ( "viewBox", "0 0 20 20" ), ( "fill", "currentColor" ) ]
+                , attributes = [ ( "viewBox", "0 0 20 20" ), ( "fill", "currentColor" ), ( "aria-hidden", "true" ) ]
                 , children =
                     [ XMLTree
                         { tag = "path"
@@ -3076,7 +3125,7 @@ model =
       , tree =
             XMLTree
                 { tag = "svg"
-                , attributes = [ ( "viewBox", "0 0 20 20" ), ( "fill", "currentColor" ) ]
+                , attributes = [ ( "viewBox", "0 0 20 20" ), ( "fill", "currentColor" ), ( "aria-hidden", "true" ) ]
                 , children =
                     [ XMLTree
                         { tag = "path"
@@ -3092,7 +3141,7 @@ model =
       , tree =
             XMLTree
                 { tag = "svg"
-                , attributes = [ ( "viewBox", "0 0 20 20" ), ( "fill", "currentColor" ) ]
+                , attributes = [ ( "viewBox", "0 0 20 20" ), ( "fill", "currentColor" ), ( "aria-hidden", "true" ) ]
                 , children =
                     [ XMLTree
                         { tag = "path"
@@ -3108,7 +3157,7 @@ model =
       , tree =
             XMLTree
                 { tag = "svg"
-                , attributes = [ ( "viewBox", "0 0 20 20" ), ( "fill", "currentColor" ) ]
+                , attributes = [ ( "viewBox", "0 0 20 20" ), ( "fill", "currentColor" ), ( "aria-hidden", "true" ) ]
                 , children =
                     [ XMLTree
                         { tag = "path"
@@ -3124,7 +3173,7 @@ model =
       , tree =
             XMLTree
                 { tag = "svg"
-                , attributes = [ ( "viewBox", "0 0 20 20" ), ( "fill", "currentColor" ) ]
+                , attributes = [ ( "viewBox", "0 0 20 20" ), ( "fill", "currentColor" ), ( "aria-hidden", "true" ) ]
                 , children =
                     [ XMLTree
                         { tag = "path"
@@ -3140,7 +3189,7 @@ model =
       , tree =
             XMLTree
                 { tag = "svg"
-                , attributes = [ ( "viewBox", "0 0 20 20" ), ( "fill", "currentColor" ) ]
+                , attributes = [ ( "viewBox", "0 0 20 20" ), ( "fill", "currentColor" ), ( "aria-hidden", "true" ) ]
                 , children =
                     [ XMLTree
                         { tag = "path"
@@ -3156,7 +3205,7 @@ model =
       , tree =
             XMLTree
                 { tag = "svg"
-                , attributes = [ ( "viewBox", "0 0 20 20" ), ( "fill", "currentColor" ) ]
+                , attributes = [ ( "viewBox", "0 0 20 20" ), ( "fill", "currentColor" ), ( "aria-hidden", "true" ) ]
                 , children =
                     [ XMLTree
                         { tag = "path"
@@ -3172,7 +3221,7 @@ model =
       , tree =
             XMLTree
                 { tag = "svg"
-                , attributes = [ ( "viewBox", "0 0 20 20" ), ( "fill", "currentColor" ) ]
+                , attributes = [ ( "viewBox", "0 0 20 20" ), ( "fill", "currentColor" ), ( "aria-hidden", "true" ) ]
                 , children =
                     [ XMLTree
                         { tag = "path"
@@ -3183,12 +3232,12 @@ model =
                 }
       }
     , { name = "star"
-      , tags = []
+      , tags = [ "favorite", "achievement", "score", "rating" ]
       , viewIcon = star
       , tree =
             XMLTree
                 { tag = "svg"
-                , attributes = [ ( "viewBox", "0 0 20 20" ), ( "fill", "currentColor" ) ]
+                , attributes = [ ( "viewBox", "0 0 20 20" ), ( "fill", "currentColor" ), ( "aria-hidden", "true" ) ]
                 , children =
                     [ XMLTree
                         { tag = "path"
@@ -3204,7 +3253,7 @@ model =
       , tree =
             XMLTree
                 { tag = "svg"
-                , attributes = [ ( "viewBox", "0 0 20 20" ), ( "fill", "currentColor" ) ]
+                , attributes = [ ( "viewBox", "0 0 20 20" ), ( "fill", "currentColor" ), ( "aria-hidden", "true" ) ]
                 , children =
                     [ XMLTree
                         { tag = "path"
@@ -3220,7 +3269,7 @@ model =
       , tree =
             XMLTree
                 { tag = "svg"
-                , attributes = [ ( "viewBox", "0 0 20 20" ), ( "fill", "currentColor" ) ]
+                , attributes = [ ( "viewBox", "0 0 20 20" ), ( "fill", "currentColor" ), ( "aria-hidden", "true" ) ]
                 , children =
                     [ XMLTree
                         { tag = "path"
@@ -3236,7 +3285,7 @@ model =
       , tree =
             XMLTree
                 { tag = "svg"
-                , attributes = [ ( "viewBox", "0 0 20 20" ), ( "fill", "currentColor" ) ]
+                , attributes = [ ( "viewBox", "0 0 20 20" ), ( "fill", "currentColor" ), ( "aria-hidden", "true" ) ]
                 , children =
                     [ XMLTree
                         { tag = "path"
@@ -3252,7 +3301,7 @@ model =
       , tree =
             XMLTree
                 { tag = "svg"
-                , attributes = [ ( "viewBox", "0 0 20 20" ), ( "fill", "currentColor" ) ]
+                , attributes = [ ( "viewBox", "0 0 20 20" ), ( "fill", "currentColor" ), ( "aria-hidden", "true" ) ]
                 , children =
                     [ XMLTree
                         { tag = "path"
@@ -3263,12 +3312,12 @@ model =
                 }
       }
     , { name = "support"
-      , tags = [ "help" ]
+      , tags = [ "help", "life-ring", "overboard" ]
       , viewIcon = support
       , tree =
             XMLTree
                 { tag = "svg"
-                , attributes = [ ( "viewBox", "0 0 20 20" ), ( "fill", "currentColor" ) ]
+                , attributes = [ ( "viewBox", "0 0 20 20" ), ( "fill", "currentColor" ), ( "aria-hidden", "true" ) ]
                 , children =
                     [ XMLTree
                         { tag = "path"
@@ -3279,12 +3328,12 @@ model =
                 }
       }
     , { name = "switch-horizontal"
-      , tags = []
+      , tags = [ "arrows" ]
       , viewIcon = switchHorizontal
       , tree =
             XMLTree
                 { tag = "svg"
-                , attributes = [ ( "viewBox", "0 0 20 20" ), ( "fill", "currentColor" ) ]
+                , attributes = [ ( "viewBox", "0 0 20 20" ), ( "fill", "currentColor" ), ( "aria-hidden", "true" ) ]
                 , children =
                     [ XMLTree
                         { tag = "path"
@@ -3295,12 +3344,12 @@ model =
                 }
       }
     , { name = "switch-vertical"
-      , tags = []
+      , tags = [ "arrows" ]
       , viewIcon = switchVertical
       , tree =
             XMLTree
                 { tag = "svg"
-                , attributes = [ ( "viewBox", "0 0 20 20" ), ( "fill", "currentColor" ) ]
+                , attributes = [ ( "viewBox", "0 0 20 20" ), ( "fill", "currentColor" ), ( "aria-hidden", "true" ) ]
                 , children =
                     [ XMLTree
                         { tag = "path"
@@ -3311,12 +3360,12 @@ model =
                 }
       }
     , { name = "table"
-      , tags = [ "grid" ]
+      , tags = [ "grid", "data", "spreadsheet" ]
       , viewIcon = table
       , tree =
             XMLTree
                 { tag = "svg"
-                , attributes = [ ( "viewBox", "0 0 20 20" ), ( "fill", "currentColor" ) ]
+                , attributes = [ ( "viewBox", "0 0 20 20" ), ( "fill", "currentColor" ), ( "aria-hidden", "true" ) ]
                 , children =
                     [ XMLTree
                         { tag = "path"
@@ -3332,7 +3381,7 @@ model =
       , tree =
             XMLTree
                 { tag = "svg"
-                , attributes = [ ( "viewBox", "0 0 20 20" ), ( "fill", "currentColor" ) ]
+                , attributes = [ ( "viewBox", "0 0 20 20" ), ( "fill", "currentColor" ), ( "aria-hidden", "true" ) ]
                 , children =
                     [ XMLTree
                         { tag = "path"
@@ -3348,7 +3397,7 @@ model =
       , tree =
             XMLTree
                 { tag = "svg"
-                , attributes = [ ( "viewBox", "0 0 20 20" ), ( "fill", "currentColor" ) ]
+                , attributes = [ ( "viewBox", "0 0 20 20" ), ( "fill", "currentColor" ), ( "aria-hidden", "true" ) ]
                 , children =
                     [ XMLTree
                         { tag = "path"
@@ -3364,7 +3413,7 @@ model =
       , tree =
             XMLTree
                 { tag = "svg"
-                , attributes = [ ( "viewBox", "0 0 20 20" ), ( "fill", "currentColor" ) ]
+                , attributes = [ ( "viewBox", "0 0 20 20" ), ( "fill", "currentColor" ), ( "aria-hidden", "true" ) ]
                 , children =
                     [ XMLTree
                         { tag = "path"
@@ -3380,7 +3429,7 @@ model =
       , tree =
             XMLTree
                 { tag = "svg"
-                , attributes = [ ( "viewBox", "0 0 20 20" ), ( "fill", "currentColor" ) ]
+                , attributes = [ ( "viewBox", "0 0 20 20" ), ( "fill", "currentColor" ), ( "aria-hidden", "true" ) ]
                 , children =
                     [ XMLTree
                         { tag = "path"
@@ -3396,7 +3445,7 @@ model =
       , tree =
             XMLTree
                 { tag = "svg"
-                , attributes = [ ( "viewBox", "0 0 20 20" ), ( "fill", "currentColor" ) ]
+                , attributes = [ ( "viewBox", "0 0 20 20" ), ( "fill", "currentColor" ), ( "aria-hidden", "true" ) ]
                 , children =
                     [ XMLTree
                         { tag = "path"
@@ -3412,7 +3461,7 @@ model =
       , tree =
             XMLTree
                 { tag = "svg"
-                , attributes = [ ( "viewBox", "0 0 20 20" ), ( "fill", "currentColor" ) ]
+                , attributes = [ ( "viewBox", "0 0 20 20" ), ( "fill", "currentColor" ), ( "aria-hidden", "true" ) ]
                 , children =
                     [ XMLTree
                         { tag = "path"
@@ -3423,12 +3472,12 @@ model =
                 }
       }
     , { name = "translate"
-      , tags = []
+      , tags = [ "language", "international", "i18n", "l10n", "intl" ]
       , viewIcon = translate
       , tree =
             XMLTree
                 { tag = "svg"
-                , attributes = [ ( "viewBox", "0 0 20 20" ), ( "fill", "currentColor" ) ]
+                , attributes = [ ( "viewBox", "0 0 20 20" ), ( "fill", "currentColor" ), ( "aria-hidden", "true" ) ]
                 , children =
                     [ XMLTree
                         { tag = "path"
@@ -3444,7 +3493,7 @@ model =
       , tree =
             XMLTree
                 { tag = "svg"
-                , attributes = [ ( "viewBox", "0 0 20 20" ), ( "fill", "currentColor" ) ]
+                , attributes = [ ( "viewBox", "0 0 20 20" ), ( "fill", "currentColor" ), ( "aria-hidden", "true" ) ]
                 , children =
                     [ XMLTree
                         { tag = "path"
@@ -3455,12 +3504,12 @@ model =
                 }
       }
     , { name = "trending-down"
-      , tags = [ "decrease" ]
+      , tags = [ "decrease", "analytics" ]
       , viewIcon = trendingDown
       , tree =
             XMLTree
                 { tag = "svg"
-                , attributes = [ ( "viewBox", "0 0 20 20" ), ( "fill", "currentColor" ) ]
+                , attributes = [ ( "viewBox", "0 0 20 20" ), ( "fill", "currentColor" ), ( "aria-hidden", "true" ) ]
                 , children =
                     [ XMLTree
                         { tag = "path"
@@ -3471,12 +3520,12 @@ model =
                 }
       }
     , { name = "trending-up"
-      , tags = [ "increase" ]
+      , tags = [ "increase", "analytics" ]
       , viewIcon = trendingUp
       , tree =
             XMLTree
                 { tag = "svg"
-                , attributes = [ ( "viewBox", "0 0 20 20" ), ( "fill", "currentColor" ) ]
+                , attributes = [ ( "viewBox", "0 0 20 20" ), ( "fill", "currentColor" ), ( "aria-hidden", "true" ) ]
                 , children =
                     [ XMLTree
                         { tag = "path"
@@ -3492,7 +3541,7 @@ model =
       , tree =
             XMLTree
                 { tag = "svg"
-                , attributes = [ ( "viewBox", "0 0 20 20" ), ( "fill", "currentColor" ) ]
+                , attributes = [ ( "viewBox", "0 0 20 20" ), ( "fill", "currentColor" ), ( "aria-hidden", "true" ) ]
                 , children =
                     [ XMLTree
                         { tag = "path"
@@ -3513,7 +3562,7 @@ model =
       , tree =
             XMLTree
                 { tag = "svg"
-                , attributes = [ ( "viewBox", "0 0 20 20" ), ( "fill", "currentColor" ) ]
+                , attributes = [ ( "viewBox", "0 0 20 20" ), ( "fill", "currentColor" ), ( "aria-hidden", "true" ) ]
                 , children =
                     [ XMLTree
                         { tag = "path"
@@ -3529,7 +3578,7 @@ model =
       , tree =
             XMLTree
                 { tag = "svg"
-                , attributes = [ ( "viewBox", "0 0 20 20" ), ( "fill", "currentColor" ) ]
+                , attributes = [ ( "viewBox", "0 0 20 20" ), ( "fill", "currentColor" ), ( "aria-hidden", "true" ) ]
                 , children =
                     [ XMLTree
                         { tag = "path"
@@ -3545,7 +3594,7 @@ model =
       , tree =
             XMLTree
                 { tag = "svg"
-                , attributes = [ ( "viewBox", "0 0 20 20" ), ( "fill", "currentColor" ) ]
+                , attributes = [ ( "viewBox", "0 0 20 20" ), ( "fill", "currentColor" ), ( "aria-hidden", "true" ) ]
                 , children =
                     [ XMLTree
                         { tag = "path"
@@ -3561,7 +3610,7 @@ model =
       , tree =
             XMLTree
                 { tag = "svg"
-                , attributes = [ ( "viewBox", "0 0 20 20" ), ( "fill", "currentColor" ) ]
+                , attributes = [ ( "viewBox", "0 0 20 20" ), ( "fill", "currentColor" ), ( "aria-hidden", "true" ) ]
                 , children =
                     [ XMLTree
                         { tag = "path"
@@ -3577,7 +3626,7 @@ model =
       , tree =
             XMLTree
                 { tag = "svg"
-                , attributes = [ ( "viewBox", "0 0 20 20" ), ( "fill", "currentColor" ) ]
+                , attributes = [ ( "viewBox", "0 0 20 20" ), ( "fill", "currentColor" ), ( "aria-hidden", "true" ) ]
                 , children =
                     [ XMLTree
                         { tag = "path"
@@ -3593,7 +3642,7 @@ model =
       , tree =
             XMLTree
                 { tag = "svg"
-                , attributes = [ ( "viewBox", "0 0 20 20" ), ( "fill", "currentColor" ) ]
+                , attributes = [ ( "viewBox", "0 0 20 20" ), ( "fill", "currentColor" ), ( "aria-hidden", "true" ) ]
                 , children =
                     [ XMLTree
                         { tag = "path"
@@ -3609,7 +3658,7 @@ model =
       , tree =
             XMLTree
                 { tag = "svg"
-                , attributes = [ ( "viewBox", "0 0 20 20" ), ( "fill", "currentColor" ) ]
+                , attributes = [ ( "viewBox", "0 0 20 20" ), ( "fill", "currentColor" ), ( "aria-hidden", "true" ) ]
                 , children =
                     [ XMLTree
                         { tag = "path"
@@ -3625,7 +3674,7 @@ model =
       , tree =
             XMLTree
                 { tag = "svg"
-                , attributes = [ ( "viewBox", "0 0 20 20" ), ( "fill", "currentColor" ) ]
+                , attributes = [ ( "viewBox", "0 0 20 20" ), ( "fill", "currentColor" ), ( "aria-hidden", "true" ) ]
                 , children =
                     [ XMLTree
                         { tag = "path"
@@ -3636,12 +3685,12 @@ model =
                 }
       }
     , { name = "video-camera"
-      , tags = [ "record" ]
+      , tags = [ "record", "movie" ]
       , viewIcon = videoCamera
       , tree =
             XMLTree
                 { tag = "svg"
-                , attributes = [ ( "viewBox", "0 0 20 20" ), ( "fill", "currentColor" ) ]
+                , attributes = [ ( "viewBox", "0 0 20 20" ), ( "fill", "currentColor" ), ( "aria-hidden", "true" ) ]
                 , children =
                     [ XMLTree
                         { tag = "path"
@@ -3657,7 +3706,7 @@ model =
       , tree =
             XMLTree
                 { tag = "svg"
-                , attributes = [ ( "viewBox", "0 0 20 20" ), ( "fill", "currentColor" ) ]
+                , attributes = [ ( "viewBox", "0 0 20 20" ), ( "fill", "currentColor" ), ( "aria-hidden", "true" ) ]
                 , children =
                     [ XMLTree
                         { tag = "path"
@@ -3673,7 +3722,7 @@ model =
       , tree =
             XMLTree
                 { tag = "svg"
-                , attributes = [ ( "viewBox", "0 0 20 20" ), ( "fill", "currentColor" ) ]
+                , attributes = [ ( "viewBox", "0 0 20 20" ), ( "fill", "currentColor" ), ( "aria-hidden", "true" ) ]
                 , children =
                     [ XMLTree
                         { tag = "path"
@@ -3689,7 +3738,7 @@ model =
       , tree =
             XMLTree
                 { tag = "svg"
-                , attributes = [ ( "viewBox", "0 0 20 20" ), ( "fill", "currentColor" ) ]
+                , attributes = [ ( "viewBox", "0 0 20 20" ), ( "fill", "currentColor" ), ( "aria-hidden", "true" ) ]
                 , children =
                     [ XMLTree
                         { tag = "path"
@@ -3705,7 +3754,7 @@ model =
       , tree =
             XMLTree
                 { tag = "svg"
-                , attributes = [ ( "viewBox", "0 0 20 20" ), ( "fill", "currentColor" ) ]
+                , attributes = [ ( "viewBox", "0 0 20 20" ), ( "fill", "currentColor" ), ( "aria-hidden", "true" ) ]
                 , children =
                     [ XMLTree
                         { tag = "path"
@@ -3721,7 +3770,7 @@ model =
       , tree =
             XMLTree
                 { tag = "svg"
-                , attributes = [ ( "viewBox", "0 0 20 20" ), ( "fill", "currentColor" ) ]
+                , attributes = [ ( "viewBox", "0 0 20 20" ), ( "fill", "currentColor" ), ( "aria-hidden", "true" ) ]
                 , children =
                     [ XMLTree
                         { tag = "path"
@@ -3737,7 +3786,7 @@ model =
       , tree =
             XMLTree
                 { tag = "svg"
-                , attributes = [ ( "viewBox", "0 0 20 20" ), ( "fill", "currentColor" ) ]
+                , attributes = [ ( "viewBox", "0 0 20 20" ), ( "fill", "currentColor" ), ( "aria-hidden", "true" ) ]
                 , children =
                     [ XMLTree
                         { tag = "path"
@@ -3753,7 +3802,7 @@ model =
       , tree =
             XMLTree
                 { tag = "svg"
-                , attributes = [ ( "viewBox", "0 0 20 20" ), ( "fill", "currentColor" ) ]
+                , attributes = [ ( "viewBox", "0 0 20 20" ), ( "fill", "currentColor" ), ( "aria-hidden", "true" ) ]
                 , children =
                     [ XMLTree
                         { tag = "path"
@@ -3769,7 +3818,7 @@ model =
       , tree =
             XMLTree
                 { tag = "svg"
-                , attributes = [ ( "viewBox", "0 0 20 20" ), ( "fill", "currentColor" ) ]
+                , attributes = [ ( "viewBox", "0 0 20 20" ), ( "fill", "currentColor" ), ( "aria-hidden", "true" ) ]
                 , children =
                     [ XMLTree
                         { tag = "path"
@@ -3785,7 +3834,7 @@ model =
       , tree =
             XMLTree
                 { tag = "svg"
-                , attributes = [ ( "viewBox", "0 0 20 20" ), ( "fill", "currentColor" ) ]
+                , attributes = [ ( "viewBox", "0 0 20 20" ), ( "fill", "currentColor" ), ( "aria-hidden", "true" ) ]
                 , children =
                     [ XMLTree
                         { tag = "path"
@@ -3801,7 +3850,7 @@ model =
       , tree =
             XMLTree
                 { tag = "svg"
-                , attributes = [ ( "viewBox", "0 0 20 20" ), ( "fill", "currentColor" ) ]
+                , attributes = [ ( "viewBox", "0 0 20 20" ), ( "fill", "currentColor" ), ( "aria-hidden", "true" ) ]
                 , children =
                     [ XMLTree
                         { tag = "path"
@@ -3822,7 +3871,7 @@ model =
       , tree =
             XMLTree
                 { tag = "svg"
-                , attributes = [ ( "viewBox", "0 0 20 20" ), ( "fill", "currentColor" ) ]
+                , attributes = [ ( "viewBox", "0 0 20 20" ), ( "fill", "currentColor" ), ( "aria-hidden", "true" ) ]
                 , children =
                     [ XMLTree
                         { tag = "path"

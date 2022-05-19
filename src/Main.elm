@@ -229,7 +229,7 @@ view : Model -> Html Msg
 view model =
     div []
         [ header [ class "bg-elm-blue text-white" ]
-            [ div [ class "container mx-auto px-8" ]
+            [ div [ class "px-16" ]
                 [ div [ class "border-b border-blue-600 flex items-center py-4" ]
                     [ span [ class "font-bold text-2xl mr-auto" ] [ text "Heroicons for Elm" ]
                     , viewNav
@@ -254,7 +254,7 @@ view model =
                     ]
                 ]
             ]
-        , main_ [ class "container px-8 pb-20 mx-auto" ]
+        , main_ [ class "px-16 pb-20 mx-auto" ]
             [ div [ class "flex justify-center my-12" ]
                 [ label [ class "w-full max-w-xl flex items-center rounded-lg px-4 bg-gray-200 focus-within:shadow-outline focus-within:bg-white transition duration-150" ]
                     [ span
@@ -297,12 +297,14 @@ view model =
 
               else
                 div [ class "text-center py-24" ]
-                    [ h2 [ class "text-gray-700 text-2xl font-bold mb-1 break-words" ]
+                    [ h2 [ class "text-gray-700 text-2xl font-bold mb-2 break-words" ]
                         [ text "Sorry! I could't find anything for "
                         , span [ class "text-gray-900" ] [ text model.search ]
                         ]
                     , p [ class "text-lg text-gray-600" ]
-                        [ text "Is there an icon missing? Let me know by "
+                        [ text "Can't find what you're looking for? Are the icons outdated?" ]
+                    , p [ class "text-lg text-gray-600" ]
+                        [ text "Let me know by "
                         , a
                             [ class "text-elm-blue hover:underline"
                             , href "https://github.com/jasonliang-dev/elm-heroicons-gallery/issues"
@@ -313,7 +315,7 @@ view model =
                     ]
             ]
         , footer [ class "bg-gray-100 text-gray-600 flex border-t border-gray-300 py-12" ]
-            [ div [ class "flex flex-col sm:flex-row space-y-1 sm:space-y-0 sm:space-x-8 container px-8 mx-auto" ]
+            [ div [ class "flex flex-col sm:flex-row space-y-1 sm:space-y-0 sm:space-x-8 px-16" ]
                 [ span []
                     [ a
                         [ class "hover:underline font-bold"
@@ -402,7 +404,7 @@ viewIcons { heading, subHeader, size, search, icons } =
             , p [ class "hidden md:block mt-1 font-medium text-gray-600 text-sm" ] [ text subHeader ]
             ]
         , Keyed.ul
-            [ class "w-full grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 sm:gap-8" ]
+            [ class "w-full grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 2xl:grid-cols-5 gap-4 sm:gap-8" ]
             (List.map viewIconKeyed icons)
         ]
 
