@@ -1,20 +1,20 @@
-module Gallery exposing (Icon, XMLTree(..))
+module Gallery exposing (Icon, XmlTree(..))
 
 import Html exposing (Html)
-import Svg exposing (Attribute)
+import Svg
 
 
 type alias Icon a =
     { name : String
     , tags : List String
-    , viewIcon : List (Attribute a) -> Html a
-    , tree : XMLTree
+    , viewIcon : List (Svg.Attribute a) -> Html a
+    , tree : XmlTree
     }
 
 
-type XMLTree
-    = XMLTree
+type XmlTree
+    = XmlTree
         { tag : String
         , attributes : List ( String, String )
-        , children : List XMLTree
+        , children : List XmlTree
         }

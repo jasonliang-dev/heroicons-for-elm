@@ -8,20 +8,20 @@ import xml.etree.ElementTree as ET
 from attr_lookup import svg_attrs
 
 
-def to_attr(xml_attr):
-    name, value = xml_attr
-    attr = svg_attrs.get(name, name)
-
-    return f'("{attr}", "{value}")'
-
-
 def to_elm_xml_tree(node):
     _, tag = node.tag[1:].split("}")  # strip namespace
-    attrs = ", ".join(map(to_attr, node.attrib.items()))
+
+    attrs = []
+    for name, value in node.attrib.items():
+        name = svg_attrs.get(name, name)
+        if name != "aria-hidden":
+            attrs.append(f'("{name}", "{value}")')
+
+    attrs = ",".join(attrs)
     children = ",\n".join(map(to_elm_xml_tree, node))
 
     return (
-        "XMLTree {\n"
+        "XmlTree {\n"
         f'    tag = "{tag}",\n'
         f"    attributes = [{attrs}],\n"
         f"    children = [{children}]\n"
@@ -56,7 +56,7 @@ icons = ",\n".join(map(lambda i: to_elm_icon(tags, i), sys.argv[2:]))
 source_code = f"""module Gallery.{sys.argv[1]} exposing (model)
 
 import Heroicons.{sys.argv[1]} exposing (..)
-import Gallery exposing (Icon, XMLTree(..))
+import Gallery exposing (Icon, XmlTree(..))
 
 
 model : List (Icon a)

@@ -49,8 +49,8 @@ type alias ImportStyle =
 type alias Model =
     { modalFor : Maybe (Gallery.Icon Msg)
     , search : String
-    , svgImportStyle : ImportStyle
-    , svgAttrsImportStyle : ImportStyle
+    , svgImport : ImportStyle
+    , svgAttrsImport : ImportStyle
     , backdropStyle : Animation.Messenger.State Msg
     , modalStyle : Animation.Messenger.State Msg
     }
@@ -67,13 +67,13 @@ init : ( Model, Cmd Msg )
 init =
     ( { modalFor = Nothing
       , search = ""
-      , svgImportStyle =
+      , svgImport =
             { withAs = ""
             , withExposing = ".."
             , onAs = SetSvgAs
             , onExposing = SetSvgExposing
             }
-      , svgAttrsImportStyle =
+      , svgAttrsImport =
             { withAs = ""
             , withExposing = ".."
             , onAs = SetSvgAttrsAs
@@ -166,36 +166,36 @@ update msg model =
         SetSvgAs str ->
             let
                 old =
-                    model.svgImportStyle
+                    model.svgImport
             in
-            ( { model | svgImportStyle = { old | withAs = str } }
+            ( { model | svgImport = { old | withAs = str } }
             , setTippyContent initialTippy
             )
 
         SetSvgExposing str ->
             let
                 old =
-                    model.svgImportStyle
+                    model.svgImport
             in
-            ( { model | svgImportStyle = { old | withExposing = str } }
+            ( { model | svgImport = { old | withExposing = str } }
             , setTippyContent initialTippy
             )
 
         SetSvgAttrsAs str ->
             let
                 old =
-                    model.svgAttrsImportStyle
+                    model.svgAttrsImport
             in
-            ( { model | svgAttrsImportStyle = { old | withAs = str } }
+            ( { model | svgAttrsImport = { old | withAs = str } }
             , setTippyContent initialTippy
             )
 
         SetSvgAttrsExposing str ->
             let
                 old =
-                    model.svgAttrsImportStyle
+                    model.svgAttrsImport
             in
-            ( { model | svgAttrsImportStyle = { old | withExposing = str } }
+            ( { model | svgAttrsImport = { old | withExposing = str } }
             , setTippyContent initialTippy
             )
 
@@ -254,7 +254,7 @@ view model =
                     ]
                 ]
             ]
-        , main_ [ class "px-16 pb-20 mx-auto" ]
+        , main_ [ class "px-16 pb-20 mx-auto", style "max-width" "112rem" ]
             [ div [ class "flex justify-center my-12" ]
                 [ label [ class "w-full max-w-xl flex items-center rounded-lg px-4 bg-gray-200 focus-within:shadow-outline focus-within:bg-white transition duration-150" ]
                     [ span
@@ -438,14 +438,14 @@ viewIcon size search icon =
 
 viewModal :
     { a
-        | svgImportStyle : ImportStyle
-        , svgAttrsImportStyle : ImportStyle
+        | svgImport : ImportStyle
+        , svgAttrsImport : ImportStyle
         , backdropStyle : Animation.Messenger.State Msg
         , modalStyle : Animation.Messenger.State Msg
     }
     -> Gallery.Icon Msg
     -> Html Msg
-viewModal { svgImportStyle, svgAttrsImportStyle, backdropStyle, modalStyle } icon =
+viewModal { svgImport, svgAttrsImport, backdropStyle, modalStyle } icon =
     div [ class "fixed z-10 inset-0 overflow-y-auto" ]
         [ div [ class "min-h-screen text-center p-0" ]
             [ div (class "fixed inset-0 transition-opacity" :: Animation.render backdropStyle)
@@ -466,13 +466,13 @@ viewModal { svgImportStyle, svgAttrsImportStyle, backdropStyle, modalStyle } ico
                        , class "relative inline-block bg-white rounded-lg text-left shadow-xl transition-all my-8 align-middle max-w-2xl w-full"
                        ]
                 )
-                [ lazy3 viewModalContent svgImportStyle svgAttrsImportStyle icon ]
+                [ lazy3 viewModalContent svgImport svgAttrsImport icon ]
             ]
         ]
 
 
 viewModalContent : ImportStyle -> ImportStyle -> Gallery.Icon Msg -> Html Msg
-viewModalContent svgImportStyle svgAttrsImportStyle icon =
+viewModalContent svgImport svgAttrsImport icon =
     div [ class "contents" ]
         [ button
             [ class "absolute right-0 top-0 -mt-3 -mr-3 w-8 h-8 flex items-center justify-center shadow hover:shadow-md rounded-full bg-white text-red-500 hover:text-red-700 focus:outline-none focus:shadow-outline transition duration-150"
@@ -498,8 +498,8 @@ viewModalContent svgImportStyle svgAttrsImportStyle icon =
                     , attribute "data-tippy" ""
                     , onClick
                         (CopyToClipboard
-                            (treeToString svgImportStyle
-                                svgAttrsImportStyle
+                            (treeToString svgImport
+                                svgAttrsImport
                                 icon.tree
                             )
                         )
@@ -513,7 +513,7 @@ viewModalContent svgImportStyle svgAttrsImportStyle icon =
                     ]
                 , div [ class "elm-syntax-highlight-fix" ]
                     [ SyntaxHighlight.useTheme SyntaxHighlight.oneDark
-                    , codeStateToString svgImportStyle svgAttrsImportStyle icon
+                    , codeStateToString svgImport svgAttrsImport icon
                         |> SyntaxHighlight.elm
                         |> Result.map (SyntaxHighlight.toBlockHtml Nothing)
                         |> Result.withDefault
@@ -521,8 +521,8 @@ viewModalContent svgImportStyle svgAttrsImportStyle icon =
                                 [ code []
                                     [ text
                                         (codeStateToString
-                                            svgImportStyle
-                                            svgAttrsImportStyle
+                                            svgImport
+                                            svgAttrsImport
                                             icon
                                         )
                                     ]
@@ -531,13 +531,10 @@ viewModalContent svgImportStyle svgAttrsImportStyle icon =
                     ]
                 ]
             , h3 [ class "text-lg leading-6 font-medium text-gray-900 mb-3" ]
-                [ text "How are you importing "
-                , code [ class "text-sm bg-gray-200 text-gray-800 font-bold" ] [ text "elm/svg" ]
-                , text "?"
-                ]
+                [ text "What do your imports look like?" ]
             , div [ class "space-y-1" ]
-                [ viewImportStyle "Svg           " svgImportStyle
-                , viewImportStyle "Svg.Attributes" svgAttrsImportStyle
+                [ viewImportStyle "Svg           " svgImport
+                , viewImportStyle "Svg.Attributes" svgAttrsImport
                 ]
             ]
         , div [ class "bg-gray-100 px-6 py-3 flex flex-row-reverse rounded-b-lg" ]
@@ -646,13 +643,13 @@ importStyleToString moduleName { withAs, withExposing } =
                 nonEmpty ->
                     " exposing (" ++ nonEmpty ++ ")"
     in
-    "import " ++ moduleName ++ optionalAs ++ optionalExposing
+    "import " ++ moduleName ++ optionalAs ++ optionalExposing ++ "\n"
 
 
-treeToString : ImportStyle -> ImportStyle -> Gallery.XMLTree -> String
-treeToString svgImportStyle svgAttrsImportStyle (Gallery.XMLTree tree) =
+treeToString : ImportStyle -> ImportStyle -> Gallery.XmlTree -> String
+treeToString svgImport svgAttrsImport (Gallery.XmlTree tree) =
     let
-        attributeToString ( name, value ) =
+        stringify ( name, value ) =
             name ++ " \"" ++ value ++ "\""
 
         bracketify xs =
@@ -665,14 +662,14 @@ treeToString svgImportStyle svgAttrsImportStyle (Gallery.XMLTree tree) =
 
         tag =
             if
-                String.split "," svgImportStyle.withExposing
+                String.split "," svgImport.withExposing
                     |> List.map String.trim
                     |> List.any (\ex -> ex == tree.tag || ex == "..")
             then
                 tree.tag
 
             else
-                (case svgImportStyle.withAs of
+                (case svgImport.withAs of
                     "" ->
                         "Svg."
 
@@ -681,16 +678,16 @@ treeToString svgImportStyle svgAttrsImportStyle (Gallery.XMLTree tree) =
                 )
                     ++ tree.tag
 
-        attr ( name, value ) =
+        group ( name, value ) =
             if
-                String.split "," svgAttrsImportStyle.withExposing
+                String.split "," svgAttrsImport.withExposing
                     |> List.map String.trim
                     |> List.any (\ex -> ex == name || ex == "..")
             then
                 ( name, value )
 
             else
-                ( (case svgAttrsImportStyle.withAs of
+                ( (case svgAttrsImport.withAs of
                     "" ->
                         "Svg.Attributes."
 
@@ -703,24 +700,23 @@ treeToString svgImportStyle svgAttrsImportStyle (Gallery.XMLTree tree) =
     in
     tag
         ++ " "
-        ++ bracketify (List.map (attributeToString << attr) tree.attributes)
+        ++ bracketify (List.map (stringify << group) tree.attributes)
         ++ " "
         ++ bracketify
             (List.map
-                (treeToString svgImportStyle svgAttrsImportStyle)
+                (treeToString svgImport svgAttrsImport)
                 tree.children
             )
 
 
 codeStateToString : ImportStyle -> ImportStyle -> Gallery.Icon msg -> String
-codeStateToString svgImportStyle svgAttrsImportStyle icon =
-    importStyleToString "Svg" svgImportStyle
-        ++ "\n"
-        ++ importStyleToString "Svg.Attributes" svgAttrsImportStyle
-        ++ "\n\nicon : Html msg\n"
+codeStateToString svgImport svgAttrsImport icon =
+    importStyleToString "Svg" svgImport
+        ++ importStyleToString "Svg.Attributes" svgAttrsImport
+        ++ "\nicon : Html msg\n"
         ++ "icon = \n    "
-        ++ treeToString svgImportStyle
-            svgAttrsImportStyle
+        ++ treeToString svgImport
+            svgAttrsImport
             icon.tree
 
 
