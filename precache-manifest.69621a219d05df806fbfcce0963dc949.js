@@ -4,15 +4,15 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/heroicons-for-elm/favicon.ico"
   },
   {
-    "revision": "71a9f1b7eb7342823e6e5ee0dcff7022",
+    "revision": "f38b0eb2060d8a687d331bbd8b69bb91",
     "url": "/heroicons-for-elm/index.html"
   },
   {
-    "revision": "6ead519905b7b907c00965be37dd5cd7",
+    "revision": "2192e9b000f464fc69d31caed0f6ba54",
     "url": "/heroicons-for-elm/logo.svg"
   },
   {
-    "revision": "1c82903c2994c2507b385b9042bbfac5",
+    "revision": "b4c3b56a7391efbcc8f1b15a90906d1a",
     "url": "/heroicons-for-elm/manifest.json"
   },
   {
@@ -20,23 +20,23 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/heroicons-for-elm/meta-image.png"
   },
   {
-    "revision": "278f34c9788c89b9a524",
-    "url": "/heroicons-for-elm/static/css/main.3f2aafa2.chunk.css"
+    "revision": "22bc3fd82a5fe4df0985",
+    "url": "/heroicons-for-elm/static/css/main.a64dbb13.chunk.css"
   },
   {
-    "revision": "c962df00993b46c58535",
+    "revision": "279cd2929d1ab5ad318f",
     "url": "/heroicons-for-elm/static/css/vendors~main.e4395bd5.chunk.css"
   },
   {
-    "revision": "278f34c9788c89b9a524",
-    "url": "/heroicons-for-elm/static/js/main.278f34c9.chunk.js"
+    "revision": "22bc3fd82a5fe4df0985",
+    "url": "/heroicons-for-elm/static/js/main.22bc3fd8.chunk.js"
   },
   {
     "revision": "e3b644db3393feebd61a",
     "url": "/heroicons-for-elm/static/js/runtime~main.e3b644db.js"
   },
   {
-    "revision": "c962df00993b46c58535",
-    "url": "/heroicons-for-elm/static/js/vendors~main.c962df00.chunk.js"
+    "revision": "279cd2929d1ab5ad318f",
+    "url": "/heroicons-for-elm/static/js/vendors~main.279cd292.chunk.js"
   }
 ]);

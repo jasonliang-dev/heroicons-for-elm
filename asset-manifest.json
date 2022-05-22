@@ -1,17 +1,17 @@
 {
-  "main.css": "/heroicons-for-elm/static/css/main.3f2aafa2.chunk.css",
-  "main.js": "/heroicons-for-elm/static/js/main.278f34c9.chunk.js",
-  "main.js.map": "/heroicons-for-elm/static/js/main.278f34c9.chunk.js.map",
+  "main.css": "/heroicons-for-elm/static/css/main.a64dbb13.chunk.css",
+  "main.js": "/heroicons-for-elm/static/js/main.22bc3fd8.chunk.js",
+  "main.js.map": "/heroicons-for-elm/static/js/main.22bc3fd8.chunk.js.map",
   "runtime~main.js": "/heroicons-for-elm/static/js/runtime~main.e3b644db.js",
   "runtime~main.js.map": "/heroicons-for-elm/static/js/runtime~main.e3b644db.js.map",
   "vendors~main.css": "/heroicons-for-elm/static/css/vendors~main.e4395bd5.chunk.css",
-  "vendors~main.js": "/heroicons-for-elm/static/js/vendors~main.c962df00.chunk.js",
-  "vendors~main.js.map": "/heroicons-for-elm/static/js/vendors~main.c962df00.chunk.js.map",
+  "vendors~main.js": "/heroicons-for-elm/static/js/vendors~main.279cd292.chunk.js",
+  "vendors~main.js.map": "/heroicons-for-elm/static/js/vendors~main.279cd292.chunk.js.map",
   "./service-worker.js": "/heroicons-for-elm/./service-worker.js",
   "favicon.ico": "/heroicons-for-elm/favicon.ico",
   "index.html": "/heroicons-for-elm/index.html",
   "logo.svg": "/heroicons-for-elm/logo.svg",
   "manifest.json": "/heroicons-for-elm/manifest.json",
   "meta-image.png": "/heroicons-for-elm/meta-image.png",
-  "precache-manifest.462426e6c9f7ab6107fb86e2edc73580.js": "/heroicons-for-elm/precache-manifest.462426e6c9f7ab6107fb86e2edc73580.js"
+  "precache-manifest.69621a219d05df806fbfcce0963dc949.js": "/heroicons-for-elm/precache-manifest.69621a219d05df806fbfcce0963dc949.js"
 }
