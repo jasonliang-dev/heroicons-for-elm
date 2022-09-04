@@ -1,0 +1,3 @@
+[submodule "gen/heroicons"]
+	path = gen/heroicons
+	url = git@github.com:tailwindlabs/heroicons.git
