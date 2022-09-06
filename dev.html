@@ -20,12 +20,17 @@
       }
     }
   </script>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&family=Lora:wght@400;600;700&display=swap" rel="stylesheet"> </head>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&display=swap" rel="stylesheet">
+</head>
 <body>
   <div id="root"></div>
   <script>
     var app = Elm.Main.init({
       node: document.getElementById('root')
+    })
+
+    app.ports.copy.subscribe(text => {
+      navigator.clipboard.writeText(text)
     })
   </script>
 </body>
