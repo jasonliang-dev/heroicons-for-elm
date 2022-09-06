@@ -341,14 +341,15 @@ viewModal imports icon =
     div [ class "relative z-10" ]
         [ div [ class "fixed inset-0 bg-gray-200 bg-opacity-75 transition-opacity" ] []
         , div [ class "fixed inset-0 z-10 overflow-y-auto" ]
-            [ div [ class "flex min-h-full items-end justify-center p-4 text-center sm:items-center sm:p-0" ]
+            [ button [ Events.onClick DeselectIcon, class "absolute inset-0 w-full h-full opacity-0 cursor-default", Attributes.tabindex -1] []
+            , div [ class "flex min-h-full items-end justify-center p-4 text-center sm:items-center sm:p-0" ]
                 [ div [ class "relative transform overflow-hidden rounded-lg bg-white text-left shadow-xl transition-all sm:my-8 sm:w-full sm:max-w-lg md:max-w-3xl" ]
                     [ div [ class "bg-white px-4 pt-5 pb-4 sm:p-6 sm:pb-4" ]
-                        [ h3 [ class "text-lg font-medium leading-6 text-gray-900" ]
-                            [ text "Icon usage" ]
+                        [ h3 [ class "text-lg font-medium text-gray-900" ]
+                            [ text "Usage" ]
                         , p [ class "text-sm text-gray-500" ]
                             [ text "Copy this Elm code and paste it in your project:" ]
-                        , div [ class "bg-slate-800 text-slate-50 p-4 rounded overflow-x-auto mt-3 text-sm" ]
+                        , div [ class "bg-slate-800 border border-slate-900 text-slate-50 p-4 rounded overflow-x-auto mt-3 text-sm" ]
                             [ pre [ class "mb-1" ]
                                 [ span [ class "text-violet-400" ] [ text "import" ]
                                 , text " Svg           "
@@ -436,7 +437,7 @@ viewTree imports (Gallery.XmlTree tree) =
                     |> List.any (\ex -> ex == name || ex == "..")
             then
                 [ span [] [ text name ]
-                , span [ class "text-lime-400" ] [ text (" \"" ++ value ++ "\"") ]
+                , span [ class "text-lime-300" ] [ text (" \"" ++ value ++ "\"") ]
                 ]
 
             else
@@ -450,7 +451,7 @@ viewTree imports (Gallery.XmlTree tree) =
                         )
                     ]
                 , span [] [ text name ]
-                , span [ class "text-lime-400" ] [ text (" \"" ++ value ++ "\"") ]
+                , span [ class "text-lime-300" ] [ text (" \"" ++ value ++ "\"") ]
                 ]
     in
     List.concat
