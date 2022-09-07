@@ -14,8 +14,10 @@ import Html.Attributes as Attributes exposing (class)
 import Html.Events as Events
 import Html.Keyed as Keyed
 import Json.Decode as Decode
+import Process
 import Svg
 import Svg.Attributes
+import Task
 
 
 
@@ -60,7 +62,8 @@ type alias Model =
     { search : String
     , iconKind : IconKind
     , imports : Imports
-    , modal : Maybe (Gallery.Icon Msg)
+    , icon : Maybe (Gallery.Icon Msg)
+    , balloonText : String
     }
 
 
@@ -74,7 +77,8 @@ init _ =
             , attrsAs = ""
             , attrsExposing = ".."
             }
-      , modal = Nothing
+      , icon = Nothing
+      , balloonText = "Copy"
       }
     , Cmd.none
     )
@@ -93,6 +97,8 @@ type Msg
     | ChangeAttributesExposing String
     | SelectIcon (Gallery.Icon Msg)
     | DeselectIcon
+    | ClipboardCopy
+    | ResetBalloon
     | NoOp
 
 
@@ -134,10 +140,28 @@ update msg model =
             ( { model | imports = { old | attrsExposing = str } }, Cmd.none )
 
         SelectIcon icon ->
-            ( { model | modal = Just icon }, copy (treeToString model.imports icon.tree) )
+            ( { model | icon = Just icon }, copy (treeToString model.imports icon.tree) )
 
         DeselectIcon ->
-            ( { model | modal = Nothing }, Cmd.none )
+            ( { model | icon = Nothing }, Cmd.none )
+
+        ClipboardCopy ->
+            case model.icon of
+                Just icon ->
+                    ( { model | balloonText = "Copied" }
+                    , Cmd.batch
+                        [ copy (treeToString model.imports icon.tree)
+                        , Process.sleep 2000
+                            |> Task.andThen (always (Task.succeed ResetBalloon))
+                            |> Task.perform identity
+                        ]
+                    )
+
+                Nothing ->
+                    ( model, Cmd.none )
+
+        ResetBalloon ->
+            ( { model | balloonText = "Copy" }, Cmd.none )
 
         NoOp ->
             ( model, Cmd.none )
@@ -162,7 +186,7 @@ subscriptions model =
                     NoOp
     in
     Sub.batch
-        [ case model.modal of
+        [ case model.icon of
             Just _ ->
                 Browser.Events.onKeyDown
                     (Decode.map keyHandle (Decode.field "key" Decode.string))
@@ -268,9 +292,9 @@ view model =
                     [ text "Elm" ]
                 ]
             ]
-        , case model.modal of
+        , case model.icon of
             Just icon ->
-                viewModal model.imports icon
+                viewModal model.imports model.balloonText icon
 
             Nothing ->
                 text ""
@@ -336,12 +360,12 @@ viewIcon kind search icon =
         ]
 
 
-viewModal : Imports -> Gallery.Icon msg -> Html Msg
-viewModal imports icon =
+viewModal : Imports -> String -> Gallery.Icon msg -> Html Msg
+viewModal imports balloon icon =
     div [ class "relative z-10" ]
         [ div [ class "fixed inset-0 bg-gray-200 bg-opacity-75 transition-opacity" ] []
         , div [ class "fixed inset-0 z-10 overflow-y-auto" ]
-            [ button [ Events.onClick DeselectIcon, class "absolute inset-0 w-full h-full opacity-0 cursor-default", Attributes.tabindex -1] []
+            [ button [ Events.onClick DeselectIcon, class "absolute inset-0 w-full h-full opacity-0 cursor-default", Attributes.tabindex -1 ] []
             , div [ class "flex min-h-full items-end justify-center p-4 text-center sm:items-center sm:p-0" ]
                 [ div [ class "relative transform overflow-hidden rounded-lg bg-white text-left shadow-xl transition-all sm:my-8 sm:w-full sm:max-w-lg md:max-w-3xl" ]
                     [ div [ class "bg-white px-4 pt-5 pb-4 sm:p-6 sm:pb-4" ]
@@ -349,38 +373,43 @@ viewModal imports icon =
                             [ text "Usage" ]
                         , p [ class "text-sm text-gray-500" ]
                             [ text "Copy this Elm code and paste it in your project:" ]
-                        , div [ class "bg-slate-800 border border-slate-900 text-slate-50 p-4 rounded overflow-x-auto mt-3 text-sm" ]
-                            [ pre [ class "mb-1" ]
-                                [ span [ class "text-violet-400" ] [ text "import" ]
-                                , text " Svg           "
-                                , span [ class "text-violet-400" ] [ text " as " ]
-                                , input [ Attributes.value imports.svgAs, Events.onInput ChangeSvgAs, class "mx-1 px-1 bg-slate-900 rounded outline-none w-40" ] []
-                                , span [ class "text-violet-400" ] [ text " exposing " ]
-                                , text "("
-                                , input [ Attributes.value imports.svgExposing, Events.onInput ChangeSvgExposing, class "mx-1 px-1 bg-slate-900 rounded outline-none w-40" ] []
-                                , text ")"
+                        , div [ class "relative" ]
+                            [ div [ class "bg-slate-800 border border-slate-900 text-slate-50 p-4 rounded overflow-x-auto mt-3 text-sm" ]
+                                [ pre [ class "mb-1" ]
+                                    [ span [ class "text-violet-400" ] [ text "import" ]
+                                    , text " Svg           "
+                                    , span [ class "text-violet-400" ] [ text " as " ]
+                                    , input [ Attributes.value imports.svgAs, Events.onInput ChangeSvgAs, class "mx-1 px-1 bg-slate-900 rounded outline-none w-40" ] []
+                                    , span [ class "text-violet-400" ] [ text " exposing " ]
+                                    , text "("
+                                    , input [ Attributes.value imports.svgExposing, Events.onInput ChangeSvgExposing, class "mx-1 px-1 bg-slate-900 rounded outline-none w-40" ] []
+                                    , text ")"
+                                    ]
+                                , pre [ class "mb-1" ]
+                                    [ span [ class "text-violet-400" ] [ text "import" ]
+                                    , text " Svg.Attributes"
+                                    , span [ class "text-violet-400" ] [ text " as " ]
+                                    , input [ Attributes.value imports.attrsAs, Events.onInput ChangeAttributesAs, class "mx-1 px-1 bg-slate-900 rounded outline-none w-40" ] []
+                                    , span [ class "text-violet-400" ] [ text " exposing " ]
+                                    , text "("
+                                    , input [ Attributes.value imports.attrsExposing, Events.onInput ChangeAttributesExposing, class "mx-1 px-1 bg-slate-900 rounded outline-none w-40" ] []
+                                    , text ")"
+                                    ]
+                                , pre [ class "mb-1" ]
+                                    [ span [ class "text-yellow-300" ] [ text "\nicon" ]
+                                    , span [ class "text-slate-400" ] [ text " : " ]
+                                    , span [ class "text-violet-400" ] [ text "Html" ]
+                                    , text " msg"
+                                    ]
+                                , pre [ class "mb-1" ]
+                                    [ span [ class "text-yellow-300" ] [ text "icon" ]
+                                    , span [ class "text-slate-400" ] [ text " =" ]
+                                    ]
+                                , pre [ class "mb-1" ]
+                                    (text "    " :: viewTree imports icon.tree)
                                 ]
-                            , pre [ class "mb-1" ]
-                                [ span [ class "text-violet-400" ] [ text "import" ]
-                                , text " Svg.Attributes"
-                                , span [ class "text-violet-400" ] [ text " as " ]
-                                , input [ Attributes.value imports.attrsAs, Events.onInput ChangeAttributesAs, class "mx-1 px-1 bg-slate-900 rounded outline-none w-40" ] []
-                                , span [ class "text-violet-400" ] [ text " exposing " ]
-                                , text "("
-                                , input [ Attributes.value imports.attrsExposing, Events.onInput ChangeAttributesExposing, class "mx-1 px-1 bg-slate-900 rounded outline-none w-40" ] []
-                                , text ")"
-                                ]
-                            , pre [ class "mb-1" ]
-                                [ span [ class "text-yellow-300" ] [ text "\nicon" ]
-                                , span [ class "text-slate-400" ] [ text " : " ]
-                                , span [ class "text-violet-400" ] [ text "Html" ]
-                                , text " msg"
-                                ]
-                            , pre [ class "mb-1" ]
-                                [ span [ class "text-yellow-300" ] [ text "icon" ]
-                                , span [ class "text-slate-400" ] [ text " =" ]
-                                ]
-                            , pre [ class "mb-1" ] (text "    " :: viewTree imports icon.tree)
+                            , div [ class "absolute inset-x-0 bottom-0 mb-8" ]
+                                [ div [ Events.onClick ClipboardCopy, Attributes.attribute "aria-label" balloon, Attributes.attribute "data-balloon-pos" "up", class "h-8 font-medium" ] [] ]
                             ]
                         ]
                     , div [ class "bg-gray-50 px-4 py-3 sm:flex sm:flex-row-reverse sm:px-6" ]
@@ -418,7 +447,7 @@ viewTree imports (Gallery.XmlTree tree) =
                 [ text tree.tag ]
 
             else
-                [ span [ class "text-sky-400" ]
+                [ span [ class "text-blue-400" ]
                     [ text
                         (if imports.svgAs == "" then
                             "Svg."
@@ -441,7 +470,7 @@ viewTree imports (Gallery.XmlTree tree) =
                 ]
 
             else
-                [ span [ class "text-sky-400" ]
+                [ span [ class "text-blue-400" ]
                     [ text
                         (if imports.attrsAs == "" then
                             "Svg.Attributes."
