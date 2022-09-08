@@ -1,6 +1,3 @@
--- elm-live src\Main.elm --start-page=dev.html -- --output=main.js --debug
-
-
 port module Main exposing (main)
 
 import Animation
