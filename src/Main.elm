@@ -3,6 +3,9 @@
 
 port module Main exposing (main)
 
+import Animation
+import Animation.Messenger
+import Animation.Spring.Presets
 import Browser
 import Browser.Events
 import Gallery
@@ -63,6 +66,9 @@ type alias Model =
     , iconKind : IconKind
     , imports : Imports
     , icon : Maybe (Gallery.Icon Msg)
+    , modalShow : Bool
+    , modalStyle : Animation.Messenger.State Msg
+    , backgroundStyle : Animation.Messenger.State Msg
     , balloonText : String
     }
 
@@ -78,6 +84,15 @@ init _ =
             , attrsExposing = ".."
             }
       , icon = Nothing
+      , modalShow = False
+      , modalStyle =
+            Animation.styleWith
+                (Animation.spring Animation.Spring.Presets.zippy)
+                [ Animation.opacity 0.0, Animation.scale 1.1 ]
+      , backgroundStyle =
+            Animation.styleWith
+                (Animation.spring Animation.Spring.Presets.zippy)
+                [ Animation.opacity 0.01 ]
       , balloonText = "Copy"
       }
     , Cmd.none
@@ -97,8 +112,10 @@ type Msg
     | ChangeAttributesExposing String
     | SelectIcon (Gallery.Icon Msg)
     | DeselectIcon
+    | HideModal
     | ClipboardCopy
     | ResetBalloon
+    | Animate Animation.Msg
     | NoOp
 
 
@@ -140,10 +157,42 @@ update msg model =
             ( { model | imports = { old | attrsExposing = str } }, Cmd.none )
 
         SelectIcon icon ->
-            ( { model | icon = Just icon }, copy (treeToString model.imports icon.tree) )
+            ( { model
+                | icon = Just icon
+                , modalShow = True
+                , modalStyle =
+                    Animation.interrupt
+                        [ Animation.to [ Animation.opacity 1.0, Animation.scale 1.0 ] ]
+                        model.modalStyle
+                , backgroundStyle =
+                    Animation.interrupt
+                        [ Animation.to [ Animation.opacity 0.75 ] ]
+                        model.backgroundStyle
+              }
+            , Cmd.none
+            )
 
         DeselectIcon ->
-            ( { model | icon = Nothing }, Cmd.none )
+            ( { model
+                | modalStyle =
+                    Animation.interrupt
+                        [ Animation.to [ Animation.opacity 0.0, Animation.scale 1.1 ]
+                        , Animation.Messenger.send HideModal
+                        ]
+                        model.modalStyle
+                , backgroundStyle =
+                    Animation.interrupt
+                        [ Animation.to
+                            [ Animation.opacity 0.0 ]
+                        , Animation.Messenger.send HideModal
+                        ]
+                        model.backgroundStyle
+              }
+            , Cmd.none
+            )
+
+        HideModal ->
+            ( { model | modalShow = False }, Cmd.none )
 
         ClipboardCopy ->
             case model.icon of
@@ -152,8 +201,7 @@ update msg model =
                     , Cmd.batch
                         [ copy (treeToString model.imports icon.tree)
                         , Process.sleep 2000
-                            |> Task.andThen (always (Task.succeed ResetBalloon))
-                            |> Task.perform identity
+                            |> Task.perform (always ResetBalloon)
                         ]
                     )
 
@@ -162,6 +210,21 @@ update msg model =
 
         ResetBalloon ->
             ( { model | balloonText = "Copy" }, Cmd.none )
+
+        Animate m ->
+            let
+                ( modal, modalCmd ) =
+                    Animation.Messenger.update m model.modalStyle
+
+                ( background, backgroundCmd ) =
+                    Animation.Messenger.update m model.backgroundStyle
+            in
+            ( { model
+                | modalStyle = modal
+                , backgroundStyle = background
+              }
+            , Cmd.batch [ modalCmd, backgroundCmd ]
+            )
 
         NoOp ->
             ( model, Cmd.none )
@@ -186,13 +249,13 @@ subscriptions model =
                     NoOp
     in
     Sub.batch
-        [ case model.icon of
-            Just _ ->
-                Browser.Events.onKeyDown
-                    (Decode.map keyHandle (Decode.field "key" Decode.string))
+        [ if model.modalShow then
+            Browser.Events.onKeyDown
+                (Decode.map keyHandle (Decode.field "key" Decode.string))
 
-            Nothing ->
-                Sub.none
+          else
+            Sub.none
+        , Animation.subscription Animate [ model.modalStyle, model.backgroundStyle ]
         ]
 
 
@@ -211,23 +274,25 @@ view model =
                 ]
             , div [ class "container mx-auto px-4 pt-16 pb-20" ]
                 [ div [ class "flex flex-col items-center" ]
-                    [ h1 [ class "text-5xl font-bold flex items-center" ]
+                    [ h1 [ class "text-2xl sm:text-5xl font-bold flex items-center" ]
                         [ text "Elm + Heroicons = "
-                        , Svg.svg [ Svg.Attributes.class "w-16 h-16 pl-2", Svg.Attributes.viewBox "0 0 24 24", Svg.Attributes.fill "currentColor" ] [ Svg.path [ Svg.Attributes.d "M11.645 20.91l-.007-.003-.022-.012a15.247 15.247 0 01-.383-.218 25.18 25.18 0 01-4.244-3.17C4.688 15.36 2.25 12.174 2.25 8.25 2.25 5.322 4.714 3 7.688 3A5.5 5.5 0 0112 5.052 5.5 5.5 0 0116.313 3c2.973 0 5.437 2.322 5.437 5.25 0 3.925-2.438 7.111-4.739 9.256a25.175 25.175 0 01-4.244 3.17 15.247 15.247 0 01-.383.219l-.022.012-.007.004-.003.001a.752.752 0 01-.704 0l-.003-.001z" ] [] ]
+                        , Svg.svg [ Svg.Attributes.class "w-8 h-8 sm:w-16 sm:h-16 pl-2", Svg.Attributes.viewBox "0 0 24 24", Svg.Attributes.fill "currentColor" ] [ Svg.path [ Svg.Attributes.d "M11.645 20.91l-.007-.003-.022-.012a15.247 15.247 0 01-.383-.218 25.18 25.18 0 01-4.244-3.17C4.688 15.36 2.25 12.174 2.25 8.25 2.25 5.322 4.714 3 7.688 3A5.5 5.5 0 0112 5.052 5.5 5.5 0 0116.313 3c2.973 0 5.437 2.322 5.437 5.25 0 3.925-2.438 7.111-4.739 9.256a25.175 25.175 0 01-4.244 3.17 15.247 15.247 0 01-.383.219l-.022.012-.007.004-.003.001a.752.752 0 01-.704 0l-.003-.001z" ] [] ]
                         ]
-                    , p [ class "text-xl text-blue-200 font-semibold pr-2" ]
+                    , p [ class "sm:text-xl text-blue-200 font-bold pr-2" ]
                         [ code [] [ text "elm/svg" ]
                         , text " icons for your Elm project"
                         ]
                     ]
                 ]
             ]
-        , div [ class "max-w-lg relative mx-auto mt-16" ]
-            [ span [ class "absolute inset-y-0 left-0 flex items-center pl-3 text-gray-800" ]
-                [ Svg.svg [ Svg.Attributes.class "absolute w-4 h-4", Svg.Attributes.viewBox "0 0 20 20", Svg.Attributes.fill "currentColor" ] [ Svg.path [ Svg.Attributes.fillRule "evenodd", Svg.Attributes.d "M9 3.5a5.5 5.5 0 100 11 5.5 5.5 0 000-11zM2 9a7 7 0 1112.452 4.391l3.328 3.329a.75.75 0 11-1.06 1.06l-3.329-3.328A7 7 0 012 9z", Svg.Attributes.clipRule "evenodd" ] [] ] ]
-            , input [ Attributes.value model.search, Events.onInput ChangeSearch, class "placeholder:italic placeholder:text-slate-400 block bg-white w-full border border-slate-300 rounded-md py-3 pl-9 pr-3 shadow-sm focus:outline-none focus:border-sky-500 focus:ring-sky-500 focus:ring-1", Attributes.placeholder "Search..." ] []
+        , div [ class "px-4 max-w-lg mx-auto mt-16" ]
+            [ div [ class "relative" ]
+                [ span [ class "absolute inset-y-0 left-0 flex items-center pl-3 text-gray-800" ]
+                    [ Svg.svg [ Svg.Attributes.class "absolute w-4 h-4", Svg.Attributes.viewBox "0 0 20 20", Svg.Attributes.fill "currentColor" ] [ Svg.path [ Svg.Attributes.fillRule "evenodd", Svg.Attributes.d "M9 3.5a5.5 5.5 0 100 11 5.5 5.5 0 000-11zM2 9a7 7 0 1112.452 4.391l3.328 3.329a.75.75 0 11-1.06 1.06l-3.329-3.328A7 7 0 012 9z", Svg.Attributes.clipRule "evenodd" ] [] ] ]
+                , input [ Attributes.value model.search, Events.onInput ChangeSearch, class "placeholder:italic placeholder:text-slate-400 block bg-white w-full border border-slate-300 rounded-md py-3 pl-9 pr-3 shadow-sm focus:outline-none focus:border-sky-500 focus:ring-sky-500 focus:ring-1", Attributes.placeholder "Search..." ] []
+                ]
             ]
-        , div [ class "mt-10 container max-w-7xl mx-auto px-4 grid grid-cols-3 gap-x-8" ]
+        , div [ class "mt-10 container max-w-7xl mx-auto px-4 grid md:grid-cols-3 gap-x-8 gap-y-4" ]
             [ viewkindButton
                 { kind = Outline
                 , short = "24x24, 1.5px stroke"
@@ -249,7 +314,7 @@ view model =
             ]
         , if List.any (kindaMatch model.search) Gallery.Outline.model then
             div [ class "min-h-screen mt-10" ]
-                [ Keyed.ul [ class "grid grid-cols-8 container max-w-7xl mx-auto px-4 gap-y-6 gap-x-8" ]
+                [ Keyed.ul [ class "grid grid-cols-3 sm:grid-cols-4 md:grid-cols-5 lg:grid-cols-7 xl:grid-cols-8 container max-w-7xl mx-auto px-4 gap-y-6 gap-x-8" ]
                     (List.map
                         (\icon ->
                             ( icon.name
@@ -292,12 +357,11 @@ view model =
                     [ text "Elm" ]
                 ]
             ]
-        , case model.icon of
-            Just icon ->
-                viewModal model.imports model.balloonText icon
+        , if model.modalShow then
+            viewModal model
 
-            Nothing ->
-                text ""
+          else
+            text ""
         ]
 
 
@@ -333,7 +397,7 @@ viewkindButton { kind, short, long, current } =
                 ]
                 [ text kindStr ]
             , span [ class "text-gray-500 text-sm" ] [ text short ]
-            , div [ class "text-gray-600" ] [ text long ]
+            , div [ class "md:hidden lg:block text-gray-600" ] [ text long ]
             ]
         ]
 
@@ -360,14 +424,17 @@ viewIcon kind search icon =
         ]
 
 
-viewModal : Imports -> String -> Gallery.Icon msg -> Html Msg
-viewModal imports balloon icon =
+viewModal : Model -> Html Msg
+viewModal model =
     div [ class "relative z-10" ]
-        [ div [ class "fixed inset-0 bg-gray-200 bg-opacity-75 transition-opacity" ] []
+        [ div (class "fixed inset-0 bg-gray-100" :: Animation.render model.backgroundStyle) []
         , div [ class "fixed inset-0 z-10 overflow-y-auto" ]
             [ button [ Events.onClick DeselectIcon, class "absolute inset-0 w-full h-full opacity-0 cursor-default", Attributes.tabindex -1 ] []
             , div [ class "flex min-h-full items-end justify-center p-4 text-center sm:items-center sm:p-0" ]
-                [ div [ class "relative transform overflow-hidden rounded-lg bg-white text-left shadow-xl transition-all sm:my-8 sm:w-full sm:max-w-lg md:max-w-3xl" ]
+                [ div
+                    (class "relative overflow-hidden rounded-lg bg-white text-left shadow-xl sm:my-8 sm:w-full sm:max-w-lg md:max-w-3xl"
+                        :: Animation.render model.modalStyle
+                    )
                     [ div [ class "bg-white px-4 pt-5 pb-4 sm:p-6 sm:pb-4" ]
                         [ h3 [ class "text-lg font-medium text-gray-900" ]
                             [ text "Usage" ]
@@ -379,20 +446,20 @@ viewModal imports balloon icon =
                                     [ span [ class "text-violet-400" ] [ text "import" ]
                                     , text " Svg           "
                                     , span [ class "text-violet-400" ] [ text " as " ]
-                                    , input [ Attributes.value imports.svgAs, Events.onInput ChangeSvgAs, class "mx-1 px-1 bg-slate-900 rounded outline-none w-40" ] []
+                                    , input [ Attributes.value model.imports.svgAs, Events.onInput ChangeSvgAs, class "mx-1 px-1 bg-slate-900 rounded outline-none w-40" ] []
                                     , span [ class "text-violet-400" ] [ text " exposing " ]
                                     , text "("
-                                    , input [ Attributes.value imports.svgExposing, Events.onInput ChangeSvgExposing, class "mx-1 px-1 bg-slate-900 rounded outline-none w-40" ] []
+                                    , input [ Attributes.value model.imports.svgExposing, Events.onInput ChangeSvgExposing, class "mx-1 px-1 bg-slate-900 rounded outline-none w-40" ] []
                                     , text ")"
                                     ]
                                 , pre [ class "mb-1" ]
                                     [ span [ class "text-violet-400" ] [ text "import" ]
                                     , text " Svg.Attributes"
                                     , span [ class "text-violet-400" ] [ text " as " ]
-                                    , input [ Attributes.value imports.attrsAs, Events.onInput ChangeAttributesAs, class "mx-1 px-1 bg-slate-900 rounded outline-none w-40" ] []
+                                    , input [ Attributes.value model.imports.attrsAs, Events.onInput ChangeAttributesAs, class "mx-1 px-1 bg-slate-900 rounded outline-none w-40" ] []
                                     , span [ class "text-violet-400" ] [ text " exposing " ]
                                     , text "("
-                                    , input [ Attributes.value imports.attrsExposing, Events.onInput ChangeAttributesExposing, class "mx-1 px-1 bg-slate-900 rounded outline-none w-40" ] []
+                                    , input [ Attributes.value model.imports.attrsExposing, Events.onInput ChangeAttributesExposing, class "mx-1 px-1 bg-slate-900 rounded outline-none w-40" ] []
                                     , text ")"
                                     ]
                                 , pre [ class "mb-1" ]
@@ -406,10 +473,16 @@ viewModal imports balloon icon =
                                     , span [ class "text-slate-400" ] [ text " =" ]
                                     ]
                                 , pre [ class "mb-1" ]
-                                    (text "    " :: viewTree imports icon.tree)
+                                    (case model.icon of
+                                        Just i ->
+                                            text "    " :: viewTree model.imports i.tree
+
+                                        Nothing ->
+                                            []
+                                    )
                                 ]
                             , div [ class "absolute inset-x-0 bottom-0 mb-8" ]
-                                [ div [ Events.onClick ClipboardCopy, Attributes.attribute "aria-label" balloon, Attributes.attribute "data-balloon-pos" "up", class "h-8 font-medium" ] [] ]
+                                [ div [ Events.onClick ClipboardCopy, Attributes.attribute "aria-label" model.balloonText, Attributes.attribute "data-balloon-pos" "up", class "h-8 font-medium" ] [] ]
                             ]
                         ]
                     , div [ class "bg-gray-50 px-4 py-3 sm:flex sm:flex-row-reverse sm:px-6" ]

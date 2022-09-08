@@ -1,8 +1,24 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="utf-8">
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="theme-color" content="#000000">
+  <meta name="title" content="Heroicons for Elm">
+  <meta name="description" content="Heroicons ported over to elm/svg elements for you to use in your own Elm projects.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://jasonliang.js.org/heroicons-for-elm">
+  <meta property="og:title" content="Heroicons for Elm">
+  <meta property="og:description" content="Heroicons ported over to elm/svg elements for you to use in your own Elm projects.">
+  <meta property="og:image" content="https://jasonliang.js.org/heroicons-for-elm/meta-image.png">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="600">
+  <meta property="twitter:card" content="summary_large_image">
+  <meta property="twitter:url" content="https://jasonliang.js.org/heroicons-for-elm">
+  <meta property="twitter:title" content="Heroicons for Elm">
+  <meta property="twitter:description" content="Heroicons ported over to elm/svg elements for you to use in your own Elm projects.">
+  <meta property="twitter:image" content="https://jasonliang.js.org/heroicons-for-elm/meta-image.png">
   <title>Heroicons for Elm</title>
   <script src="main.js"></script>
   <script src="https://cdn.tailwindcss.com"></script>
@@ -10,7 +26,8 @@
     tailwind.config = {
       theme: {
         fontFamily: {
-          sans: ["Inter", "sans-serif"],
+          sans: ["Inter", "ui-sans-serif", "system-ui", "sans-serif"],
+          mono: ["Roboto Mono", "ui-monospace", "monospace"],
         },
         extend: {
           colors: {
@@ -20,19 +37,47 @@
       }
     }
   </script>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="balloon.css">
+  <style>
+    @font-face {
+      font-family: "Inter";
+      src: url("resources/Inter-Regular.ttf") format("truetype");
+      font-weight: 400;
+    }
+
+    @font-face {
+      font-family: "Inter";
+      src: url("resources/Inter-Medium.ttf") format("truetype");
+      font-weight: 500;
+    }
+
+    @font-face {
+      font-family: "Inter";
+      src: url("resources/Inter-Bold.ttf") format("truetype");
+      font-weight: 700;
+    }
+
+    @font-face {
+      font-family: "Roboto Mono";
+      src: url("resources/RobotoMono-Regular.ttf") format("truetype");
+      font-weight: 400;
+    }
+  </style>
+  <link rel="stylesheet" href="resources/balloon.css">
 </head>
 <body>
   <div id="root"></div>
   <script>
-    var app = Elm.Main.init({
+    window.app = Elm.Main.init({
       node: document.getElementById('root')
     })
 
     app.ports.copy.subscribe(text => {
       navigator.clipboard.writeText(text)
     })
+  </script>
+  <script type="module">
+    import Transitions from "./resources/transitions.js"
+    Transitions.start(window.app)
   </script>
 </body>
 </html>
