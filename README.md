@@ -30,7 +30,7 @@ and copy the code provided to you into your project:
 import Html exposing (..)
 import Html.Attributes exposing (class)
 import Svg as S
-import Svg.Attributes as SAview : Model -> Html Msg
+import Svg.Attributes as SA
 
 view : Model -> Html Msg
 view model =

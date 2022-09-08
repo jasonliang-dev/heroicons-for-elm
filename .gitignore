@@ -3,3 +3,4 @@ index.html
 main.js
 *.exe
 dist
+node_modules
