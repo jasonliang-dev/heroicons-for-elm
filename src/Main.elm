@@ -438,7 +438,7 @@ viewModal model =
                         , p [ class "text-sm text-gray-500" ]
                             [ text "Copy this Elm code and paste it in your project:" ]
                         , div [ class "relative" ]
-                            [ div [ class "bg-slate-800 border border-slate-900 text-slate-50 p-4 rounded overflow-x-auto mt-3 text-sm" ]
+                            [ div [ class "bg-slate-800 text-slate-50 p-4 rounded overflow-x-auto mt-3 text-sm" ]
                                 [ pre [ class "mb-1" ]
                                     [ span [ class "text-violet-400" ] [ text "import" ]
                                     , text " Svg           "
