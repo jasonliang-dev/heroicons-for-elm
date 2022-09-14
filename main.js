@@ -11790,6 +11790,50 @@ var $author$project$Gallery$Mini$model = _List_fromArray(
 				]))
 	},
 		{
+		bf: 'bug-ant',
+		bm: _List_Nil,
+		bp: {
+			a: _List_fromArray(
+				[
+					_Utils_Tuple2('viewBox', '0 0 20 20'),
+					_Utils_Tuple2('fill', 'currentColor')
+				]),
+			b: _List_fromArray(
+				[
+					{
+					a: _List_fromArray(
+						[
+							_Utils_Tuple2('fillRule', 'evenodd'),
+							_Utils_Tuple2('d', 'M6.56 1.14a.75.75 0 01.177 1.045 3.989 3.989 0 00-.464.86c.185.17.382.329.59.473A3.993 3.993 0 0110 2c1.272 0 2.405.594 3.137 1.518.208-.144.405-.302.59-.473a3.989 3.989 0 00-.464-.86.75.75 0 011.222-.869c.369.519.65 1.105.822 1.736a.75.75 0 01-.174.707 7.03 7.03 0 01-1.299 1.098A4 4 0 0114 6c0 .52-.301.963-.723 1.187a6.961 6.961 0 01-1.158.486c.13.208.231.436.296.679 1.413-.174 2.779-.5 4.081-.96a19.655 19.655 0 00-.09-2.319.75.75 0 111.493-.146 21.239 21.239 0 01.08 3.028.75.75 0 01-.482.667 20.874 20.874 0 01-5.153 1.249 2.51 2.51 0 01-.107.247 20.86 20.86 0 015.253 1.257.75.75 0 01.48.74 20.946 20.946 0 01-.907 5.107.75.75 0 01-1.433-.444c.415-1.34.69-2.743.806-4.19-.495-.174-1-.328-1.512-.461.05.284.076.575.076.873 0 1.814-.517 3.312-1.426 4.37A4.639 4.639 0 0110 19a4.64 4.64 0 01-3.574-1.63C5.516 16.311 5 14.813 5 13c0-.298.026-.59.076-.873-.513.133-1.017.287-1.512.46.116 1.448.39 2.85.806 4.191a.75.75 0 01-1.433.444 20.94 20.94 0 01-.908-5.107.75.75 0 01.482-.74 20.857 20.857 0 015.252-1.257 2.481 2.481 0 01-.107-.247 20.874 20.874 0 01-5.153-1.249.75.75 0 01-.482-.667 21.342 21.342 0 01.08-3.028.75.75 0 111.493.146 19.745 19.745 0 00-.09 2.32c1.302.459 2.668.785 4.08.959.066-.243.166-.471.297-.679a6.962 6.962 0 01-1.158-.486A1.348 1.348 0 016 6a4 4 0 01.166-1.143 7.032 7.032 0 01-1.3-1.098.75.75 0 01-.173-.707 5.48 5.48 0 01.822-1.736.75.75 0 011.046-.176z'),
+							_Utils_Tuple2('clipRule', 'evenodd')
+						]),
+					b: _List_Nil,
+					c: 'path'
+				}
+				]),
+			c: 'svg'
+		},
+		bu: A2(
+			$elm$svg$Svg$svg,
+			_List_fromArray(
+				[
+					$elm$svg$Svg$Attributes$viewBox('0 0 20 20'),
+					$elm$svg$Svg$Attributes$fill('currentColor')
+				]),
+			_List_fromArray(
+				[
+					A2(
+					$elm$svg$Svg$path,
+					_List_fromArray(
+						[
+							$elm$svg$Svg$Attributes$fillRule('evenodd'),
+							$elm$svg$Svg$Attributes$d('M6.56 1.14a.75.75 0 01.177 1.045 3.989 3.989 0 00-.464.86c.185.17.382.329.59.473A3.993 3.993 0 0110 2c1.272 0 2.405.594 3.137 1.518.208-.144.405-.302.59-.473a3.989 3.989 0 00-.464-.86.75.75 0 011.222-.869c.369.519.65 1.105.822 1.736a.75.75 0 01-.174.707 7.03 7.03 0 01-1.299 1.098A4 4 0 0114 6c0 .52-.301.963-.723 1.187a6.961 6.961 0 01-1.158.486c.13.208.231.436.296.679 1.413-.174 2.779-.5 4.081-.96a19.655 19.655 0 00-.09-2.319.75.75 0 111.493-.146 21.239 21.239 0 01.08 3.028.75.75 0 01-.482.667 20.874 20.874 0 01-5.153 1.249 2.51 2.51 0 01-.107.247 20.86 20.86 0 015.253 1.257.75.75 0 01.48.74 20.946 20.946 0 01-.907 5.107.75.75 0 01-1.433-.444c.415-1.34.69-2.743.806-4.19-.495-.174-1-.328-1.512-.461.05.284.076.575.076.873 0 1.814-.517 3.312-1.426 4.37A4.639 4.639 0 0110 19a4.64 4.64 0 01-3.574-1.63C5.516 16.311 5 14.813 5 13c0-.298.026-.59.076-.873-.513.133-1.017.287-1.512.46.116 1.448.39 2.85.806 4.191a.75.75 0 01-1.433.444 20.94 20.94 0 01-.908-5.107.75.75 0 01.482-.74 20.857 20.857 0 015.252-1.257 2.481 2.481 0 01-.107-.247 20.874 20.874 0 01-5.153-1.249.75.75 0 01-.482-.667 21.342 21.342 0 01.08-3.028.75.75 0 111.493.146 19.745 19.745 0 00-.09 2.32c1.302.459 2.668.785 4.08.959.066-.243.166-.471.297-.679a6.962 6.962 0 01-1.158-.486A1.348 1.348 0 016 6a4 4 0 01.166-1.143 7.032 7.032 0 01-1.3-1.098.75.75 0 01-.173-.707 5.48 5.48 0 01.822-1.736.75.75 0 011.046-.176z'),
+							$elm$svg$Svg$Attributes$clipRule('evenodd')
+						]),
+					_List_Nil)
+				]))
+	},
+		{
 		bf: 'building-library',
 		bm: _List_fromArray(
 			['administration', 'institution']),
@@ -15464,6 +15508,50 @@ var $author$project$Gallery$Mini$model = _List_fromArray(
 				]))
 	},
 		{
+		bf: 'eye-dropper',
+		bm: _List_Nil,
+		bp: {
+			a: _List_fromArray(
+				[
+					_Utils_Tuple2('viewBox', '0 0 20 20'),
+					_Utils_Tuple2('fill', 'currentColor')
+				]),
+			b: _List_fromArray(
+				[
+					{
+					a: _List_fromArray(
+						[
+							_Utils_Tuple2('fillRule', 'evenodd'),
+							_Utils_Tuple2('d', 'M12.1 3.667a3.502 3.502 0 116.782 1.738 3.487 3.487 0 01-.907 1.57 3.495 3.495 0 01-1.617.919L16 7.99V10a.75.75 0 01-.22.53l-.25.25a.75.75 0 01-1.06 0l-.845-.844L7.22 16.34A2.25 2.25 0 015.629 17H5.12a.75.75 0 00-.53.22l-1.56 1.56a.75.75 0 01-1.061 0l-.75-.75a.75.75 0 010-1.06l1.56-1.561a.75.75 0 00.22-.53v-.508c0-.596.237-1.169.659-1.59l6.405-6.406-.844-.845a.75.75 0 010-1.06l.25-.25A.75.75 0 0110 4h2.01l.09-.333zM4.72 13.84l6.405-6.405 1.44 1.439-6.406 6.405a.75.75 0 01-.53.22H5.12c-.258 0-.511.044-.75.129a2.25 2.25 0 00.129-.75v-.508a.75.75 0 01.22-.53z'),
+							_Utils_Tuple2('clipRule', 'evenodd')
+						]),
+					b: _List_Nil,
+					c: 'path'
+				}
+				]),
+			c: 'svg'
+		},
+		bu: A2(
+			$elm$svg$Svg$svg,
+			_List_fromArray(
+				[
+					$elm$svg$Svg$Attributes$viewBox('0 0 20 20'),
+					$elm$svg$Svg$Attributes$fill('currentColor')
+				]),
+			_List_fromArray(
+				[
+					A2(
+					$elm$svg$Svg$path,
+					_List_fromArray(
+						[
+							$elm$svg$Svg$Attributes$fillRule('evenodd'),
+							$elm$svg$Svg$Attributes$d('M12.1 3.667a3.502 3.502 0 116.782 1.738 3.487 3.487 0 01-.907 1.57 3.495 3.495 0 01-1.617.919L16 7.99V10a.75.75 0 01-.22.53l-.25.25a.75.75 0 01-1.06 0l-.845-.844L7.22 16.34A2.25 2.25 0 015.629 17H5.12a.75.75 0 00-.53.22l-1.56 1.56a.75.75 0 01-1.061 0l-.75-.75a.75.75 0 010-1.06l1.56-1.561a.75.75 0 00.22-.53v-.508c0-.596.237-1.169.659-1.59l6.405-6.406-.844-.845a.75.75 0 010-1.06l.25-.25A.75.75 0 0110 4h2.01l.09-.333zM4.72 13.84l6.405-6.405 1.44 1.439-6.406 6.405a.75.75 0 01-.53.22H5.12c-.258 0-.511.044-.75.129a2.25 2.25 0 00.129-.75v-.508a.75.75 0 01.22-.53z'),
+							$elm$svg$Svg$Attributes$clipRule('evenodd')
+						]),
+					_List_Nil)
+				]))
+	},
+		{
 		bf: 'eye-slash',
 		bm: _List_fromArray(
 			['hidden', 'invisible', 'private', 'unseen']),
@@ -18266,6 +18354,50 @@ var $author$project$Gallery$Mini$model = _List_fromArray(
 				]))
 	},
 		{
+		bf: 'pause-circle',
+		bm: _List_Nil,
+		bp: {
+			a: _List_fromArray(
+				[
+					_Utils_Tuple2('viewBox', '0 0 20 20'),
+					_Utils_Tuple2('fill', 'currentColor')
+				]),
+			b: _List_fromArray(
+				[
+					{
+					a: _List_fromArray(
+						[
+							_Utils_Tuple2('fillRule', 'evenodd'),
+							_Utils_Tuple2('d', 'M2 10a8 8 0 1116 0 8 8 0 01-16 0zm5-2.25A.75.75 0 017.75 7h.5a.75.75 0 01.75.75v4.5a.75.75 0 01-.75.75h-.5a.75.75 0 01-.75-.75v-4.5zm4 0a.75.75 0 01.75-.75h.5a.75.75 0 01.75.75v4.5a.75.75 0 01-.75.75h-.5a.75.75 0 01-.75-.75v-4.5z'),
+							_Utils_Tuple2('clipRule', 'evenodd')
+						]),
+					b: _List_Nil,
+					c: 'path'
+				}
+				]),
+			c: 'svg'
+		},
+		bu: A2(
+			$elm$svg$Svg$svg,
+			_List_fromArray(
+				[
+					$elm$svg$Svg$Attributes$viewBox('0 0 20 20'),
+					$elm$svg$Svg$Attributes$fill('currentColor')
+				]),
+			_List_fromArray(
+				[
+					A2(
+					$elm$svg$Svg$path,
+					_List_fromArray(
+						[
+							$elm$svg$Svg$Attributes$fillRule('evenodd'),
+							$elm$svg$Svg$Attributes$d('M2 10a8 8 0 1116 0 8 8 0 01-16 0zm5-2.25A.75.75 0 017.75 7h.5a.75.75 0 01.75.75v4.5a.75.75 0 01-.75.75h-.5a.75.75 0 01-.75-.75v-4.5zm4 0a.75.75 0 01.75-.75h.5a.75.75 0 01.75.75v4.5a.75.75 0 01-.75.75h-.5a.75.75 0 01-.75-.75v-4.5z'),
+							$elm$svg$Svg$Attributes$clipRule('evenodd')
+						]),
+					_List_Nil)
+				]))
+	},
+		{
 		bf: 'pause',
 		bm: _List_Nil,
 		bp: {
@@ -18616,6 +18748,50 @@ var $author$project$Gallery$Mini$model = _List_fromArray(
 				]))
 	},
 		{
+		bf: 'play-circle',
+		bm: _List_Nil,
+		bp: {
+			a: _List_fromArray(
+				[
+					_Utils_Tuple2('viewBox', '0 0 20 20'),
+					_Utils_Tuple2('fill', 'currentColor')
+				]),
+			b: _List_fromArray(
+				[
+					{
+					a: _List_fromArray(
+						[
+							_Utils_Tuple2('fillRule', 'evenodd'),
+							_Utils_Tuple2('d', 'M2 10a8 8 0 1116 0 8 8 0 01-16 0zm6.39-2.908a.75.75 0 01.766.027l3.5 2.25a.75.75 0 010 1.262l-3.5 2.25A.75.75 0 018 12.25v-4.5a.75.75 0 01.39-.658z'),
+							_Utils_Tuple2('clipRule', 'evenodd')
+						]),
+					b: _List_Nil,
+					c: 'path'
+				}
+				]),
+			c: 'svg'
+		},
+		bu: A2(
+			$elm$svg$Svg$svg,
+			_List_fromArray(
+				[
+					$elm$svg$Svg$Attributes$viewBox('0 0 20 20'),
+					$elm$svg$Svg$Attributes$fill('currentColor')
+				]),
+			_List_fromArray(
+				[
+					A2(
+					$elm$svg$Svg$path,
+					_List_fromArray(
+						[
+							$elm$svg$Svg$Attributes$fillRule('evenodd'),
+							$elm$svg$Svg$Attributes$d('M2 10a8 8 0 1116 0 8 8 0 01-16 0zm6.39-2.908a.75.75 0 01.766.027l3.5 2.25a.75.75 0 010 1.262l-3.5 2.25A.75.75 0 018 12.25v-4.5a.75.75 0 01.39-.658z'),
+							$elm$svg$Svg$Attributes$clipRule('evenodd')
+						]),
+					_List_Nil)
+				]))
+	},
+		{
 		bf: 'play-pause',
 		bm: _List_Nil,
 		bp: {
@@ -18817,6 +18993,50 @@ var $author$project$Gallery$Mini$model = _List_fromArray(
 					_List_fromArray(
 						[
 							$elm$svg$Svg$Attributes$d('M10.75 4.75a.75.75 0 00-1.5 0v4.5h-4.5a.75.75 0 000 1.5h4.5v4.5a.75.75 0 001.5 0v-4.5h4.5a.75.75 0 000-1.5h-4.5v-4.5z')
+						]),
+					_List_Nil)
+				]))
+	},
+		{
+		bf: 'power',
+		bm: _List_Nil,
+		bp: {
+			a: _List_fromArray(
+				[
+					_Utils_Tuple2('viewBox', '0 0 20 20'),
+					_Utils_Tuple2('fill', 'currentColor')
+				]),
+			b: _List_fromArray(
+				[
+					{
+					a: _List_fromArray(
+						[
+							_Utils_Tuple2('fillRule', 'evenodd'),
+							_Utils_Tuple2('d', 'M10 2a.75.75 0 01.75.75v7.5a.75.75 0 01-1.5 0v-7.5A.75.75 0 0110 2zM5.404 4.343a.75.75 0 010 1.06 6.5 6.5 0 109.192 0 .75.75 0 111.06-1.06 8 8 0 11-11.313 0 .75.75 0 011.06 0z'),
+							_Utils_Tuple2('clipRule', 'evenodd')
+						]),
+					b: _List_Nil,
+					c: 'path'
+				}
+				]),
+			c: 'svg'
+		},
+		bu: A2(
+			$elm$svg$Svg$svg,
+			_List_fromArray(
+				[
+					$elm$svg$Svg$Attributes$viewBox('0 0 20 20'),
+					$elm$svg$Svg$Attributes$fill('currentColor')
+				]),
+			_List_fromArray(
+				[
+					A2(
+					$elm$svg$Svg$path,
+					_List_fromArray(
+						[
+							$elm$svg$Svg$Attributes$fillRule('evenodd'),
+							$elm$svg$Svg$Attributes$d('M10 2a.75.75 0 01.75.75v7.5a.75.75 0 01-1.5 0v-7.5A.75.75 0 0110 2zM5.404 4.343a.75.75 0 010 1.06 6.5 6.5 0 109.192 0 .75.75 0 111.06-1.06 8 8 0 11-11.313 0 .75.75 0 011.06 0z'),
+							$elm$svg$Svg$Attributes$clipRule('evenodd')
 						]),
 					_List_Nil)
 				]))
@@ -19335,6 +19555,69 @@ var $author$project$Gallery$Mini$model = _List_fromArray(
 					_List_fromArray(
 						[
 							$elm$svg$Svg$Attributes$d('M5.127 3.502L5.25 3.5h9.5c.041 0 .082 0 .123.002A2.251 2.251 0 0012.75 2h-5.5a2.25 2.25 0 00-2.123 1.502zM1 10.25A2.25 2.25 0 013.25 8h13.5A2.25 2.25 0 0119 10.25v5.5A2.25 2.25 0 0116.75 18H3.25A2.25 2.25 0 011 15.75v-5.5zM3.25 6.5c-.04 0-.082 0-.123.002A2.25 2.25 0 015.25 5h9.5c.98 0 1.814.627 2.123 1.502a3.819 3.819 0 00-.123-.002H3.25z')
+						]),
+					_List_Nil)
+				]))
+	},
+		{
+		bf: 'rocket-launch',
+		bm: _List_Nil,
+		bp: {
+			a: _List_fromArray(
+				[
+					_Utils_Tuple2('viewBox', '0 0 20 20'),
+					_Utils_Tuple2('fill', 'currentColor')
+				]),
+			b: _List_fromArray(
+				[
+					{
+					a: _List_fromArray(
+						[
+							_Utils_Tuple2('fillRule', 'evenodd'),
+							_Utils_Tuple2('d', 'M4.606 12.97a.75.75 0 01-.134 1.051 2.494 2.494 0 00-.93 2.437 2.494 2.494 0 002.437-.93.75.75 0 111.186.918 3.995 3.995 0 01-4.482 1.332.75.75 0 01-.461-.461 3.994 3.994 0 011.332-4.482.75.75 0 011.052.134z'),
+							_Utils_Tuple2('clipRule', 'evenodd')
+						]),
+					b: _List_Nil,
+					c: 'path'
+				},
+					{
+					a: _List_fromArray(
+						[
+							_Utils_Tuple2('fillRule', 'evenodd'),
+							_Utils_Tuple2('d', 'M5.752 12A13.07 13.07 0 008 14.248v4.002c0 .414.336.75.75.75a5 5 0 004.797-6.414 12.984 12.984 0 005.45-10.848.75.75 0 00-.735-.735 12.984 12.984 0 00-10.849 5.45A5 5 0 001 11.25c.001.414.337.75.751.75h4.002zM13 9a2 2 0 100-4 2 2 0 000 4z'),
+							_Utils_Tuple2('clipRule', 'evenodd')
+						]),
+					b: _List_Nil,
+					c: 'path'
+				}
+				]),
+			c: 'svg'
+		},
+		bu: A2(
+			$elm$svg$Svg$svg,
+			_List_fromArray(
+				[
+					$elm$svg$Svg$Attributes$viewBox('0 0 20 20'),
+					$elm$svg$Svg$Attributes$fill('currentColor')
+				]),
+			_List_fromArray(
+				[
+					A2(
+					$elm$svg$Svg$path,
+					_List_fromArray(
+						[
+							$elm$svg$Svg$Attributes$fillRule('evenodd'),
+							$elm$svg$Svg$Attributes$d('M4.606 12.97a.75.75 0 01-.134 1.051 2.494 2.494 0 00-.93 2.437 2.494 2.494 0 002.437-.93.75.75 0 111.186.918 3.995 3.995 0 01-4.482 1.332.75.75 0 01-.461-.461 3.994 3.994 0 011.332-4.482.75.75 0 011.052.134z'),
+							$elm$svg$Svg$Attributes$clipRule('evenodd')
+						]),
+					_List_Nil),
+					A2(
+					$elm$svg$Svg$path,
+					_List_fromArray(
+						[
+							$elm$svg$Svg$Attributes$fillRule('evenodd'),
+							$elm$svg$Svg$Attributes$d('M5.752 12A13.07 13.07 0 008 14.248v4.002c0 .414.336.75.75.75a5 5 0 004.797-6.414 12.984 12.984 0 005.45-10.848.75.75 0 00-.735-.735 12.984 12.984 0 00-10.849 5.45A5 5 0 001 11.25c.001.414.337.75.751.75h4.002zM13 9a2 2 0 100-4 2 2 0 000 4z'),
+							$elm$svg$Svg$Attributes$clipRule('evenodd')
 						]),
 					_List_Nil)
 				]))
@@ -20121,6 +20404,76 @@ var $author$project$Gallery$Mini$model = _List_fromArray(
 				]))
 	},
 		{
+		bf: 'square-3-stack-3d',
+		bm: _List_Nil,
+		bp: {
+			a: _List_fromArray(
+				[
+					_Utils_Tuple2('viewBox', '0 0 20 20'),
+					_Utils_Tuple2('fill', 'currentColor')
+				]),
+			b: _List_fromArray(
+				[
+					{
+					a: _List_fromArray(
+						[
+							_Utils_Tuple2('d', 'M3.196 12.87l-.825.483a.75.75 0 000 1.294l7.25 4.25a.75.75 0 00.758 0l7.25-4.25a.75.75 0 000-1.294l-.825-.484-5.666 3.322a2.25 2.25 0 01-2.276 0L3.196 12.87z')
+						]),
+					b: _List_Nil,
+					c: 'path'
+				},
+					{
+					a: _List_fromArray(
+						[
+							_Utils_Tuple2('d', 'M3.196 8.87l-.825.483a.75.75 0 000 1.294l7.25 4.25a.75.75 0 00.758 0l7.25-4.25a.75.75 0 000-1.294l-.825-.484-5.666 3.322a2.25 2.25 0 01-2.276 0L3.196 8.87z')
+						]),
+					b: _List_Nil,
+					c: 'path'
+				},
+					{
+					a: _List_fromArray(
+						[
+							_Utils_Tuple2('d', 'M10.38 1.103a.75.75 0 00-.76 0l-7.25 4.25a.75.75 0 000 1.294l7.25 4.25a.75.75 0 00.76 0l7.25-4.25a.75.75 0 000-1.294l-7.25-4.25z')
+						]),
+					b: _List_Nil,
+					c: 'path'
+				}
+				]),
+			c: 'svg'
+		},
+		bu: A2(
+			$elm$svg$Svg$svg,
+			_List_fromArray(
+				[
+					$elm$svg$Svg$Attributes$viewBox('0 0 20 20'),
+					$elm$svg$Svg$Attributes$fill('currentColor')
+				]),
+			_List_fromArray(
+				[
+					A2(
+					$elm$svg$Svg$path,
+					_List_fromArray(
+						[
+							$elm$svg$Svg$Attributes$d('M3.196 12.87l-.825.483a.75.75 0 000 1.294l7.25 4.25a.75.75 0 00.758 0l7.25-4.25a.75.75 0 000-1.294l-.825-.484-5.666 3.322a2.25 2.25 0 01-2.276 0L3.196 12.87z')
+						]),
+					_List_Nil),
+					A2(
+					$elm$svg$Svg$path,
+					_List_fromArray(
+						[
+							$elm$svg$Svg$Attributes$d('M3.196 8.87l-.825.483a.75.75 0 000 1.294l7.25 4.25a.75.75 0 00.758 0l7.25-4.25a.75.75 0 000-1.294l-.825-.484-5.666 3.322a2.25 2.25 0 01-2.276 0L3.196 8.87z')
+						]),
+					_List_Nil),
+					A2(
+					$elm$svg$Svg$path,
+					_List_fromArray(
+						[
+							$elm$svg$Svg$Attributes$d('M10.38 1.103a.75.75 0 00-.76 0l-7.25 4.25a.75.75 0 000 1.294l7.25 4.25a.75.75 0 00.76 0l7.25-4.25a.75.75 0 000-1.294l-7.25-4.25z')
+						]),
+					_List_Nil)
+				]))
+	},
+		{
 		bf: 'squares-2x2',
 		bm: _List_Nil,
 		bp: {
@@ -20244,6 +20597,50 @@ var $author$project$Gallery$Mini$model = _List_fromArray(
 						[
 							$elm$svg$Svg$Attributes$fillRule('evenodd'),
 							$elm$svg$Svg$Attributes$d('M10.868 2.884c-.321-.772-1.415-.772-1.736 0l-1.83 4.401-4.753.381c-.833.067-1.171 1.107-.536 1.651l3.62 3.102-1.106 4.637c-.194.813.691 1.456 1.405 1.02L10 15.591l4.069 2.485c.713.436 1.598-.207 1.404-1.02l-1.106-4.637 3.62-3.102c.635-.544.297-1.584-.536-1.65l-4.752-.382-1.831-4.401z'),
+							$elm$svg$Svg$Attributes$clipRule('evenodd')
+						]),
+					_List_Nil)
+				]))
+	},
+		{
+		bf: 'stop-circle',
+		bm: _List_Nil,
+		bp: {
+			a: _List_fromArray(
+				[
+					_Utils_Tuple2('viewBox', '0 0 20 20'),
+					_Utils_Tuple2('fill', 'currentColor')
+				]),
+			b: _List_fromArray(
+				[
+					{
+					a: _List_fromArray(
+						[
+							_Utils_Tuple2('fillRule', 'evenodd'),
+							_Utils_Tuple2('d', 'M2 10a8 8 0 1116 0 8 8 0 01-16 0zm5-2.25A.75.75 0 017.75 7h4.5a.75.75 0 01.75.75v4.5a.75.75 0 01-.75.75h-4.5a.75.75 0 01-.75-.75v-4.5z'),
+							_Utils_Tuple2('clipRule', 'evenodd')
+						]),
+					b: _List_Nil,
+					c: 'path'
+				}
+				]),
+			c: 'svg'
+		},
+		bu: A2(
+			$elm$svg$Svg$svg,
+			_List_fromArray(
+				[
+					$elm$svg$Svg$Attributes$viewBox('0 0 20 20'),
+					$elm$svg$Svg$Attributes$fill('currentColor')
+				]),
+			_List_fromArray(
+				[
+					A2(
+					$elm$svg$Svg$path,
+					_List_fromArray(
+						[
+							$elm$svg$Svg$Attributes$fillRule('evenodd'),
+							$elm$svg$Svg$Attributes$d('M2 10a8 8 0 1116 0 8 8 0 01-16 0zm5-2.25A.75.75 0 017.75 7h4.5a.75.75 0 01.75.75v4.5a.75.75 0 01-.75.75h-4.5a.75.75 0 01-.75-.75v-4.5z'),
 							$elm$svg$Svg$Attributes$clipRule('evenodd')
 						]),
 					_List_Nil)
@@ -20555,6 +20952,50 @@ var $author$project$Gallery$Mini$model = _List_fromArray(
 				]))
 	},
 		{
+		bf: 'trophy',
+		bm: _List_Nil,
+		bp: {
+			a: _List_fromArray(
+				[
+					_Utils_Tuple2('viewBox', '0 0 20 20'),
+					_Utils_Tuple2('fill', 'currentColor')
+				]),
+			b: _List_fromArray(
+				[
+					{
+					a: _List_fromArray(
+						[
+							_Utils_Tuple2('fillRule', 'evenodd'),
+							_Utils_Tuple2('d', 'M10 1c-1.828 0-3.623.149-5.371.435a.75.75 0 00-.629.74v.387c-.827.157-1.642.345-2.445.564a.75.75 0 00-.552.698 5 5 0 004.503 5.152 6 6 0 002.946 1.822A6.451 6.451 0 017.768 13H7.5A1.5 1.5 0 006 14.5V17h-.75C4.56 17 4 17.56 4 18.25c0 .414.336.75.75.75h10.5a.75.75 0 00.75-.75c0-.69-.56-1.25-1.25-1.25H14v-2.5a1.5 1.5 0 00-1.5-1.5h-.268a6.453 6.453 0 01-.684-2.202 6 6 0 002.946-1.822 5 5 0 004.503-5.152.75.75 0 00-.552-.698A31.804 31.804 0 0016 2.562v-.387a.75.75 0 00-.629-.74A33.227 33.227 0 0010 1zM2.525 4.422C3.012 4.3 3.504 4.19 4 4.09V5c0 .74.134 1.448.38 2.103a3.503 3.503 0 01-1.855-2.68zm14.95 0a3.503 3.503 0 01-1.854 2.68C15.866 6.449 16 5.74 16 5v-.91c.496.099.988.21 1.475.332z'),
+							_Utils_Tuple2('clipRule', 'evenodd')
+						]),
+					b: _List_Nil,
+					c: 'path'
+				}
+				]),
+			c: 'svg'
+		},
+		bu: A2(
+			$elm$svg$Svg$svg,
+			_List_fromArray(
+				[
+					$elm$svg$Svg$Attributes$viewBox('0 0 20 20'),
+					$elm$svg$Svg$Attributes$fill('currentColor')
+				]),
+			_List_fromArray(
+				[
+					A2(
+					$elm$svg$Svg$path,
+					_List_fromArray(
+						[
+							$elm$svg$Svg$Attributes$fillRule('evenodd'),
+							$elm$svg$Svg$Attributes$d('M10 1c-1.828 0-3.623.149-5.371.435a.75.75 0 00-.629.74v.387c-.827.157-1.642.345-2.445.564a.75.75 0 00-.552.698 5 5 0 004.503 5.152 6 6 0 002.946 1.822A6.451 6.451 0 017.768 13H7.5A1.5 1.5 0 006 14.5V17h-.75C4.56 17 4 17.56 4 18.25c0 .414.336.75.75.75h10.5a.75.75 0 00.75-.75c0-.69-.56-1.25-1.25-1.25H14v-2.5a1.5 1.5 0 00-1.5-1.5h-.268a6.453 6.453 0 01-.684-2.202 6 6 0 002.946-1.822 5 5 0 004.503-5.152.75.75 0 00-.552-.698A31.804 31.804 0 0016 2.562v-.387a.75.75 0 00-.629-.74A33.227 33.227 0 0010 1zM2.525 4.422C3.012 4.3 3.504 4.19 4 4.09V5c0 .74.134 1.448.38 2.103a3.503 3.503 0 01-1.855-2.68zm14.95 0a3.503 3.503 0 01-1.854 2.68C15.866 6.449 16 5.74 16 5v-.91c.496.099.988.21 1.475.332z'),
+							$elm$svg$Svg$Attributes$clipRule('evenodd')
+						]),
+					_List_Nil)
+				]))
+	},
+		{
 		bf: 'truck',
 		bm: _List_fromArray(
 			['lorry', 'vehicle']),
@@ -20606,6 +21047,65 @@ var $author$project$Gallery$Mini$model = _List_fromArray(
 					_List_fromArray(
 						[
 							$elm$svg$Svg$Attributes$d('M6.5 18a1.5 1.5 0 100-3 1.5 1.5 0 000 3zM13.25 5a.75.75 0 00-.75.75v8.514a3.001 3.001 0 014.893 1.44c.37-.275.61-.719.595-1.227a24.905 24.905 0 00-1.784-8.549A1.486 1.486 0 0014.823 5H13.25zM14.5 18a1.5 1.5 0 100-3 1.5 1.5 0 000 3z')
+						]),
+					_List_Nil)
+				]))
+	},
+		{
+		bf: 'tv',
+		bm: _List_Nil,
+		bp: {
+			a: _List_fromArray(
+				[
+					_Utils_Tuple2('viewBox', '0 0 20 20'),
+					_Utils_Tuple2('fill', 'currentColor')
+				]),
+			b: _List_fromArray(
+				[
+					{
+					a: _List_fromArray(
+						[
+							_Utils_Tuple2('d', 'M4 5h12v7H4V5z')
+						]),
+					b: _List_Nil,
+					c: 'path'
+				},
+					{
+					a: _List_fromArray(
+						[
+							_Utils_Tuple2('fillRule', 'evenodd'),
+							_Utils_Tuple2('d', 'M1 3.5A1.5 1.5 0 012.5 2h15A1.5 1.5 0 0119 3.5v10a1.5 1.5 0 01-1.5 1.5H12v1.5h3.25a.75.75 0 010 1.5H4.75a.75.75 0 010-1.5H8V15H2.5A1.5 1.5 0 011 13.5v-10zm16.5 0h-15v10h15v-10z'),
+							_Utils_Tuple2('clipRule', 'evenodd')
+						]),
+					b: _List_Nil,
+					c: 'path'
+				}
+				]),
+			c: 'svg'
+		},
+		bu: A2(
+			$elm$svg$Svg$svg,
+			_List_fromArray(
+				[
+					$elm$svg$Svg$Attributes$viewBox('0 0 20 20'),
+					$elm$svg$Svg$Attributes$fill('currentColor')
+				]),
+			_List_fromArray(
+				[
+					A2(
+					$elm$svg$Svg$path,
+					_List_fromArray(
+						[
+							$elm$svg$Svg$Attributes$d('M4 5h12v7H4V5z')
+						]),
+					_List_Nil),
+					A2(
+					$elm$svg$Svg$path,
+					_List_fromArray(
+						[
+							$elm$svg$Svg$Attributes$fillRule('evenodd'),
+							$elm$svg$Svg$Attributes$d('M1 3.5A1.5 1.5 0 012.5 2h15A1.5 1.5 0 0119 3.5v10a1.5 1.5 0 01-1.5 1.5H12v1.5h3.25a.75.75 0 010 1.5H4.75a.75.75 0 010-1.5H8V15H2.5A1.5 1.5 0 011 13.5v-10zm16.5 0h-15v10h15v-10z'),
+							$elm$svg$Svg$Attributes$clipRule('evenodd')
 						]),
 					_List_Nil)
 				]))
@@ -21025,6 +21525,46 @@ var $author$project$Gallery$Mini$model = _List_fromArray(
 				]))
 	},
 		{
+		bf: 'viewfinder-circle',
+		bm: _List_Nil,
+		bp: {
+			a: _List_fromArray(
+				[
+					_Utils_Tuple2('viewBox', '0 0 20 20'),
+					_Utils_Tuple2('fill', 'currentColor')
+				]),
+			b: _List_fromArray(
+				[
+					{
+					a: _List_fromArray(
+						[
+							_Utils_Tuple2('d', 'M4.25 2A2.25 2.25 0 002 4.25v2a.75.75 0 001.5 0v-2a.75.75 0 01.75-.75h2a.75.75 0 000-1.5h-2zM13.75 2a.75.75 0 000 1.5h2a.75.75 0 01.75.75v2a.75.75 0 001.5 0v-2A2.25 2.25 0 0015.75 2h-2zM3.5 13.75a.75.75 0 00-1.5 0v2A2.25 2.25 0 004.25 18h2a.75.75 0 000-1.5h-2a.75.75 0 01-.75-.75v-2zM18 13.75a.75.75 0 00-1.5 0v2a.75.75 0 01-.75.75h-2a.75.75 0 000 1.5h2A2.25 2.25 0 0018 15.75v-2zM7 10a3 3 0 116 0 3 3 0 01-6 0z')
+						]),
+					b: _List_Nil,
+					c: 'path'
+				}
+				]),
+			c: 'svg'
+		},
+		bu: A2(
+			$elm$svg$Svg$svg,
+			_List_fromArray(
+				[
+					$elm$svg$Svg$Attributes$viewBox('0 0 20 20'),
+					$elm$svg$Svg$Attributes$fill('currentColor')
+				]),
+			_List_fromArray(
+				[
+					A2(
+					$elm$svg$Svg$path,
+					_List_fromArray(
+						[
+							$elm$svg$Svg$Attributes$d('M4.25 2A2.25 2.25 0 002 4.25v2a.75.75 0 001.5 0v-2a.75.75 0 01.75-.75h2a.75.75 0 000-1.5h-2zM13.75 2a.75.75 0 000 1.5h2a.75.75 0 01.75.75v2a.75.75 0 001.5 0v-2A2.25 2.25 0 0015.75 2h-2zM3.5 13.75a.75.75 0 00-1.5 0v2A2.25 2.25 0 004.25 18h2a.75.75 0 000-1.5h-2a.75.75 0 01-.75-.75v-2zM18 13.75a.75.75 0 00-1.5 0v2a.75.75 0 01-.75.75h-2a.75.75 0 000 1.5h2A2.25 2.25 0 0018 15.75v-2zM7 10a3 3 0 116 0 3 3 0 01-6 0z')
+						]),
+					_List_Nil)
+				]))
+	},
+		{
 		bf: 'wallet',
 		bm: _List_Nil,
 		bp: {
@@ -21104,6 +21644,50 @@ var $author$project$Gallery$Mini$model = _List_fromArray(
 						[
 							$elm$svg$Svg$Attributes$fillRule('evenodd'),
 							$elm$svg$Svg$Attributes$d('M.676 6.941A12.964 12.964 0 0110 3c3.657 0 6.963 1.511 9.324 3.941a.75.75 0 01-.008 1.053l-.353.354a.75.75 0 01-1.069-.008C15.894 6.28 13.097 5 10 5 6.903 5 4.106 6.28 2.106 8.34a.75.75 0 01-1.069.008l-.353-.354a.75.75 0 01-.008-1.053zm2.825 2.833A8.976 8.976 0 0110 7a8.976 8.976 0 016.499 2.774.75.75 0 01-.011 1.049l-.354.354a.75.75 0 01-1.072-.012A6.978 6.978 0 0010 9c-1.99 0-3.786.83-5.061 2.165a.75.75 0 01-1.073.012l-.354-.354a.75.75 0 01-.01-1.05zm2.82 2.84A4.989 4.989 0 0110 11c1.456 0 2.767.623 3.68 1.614a.75.75 0 01-.022 1.039l-.354.354a.75.75 0 01-1.085-.026A2.99 2.99 0 0010 13c-.88 0-1.67.377-2.22.981a.75.75 0 01-1.084.026l-.354-.354a.75.75 0 01-.021-1.039zm2.795 2.752a1.248 1.248 0 011.768 0 .75.75 0 010 1.06l-.354.354a.75.75 0 01-1.06 0l-.354-.353a.75.75 0 010-1.06z'),
+							$elm$svg$Svg$Attributes$clipRule('evenodd')
+						]),
+					_List_Nil)
+				]))
+	},
+		{
+		bf: 'window',
+		bm: _List_Nil,
+		bp: {
+			a: _List_fromArray(
+				[
+					_Utils_Tuple2('viewBox', '0 0 20 20'),
+					_Utils_Tuple2('fill', 'currentColor')
+				]),
+			b: _List_fromArray(
+				[
+					{
+					a: _List_fromArray(
+						[
+							_Utils_Tuple2('fillRule', 'evenodd'),
+							_Utils_Tuple2('d', 'M3.25 3A2.25 2.25 0 001 5.25v9.5A2.25 2.25 0 003.25 17h13.5A2.25 2.25 0 0019 14.75v-9.5A2.25 2.25 0 0016.75 3H3.25zM2.5 9v5.75c0 .414.336.75.75.75h13.5a.75.75 0 00.75-.75V9h-15zM4 5.25a.75.75 0 00-.75.75v.01c0 .414.336.75.75.75h.01a.75.75 0 00.75-.75V6a.75.75 0 00-.75-.75H4zM6.25 6A.75.75 0 017 5.25h.01a.75.75 0 01.75.75v.01a.75.75 0 01-.75.75H7a.75.75 0 01-.75-.75V6zM10 5.25a.75.75 0 00-.75.75v.01c0 .414.336.75.75.75h.01a.75.75 0 00.75-.75V6a.75.75 0 00-.75-.75H10z'),
+							_Utils_Tuple2('clipRule', 'evenodd')
+						]),
+					b: _List_Nil,
+					c: 'path'
+				}
+				]),
+			c: 'svg'
+		},
+		bu: A2(
+			$elm$svg$Svg$svg,
+			_List_fromArray(
+				[
+					$elm$svg$Svg$Attributes$viewBox('0 0 20 20'),
+					$elm$svg$Svg$Attributes$fill('currentColor')
+				]),
+			_List_fromArray(
+				[
+					A2(
+					$elm$svg$Svg$path,
+					_List_fromArray(
+						[
+							$elm$svg$Svg$Attributes$fillRule('evenodd'),
+							$elm$svg$Svg$Attributes$d('M3.25 3A2.25 2.25 0 001 5.25v9.5A2.25 2.25 0 003.25 17h13.5A2.25 2.25 0 0019 14.75v-9.5A2.25 2.25 0 0016.75 3H3.25zM2.5 9v5.75c0 .414.336.75.75.75h13.5a.75.75 0 00.75-.75V9h-15zM4 5.25a.75.75 0 00-.75.75v.01c0 .414.336.75.75.75h.01a.75.75 0 00.75-.75V6a.75.75 0 00-.75-.75H4zM6.25 6A.75.75 0 017 5.25h.01a.75.75 0 01.75.75v.01a.75.75 0 01-.75.75H7a.75.75 0 01-.75-.75V6zM10 5.25a.75.75 0 00-.75.75v.01c0 .414.336.75.75.75h.01a.75.75 0 00.75-.75V6a.75.75 0 00-.75-.75H10z'),
 							$elm$svg$Svg$Attributes$clipRule('evenodd')
 						]),
 					_List_Nil)
@@ -24895,6 +25479,54 @@ var $author$project$Gallery$Outline$model = _List_fromArray(
 							$elm$svg$Svg$Attributes$strokeLinecap('round'),
 							$elm$svg$Svg$Attributes$strokeLinejoin('round'),
 							$elm$svg$Svg$Attributes$d('M20.25 14.15v4.25c0 1.094-.787 2.036-1.872 2.18-2.087.277-4.216.42-6.378.42s-4.291-.143-6.378-.42c-1.085-.144-1.872-1.086-1.872-2.18v-4.25m16.5 0a2.18 2.18 0 00.75-1.661V8.706c0-1.081-.768-2.015-1.837-2.175a48.114 48.114 0 00-3.413-.387m4.5 8.006c-.194.165-.42.295-.673.38A23.978 23.978 0 0112 15.75c-2.648 0-5.195-.429-7.577-1.22a2.016 2.016 0 01-.673-.38m0 0A2.18 2.18 0 013 12.489V8.706c0-1.081.768-2.015 1.837-2.175a48.111 48.111 0 013.413-.387m7.5 0V5.25A2.25 2.25 0 0013.5 3h-3a2.25 2.25 0 00-2.25 2.25v.894m7.5 0a48.667 48.667 0 00-7.5 0M12 12.75h.008v.008H12v-.008z')
+						]),
+					_List_Nil)
+				]))
+	},
+		{
+		bf: 'bug-ant',
+		bm: _List_Nil,
+		bp: {
+			a: _List_fromArray(
+				[
+					_Utils_Tuple2('fill', 'none'),
+					_Utils_Tuple2('viewBox', '0 0 24 24'),
+					_Utils_Tuple2('strokeWidth', '1.5'),
+					_Utils_Tuple2('stroke', 'currentColor')
+				]),
+			b: _List_fromArray(
+				[
+					{
+					a: _List_fromArray(
+						[
+							_Utils_Tuple2('strokeLinecap', 'round'),
+							_Utils_Tuple2('strokeLinejoin', 'round'),
+							_Utils_Tuple2('d', 'M12 12.75c1.148 0 2.278.08 3.383.237 1.037.146 1.866.966 1.866 2.013 0 3.728-2.35 6.75-5.25 6.75S6.75 18.728 6.75 15c0-1.046.83-1.867 1.866-2.013A24.204 24.204 0 0112 12.75zm0 0c2.883 0 5.647.508 8.207 1.44a23.91 23.91 0 01-1.152 6.06M12 12.75c-2.883 0-5.647.508-8.208 1.44.125 2.104.52 4.136 1.153 6.06M12 12.75a2.25 2.25 0 002.248-2.354M12 12.75a2.25 2.25 0 01-2.248-2.354M12 8.25c.995 0 1.971-.08 2.922-.236.403-.066.74-.358.795-.762a3.778 3.778 0 00-.399-2.25M12 8.25c-.995 0-1.97-.08-2.922-.236-.402-.066-.74-.358-.795-.762a3.734 3.734 0 01.4-2.253M12 8.25a2.25 2.25 0 00-2.248 2.146M12 8.25a2.25 2.25 0 012.248 2.146M8.683 5a6.032 6.032 0 01-1.155-1.002c.07-.63.27-1.222.574-1.747m.581 2.749A3.75 3.75 0 0115.318 5m0 0c.427-.283.815-.62 1.155-.999a4.471 4.471 0 00-.575-1.752M4.921 6a24.048 24.048 0 00-.392 3.314c1.668.546 3.416.914 5.223 1.082M19.08 6c.205 1.08.337 2.187.392 3.314a23.882 23.882 0 01-5.223 1.082')
+						]),
+					b: _List_Nil,
+					c: 'path'
+				}
+				]),
+			c: 'svg'
+		},
+		bu: A2(
+			$elm$svg$Svg$svg,
+			_List_fromArray(
+				[
+					$elm$svg$Svg$Attributes$fill('none'),
+					$elm$svg$Svg$Attributes$viewBox('0 0 24 24'),
+					$elm$svg$Svg$Attributes$strokeWidth('1.5'),
+					$elm$svg$Svg$Attributes$stroke('currentColor')
+				]),
+			_List_fromArray(
+				[
+					A2(
+					$elm$svg$Svg$path,
+					_List_fromArray(
+						[
+							$elm$svg$Svg$Attributes$strokeLinecap('round'),
+							$elm$svg$Svg$Attributes$strokeLinejoin('round'),
+							$elm$svg$Svg$Attributes$d('M12 12.75c1.148 0 2.278.08 3.383.237 1.037.146 1.866.966 1.866 2.013 0 3.728-2.35 6.75-5.25 6.75S6.75 18.728 6.75 15c0-1.046.83-1.867 1.866-2.013A24.204 24.204 0 0112 12.75zm0 0c2.883 0 5.647.508 8.207 1.44a23.91 23.91 0 01-1.152 6.06M12 12.75c-2.883 0-5.647.508-8.208 1.44.125 2.104.52 4.136 1.153 6.06M12 12.75a2.25 2.25 0 002.248-2.354M12 12.75a2.25 2.25 0 01-2.248-2.354M12 8.25c.995 0 1.971-.08 2.922-.236.403-.066.74-.358.795-.762a3.778 3.778 0 00-.399-2.25M12 8.25c-.995 0-1.97-.08-2.922-.236-.402-.066-.74-.358-.795-.762a3.734 3.734 0 01.4-2.253M12 8.25a2.25 2.25 0 00-2.248 2.146M12 8.25a2.25 2.25 0 012.248 2.146M8.683 5a6.032 6.032 0 01-1.155-1.002c.07-.63.27-1.222.574-1.747m.581 2.749A3.75 3.75 0 0115.318 5m0 0c.427-.283.815-.62 1.155-.999a4.471 4.471 0 00-.575-1.752M4.921 6a24.048 24.048 0 00-.392 3.314c1.668.546 3.416.914 5.223 1.082M19.08 6c.205 1.08.337 2.187.392 3.314a23.882 23.882 0 01-5.223 1.082')
 						]),
 					_List_Nil)
 				]))
@@ -28784,6 +29416,54 @@ var $author$project$Gallery$Outline$model = _List_fromArray(
 				]))
 	},
 		{
+		bf: 'eye-dropper',
+		bm: _List_Nil,
+		bp: {
+			a: _List_fromArray(
+				[
+					_Utils_Tuple2('fill', 'none'),
+					_Utils_Tuple2('viewBox', '0 0 24 24'),
+					_Utils_Tuple2('strokeWidth', '1.5'),
+					_Utils_Tuple2('stroke', 'currentColor')
+				]),
+			b: _List_fromArray(
+				[
+					{
+					a: _List_fromArray(
+						[
+							_Utils_Tuple2('strokeLinecap', 'round'),
+							_Utils_Tuple2('strokeLinejoin', 'round'),
+							_Utils_Tuple2('d', 'M15 11.25l1.5 1.5.75-.75V8.758l2.276-.61a3 3 0 10-3.675-3.675l-.61 2.277H12l-.75.75 1.5 1.5M15 11.25l-8.47 8.47c-.34.34-.8.53-1.28.53s-.94.19-1.28.53l-.97.97-.75-.75.97-.97c.34-.34.53-.8.53-1.28s.19-.94.53-1.28L12.75 9M15 11.25L12.75 9')
+						]),
+					b: _List_Nil,
+					c: 'path'
+				}
+				]),
+			c: 'svg'
+		},
+		bu: A2(
+			$elm$svg$Svg$svg,
+			_List_fromArray(
+				[
+					$elm$svg$Svg$Attributes$fill('none'),
+					$elm$svg$Svg$Attributes$viewBox('0 0 24 24'),
+					$elm$svg$Svg$Attributes$strokeWidth('1.5'),
+					$elm$svg$Svg$Attributes$stroke('currentColor')
+				]),
+			_List_fromArray(
+				[
+					A2(
+					$elm$svg$Svg$path,
+					_List_fromArray(
+						[
+							$elm$svg$Svg$Attributes$strokeLinecap('round'),
+							$elm$svg$Svg$Attributes$strokeLinejoin('round'),
+							$elm$svg$Svg$Attributes$d('M15 11.25l1.5 1.5.75-.75V8.758l2.276-.61a3 3 0 10-3.675-3.675l-.61 2.277H12l-.75.75 1.5 1.5M15 11.25l-8.47 8.47c-.34.34-.8.53-1.28.53s-.94.19-1.28.53l-.97.97-.75-.75.97-.97c.34-.34.53-.8.53-1.28s.19-.94.53-1.28L12.75 9M15 11.25L12.75 9')
+						]),
+					_List_Nil)
+				]))
+	},
+		{
 		bf: 'eye-slash',
 		bm: _List_fromArray(
 			['hidden', 'invisible', 'private', 'unseen']),
@@ -31771,6 +32451,54 @@ var $author$project$Gallery$Outline$model = _List_fromArray(
 				]))
 	},
 		{
+		bf: 'pause-circle',
+		bm: _List_Nil,
+		bp: {
+			a: _List_fromArray(
+				[
+					_Utils_Tuple2('fill', 'none'),
+					_Utils_Tuple2('viewBox', '0 0 24 24'),
+					_Utils_Tuple2('strokeWidth', '1.5'),
+					_Utils_Tuple2('stroke', 'currentColor')
+				]),
+			b: _List_fromArray(
+				[
+					{
+					a: _List_fromArray(
+						[
+							_Utils_Tuple2('strokeLinecap', 'round'),
+							_Utils_Tuple2('strokeLinejoin', 'round'),
+							_Utils_Tuple2('d', 'M14.25 9v6m-4.5 0V9M21 12a9 9 0 11-18 0 9 9 0 0118 0z')
+						]),
+					b: _List_Nil,
+					c: 'path'
+				}
+				]),
+			c: 'svg'
+		},
+		bu: A2(
+			$elm$svg$Svg$svg,
+			_List_fromArray(
+				[
+					$elm$svg$Svg$Attributes$fill('none'),
+					$elm$svg$Svg$Attributes$viewBox('0 0 24 24'),
+					$elm$svg$Svg$Attributes$strokeWidth('1.5'),
+					$elm$svg$Svg$Attributes$stroke('currentColor')
+				]),
+			_List_fromArray(
+				[
+					A2(
+					$elm$svg$Svg$path,
+					_List_fromArray(
+						[
+							$elm$svg$Svg$Attributes$strokeLinecap('round'),
+							$elm$svg$Svg$Attributes$strokeLinejoin('round'),
+							$elm$svg$Svg$Attributes$d('M14.25 9v6m-4.5 0V9M21 12a9 9 0 11-18 0 9 9 0 0118 0z')
+						]),
+					_List_Nil)
+				]))
+	},
+		{
 		bf: 'pause',
 		bm: _List_Nil,
 		bp: {
@@ -32158,6 +32886,73 @@ var $author$project$Gallery$Outline$model = _List_fromArray(
 				]))
 	},
 		{
+		bf: 'play-circle',
+		bm: _List_Nil,
+		bp: {
+			a: _List_fromArray(
+				[
+					_Utils_Tuple2('fill', 'none'),
+					_Utils_Tuple2('viewBox', '0 0 24 24'),
+					_Utils_Tuple2('strokeWidth', '1.5'),
+					_Utils_Tuple2('stroke', 'currentColor')
+				]),
+			b: _List_fromArray(
+				[
+					{
+					a: _List_fromArray(
+						[
+							_Utils_Tuple2('strokeLinecap', 'round'),
+							_Utils_Tuple2('strokeLinejoin', 'round'),
+							_Utils_Tuple2('d', 'M21 12a9 9 0 11-18 0 9 9 0 0118 0z')
+						]),
+					b: _List_Nil,
+					c: 'path'
+				},
+					{
+					a: _List_fromArray(
+						[
+							_Utils_Tuple2('strokeLinecap', 'round'),
+							_Utils_Tuple2('strokeLinejoin', 'round'),
+							_Utils_Tuple2('d', 'M15.91 11.672a.375.375 0 010 .656l-5.603 3.113a.375.375 0 01-.557-.328V8.887c0-.286.307-.466.557-.327l5.603 3.112z')
+						]),
+					b: _List_Nil,
+					c: 'path'
+				}
+				]),
+			c: 'svg'
+		},
+		bu: A2(
+			$elm$svg$Svg$svg,
+			_List_fromArray(
+				[
+					$elm$svg$Svg$Attributes$fill('none'),
+					$elm$svg$Svg$Attributes$viewBox('0 0 24 24'),
+					$elm$svg$Svg$Attributes$strokeWidth('1.5'),
+					$elm$svg$Svg$Attributes$stroke('currentColor')
+				]),
+			_List_fromArray(
+				[
+					A2(
+					$elm$svg$Svg$path,
+					_List_fromArray(
+						[
+							$elm$svg$Svg$Attributes$strokeLinecap('round'),
+							$elm$svg$Svg$Attributes$strokeLinejoin('round'),
+							$elm$svg$Svg$Attributes$d('M21 12a9 9 0 11-18 0 9 9 0 0118 0z')
+						]),
+					_List_Nil),
+					A2(
+					$elm$svg$Svg$path,
+					_List_fromArray(
+						[
+							$elm$svg$Svg$Attributes$strokeLinecap('round'),
+							$elm$svg$Svg$Attributes$strokeLinejoin('round'),
+							$elm$svg$Svg$Attributes$d('M15.91 11.672a.375.375 0 010 .656l-5.603 3.113a.375.375 0 01-.557-.328V8.887c0-.286.307-.466.557-.327l5.603 3.112z')
+						]),
+					_List_Nil)
+				]))
+	},
+		{
 		bf: 'play-pause',
 		bm: _List_Nil,
 		bp: {
@@ -32395,6 +33190,54 @@ var $author$project$Gallery$Outline$model = _List_fromArray(
 							$elm$svg$Svg$Attributes$strokeLinecap('round'),
 							$elm$svg$Svg$Attributes$strokeLinejoin('round'),
 							$elm$svg$Svg$Attributes$d('M12 4.5v15m7.5-7.5h-15')
+						]),
+					_List_Nil)
+				]))
+	},
+		{
+		bf: 'power',
+		bm: _List_Nil,
+		bp: {
+			a: _List_fromArray(
+				[
+					_Utils_Tuple2('fill', 'none'),
+					_Utils_Tuple2('viewBox', '0 0 24 24'),
+					_Utils_Tuple2('strokeWidth', '1.5'),
+					_Utils_Tuple2('stroke', 'currentColor')
+				]),
+			b: _List_fromArray(
+				[
+					{
+					a: _List_fromArray(
+						[
+							_Utils_Tuple2('strokeLinecap', 'round'),
+							_Utils_Tuple2('strokeLinejoin', 'round'),
+							_Utils_Tuple2('d', 'M5.636 5.636a9 9 0 1012.728 0M12 3v9')
+						]),
+					b: _List_Nil,
+					c: 'path'
+				}
+				]),
+			c: 'svg'
+		},
+		bu: A2(
+			$elm$svg$Svg$svg,
+			_List_fromArray(
+				[
+					$elm$svg$Svg$Attributes$fill('none'),
+					$elm$svg$Svg$Attributes$viewBox('0 0 24 24'),
+					$elm$svg$Svg$Attributes$strokeWidth('1.5'),
+					$elm$svg$Svg$Attributes$stroke('currentColor')
+				]),
+			_List_fromArray(
+				[
+					A2(
+					$elm$svg$Svg$path,
+					_List_fromArray(
+						[
+							$elm$svg$Svg$Attributes$strokeLinecap('round'),
+							$elm$svg$Svg$Attributes$strokeLinejoin('round'),
+							$elm$svg$Svg$Attributes$d('M5.636 5.636a9 9 0 1012.728 0M12 3v9')
 						]),
 					_List_Nil)
 				]))
@@ -32992,6 +33835,54 @@ var $author$project$Gallery$Outline$model = _List_fromArray(
 							$elm$svg$Svg$Attributes$strokeLinecap('round'),
 							$elm$svg$Svg$Attributes$strokeLinejoin('round'),
 							$elm$svg$Svg$Attributes$d('M6 6.878V6a2.25 2.25 0 012.25-2.25h7.5A2.25 2.25 0 0118 6v.878m-12 0c.235-.083.487-.128.75-.128h10.5c.263 0 .515.045.75.128m-12 0A2.25 2.25 0 004.5 9v.878m13.5-3A2.25 2.25 0 0119.5 9v.878m0 0a2.246 2.246 0 00-.75-.128H5.25c-.263 0-.515.045-.75.128m15 0A2.25 2.25 0 0121 12v6a2.25 2.25 0 01-2.25 2.25H5.25A2.25 2.25 0 013 18v-6c0-.98.626-1.813 1.5-2.122')
+						]),
+					_List_Nil)
+				]))
+	},
+		{
+		bf: 'rocket-launch',
+		bm: _List_Nil,
+		bp: {
+			a: _List_fromArray(
+				[
+					_Utils_Tuple2('fill', 'none'),
+					_Utils_Tuple2('viewBox', '0 0 24 24'),
+					_Utils_Tuple2('strokeWidth', '1.5'),
+					_Utils_Tuple2('stroke', 'currentColor')
+				]),
+			b: _List_fromArray(
+				[
+					{
+					a: _List_fromArray(
+						[
+							_Utils_Tuple2('strokeLinecap', 'round'),
+							_Utils_Tuple2('strokeLinejoin', 'round'),
+							_Utils_Tuple2('d', 'M15.59 14.37a6 6 0 01-5.84 7.38v-4.8m5.84-2.58a14.98 14.98 0 006.16-12.12A14.98 14.98 0 009.631 8.41m5.96 5.96a14.926 14.926 0 01-5.841 2.58m-.119-8.54a6 6 0 00-7.381 5.84h4.8m2.581-5.84a14.927 14.927 0 00-2.58 5.84m2.699 2.7c-.103.021-.207.041-.311.06a15.09 15.09 0 01-2.448-2.448 14.9 14.9 0 01.06-.312m-2.24 2.39a4.493 4.493 0 00-1.757 4.306 4.493 4.493 0 004.306-1.758M16.5 9a1.5 1.5 0 11-3 0 1.5 1.5 0 013 0z')
+						]),
+					b: _List_Nil,
+					c: 'path'
+				}
+				]),
+			c: 'svg'
+		},
+		bu: A2(
+			$elm$svg$Svg$svg,
+			_List_fromArray(
+				[
+					$elm$svg$Svg$Attributes$fill('none'),
+					$elm$svg$Svg$Attributes$viewBox('0 0 24 24'),
+					$elm$svg$Svg$Attributes$strokeWidth('1.5'),
+					$elm$svg$Svg$Attributes$stroke('currentColor')
+				]),
+			_List_fromArray(
+				[
+					A2(
+					$elm$svg$Svg$path,
+					_List_fromArray(
+						[
+							$elm$svg$Svg$Attributes$strokeLinecap('round'),
+							$elm$svg$Svg$Attributes$strokeLinejoin('round'),
+							$elm$svg$Svg$Attributes$d('M15.59 14.37a6 6 0 01-5.84 7.38v-4.8m5.84-2.58a14.98 14.98 0 006.16-12.12A14.98 14.98 0 009.631 8.41m5.96 5.96a14.926 14.926 0 01-5.841 2.58m-.119-8.54a6 6 0 00-7.381 5.84h4.8m2.581-5.84a14.927 14.927 0 00-2.58 5.84m2.699 2.7c-.103.021-.207.041-.311.06a15.09 15.09 0 01-2.448-2.448 14.9 14.9 0 01.06-.312m-2.24 2.39a4.493 4.493 0 00-1.757 4.306 4.493 4.493 0 004.306-1.758M16.5 9a1.5 1.5 0 11-3 0 1.5 1.5 0 013 0z')
 						]),
 					_List_Nil)
 				]))
@@ -33773,6 +34664,54 @@ var $author$project$Gallery$Outline$model = _List_fromArray(
 				]))
 	},
 		{
+		bf: 'square-3-stack-3d',
+		bm: _List_Nil,
+		bp: {
+			a: _List_fromArray(
+				[
+					_Utils_Tuple2('fill', 'none'),
+					_Utils_Tuple2('viewBox', '0 0 24 24'),
+					_Utils_Tuple2('strokeWidth', '1.5'),
+					_Utils_Tuple2('stroke', 'currentColor')
+				]),
+			b: _List_fromArray(
+				[
+					{
+					a: _List_fromArray(
+						[
+							_Utils_Tuple2('strokeLinecap', 'round'),
+							_Utils_Tuple2('strokeLinejoin', 'round'),
+							_Utils_Tuple2('d', 'M6.429 9.75L2.25 12l4.179 2.25m0-4.5l5.571 3 5.571-3m-11.142 0L2.25 7.5 12 2.25l9.75 5.25-4.179 2.25m0 0L21.75 12l-4.179 2.25m0 0l4.179 2.25L12 21.75 2.25 16.5l4.179-2.25m11.142 0l-5.571 3-5.571-3')
+						]),
+					b: _List_Nil,
+					c: 'path'
+				}
+				]),
+			c: 'svg'
+		},
+		bu: A2(
+			$elm$svg$Svg$svg,
+			_List_fromArray(
+				[
+					$elm$svg$Svg$Attributes$fill('none'),
+					$elm$svg$Svg$Attributes$viewBox('0 0 24 24'),
+					$elm$svg$Svg$Attributes$strokeWidth('1.5'),
+					$elm$svg$Svg$Attributes$stroke('currentColor')
+				]),
+			_List_fromArray(
+				[
+					A2(
+					$elm$svg$Svg$path,
+					_List_fromArray(
+						[
+							$elm$svg$Svg$Attributes$strokeLinecap('round'),
+							$elm$svg$Svg$Attributes$strokeLinejoin('round'),
+							$elm$svg$Svg$Attributes$d('M6.429 9.75L2.25 12l4.179 2.25m0-4.5l5.571 3 5.571-3m-11.142 0L2.25 7.5 12 2.25l9.75 5.25-4.179 2.25m0 0L21.75 12l-4.179 2.25m0 0l4.179 2.25L12 21.75 2.25 16.5l4.179-2.25m11.142 0l-5.571 3-5.571-3')
+						]),
+					_List_Nil)
+				]))
+	},
+		{
 		bf: 'squares-2x2',
 		bm: _List_Nil,
 		bp: {
@@ -33913,6 +34852,73 @@ var $author$project$Gallery$Outline$model = _List_fromArray(
 							$elm$svg$Svg$Attributes$strokeLinecap('round'),
 							$elm$svg$Svg$Attributes$strokeLinejoin('round'),
 							$elm$svg$Svg$Attributes$d('M11.48 3.499a.562.562 0 011.04 0l2.125 5.111a.563.563 0 00.475.345l5.518.442c.499.04.701.663.321.988l-4.204 3.602a.563.563 0 00-.182.557l1.285 5.385a.562.562 0 01-.84.61l-4.725-2.885a.563.563 0 00-.586 0L6.982 20.54a.562.562 0 01-.84-.61l1.285-5.386a.562.562 0 00-.182-.557l-4.204-3.602a.563.563 0 01.321-.988l5.518-.442a.563.563 0 00.475-.345L11.48 3.5z')
+						]),
+					_List_Nil)
+				]))
+	},
+		{
+		bf: 'stop-circle',
+		bm: _List_Nil,
+		bp: {
+			a: _List_fromArray(
+				[
+					_Utils_Tuple2('fill', 'none'),
+					_Utils_Tuple2('viewBox', '0 0 24 24'),
+					_Utils_Tuple2('strokeWidth', '1.5'),
+					_Utils_Tuple2('stroke', 'currentColor')
+				]),
+			b: _List_fromArray(
+				[
+					{
+					a: _List_fromArray(
+						[
+							_Utils_Tuple2('strokeLinecap', 'round'),
+							_Utils_Tuple2('strokeLinejoin', 'round'),
+							_Utils_Tuple2('d', 'M21 12a9 9 0 11-18 0 9 9 0 0118 0z')
+						]),
+					b: _List_Nil,
+					c: 'path'
+				},
+					{
+					a: _List_fromArray(
+						[
+							_Utils_Tuple2('strokeLinecap', 'round'),
+							_Utils_Tuple2('strokeLinejoin', 'round'),
+							_Utils_Tuple2('d', 'M9 9.563C9 9.252 9.252 9 9.563 9h4.874c.311 0 .563.252.563.563v4.874c0 .311-.252.563-.563.563H9.564A.562.562 0 019 14.437V9.564z')
+						]),
+					b: _List_Nil,
+					c: 'path'
+				}
+				]),
+			c: 'svg'
+		},
+		bu: A2(
+			$elm$svg$Svg$svg,
+			_List_fromArray(
+				[
+					$elm$svg$Svg$Attributes$fill('none'),
+					$elm$svg$Svg$Attributes$viewBox('0 0 24 24'),
+					$elm$svg$Svg$Attributes$strokeWidth('1.5'),
+					$elm$svg$Svg$Attributes$stroke('currentColor')
+				]),
+			_List_fromArray(
+				[
+					A2(
+					$elm$svg$Svg$path,
+					_List_fromArray(
+						[
+							$elm$svg$Svg$Attributes$strokeLinecap('round'),
+							$elm$svg$Svg$Attributes$strokeLinejoin('round'),
+							$elm$svg$Svg$Attributes$d('M21 12a9 9 0 11-18 0 9 9 0 0118 0z')
+						]),
+					_List_Nil),
+					A2(
+					$elm$svg$Svg$path,
+					_List_fromArray(
+						[
+							$elm$svg$Svg$Attributes$strokeLinecap('round'),
+							$elm$svg$Svg$Attributes$strokeLinejoin('round'),
+							$elm$svg$Svg$Attributes$d('M9 9.563C9 9.252 9.252 9 9.563 9h4.874c.311 0 .563.252.563.563v4.874c0 .311-.252.563-.563.563H9.564A.562.562 0 019 14.437V9.564z')
 						]),
 					_List_Nil)
 				]))
@@ -34278,6 +35284,54 @@ var $author$project$Gallery$Outline$model = _List_fromArray(
 				]))
 	},
 		{
+		bf: 'trophy',
+		bm: _List_Nil,
+		bp: {
+			a: _List_fromArray(
+				[
+					_Utils_Tuple2('fill', 'none'),
+					_Utils_Tuple2('viewBox', '0 0 24 24'),
+					_Utils_Tuple2('strokeWidth', '1.5'),
+					_Utils_Tuple2('stroke', 'currentColor')
+				]),
+			b: _List_fromArray(
+				[
+					{
+					a: _List_fromArray(
+						[
+							_Utils_Tuple2('strokeLinecap', 'round'),
+							_Utils_Tuple2('strokeLinejoin', 'round'),
+							_Utils_Tuple2('d', 'M16.5 18.75h-9m9 0a3 3 0 013 3h-15a3 3 0 013-3m9 0v-3.375c0-.621-.503-1.125-1.125-1.125h-.871M7.5 18.75v-3.375c0-.621.504-1.125 1.125-1.125h.872m5.007 0H9.497m5.007 0a7.454 7.454 0 01-.982-3.172M9.497 14.25a7.454 7.454 0 00.981-3.172M5.25 4.236c-.982.143-1.954.317-2.916.52A6.003 6.003 0 007.73 9.728M5.25 4.236V4.5c0 2.108.966 3.99 2.48 5.228M5.25 4.236V2.721C7.456 2.41 9.71 2.25 12 2.25c2.291 0 4.545.16 6.75.47v1.516M7.73 9.728a6.726 6.726 0 002.748 1.35m8.272-6.842V4.5c0 2.108-.966 3.99-2.48 5.228m2.48-5.492a46.32 46.32 0 012.916.52 6.003 6.003 0 01-5.395 4.972m0 0a6.726 6.726 0 01-2.749 1.35m0 0a6.772 6.772 0 01-3.044 0')
+						]),
+					b: _List_Nil,
+					c: 'path'
+				}
+				]),
+			c: 'svg'
+		},
+		bu: A2(
+			$elm$svg$Svg$svg,
+			_List_fromArray(
+				[
+					$elm$svg$Svg$Attributes$fill('none'),
+					$elm$svg$Svg$Attributes$viewBox('0 0 24 24'),
+					$elm$svg$Svg$Attributes$strokeWidth('1.5'),
+					$elm$svg$Svg$Attributes$stroke('currentColor')
+				]),
+			_List_fromArray(
+				[
+					A2(
+					$elm$svg$Svg$path,
+					_List_fromArray(
+						[
+							$elm$svg$Svg$Attributes$strokeLinecap('round'),
+							$elm$svg$Svg$Attributes$strokeLinejoin('round'),
+							$elm$svg$Svg$Attributes$d('M16.5 18.75h-9m9 0a3 3 0 013 3h-15a3 3 0 013-3m9 0v-3.375c0-.621-.503-1.125-1.125-1.125h-.871M7.5 18.75v-3.375c0-.621.504-1.125 1.125-1.125h.872m5.007 0H9.497m5.007 0a7.454 7.454 0 01-.982-3.172M9.497 14.25a7.454 7.454 0 00.981-3.172M5.25 4.236c-.982.143-1.954.317-2.916.52A6.003 6.003 0 007.73 9.728M5.25 4.236V4.5c0 2.108.966 3.99 2.48 5.228M5.25 4.236V2.721C7.456 2.41 9.71 2.25 12 2.25c2.291 0 4.545.16 6.75.47v1.516M7.73 9.728a6.726 6.726 0 002.748 1.35m8.272-6.842V4.5c0 2.108-.966 3.99-2.48 5.228m2.48-5.492a46.32 46.32 0 012.916.52 6.003 6.003 0 01-5.395 4.972m0 0a6.726 6.726 0 01-2.749 1.35m0 0a6.772 6.772 0 01-3.044 0')
+						]),
+					_List_Nil)
+				]))
+	},
+		{
 		bf: 'truck',
 		bm: _List_fromArray(
 			['lorry', 'vehicle']),
@@ -34322,6 +35376,54 @@ var $author$project$Gallery$Outline$model = _List_fromArray(
 							$elm$svg$Svg$Attributes$strokeLinecap('round'),
 							$elm$svg$Svg$Attributes$strokeLinejoin('round'),
 							$elm$svg$Svg$Attributes$d('M8.25 18.75a1.5 1.5 0 01-3 0m3 0a1.5 1.5 0 00-3 0m3 0h6m-9 0H3.375a1.125 1.125 0 01-1.125-1.125V14.25m17.25 4.5a1.5 1.5 0 01-3 0m3 0a1.5 1.5 0 00-3 0m3 0h1.125c.621 0 1.129-.504 1.09-1.124a17.902 17.902 0 00-3.213-9.193 2.056 2.056 0 00-1.58-.86H14.25M16.5 18.75h-2.25m0-11.177v-.958c0-.568-.422-1.048-.987-1.106a48.554 48.554 0 00-10.026 0 1.106 1.106 0 00-.987 1.106v7.635m12-6.677v6.677m0 4.5v-4.5m0 0h-12')
+						]),
+					_List_Nil)
+				]))
+	},
+		{
+		bf: 'tv',
+		bm: _List_Nil,
+		bp: {
+			a: _List_fromArray(
+				[
+					_Utils_Tuple2('fill', 'none'),
+					_Utils_Tuple2('viewBox', '0 0 24 24'),
+					_Utils_Tuple2('strokeWidth', '1.5'),
+					_Utils_Tuple2('stroke', 'currentColor')
+				]),
+			b: _List_fromArray(
+				[
+					{
+					a: _List_fromArray(
+						[
+							_Utils_Tuple2('strokeLinecap', 'round'),
+							_Utils_Tuple2('strokeLinejoin', 'round'),
+							_Utils_Tuple2('d', 'M6 20.25h12m-7.5-3v3m3-3v3m-10.125-3h17.25c.621 0 1.125-.504 1.125-1.125V4.875c0-.621-.504-1.125-1.125-1.125H3.375c-.621 0-1.125.504-1.125 1.125v11.25c0 .621.504 1.125 1.125 1.125z')
+						]),
+					b: _List_Nil,
+					c: 'path'
+				}
+				]),
+			c: 'svg'
+		},
+		bu: A2(
+			$elm$svg$Svg$svg,
+			_List_fromArray(
+				[
+					$elm$svg$Svg$Attributes$fill('none'),
+					$elm$svg$Svg$Attributes$viewBox('0 0 24 24'),
+					$elm$svg$Svg$Attributes$strokeWidth('1.5'),
+					$elm$svg$Svg$Attributes$stroke('currentColor')
+				]),
+			_List_fromArray(
+				[
+					A2(
+					$elm$svg$Svg$path,
+					_List_fromArray(
+						[
+							$elm$svg$Svg$Attributes$strokeLinecap('round'),
+							$elm$svg$Svg$Attributes$strokeLinejoin('round'),
+							$elm$svg$Svg$Attributes$d('M6 20.25h12m-7.5-3v3m3-3v3m-10.125-3h17.25c.621 0 1.125-.504 1.125-1.125V4.875c0-.621-.504-1.125-1.125-1.125H3.375c-.621 0-1.125.504-1.125 1.125v11.25c0 .621.504 1.125 1.125 1.125z')
 						]),
 					_List_Nil)
 				]))
@@ -34811,6 +35913,54 @@ var $author$project$Gallery$Outline$model = _List_fromArray(
 				]))
 	},
 		{
+		bf: 'viewfinder-circle',
+		bm: _List_Nil,
+		bp: {
+			a: _List_fromArray(
+				[
+					_Utils_Tuple2('fill', 'none'),
+					_Utils_Tuple2('viewBox', '0 0 24 24'),
+					_Utils_Tuple2('strokeWidth', '1.5'),
+					_Utils_Tuple2('stroke', 'currentColor')
+				]),
+			b: _List_fromArray(
+				[
+					{
+					a: _List_fromArray(
+						[
+							_Utils_Tuple2('strokeLinecap', 'round'),
+							_Utils_Tuple2('strokeLinejoin', 'round'),
+							_Utils_Tuple2('d', 'M7.5 3.75H6A2.25 2.25 0 003.75 6v1.5M16.5 3.75H18A2.25 2.25 0 0120.25 6v1.5m0 9V18A2.25 2.25 0 0118 20.25h-1.5m-9 0H6A2.25 2.25 0 013.75 18v-1.5M15 12a3 3 0 11-6 0 3 3 0 016 0z')
+						]),
+					b: _List_Nil,
+					c: 'path'
+				}
+				]),
+			c: 'svg'
+		},
+		bu: A2(
+			$elm$svg$Svg$svg,
+			_List_fromArray(
+				[
+					$elm$svg$Svg$Attributes$fill('none'),
+					$elm$svg$Svg$Attributes$viewBox('0 0 24 24'),
+					$elm$svg$Svg$Attributes$strokeWidth('1.5'),
+					$elm$svg$Svg$Attributes$stroke('currentColor')
+				]),
+			_List_fromArray(
+				[
+					A2(
+					$elm$svg$Svg$path,
+					_List_fromArray(
+						[
+							$elm$svg$Svg$Attributes$strokeLinecap('round'),
+							$elm$svg$Svg$Attributes$strokeLinejoin('round'),
+							$elm$svg$Svg$Attributes$d('M7.5 3.75H6A2.25 2.25 0 003.75 6v1.5M16.5 3.75H18A2.25 2.25 0 0120.25 6v1.5m0 9V18A2.25 2.25 0 0118 20.25h-1.5m-9 0H6A2.25 2.25 0 013.75 18v-1.5M15 12a3 3 0 11-6 0 3 3 0 016 0z')
+						]),
+					_List_Nil)
+				]))
+	},
+		{
 		bf: 'wallet',
 		bm: _List_Nil,
 		bp: {
@@ -34903,6 +36053,54 @@ var $author$project$Gallery$Outline$model = _List_fromArray(
 							$elm$svg$Svg$Attributes$strokeLinecap('round'),
 							$elm$svg$Svg$Attributes$strokeLinejoin('round'),
 							$elm$svg$Svg$Attributes$d('M8.288 15.038a5.25 5.25 0 017.424 0M5.106 11.856c3.807-3.808 9.98-3.808 13.788 0M1.924 8.674c5.565-5.565 14.587-5.565 20.152 0M12.53 18.22l-.53.53-.53-.53a.75.75 0 011.06 0z')
+						]),
+					_List_Nil)
+				]))
+	},
+		{
+		bf: 'window',
+		bm: _List_Nil,
+		bp: {
+			a: _List_fromArray(
+				[
+					_Utils_Tuple2('fill', 'none'),
+					_Utils_Tuple2('viewBox', '0 0 24 24'),
+					_Utils_Tuple2('strokeWidth', '1.5'),
+					_Utils_Tuple2('stroke', 'currentColor')
+				]),
+			b: _List_fromArray(
+				[
+					{
+					a: _List_fromArray(
+						[
+							_Utils_Tuple2('strokeLinecap', 'round'),
+							_Utils_Tuple2('strokeLinejoin', 'round'),
+							_Utils_Tuple2('d', 'M3 8.25V18a2.25 2.25 0 002.25 2.25h13.5A2.25 2.25 0 0021 18V8.25m-18 0V6a2.25 2.25 0 012.25-2.25h13.5A2.25 2.25 0 0121 6v2.25m-18 0h18M5.25 6h.008v.008H5.25V6zM7.5 6h.008v.008H7.5V6zm2.25 0h.008v.008H9.75V6z')
+						]),
+					b: _List_Nil,
+					c: 'path'
+				}
+				]),
+			c: 'svg'
+		},
+		bu: A2(
+			$elm$svg$Svg$svg,
+			_List_fromArray(
+				[
+					$elm$svg$Svg$Attributes$fill('none'),
+					$elm$svg$Svg$Attributes$viewBox('0 0 24 24'),
+					$elm$svg$Svg$Attributes$strokeWidth('1.5'),
+					$elm$svg$Svg$Attributes$stroke('currentColor')
+				]),
+			_List_fromArray(
+				[
+					A2(
+					$elm$svg$Svg$path,
+					_List_fromArray(
+						[
+							$elm$svg$Svg$Attributes$strokeLinecap('round'),
+							$elm$svg$Svg$Attributes$strokeLinejoin('round'),
+							$elm$svg$Svg$Attributes$d('M3 8.25V18a2.25 2.25 0 002.25 2.25h13.5A2.25 2.25 0 0021 18V8.25m-18 0V6a2.25 2.25 0 012.25-2.25h13.5A2.25 2.25 0 0121 6v2.25m-18 0h18M5.25 6h.008v.008H5.25V6zM7.5 6h.008v.008H7.5V6zm2.25 0h.008v.008H9.75V6z')
 						]),
 					_List_Nil)
 				]))
@@ -38574,6 +39772,50 @@ var $author$project$Gallery$Solid$model = _List_fromArray(
 					_List_fromArray(
 						[
 							$elm$svg$Svg$Attributes$d('M3 18.4v-2.796a4.3 4.3 0 00.713.31A26.226 26.226 0 0012 17.25c2.892 0 5.68-.468 8.287-1.335.252-.084.49-.189.713-.311V18.4c0 1.452-1.047 2.728-2.523 2.923-2.12.282-4.282.427-6.477.427a49.19 49.19 0 01-6.477-.427C4.047 21.128 3 19.852 3 18.4z')
+						]),
+					_List_Nil)
+				]))
+	},
+		{
+		bf: 'bug-ant',
+		bm: _List_Nil,
+		bp: {
+			a: _List_fromArray(
+				[
+					_Utils_Tuple2('viewBox', '0 0 24 24'),
+					_Utils_Tuple2('fill', 'currentColor')
+				]),
+			b: _List_fromArray(
+				[
+					{
+					a: _List_fromArray(
+						[
+							_Utils_Tuple2('fillRule', 'evenodd'),
+							_Utils_Tuple2('d', 'M8.478 1.6a.75.75 0 01.273 1.025 3.72 3.72 0 00-.425 1.122c.058.057.118.114.18.168A4.491 4.491 0 0112 2.25c1.413 0 2.673.651 3.497 1.668.06-.054.12-.11.178-.167a3.717 3.717 0 00-.426-1.126.75.75 0 111.298-.75 5.22 5.22 0 01.671 2.045.75.75 0 01-.187.582c-.241.27-.505.52-.787.749a4.495 4.495 0 01.216 2.1c-.106.792-.753 1.295-1.417 1.403-.182.03-.364.057-.547.081.152.227.273.476.359.741a23.122 23.122 0 003.832-.802 23.241 23.241 0 00-.345-2.634.75.75 0 011.474-.28c.21 1.115.348 2.256.404 3.418a.75.75 0 01-.516.749c-1.527.5-3.119.855-4.76 1.05-.074.38-.22.735-.423 1.05a24.61 24.61 0 015.943 1.358.75.75 0 01.492.75 24.665 24.665 0 01-1.189 6.25.75.75 0 01-1.425-.47 23.141 23.141 0 001.077-5.307c-.5-.168-1.009-.32-1.524-.454.068.234.104.484.104.746 0 3.956-2.521 7.5-6 7.5-3.478 0-6-3.544-6-7.5 0-.262.037-.511.104-.746-.514.134-1.022.286-1.522.454a23.14 23.14 0 001.077 5.308.75.75 0 01-1.425.468 24.663 24.663 0 01-1.19-6.25.75.75 0 01.493-.749 24.593 24.593 0 014.964-1.24h.01c.321-.046.644-.085.969-.118a2.982 2.982 0 01-.424-1.05 24.614 24.614 0 01-4.76-1.05.75.75 0 01-.516-.75c.057-1.161.194-2.302.405-3.417a.75.75 0 011.474.28c-.164.862-.28 1.74-.345 2.634 1.237.37 2.517.641 3.832.802.085-.265.207-.514.359-.74a18.732 18.732 0 01-.547-.082c-.664-.108-1.311-.611-1.417-1.403a4.535 4.535 0 01.217-2.103 6.788 6.788 0 01-.788-.751.75.75 0 01-.187-.583 5.22 5.22 0 01.67-2.04.75.75 0 011.026-.273z'),
+							_Utils_Tuple2('clipRule', 'evenodd')
+						]),
+					b: _List_Nil,
+					c: 'path'
+				}
+				]),
+			c: 'svg'
+		},
+		bu: A2(
+			$elm$svg$Svg$svg,
+			_List_fromArray(
+				[
+					$elm$svg$Svg$Attributes$viewBox('0 0 24 24'),
+					$elm$svg$Svg$Attributes$fill('currentColor')
+				]),
+			_List_fromArray(
+				[
+					A2(
+					$elm$svg$Svg$path,
+					_List_fromArray(
+						[
+							$elm$svg$Svg$Attributes$fillRule('evenodd'),
+							$elm$svg$Svg$Attributes$d('M8.478 1.6a.75.75 0 01.273 1.025 3.72 3.72 0 00-.425 1.122c.058.057.118.114.18.168A4.491 4.491 0 0112 2.25c1.413 0 2.673.651 3.497 1.668.06-.054.12-.11.178-.167a3.717 3.717 0 00-.426-1.126.75.75 0 111.298-.75 5.22 5.22 0 01.671 2.045.75.75 0 01-.187.582c-.241.27-.505.52-.787.749a4.495 4.495 0 01.216 2.1c-.106.792-.753 1.295-1.417 1.403-.182.03-.364.057-.547.081.152.227.273.476.359.741a23.122 23.122 0 003.832-.802 23.241 23.241 0 00-.345-2.634.75.75 0 011.474-.28c.21 1.115.348 2.256.404 3.418a.75.75 0 01-.516.749c-1.527.5-3.119.855-4.76 1.05-.074.38-.22.735-.423 1.05a24.61 24.61 0 015.943 1.358.75.75 0 01.492.75 24.665 24.665 0 01-1.189 6.25.75.75 0 01-1.425-.47 23.141 23.141 0 001.077-5.307c-.5-.168-1.009-.32-1.524-.454.068.234.104.484.104.746 0 3.956-2.521 7.5-6 7.5-3.478 0-6-3.544-6-7.5 0-.262.037-.511.104-.746-.514.134-1.022.286-1.522.454a23.14 23.14 0 001.077 5.308.75.75 0 01-1.425.468 24.663 24.663 0 01-1.19-6.25.75.75 0 01.493-.749 24.593 24.593 0 014.964-1.24h.01c.321-.046.644-.085.969-.118a2.982 2.982 0 01-.424-1.05 24.614 24.614 0 01-4.76-1.05.75.75 0 01-.516-.75c.057-1.161.194-2.302.405-3.417a.75.75 0 011.474.28c-.164.862-.28 1.74-.345 2.634 1.237.37 2.517.641 3.832.802.085-.265.207-.514.359-.74a18.732 18.732 0 01-.547-.082c-.664-.108-1.311-.611-1.417-1.403a4.535 4.535 0 01.217-2.103 6.788 6.788 0 01-.788-.751.75.75 0 01-.187-.583 5.22 5.22 0 01.67-2.04.75.75 0 011.026-.273z'),
+							$elm$svg$Svg$Attributes$clipRule('evenodd')
 						]),
 					_List_Nil)
 				]))
@@ -42546,6 +43788,50 @@ var $author$project$Gallery$Solid$model = _List_fromArray(
 				]))
 	},
 		{
+		bf: 'eye-dropper',
+		bm: _List_Nil,
+		bp: {
+			a: _List_fromArray(
+				[
+					_Utils_Tuple2('viewBox', '0 0 24 24'),
+					_Utils_Tuple2('fill', 'currentColor')
+				]),
+			b: _List_fromArray(
+				[
+					{
+					a: _List_fromArray(
+						[
+							_Utils_Tuple2('fillRule', 'evenodd'),
+							_Utils_Tuple2('d', 'M16.098 2.598a3.75 3.75 0 113.622 6.275l-1.72.46V12a.75.75 0 01-.22.53l-.75.75a.75.75 0 01-1.06 0l-.97-.97-7.94 7.94a2.56 2.56 0 01-1.81.75 1.06 1.06 0 00-.75.31l-.97.97a.75.75 0 01-1.06 0l-.75-.75a.75.75 0 010-1.06l.97-.97a1.06 1.06 0 00.31-.75c0-.68.27-1.33.75-1.81L11.69 9l-.97-.97a.75.75 0 010-1.06l.75-.75A.75.75 0 0112 6h2.666l.461-1.72c.165-.617.49-1.2.971-1.682zm-3.348 7.463L4.81 18a1.06 1.06 0 00-.31.75c0 .318-.06.63-.172.922a2.56 2.56 0 01.922-.172c.281 0 .551-.112.75-.31l7.94-7.94-1.19-1.19z'),
+							_Utils_Tuple2('clipRule', 'evenodd')
+						]),
+					b: _List_Nil,
+					c: 'path'
+				}
+				]),
+			c: 'svg'
+		},
+		bu: A2(
+			$elm$svg$Svg$svg,
+			_List_fromArray(
+				[
+					$elm$svg$Svg$Attributes$viewBox('0 0 24 24'),
+					$elm$svg$Svg$Attributes$fill('currentColor')
+				]),
+			_List_fromArray(
+				[
+					A2(
+					$elm$svg$Svg$path,
+					_List_fromArray(
+						[
+							$elm$svg$Svg$Attributes$fillRule('evenodd'),
+							$elm$svg$Svg$Attributes$d('M16.098 2.598a3.75 3.75 0 113.622 6.275l-1.72.46V12a.75.75 0 01-.22.53l-.75.75a.75.75 0 01-1.06 0l-.97-.97-7.94 7.94a2.56 2.56 0 01-1.81.75 1.06 1.06 0 00-.75.31l-.97.97a.75.75 0 01-1.06 0l-.75-.75a.75.75 0 010-1.06l.97-.97a1.06 1.06 0 00.31-.75c0-.68.27-1.33.75-1.81L11.69 9l-.97-.97a.75.75 0 010-1.06l.75-.75A.75.75 0 0112 6h2.666l.461-1.72c.165-.617.49-1.2.971-1.682zm-3.348 7.463L4.81 18a1.06 1.06 0 00-.31.75c0 .318-.06.63-.172.922a2.56 2.56 0 01.922-.172c.281 0 .551-.112.75-.31l7.94-7.94-1.19-1.19z'),
+							$elm$svg$Svg$Attributes$clipRule('evenodd')
+						]),
+					_List_Nil)
+				]))
+	},
+		{
 		bf: 'eye-slash',
 		bm: _List_fromArray(
 			['hidden', 'invisible', 'private', 'unseen']),
@@ -45371,6 +46657,50 @@ var $author$project$Gallery$Solid$model = _List_fromArray(
 				]))
 	},
 		{
+		bf: 'pause-circle',
+		bm: _List_Nil,
+		bp: {
+			a: _List_fromArray(
+				[
+					_Utils_Tuple2('viewBox', '0 0 24 24'),
+					_Utils_Tuple2('fill', 'currentColor')
+				]),
+			b: _List_fromArray(
+				[
+					{
+					a: _List_fromArray(
+						[
+							_Utils_Tuple2('fillRule', 'evenodd'),
+							_Utils_Tuple2('d', 'M2.25 12c0-5.385 4.365-9.75 9.75-9.75s9.75 4.365 9.75 9.75-4.365 9.75-9.75 9.75S2.25 17.385 2.25 12zM9 8.25a.75.75 0 00-.75.75v6c0 .414.336.75.75.75h.75a.75.75 0 00.75-.75V9a.75.75 0 00-.75-.75H9zm5.25 0a.75.75 0 00-.75.75v6c0 .414.336.75.75.75H15a.75.75 0 00.75-.75V9a.75.75 0 00-.75-.75h-.75z'),
+							_Utils_Tuple2('clipRule', 'evenodd')
+						]),
+					b: _List_Nil,
+					c: 'path'
+				}
+				]),
+			c: 'svg'
+		},
+		bu: A2(
+			$elm$svg$Svg$svg,
+			_List_fromArray(
+				[
+					$elm$svg$Svg$Attributes$viewBox('0 0 24 24'),
+					$elm$svg$Svg$Attributes$fill('currentColor')
+				]),
+			_List_fromArray(
+				[
+					A2(
+					$elm$svg$Svg$path,
+					_List_fromArray(
+						[
+							$elm$svg$Svg$Attributes$fillRule('evenodd'),
+							$elm$svg$Svg$Attributes$d('M2.25 12c0-5.385 4.365-9.75 9.75-9.75s9.75 4.365 9.75 9.75-4.365 9.75-9.75 9.75S2.25 17.385 2.25 12zM9 8.25a.75.75 0 00-.75.75v6c0 .414.336.75.75.75h.75a.75.75 0 00.75-.75V9a.75.75 0 00-.75-.75H9zm5.25 0a.75.75 0 00-.75.75v6c0 .414.336.75.75.75H15a.75.75 0 00.75-.75V9a.75.75 0 00-.75-.75h-.75z'),
+							$elm$svg$Svg$Attributes$clipRule('evenodd')
+						]),
+					_List_Nil)
+				]))
+	},
+		{
 		bf: 'pause',
 		bm: _List_Nil,
 		bp: {
@@ -45771,6 +47101,50 @@ var $author$project$Gallery$Solid$model = _List_fromArray(
 				]))
 	},
 		{
+		bf: 'play-circle',
+		bm: _List_Nil,
+		bp: {
+			a: _List_fromArray(
+				[
+					_Utils_Tuple2('viewBox', '0 0 24 24'),
+					_Utils_Tuple2('fill', 'currentColor')
+				]),
+			b: _List_fromArray(
+				[
+					{
+					a: _List_fromArray(
+						[
+							_Utils_Tuple2('fillRule', 'evenodd'),
+							_Utils_Tuple2('d', 'M2.25 12c0-5.385 4.365-9.75 9.75-9.75s9.75 4.365 9.75 9.75-4.365 9.75-9.75 9.75S2.25 17.385 2.25 12zm14.024-.983a1.125 1.125 0 010 1.966l-5.603 3.113A1.125 1.125 0 019 15.113V8.887c0-.857.921-1.4 1.671-.983l5.603 3.113z'),
+							_Utils_Tuple2('clipRule', 'evenodd')
+						]),
+					b: _List_Nil,
+					c: 'path'
+				}
+				]),
+			c: 'svg'
+		},
+		bu: A2(
+			$elm$svg$Svg$svg,
+			_List_fromArray(
+				[
+					$elm$svg$Svg$Attributes$viewBox('0 0 24 24'),
+					$elm$svg$Svg$Attributes$fill('currentColor')
+				]),
+			_List_fromArray(
+				[
+					A2(
+					$elm$svg$Svg$path,
+					_List_fromArray(
+						[
+							$elm$svg$Svg$Attributes$fillRule('evenodd'),
+							$elm$svg$Svg$Attributes$d('M2.25 12c0-5.385 4.365-9.75 9.75-9.75s9.75 4.365 9.75 9.75-4.365 9.75-9.75 9.75S2.25 17.385 2.25 12zm14.024-.983a1.125 1.125 0 010 1.966l-5.603 3.113A1.125 1.125 0 019 15.113V8.887c0-.857.921-1.4 1.671-.983l5.603 3.113z'),
+							$elm$svg$Svg$Attributes$clipRule('evenodd')
+						]),
+					_List_Nil)
+				]))
+	},
+		{
 		bf: 'play-pause',
 		bm: _List_Nil,
 		bp: {
@@ -45983,6 +47357,50 @@ var $author$project$Gallery$Solid$model = _List_fromArray(
 						[
 							$elm$svg$Svg$Attributes$fillRule('evenodd'),
 							$elm$svg$Svg$Attributes$d('M12 3.75a.75.75 0 01.75.75v6.75h6.75a.75.75 0 010 1.5h-6.75v6.75a.75.75 0 01-1.5 0v-6.75H4.5a.75.75 0 010-1.5h6.75V4.5a.75.75 0 01.75-.75z'),
+							$elm$svg$Svg$Attributes$clipRule('evenodd')
+						]),
+					_List_Nil)
+				]))
+	},
+		{
+		bf: 'power',
+		bm: _List_Nil,
+		bp: {
+			a: _List_fromArray(
+				[
+					_Utils_Tuple2('viewBox', '0 0 24 24'),
+					_Utils_Tuple2('fill', 'currentColor')
+				]),
+			b: _List_fromArray(
+				[
+					{
+					a: _List_fromArray(
+						[
+							_Utils_Tuple2('fillRule', 'evenodd'),
+							_Utils_Tuple2('d', 'M12 2.25a.75.75 0 01.75.75v9a.75.75 0 01-1.5 0V3a.75.75 0 01.75-.75zM6.166 5.106a.75.75 0 010 1.06 8.25 8.25 0 1011.668 0 .75.75 0 111.06-1.06c3.808 3.807 3.808 9.98 0 13.788-3.807 3.808-9.98 3.808-13.788 0-3.808-3.807-3.808-9.98 0-13.788a.75.75 0 011.06 0z'),
+							_Utils_Tuple2('clipRule', 'evenodd')
+						]),
+					b: _List_Nil,
+					c: 'path'
+				}
+				]),
+			c: 'svg'
+		},
+		bu: A2(
+			$elm$svg$Svg$svg,
+			_List_fromArray(
+				[
+					$elm$svg$Svg$Attributes$viewBox('0 0 24 24'),
+					$elm$svg$Svg$Attributes$fill('currentColor')
+				]),
+			_List_fromArray(
+				[
+					A2(
+					$elm$svg$Svg$path,
+					_List_fromArray(
+						[
+							$elm$svg$Svg$Attributes$fillRule('evenodd'),
+							$elm$svg$Svg$Attributes$d('M12 2.25a.75.75 0 01.75.75v9a.75.75 0 01-1.5 0V3a.75.75 0 01.75-.75zM6.166 5.106a.75.75 0 010 1.06 8.25 8.25 0 1011.668 0 .75.75 0 111.06-1.06c3.808 3.807 3.808 9.98 0 13.788-3.807 3.808-9.98 3.808-13.788 0-3.808-3.807-3.808-9.98 0-13.788a.75.75 0 011.06 0z'),
 							$elm$svg$Svg$Attributes$clipRule('evenodd')
 						]),
 					_List_Nil)
@@ -46502,6 +47920,65 @@ var $author$project$Gallery$Solid$model = _List_fromArray(
 					_List_fromArray(
 						[
 							$elm$svg$Svg$Attributes$d('M5.566 4.657A4.505 4.505 0 016.75 4.5h10.5c.41 0 .806.055 1.183.157A3 3 0 0015.75 3h-7.5a3 3 0 00-2.684 1.657zM2.25 12a3 3 0 013-3h13.5a3 3 0 013 3v6a3 3 0 01-3 3H5.25a3 3 0 01-3-3v-6zM5.25 7.5c-.41 0-.806.055-1.184.157A3 3 0 016.75 6h10.5a3 3 0 012.683 1.657A4.505 4.505 0 0018.75 7.5H5.25z')
+						]),
+					_List_Nil)
+				]))
+	},
+		{
+		bf: 'rocket-launch',
+		bm: _List_Nil,
+		bp: {
+			a: _List_fromArray(
+				[
+					_Utils_Tuple2('viewBox', '0 0 24 24'),
+					_Utils_Tuple2('fill', 'currentColor')
+				]),
+			b: _List_fromArray(
+				[
+					{
+					a: _List_fromArray(
+						[
+							_Utils_Tuple2('fillRule', 'evenodd'),
+							_Utils_Tuple2('d', 'M9.315 7.584C12.195 3.883 16.695 1.5 21.75 1.5a.75.75 0 01.75.75c0 5.056-2.383 9.555-6.084 12.436A6.75 6.75 0 019.75 22.5a.75.75 0 01-.75-.75v-4.131A15.838 15.838 0 016.382 15H2.25a.75.75 0 01-.75-.75 6.75 6.75 0 017.815-6.666zM15 6.75a2.25 2.25 0 100 4.5 2.25 2.25 0 000-4.5z'),
+							_Utils_Tuple2('clipRule', 'evenodd')
+						]),
+					b: _List_Nil,
+					c: 'path'
+				},
+					{
+					a: _List_fromArray(
+						[
+							_Utils_Tuple2('d', 'M5.26 17.242a.75.75 0 10-.897-1.203 5.243 5.243 0 00-2.05 5.022.75.75 0 00.625.627 5.243 5.243 0 005.022-2.051.75.75 0 10-1.202-.897 3.744 3.744 0 01-3.008 1.51c0-1.23.592-2.323 1.51-3.008z')
+						]),
+					b: _List_Nil,
+					c: 'path'
+				}
+				]),
+			c: 'svg'
+		},
+		bu: A2(
+			$elm$svg$Svg$svg,
+			_List_fromArray(
+				[
+					$elm$svg$Svg$Attributes$viewBox('0 0 24 24'),
+					$elm$svg$Svg$Attributes$fill('currentColor')
+				]),
+			_List_fromArray(
+				[
+					A2(
+					$elm$svg$Svg$path,
+					_List_fromArray(
+						[
+							$elm$svg$Svg$Attributes$fillRule('evenodd'),
+							$elm$svg$Svg$Attributes$d('M9.315 7.584C12.195 3.883 16.695 1.5 21.75 1.5a.75.75 0 01.75.75c0 5.056-2.383 9.555-6.084 12.436A6.75 6.75 0 019.75 22.5a.75.75 0 01-.75-.75v-4.131A15.838 15.838 0 016.382 15H2.25a.75.75 0 01-.75-.75 6.75 6.75 0 017.815-6.666zM15 6.75a2.25 2.25 0 100 4.5 2.25 2.25 0 000-4.5z'),
+							$elm$svg$Svg$Attributes$clipRule('evenodd')
+						]),
+					_List_Nil),
+					A2(
+					$elm$svg$Svg$path,
+					_List_fromArray(
+						[
+							$elm$svg$Svg$Attributes$d('M5.26 17.242a.75.75 0 10-.897-1.203 5.243 5.243 0 00-2.05 5.022.75.75 0 00.625.627 5.243 5.243 0 005.022-2.051.75.75 0 10-1.202-.897 3.744 3.744 0 01-3.008 1.51c0-1.23.592-2.323 1.51-3.008z')
 						]),
 					_List_Nil)
 				]))
@@ -47278,6 +48755,76 @@ var $author$project$Gallery$Solid$model = _List_fromArray(
 				]))
 	},
 		{
+		bf: 'square-3-stack-3d',
+		bm: _List_Nil,
+		bp: {
+			a: _List_fromArray(
+				[
+					_Utils_Tuple2('viewBox', '0 0 24 24'),
+					_Utils_Tuple2('fill', 'currentColor')
+				]),
+			b: _List_fromArray(
+				[
+					{
+					a: _List_fromArray(
+						[
+							_Utils_Tuple2('d', 'M11.644 1.59a.75.75 0 01.712 0l9.75 5.25a.75.75 0 010 1.32l-9.75 5.25a.75.75 0 01-.712 0l-9.75-5.25a.75.75 0 010-1.32l9.75-5.25z')
+						]),
+					b: _List_Nil,
+					c: 'path'
+				},
+					{
+					a: _List_fromArray(
+						[
+							_Utils_Tuple2('d', 'M3.265 10.602l7.668 4.129a2.25 2.25 0 002.134 0l7.668-4.13 1.37.739a.75.75 0 010 1.32l-9.75 5.25a.75.75 0 01-.71 0l-9.75-5.25a.75.75 0 010-1.32l1.37-.738z')
+						]),
+					b: _List_Nil,
+					c: 'path'
+				},
+					{
+					a: _List_fromArray(
+						[
+							_Utils_Tuple2('d', 'M10.933 19.231l-7.668-4.13-1.37.739a.75.75 0 000 1.32l9.75 5.25c.221.12.489.12.71 0l9.75-5.25a.75.75 0 000-1.32l-1.37-.738-7.668 4.13a2.25 2.25 0 01-2.134-.001z')
+						]),
+					b: _List_Nil,
+					c: 'path'
+				}
+				]),
+			c: 'svg'
+		},
+		bu: A2(
+			$elm$svg$Svg$svg,
+			_List_fromArray(
+				[
+					$elm$svg$Svg$Attributes$viewBox('0 0 24 24'),
+					$elm$svg$Svg$Attributes$fill('currentColor')
+				]),
+			_List_fromArray(
+				[
+					A2(
+					$elm$svg$Svg$path,
+					_List_fromArray(
+						[
+							$elm$svg$Svg$Attributes$d('M11.644 1.59a.75.75 0 01.712 0l9.75 5.25a.75.75 0 010 1.32l-9.75 5.25a.75.75 0 01-.712 0l-9.75-5.25a.75.75 0 010-1.32l9.75-5.25z')
+						]),
+					_List_Nil),
+					A2(
+					$elm$svg$Svg$path,
+					_List_fromArray(
+						[
+							$elm$svg$Svg$Attributes$d('M3.265 10.602l7.668 4.129a2.25 2.25 0 002.134 0l7.668-4.13 1.37.739a.75.75 0 010 1.32l-9.75 5.25a.75.75 0 01-.71 0l-9.75-5.25a.75.75 0 010-1.32l1.37-.738z')
+						]),
+					_List_Nil),
+					A2(
+					$elm$svg$Svg$path,
+					_List_fromArray(
+						[
+							$elm$svg$Svg$Attributes$d('M10.933 19.231l-7.668-4.13-1.37.739a.75.75 0 000 1.32l9.75 5.25c.221.12.489.12.71 0l9.75-5.25a.75.75 0 000-1.32l-1.37-.738-7.668 4.13a2.25 2.25 0 01-2.134-.001z')
+						]),
+					_List_Nil)
+				]))
+	},
+		{
 		bf: 'squares-2x2',
 		bm: _List_Nil,
 		bp: {
@@ -47401,6 +48948,50 @@ var $author$project$Gallery$Solid$model = _List_fromArray(
 						[
 							$elm$svg$Svg$Attributes$fillRule('evenodd'),
 							$elm$svg$Svg$Attributes$d('M10.788 3.21c.448-1.077 1.976-1.077 2.424 0l2.082 5.007 5.404.433c1.164.093 1.636 1.545.749 2.305l-4.117 3.527 1.257 5.273c.271 1.136-.964 2.033-1.96 1.425L12 18.354 7.373 21.18c-.996.608-2.231-.29-1.96-1.425l1.257-5.273-4.117-3.527c-.887-.76-.415-2.212.749-2.305l5.404-.433 2.082-5.006z'),
+							$elm$svg$Svg$Attributes$clipRule('evenodd')
+						]),
+					_List_Nil)
+				]))
+	},
+		{
+		bf: 'stop-circle',
+		bm: _List_Nil,
+		bp: {
+			a: _List_fromArray(
+				[
+					_Utils_Tuple2('viewBox', '0 0 24 24'),
+					_Utils_Tuple2('fill', 'currentColor')
+				]),
+			b: _List_fromArray(
+				[
+					{
+					a: _List_fromArray(
+						[
+							_Utils_Tuple2('fillRule', 'evenodd'),
+							_Utils_Tuple2('d', 'M2.25 12c0-5.385 4.365-9.75 9.75-9.75s9.75 4.365 9.75 9.75-4.365 9.75-9.75 9.75S2.25 17.385 2.25 12zm6-2.438c0-.724.588-1.312 1.313-1.312h4.874c.725 0 1.313.588 1.313 1.313v4.874c0 .725-.588 1.313-1.313 1.313H9.564a1.312 1.312 0 01-1.313-1.313V9.564z'),
+							_Utils_Tuple2('clipRule', 'evenodd')
+						]),
+					b: _List_Nil,
+					c: 'path'
+				}
+				]),
+			c: 'svg'
+		},
+		bu: A2(
+			$elm$svg$Svg$svg,
+			_List_fromArray(
+				[
+					$elm$svg$Svg$Attributes$viewBox('0 0 24 24'),
+					$elm$svg$Svg$Attributes$fill('currentColor')
+				]),
+			_List_fromArray(
+				[
+					A2(
+					$elm$svg$Svg$path,
+					_List_fromArray(
+						[
+							$elm$svg$Svg$Attributes$fillRule('evenodd'),
+							$elm$svg$Svg$Attributes$d('M2.25 12c0-5.385 4.365-9.75 9.75-9.75s9.75 4.365 9.75 9.75-4.365 9.75-9.75 9.75S2.25 17.385 2.25 12zm6-2.438c0-.724.588-1.312 1.313-1.312h4.874c.725 0 1.313.588 1.313 1.313v4.874c0 .725-.588 1.313-1.313 1.313H9.564a1.312 1.312 0 01-1.313-1.313V9.564z'),
 							$elm$svg$Svg$Attributes$clipRule('evenodd')
 						]),
 					_List_Nil)
@@ -47731,6 +49322,50 @@ var $author$project$Gallery$Solid$model = _List_fromArray(
 				]))
 	},
 		{
+		bf: 'trophy',
+		bm: _List_Nil,
+		bp: {
+			a: _List_fromArray(
+				[
+					_Utils_Tuple2('viewBox', '0 0 24 24'),
+					_Utils_Tuple2('fill', 'currentColor')
+				]),
+			b: _List_fromArray(
+				[
+					{
+					a: _List_fromArray(
+						[
+							_Utils_Tuple2('fillRule', 'evenodd'),
+							_Utils_Tuple2('d', 'M5.166 2.621v.858c-1.035.148-2.059.33-3.071.543a.75.75 0 00-.584.859 6.753 6.753 0 006.138 5.6 6.73 6.73 0 002.743 1.346A6.707 6.707 0 019.279 15H8.54c-1.036 0-1.875.84-1.875 1.875V19.5h-.75a2.25 2.25 0 00-2.25 2.25c0 .414.336.75.75.75h15a.75.75 0 00.75-.75 2.25 2.25 0 00-2.25-2.25h-.75v-2.625c0-1.036-.84-1.875-1.875-1.875h-.739a6.706 6.706 0 01-1.112-3.173 6.73 6.73 0 002.743-1.347 6.753 6.753 0 006.139-5.6.75.75 0 00-.585-.858 47.077 47.077 0 00-3.07-.543V2.62a.75.75 0 00-.658-.744 49.22 49.22 0 00-6.093-.377c-2.063 0-4.096.128-6.093.377a.75.75 0 00-.657.744zm0 2.629c0 1.196.312 2.32.857 3.294A5.266 5.266 0 013.16 5.337a45.6 45.6 0 012.006-.343v.256zm13.5 0v-.256c.674.1 1.343.214 2.006.343a5.265 5.265 0 01-2.863 3.207 6.72 6.72 0 00.857-3.294z'),
+							_Utils_Tuple2('clipRule', 'evenodd')
+						]),
+					b: _List_Nil,
+					c: 'path'
+				}
+				]),
+			c: 'svg'
+		},
+		bu: A2(
+			$elm$svg$Svg$svg,
+			_List_fromArray(
+				[
+					$elm$svg$Svg$Attributes$viewBox('0 0 24 24'),
+					$elm$svg$Svg$Attributes$fill('currentColor')
+				]),
+			_List_fromArray(
+				[
+					A2(
+					$elm$svg$Svg$path,
+					_List_fromArray(
+						[
+							$elm$svg$Svg$Attributes$fillRule('evenodd'),
+							$elm$svg$Svg$Attributes$d('M5.166 2.621v.858c-1.035.148-2.059.33-3.071.543a.75.75 0 00-.584.859 6.753 6.753 0 006.138 5.6 6.73 6.73 0 002.743 1.346A6.707 6.707 0 019.279 15H8.54c-1.036 0-1.875.84-1.875 1.875V19.5h-.75a2.25 2.25 0 00-2.25 2.25c0 .414.336.75.75.75h15a.75.75 0 00.75-.75 2.25 2.25 0 00-2.25-2.25h-.75v-2.625c0-1.036-.84-1.875-1.875-1.875h-.739a6.706 6.706 0 01-1.112-3.173 6.73 6.73 0 002.743-1.347 6.753 6.753 0 006.139-5.6.75.75 0 00-.585-.858 47.077 47.077 0 00-3.07-.543V2.62a.75.75 0 00-.658-.744 49.22 49.22 0 00-6.093-.377c-2.063 0-4.096.128-6.093.377a.75.75 0 00-.657.744zm0 2.629c0 1.196.312 2.32.857 3.294A5.266 5.266 0 013.16 5.337a45.6 45.6 0 012.006-.343v.256zm13.5 0v-.256c.674.1 1.343.214 2.006.343a5.265 5.265 0 01-2.863 3.207 6.72 6.72 0 00.857-3.294z'),
+							$elm$svg$Svg$Attributes$clipRule('evenodd')
+						]),
+					_List_Nil)
+				]))
+	},
+		{
 		bf: 'truck',
 		bm: _List_fromArray(
 			['lorry', 'vehicle']),
@@ -47797,6 +49432,65 @@ var $author$project$Gallery$Solid$model = _List_fromArray(
 					_List_fromArray(
 						[
 							$elm$svg$Svg$Attributes$d('M19.5 19.5a1.5 1.5 0 10-3 0 1.5 1.5 0 003 0z')
+						]),
+					_List_Nil)
+				]))
+	},
+		{
+		bf: 'tv',
+		bm: _List_Nil,
+		bp: {
+			a: _List_fromArray(
+				[
+					_Utils_Tuple2('viewBox', '0 0 24 24'),
+					_Utils_Tuple2('fill', 'currentColor')
+				]),
+			b: _List_fromArray(
+				[
+					{
+					a: _List_fromArray(
+						[
+							_Utils_Tuple2('d', 'M19.5 6h-15v9h15V6z')
+						]),
+					b: _List_Nil,
+					c: 'path'
+				},
+					{
+					a: _List_fromArray(
+						[
+							_Utils_Tuple2('fillRule', 'evenodd'),
+							_Utils_Tuple2('d', 'M3.375 3C2.339 3 1.5 3.84 1.5 4.875v11.25C1.5 17.16 2.34 18 3.375 18H9.75v1.5H6A.75.75 0 006 21h12a.75.75 0 000-1.5h-3.75V18h6.375c1.035 0 1.875-.84 1.875-1.875V4.875C22.5 3.839 21.66 3 20.625 3H3.375zm0 13.5h17.25a.375.375 0 00.375-.375V4.875a.375.375 0 00-.375-.375H3.375A.375.375 0 003 4.875v11.25c0 .207.168.375.375.375z'),
+							_Utils_Tuple2('clipRule', 'evenodd')
+						]),
+					b: _List_Nil,
+					c: 'path'
+				}
+				]),
+			c: 'svg'
+		},
+		bu: A2(
+			$elm$svg$Svg$svg,
+			_List_fromArray(
+				[
+					$elm$svg$Svg$Attributes$viewBox('0 0 24 24'),
+					$elm$svg$Svg$Attributes$fill('currentColor')
+				]),
+			_List_fromArray(
+				[
+					A2(
+					$elm$svg$Svg$path,
+					_List_fromArray(
+						[
+							$elm$svg$Svg$Attributes$d('M19.5 6h-15v9h15V6z')
+						]),
+					_List_Nil),
+					A2(
+					$elm$svg$Svg$path,
+					_List_fromArray(
+						[
+							$elm$svg$Svg$Attributes$fillRule('evenodd'),
+							$elm$svg$Svg$Attributes$d('M3.375 3C2.339 3 1.5 3.84 1.5 4.875v11.25C1.5 17.16 2.34 18 3.375 18H9.75v1.5H6A.75.75 0 006 21h12a.75.75 0 000-1.5h-3.75V18h6.375c1.035 0 1.875-.84 1.875-1.875V4.875C22.5 3.839 21.66 3 20.625 3H3.375zm0 13.5h17.25a.375.375 0 00.375-.375V4.875a.375.375 0 00-.375-.375H3.375A.375.375 0 003 4.875v11.25c0 .207.168.375.375.375z'),
+							$elm$svg$Svg$Attributes$clipRule('evenodd')
 						]),
 					_List_Nil)
 				]))
@@ -48239,6 +49933,46 @@ var $author$project$Gallery$Solid$model = _List_fromArray(
 				]))
 	},
 		{
+		bf: 'viewfinder-circle',
+		bm: _List_Nil,
+		bp: {
+			a: _List_fromArray(
+				[
+					_Utils_Tuple2('viewBox', '0 0 24 24'),
+					_Utils_Tuple2('fill', 'currentColor')
+				]),
+			b: _List_fromArray(
+				[
+					{
+					a: _List_fromArray(
+						[
+							_Utils_Tuple2('d', 'M6 3a3 3 0 00-3 3v1.5a.75.75 0 001.5 0V6A1.5 1.5 0 016 4.5h1.5a.75.75 0 000-1.5H6zM16.5 3a.75.75 0 000 1.5H18A1.5 1.5 0 0119.5 6v1.5a.75.75 0 001.5 0V6a3 3 0 00-3-3h-1.5zM12 8.25a3.75 3.75 0 100 7.5 3.75 3.75 0 000-7.5zM4.5 16.5a.75.75 0 00-1.5 0V18a3 3 0 003 3h1.5a.75.75 0 000-1.5H6A1.5 1.5 0 014.5 18v-1.5zM21 16.5a.75.75 0 00-1.5 0V18a1.5 1.5 0 01-1.5 1.5h-1.5a.75.75 0 000 1.5H18a3 3 0 003-3v-1.5z')
+						]),
+					b: _List_Nil,
+					c: 'path'
+				}
+				]),
+			c: 'svg'
+		},
+		bu: A2(
+			$elm$svg$Svg$svg,
+			_List_fromArray(
+				[
+					$elm$svg$Svg$Attributes$viewBox('0 0 24 24'),
+					$elm$svg$Svg$Attributes$fill('currentColor')
+				]),
+			_List_fromArray(
+				[
+					A2(
+					$elm$svg$Svg$path,
+					_List_fromArray(
+						[
+							$elm$svg$Svg$Attributes$d('M6 3a3 3 0 00-3 3v1.5a.75.75 0 001.5 0V6A1.5 1.5 0 016 4.5h1.5a.75.75 0 000-1.5H6zM16.5 3a.75.75 0 000 1.5H18A1.5 1.5 0 0119.5 6v1.5a.75.75 0 001.5 0V6a3 3 0 00-3-3h-1.5zM12 8.25a3.75 3.75 0 100 7.5 3.75 3.75 0 000-7.5zM4.5 16.5a.75.75 0 00-1.5 0V18a3 3 0 003 3h1.5a.75.75 0 000-1.5H6A1.5 1.5 0 014.5 18v-1.5zM21 16.5a.75.75 0 00-1.5 0V18a1.5 1.5 0 01-1.5 1.5h-1.5a.75.75 0 000 1.5H18a3 3 0 003-3v-1.5z')
+						]),
+					_List_Nil)
+				]))
+	},
+		{
 		bf: 'wallet',
 		bm: _List_Nil,
 		bp: {
@@ -48318,6 +50052,50 @@ var $author$project$Gallery$Solid$model = _List_fromArray(
 						[
 							$elm$svg$Svg$Attributes$fillRule('evenodd'),
 							$elm$svg$Svg$Attributes$d('M1.371 8.143c5.858-5.857 15.356-5.857 21.213 0a.75.75 0 010 1.061l-.53.53a.75.75 0 01-1.06 0c-4.98-4.979-13.053-4.979-18.032 0a.75.75 0 01-1.06 0l-.53-.53a.75.75 0 010-1.06zm3.182 3.182c4.1-4.1 10.749-4.1 14.85 0a.75.75 0 010 1.061l-.53.53a.75.75 0 01-1.062 0 8.25 8.25 0 00-11.667 0 .75.75 0 01-1.06 0l-.53-.53a.75.75 0 010-1.06zm3.204 3.182a6 6 0 018.486 0 .75.75 0 010 1.061l-.53.53a.75.75 0 01-1.061 0 3.75 3.75 0 00-5.304 0 .75.75 0 01-1.06 0l-.53-.53a.75.75 0 010-1.06zm3.182 3.182a1.5 1.5 0 012.122 0 .75.75 0 010 1.061l-.53.53a.75.75 0 01-1.061 0l-.53-.53a.75.75 0 010-1.06z'),
+							$elm$svg$Svg$Attributes$clipRule('evenodd')
+						]),
+					_List_Nil)
+				]))
+	},
+		{
+		bf: 'window',
+		bm: _List_Nil,
+		bp: {
+			a: _List_fromArray(
+				[
+					_Utils_Tuple2('viewBox', '0 0 24 24'),
+					_Utils_Tuple2('fill', 'currentColor')
+				]),
+			b: _List_fromArray(
+				[
+					{
+					a: _List_fromArray(
+						[
+							_Utils_Tuple2('fillRule', 'evenodd'),
+							_Utils_Tuple2('d', 'M2.25 6a3 3 0 013-3h13.5a3 3 0 013 3v12a3 3 0 01-3 3H5.25a3 3 0 01-3-3V6zm18 3H3.75v9a1.5 1.5 0 001.5 1.5h13.5a1.5 1.5 0 001.5-1.5V9zm-15-3.75A.75.75 0 004.5 6v.008c0 .414.336.75.75.75h.008a.75.75 0 00.75-.75V6a.75.75 0 00-.75-.75H5.25zm1.5.75a.75.75 0 01.75-.75h.008a.75.75 0 01.75.75v.008a.75.75 0 01-.75.75H7.5a.75.75 0 01-.75-.75V6zm3-.75A.75.75 0 009 6v.008c0 .414.336.75.75.75h.008a.75.75 0 00.75-.75V6a.75.75 0 00-.75-.75H9.75z'),
+							_Utils_Tuple2('clipRule', 'evenodd')
+						]),
+					b: _List_Nil,
+					c: 'path'
+				}
+				]),
+			c: 'svg'
+		},
+		bu: A2(
+			$elm$svg$Svg$svg,
+			_List_fromArray(
+				[
+					$elm$svg$Svg$Attributes$viewBox('0 0 24 24'),
+					$elm$svg$Svg$Attributes$fill('currentColor')
+				]),
+			_List_fromArray(
+				[
+					A2(
+					$elm$svg$Svg$path,
+					_List_fromArray(
+						[
+							$elm$svg$Svg$Attributes$fillRule('evenodd'),
+							$elm$svg$Svg$Attributes$d('M2.25 6a3 3 0 013-3h13.5a3 3 0 013 3v12a3 3 0 01-3 3H5.25a3 3 0 01-3-3V6zm18 3H3.75v9a1.5 1.5 0 001.5 1.5h13.5a1.5 1.5 0 001.5-1.5V9zm-15-3.75A.75.75 0 004.5 6v.008c0 .414.336.75.75.75h.008a.75.75 0 00.75-.75V6a.75.75 0 00-.75-.75H5.25zm1.5.75a.75.75 0 01.75-.75h.008a.75.75 0 01.75.75v.008a.75.75 0 01-.75.75H7.5a.75.75 0 01-.75-.75V6zm3-.75A.75.75 0 009 6v.008c0 .414.336.75.75.75h.008a.75.75 0 00.75-.75V6a.75.75 0 00-.75-.75H9.75z'),
 							$elm$svg$Svg$Attributes$clipRule('evenodd')
 						]),
 					_List_Nil)
@@ -49531,7 +51309,7 @@ var $author$project$Main$viewModal = function (model) {
 														$elm$html$Html$div,
 														_List_fromArray(
 															[
-																$elm$html$Html$Attributes$class('bg-slate-800 border border-slate-900 text-slate-50 p-4 rounded overflow-x-auto mt-3 text-sm')
+																$elm$html$Html$Attributes$class('bg-slate-800 text-slate-50 p-4 rounded overflow-x-auto mt-3 text-sm')
 															]),
 														_List_fromArray(
 															[
