@@ -43,5 +43,4 @@ view model =
 ```
 
 Combined with [Tailwind CSS](https://tailwindcss.com/), the example above
-creates a nice looking search button which you can view on
-[Ellie](https://ellie-app.com/jyhrn3SKwTHa1).
+creates a nice looking button which you can view on [Ellie](https://ellie-app.com/jyhrn3SKwTHa1).
