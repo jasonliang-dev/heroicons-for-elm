@@ -15,7 +15,7 @@ to_elm :: proc(buf: ^strings.Builder, doc: ^xml.Document, id: xml.Element_ID) {
 
 	i := 0
 	for attr in el.attribs {
-		if attr.key == "xmlns" || attr.key == "aria-hidden" {
+		if attr.key == "xmlns" || attr.key == "aria-hidden" || attr.key == "data-slot" {
 			continue
 		}
 
@@ -30,12 +30,12 @@ to_elm :: proc(buf: ^strings.Builder, doc: ^xml.Document, id: xml.Element_ID) {
 
 	strings.write_string(buf, " ] [ ")
 
-	for child_id, i in el.children {
+	for child, i in el.value {
 		if i > 0 {
 			strings.write_string(buf, ", ")
 		}
 
-		to_elm(buf, doc, child_id)
+		to_elm(buf, doc, child.(xml.Element_ID))
 	}
 
 	strings.write_string(buf, " ]")
@@ -48,7 +48,7 @@ to_tree :: proc(buf: ^strings.Builder, doc: ^xml.Document, id: xml.Element_ID) {
 
 	i := 0
 	for attr in el.attribs {
-		if attr.key == "xmlns" || attr.key == "aria-hidden" {
+		if attr.key == "xmlns" || attr.key == "aria-hidden" || attr.key == "data-slot" {
 			continue
 		}
 
@@ -63,12 +63,12 @@ to_tree :: proc(buf: ^strings.Builder, doc: ^xml.Document, id: xml.Element_ID) {
 
 	fmt.sbprintf(buf, "]\n , children = [")
 
-	for child_id, i in el.children {
+	for child, i in el.value {
 		if i > 0 {
 			strings.write_string(buf, "\n , ")
 		}
 
-		to_tree(buf, doc, child_id)
+		to_tree(buf, doc, child.(xml.Element_ID))
 	}
 
 	strings.write_string(buf, `]}`)
@@ -76,7 +76,6 @@ to_tree :: proc(buf: ^strings.Builder, doc: ^xml.Document, id: xml.Element_ID) {
 
 generate :: proc(builder: ^strings.Builder, path: string, module: string, outfile: string) {
 	fmt.printf("generating %v...", outfile)
-	defer fmt.println(" done.")
 
 	dir, err := os.open(path)
 	defer os.close(dir)
@@ -87,7 +86,6 @@ generate :: proc(builder: ^strings.Builder, path: string, module: string, outfil
 
 	infos: []os.File_Info
 	infos, err = os.read_dir(dir, 0)
-	defer delete(infos)
 	if err != 0 {
 		fmt.eprintf("cannot read directory (errno %v)\n", err)
 		os.exit(1)
@@ -109,7 +107,6 @@ model = [`, module)
 		}
 
 		doc, err := xml.load_from_file(info.fullpath)
-		defer xml.destroy(doc)
 		if err != .None {
 			fmt.eprintf("cannot load file: %v\n", err)
 			os.exit(1)
@@ -147,15 +144,16 @@ model = [`, module)
 	}
 
 	strings.builder_reset(builder)
+	fmt.println(" done.")
 }
 
 main :: proc() {
 	file_builder := strings.builder_make()
-	defer strings.builder_destroy(&file_builder)
 
 	generate(&file_builder, "heroicons/optimized/24/solid", "Solid", "../src/Gallery/Solid.elm")
 	generate(&file_builder, "heroicons/optimized/24/outline", "Outline", "../src/Gallery/Outline.elm")
 	generate(&file_builder, "heroicons/optimized/20/solid", "Mini", "../src/Gallery/Mini.elm")
+	generate(&file_builder, "heroicons/optimized/16/solid", "Micro", "../src/Gallery/Micro.elm")
 
 	libc.system("elm-format ../src/Gallery/ --yes")
 }

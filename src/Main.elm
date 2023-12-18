@@ -6,6 +6,7 @@ import Animation.Spring.Presets
 import Browser
 import Browser.Events
 import Gallery
+import Gallery.Micro
 import Gallery.Mini
 import Gallery.Outline
 import Gallery.Solid
@@ -56,6 +57,7 @@ type IconKind
     = Outline
     | Solid
     | Mini
+    | Micro
 
 
 type alias Model =
@@ -289,23 +291,25 @@ view model =
                 , input [ Attributes.value model.search, Events.onInput ChangeSearch, class "placeholder:italic placeholder:text-slate-400 block bg-white w-full border border-slate-300 rounded-md py-3 pl-9 pr-3 shadow-sm focus:outline-none focus:border-sky-500 focus:ring-sky-500 focus:ring-1", Attributes.placeholder "Search..." ] []
                 ]
             ]
-        , div [ class "mt-10 container max-w-7xl mx-auto px-4 grid md:grid-cols-3 gap-x-8 gap-y-4" ]
+        , div [ class "mt-10 container max-w-7xl mx-auto px-4 grid md:grid-cols-4 gap-x-8 gap-y-4" ]
             [ viewkindButton
                 { kind = Outline
-                , short = "24x24, 1.5px stroke"
-                , long = "Icons with an outlined appearance."
+                , desc = "24x24, 1.5px stroke"
                 , current = model.iconKind
                 }
             , viewkindButton
                 { kind = Solid
-                , short = "24x24, Solid fill"
-                , long = "Icons with a filled appearance."
+                , desc = "24x24, Solid fill"
                 , current = model.iconKind
                 }
             , viewkindButton
                 { kind = Mini
-                , short = "20x20, Solid fill"
-                , long = "For small elements like buttons and forms."
+                , desc = "20x20, Solid fill"
+                , current = model.iconKind
+                }
+            , viewkindButton
+                { kind = Micro
+                , desc = "16x16, Solid fill"
                 , current = model.iconKind
                 }
             ]
@@ -333,6 +337,9 @@ view model =
 
                             Mini ->
                                 Gallery.Mini.model
+
+                            Micro ->
+                                Gallery.Micro.model
                         )
                     )
                 ]
@@ -362,8 +369,8 @@ view model =
         ]
 
 
-viewkindButton : { kind : IconKind, short : String, long : String, current : IconKind } -> Html Msg
-viewkindButton { kind, short, long, current } =
+viewkindButton : { kind : IconKind, desc : String, current : IconKind } -> Html Msg
+viewkindButton { kind, desc, current } =
     let
         kindStr =
             case kind of
@@ -375,11 +382,14 @@ viewkindButton { kind, short, long, current } =
 
                 Mini ->
                     "Mini"
+
+                Micro ->
+                    "Micro"
     in
     button
         [ Attributes.classList
             [ ( "p-4 rounded-lg border transition-colors", True )
-            , ( "border-gray-50 shadow", current == kind )
+            , ( "border-gray-200 shadow", current == kind )
             , ( "border-transparent hover:border-gray-100 hover:bg-gray-50", current /= kind )
             ]
         , Events.onClick (ChangeIconKind kind)
@@ -393,8 +403,7 @@ viewkindButton { kind, short, long, current } =
                     ]
                 ]
                 [ text kindStr ]
-            , span [ class "text-gray-500 text-sm" ] [ text short ]
-            , div [ class "md:hidden lg:block text-gray-600" ] [ text long ]
+            , span [ class "text-gray-500 text-sm" ] [ text desc ]
             ]
         ]
 
@@ -412,6 +421,9 @@ viewIcon kind search icon =
 
                 Mini ->
                     "w-5 h-5"
+
+                Micro ->
+                    "w-4 h-4"
     in
     div [ Attributes.classList [ ( "text-center", True ), ( "hidden", not (kindaMatch search icon) ) ] ]
         [ button [ Attributes.id icon.name, Events.onClick (SelectIcon icon), class "w-full h-28 flex flex-col justify-center items-center bg-white hover:bg-sky-100 rounded-lg border border-gray-200 hover:border-sky-500 text-gray-600 hover:text-sky-700 focus:outline-none focus:border-sky-500 transition-colors" ]
