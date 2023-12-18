@@ -1,7 +1,7 @@
 <h1 align="center">Heroicons for Elm</h1>
 
 <p align="center">
-  <img src="resources/meta-image.png" width="400" />
+  <img src="public/meta-image.png" width="400" />
 </p>
 
 <p align="center">
