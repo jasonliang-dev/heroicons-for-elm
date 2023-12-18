@@ -20,40 +20,12 @@
   <meta property="twitter:description" content="Heroicons ported over to elm/svg elements for you to use in your own Elm projects.">
   <meta property="twitter:image" content="https://jasonliang.js.org/heroicons-for-elm/meta-image.png">
   <title>Heroicons for Elm</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&family=Roboto+Mono:wght@400;700&display=swap" rel="stylesheet">
   <script src="main.js"></script>
+  <link rel="stylesheet" href="balloon.css">
   <link rel="stylesheet" href="style.css">
-  <style>
-    @font-face {
-      font-family: "Inter";
-      src: url("resources/Inter-Regular.ttf") format("truetype");
-      font-weight: 400;
-    }
-
-    @font-face {
-      font-family: "Inter";
-      src: url("resources/Inter-Medium.ttf") format("truetype");
-      font-weight: 500;
-    }
-
-    @font-face {
-      font-family: "Inter";
-      src: url("resources/Inter-Bold.ttf") format("truetype");
-      font-weight: 700;
-    }
-
-    @font-face {
-      font-family: "Roboto Mono";
-      src: url("resources/RobotoMono-Regular.ttf") format("truetype");
-      font-weight: 400;
-    }
-
-    @font-face {
-      font-family: "Roboto Mono";
-      src: url("resources/RobotoMono-Bold.ttf") format("truetype");
-      font-weight: 700;
-    }
-  </style>
-  <link rel="stylesheet" href="resources/balloon.css">
 </head>
 <body>
   <div id="root"></div>
@@ -65,10 +37,6 @@
     app.ports.copy.subscribe(text => {
       navigator.clipboard.writeText(text)
     })
-  </script>
-  <script type="module">
-    import Transitions from "./resources/transitions.js"
-    Transitions.start(window.app)
   </script>
 </body>
 </html>
