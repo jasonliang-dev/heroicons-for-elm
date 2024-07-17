@@ -1,11 +1,13 @@
 package main
 
+import "base:runtime"
 import "core:c/libc"
 import "core:encoding/base64"
 import "core:encoding/xml"
 import "core:fmt"
 import "core:io"
 import "core:os"
+import "core:slice"
 import "core:strings"
 
 to_elm :: proc(buf: ^strings.Builder, doc: ^xml.Document, id: xml.Element_ID) {
@@ -78,11 +80,11 @@ generate :: proc(builder: ^strings.Builder, path: string, module: string, outfil
 	fmt.printf("generating %v...", outfile)
 
 	dir, err := os.open(path)
-	defer os.close(dir)
 	if err != 0 {
 		fmt.eprintf("cannot open directory %v, (errno %v)\n", path, err)
 		os.exit(1)
 	}
+	defer os.close(dir)
 
 	infos: []os.File_Info
 	infos, err = os.read_dir(dir, 0)
@@ -91,7 +93,11 @@ generate :: proc(builder: ^strings.Builder, path: string, module: string, outfil
 		os.exit(1)
 	}
 
-	fmt.sbprintf(builder, `module Gallery.%[1]v exposing (model)
+	slice.sort_by(infos, proc(lhs: os.File_Info, rhs: os.File_Info) -> bool {
+		return runtime.string_lt(lhs.name, rhs.name)
+	})
+
+	fmt.sbprintf(builder, `module Gallery.%v exposing (model)
 
 import Gallery exposing (Icon, XmlTree(..))
 import Html exposing (Html)

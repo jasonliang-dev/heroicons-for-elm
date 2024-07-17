@@ -584,6 +584,134 @@ model =
                     ]
                 }
       }
+    , { name = "arrow-turn-down-left"
+      , tags = []
+      , viewIcon = Svg.svg [ Svg.Attributes.fill "none", Svg.Attributes.viewBox "0 0 24 24", Svg.Attributes.strokeWidth "1.5", Svg.Attributes.stroke "currentColor" ] [ Svg.path [ Svg.Attributes.strokeLinecap "round", Svg.Attributes.strokeLinejoin "round", Svg.Attributes.d "m7.49 12-3.75 3.75m0 0 3.75 3.75m-3.75-3.75h16.5V4.499" ] [] ]
+      , tree =
+            XmlTree
+                { tag = "svg"
+                , attributes = [ ( "fill", "none" ), ( "viewBox", "0 0 24 24" ), ( "strokeWidth", "1.5" ), ( "stroke", "currentColor" ) ]
+                , children =
+                    [ XmlTree
+                        { tag = "path"
+                        , attributes = [ ( "strokeLinecap", "round" ), ( "strokeLinejoin", "round" ), ( "d", "m7.49 12-3.75 3.75m0 0 3.75 3.75m-3.75-3.75h16.5V4.499" ) ]
+                        , children = []
+                        }
+                    ]
+                }
+      }
+    , { name = "arrow-turn-down-right"
+      , tags = []
+      , viewIcon = Svg.svg [ Svg.Attributes.fill "none", Svg.Attributes.viewBox "0 0 24 24", Svg.Attributes.strokeWidth "1.5", Svg.Attributes.stroke "currentColor" ] [ Svg.path [ Svg.Attributes.strokeLinecap "round", Svg.Attributes.strokeLinejoin "round", Svg.Attributes.d "m16.49 12 3.75 3.75m0 0-3.75 3.75m3.75-3.75H3.74V4.499" ] [] ]
+      , tree =
+            XmlTree
+                { tag = "svg"
+                , attributes = [ ( "fill", "none" ), ( "viewBox", "0 0 24 24" ), ( "strokeWidth", "1.5" ), ( "stroke", "currentColor" ) ]
+                , children =
+                    [ XmlTree
+                        { tag = "path"
+                        , attributes = [ ( "strokeLinecap", "round" ), ( "strokeLinejoin", "round" ), ( "d", "m16.49 12 3.75 3.75m0 0-3.75 3.75m3.75-3.75H3.74V4.499" ) ]
+                        , children = []
+                        }
+                    ]
+                }
+      }
+    , { name = "arrow-turn-left-down"
+      , tags = []
+      , viewIcon = Svg.svg [ Svg.Attributes.fill "none", Svg.Attributes.viewBox "0 0 24 24", Svg.Attributes.strokeWidth "1.5", Svg.Attributes.stroke "currentColor" ] [ Svg.path [ Svg.Attributes.strokeLinecap "round", Svg.Attributes.strokeLinejoin "round", Svg.Attributes.d "m11.99 16.5-3.75 3.75m0 0L4.49 16.5m3.75 3.75V3.75h11.25" ] [] ]
+      , tree =
+            XmlTree
+                { tag = "svg"
+                , attributes = [ ( "fill", "none" ), ( "viewBox", "0 0 24 24" ), ( "strokeWidth", "1.5" ), ( "stroke", "currentColor" ) ]
+                , children =
+                    [ XmlTree
+                        { tag = "path"
+                        , attributes = [ ( "strokeLinecap", "round" ), ( "strokeLinejoin", "round" ), ( "d", "m11.99 16.5-3.75 3.75m0 0L4.49 16.5m3.75 3.75V3.75h11.25" ) ]
+                        , children = []
+                        }
+                    ]
+                }
+      }
+    , { name = "arrow-turn-left-up"
+      , tags = []
+      , viewIcon = Svg.svg [ Svg.Attributes.fill "none", Svg.Attributes.viewBox "0 0 24 24", Svg.Attributes.strokeWidth "1.5", Svg.Attributes.stroke "currentColor" ] [ Svg.path [ Svg.Attributes.strokeLinecap "round", Svg.Attributes.strokeLinejoin "round", Svg.Attributes.d "M11.99 7.5 8.24 3.75m0 0L4.49 7.5m3.75-3.75v16.499h11.25" ] [] ]
+      , tree =
+            XmlTree
+                { tag = "svg"
+                , attributes = [ ( "fill", "none" ), ( "viewBox", "0 0 24 24" ), ( "strokeWidth", "1.5" ), ( "stroke", "currentColor" ) ]
+                , children =
+                    [ XmlTree
+                        { tag = "path"
+                        , attributes = [ ( "strokeLinecap", "round" ), ( "strokeLinejoin", "round" ), ( "d", "M11.99 7.5 8.24 3.75m0 0L4.49 7.5m3.75-3.75v16.499h11.25" ) ]
+                        , children = []
+                        }
+                    ]
+                }
+      }
+    , { name = "arrow-turn-right-down"
+      , tags = []
+      , viewIcon = Svg.svg [ Svg.Attributes.fill "none", Svg.Attributes.viewBox "0 0 24 24", Svg.Attributes.strokeWidth "1.5", Svg.Attributes.stroke "currentColor" ] [ Svg.path [ Svg.Attributes.strokeLinecap "round", Svg.Attributes.strokeLinejoin "round", Svg.Attributes.d "m11.99 16.5 3.75 3.75m0 0 3.75-3.75m-3.75 3.75V3.75H4.49" ] [] ]
+      , tree =
+            XmlTree
+                { tag = "svg"
+                , attributes = [ ( "fill", "none" ), ( "viewBox", "0 0 24 24" ), ( "strokeWidth", "1.5" ), ( "stroke", "currentColor" ) ]
+                , children =
+                    [ XmlTree
+                        { tag = "path"
+                        , attributes = [ ( "strokeLinecap", "round" ), ( "strokeLinejoin", "round" ), ( "d", "m11.99 16.5 3.75 3.75m0 0 3.75-3.75m-3.75 3.75V3.75H4.49" ) ]
+                        , children = []
+                        }
+                    ]
+                }
+      }
+    , { name = "arrow-turn-right-up"
+      , tags = []
+      , viewIcon = Svg.svg [ Svg.Attributes.fill "none", Svg.Attributes.viewBox "0 0 24 24", Svg.Attributes.strokeWidth "1.5", Svg.Attributes.stroke "currentColor" ] [ Svg.path [ Svg.Attributes.strokeLinecap "round", Svg.Attributes.strokeLinejoin "round", Svg.Attributes.d "m11.99 7.5 3.75-3.75m0 0 3.75 3.75m-3.75-3.75v16.499H4.49" ] [] ]
+      , tree =
+            XmlTree
+                { tag = "svg"
+                , attributes = [ ( "fill", "none" ), ( "viewBox", "0 0 24 24" ), ( "strokeWidth", "1.5" ), ( "stroke", "currentColor" ) ]
+                , children =
+                    [ XmlTree
+                        { tag = "path"
+                        , attributes = [ ( "strokeLinecap", "round" ), ( "strokeLinejoin", "round" ), ( "d", "m11.99 7.5 3.75-3.75m0 0 3.75 3.75m-3.75-3.75v16.499H4.49" ) ]
+                        , children = []
+                        }
+                    ]
+                }
+      }
+    , { name = "arrow-turn-up-left"
+      , tags = []
+      , viewIcon = Svg.svg [ Svg.Attributes.fill "none", Svg.Attributes.viewBox "0 0 24 24", Svg.Attributes.strokeWidth "1.5", Svg.Attributes.stroke "currentColor" ] [ Svg.path [ Svg.Attributes.strokeLinecap "round", Svg.Attributes.strokeLinejoin "round", Svg.Attributes.d "M7.49 12 3.74 8.248m0 0 3.75-3.75m-3.75 3.75h16.5V19.5" ] [] ]
+      , tree =
+            XmlTree
+                { tag = "svg"
+                , attributes = [ ( "fill", "none" ), ( "viewBox", "0 0 24 24" ), ( "strokeWidth", "1.5" ), ( "stroke", "currentColor" ) ]
+                , children =
+                    [ XmlTree
+                        { tag = "path"
+                        , attributes = [ ( "strokeLinecap", "round" ), ( "strokeLinejoin", "round" ), ( "d", "M7.49 12 3.74 8.248m0 0 3.75-3.75m-3.75 3.75h16.5V19.5" ) ]
+                        , children = []
+                        }
+                    ]
+                }
+      }
+    , { name = "arrow-turn-up-right"
+      , tags = []
+      , viewIcon = Svg.svg [ Svg.Attributes.fill "none", Svg.Attributes.viewBox "0 0 24 24", Svg.Attributes.strokeWidth "1.5", Svg.Attributes.stroke "currentColor" ] [ Svg.path [ Svg.Attributes.strokeLinecap "round", Svg.Attributes.strokeLinejoin "round", Svg.Attributes.d "m16.49 12 3.75-3.751m0 0-3.75-3.75m3.75 3.75H3.74V19.5" ] [] ]
+      , tree =
+            XmlTree
+                { tag = "svg"
+                , attributes = [ ( "fill", "none" ), ( "viewBox", "0 0 24 24" ), ( "strokeWidth", "1.5" ), ( "stroke", "currentColor" ) ]
+                , children =
+                    [ XmlTree
+                        { tag = "path"
+                        , attributes = [ ( "strokeLinecap", "round" ), ( "strokeLinejoin", "round" ), ( "d", "m16.49 12 3.75-3.751m0 0-3.75-3.75m3.75 3.75H3.74V19.5" ) ]
+                        , children = []
+                        }
+                    ]
+                }
+      }
     , { name = "arrow-up-circle"
       , tags = []
       , viewIcon = Svg.svg [ Svg.Attributes.fill "none", Svg.Attributes.viewBox "0 0 24 24", Svg.Attributes.strokeWidth "1.5", Svg.Attributes.stroke "currentColor" ] [ Svg.path [ Svg.Attributes.strokeLinecap "round", Svg.Attributes.strokeLinejoin "round", Svg.Attributes.d "m15 11.25-3-3m0 0-3 3m3-3v7.5M21 12a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z" ] [] ]
@@ -1144,6 +1272,22 @@ model =
                     ]
                 }
       }
+    , { name = "bold"
+      , tags = []
+      , viewIcon = Svg.svg [ Svg.Attributes.fill "none", Svg.Attributes.viewBox "0 0 24 24", Svg.Attributes.strokeWidth "1.5", Svg.Attributes.stroke "currentColor" ] [ Svg.path [ Svg.Attributes.strokeLinejoin "round", Svg.Attributes.d "M6.75 3.744h-.753v8.25h7.125a4.125 4.125 0 0 0 0-8.25H6.75Zm0 0v.38m0 16.122h6.747a4.5 4.5 0 0 0 0-9.001h-7.5v9h.753Zm0 0v-.37m0-15.751h6a3.75 3.75 0 1 1 0 7.5h-6m0-7.5v7.5m0 0v8.25m0-8.25h6.375a4.125 4.125 0 0 1 0 8.25H6.75m.747-15.38h4.875a3.375 3.375 0 0 1 0 6.75H7.497v-6.75Zm0 7.5h5.25a3.75 3.75 0 0 1 0 7.5h-5.25v-7.5Z" ] [] ]
+      , tree =
+            XmlTree
+                { tag = "svg"
+                , attributes = [ ( "fill", "none" ), ( "viewBox", "0 0 24 24" ), ( "strokeWidth", "1.5" ), ( "stroke", "currentColor" ) ]
+                , children =
+                    [ XmlTree
+                        { tag = "path"
+                        , attributes = [ ( "strokeLinejoin", "round" ), ( "d", "M6.75 3.744h-.753v8.25h7.125a4.125 4.125 0 0 0 0-8.25H6.75Zm0 0v.38m0 16.122h6.747a4.5 4.5 0 0 0 0-9.001h-7.5v9h.753Zm0 0v-.37m0-15.751h6a3.75 3.75 0 1 1 0 7.5h-6m0-7.5v7.5m0 0v8.25m0-8.25h6.375a4.125 4.125 0 0 1 0 8.25H6.75m.747-15.38h4.875a3.375 3.375 0 0 1 0 6.75H7.497v-6.75Zm0 7.5h5.25a3.75 3.75 0 0 1 0 7.5h-5.25v-7.5Z" ) ]
+                        , children = []
+                        }
+                    ]
+                }
+      }
     , { name = "bolt-slash"
       , tags = [ "electric", "electricity", "flash", "lightning", "power", "zap" ]
       , viewIcon = Svg.svg [ Svg.Attributes.fill "none", Svg.Attributes.viewBox "0 0 24 24", Svg.Attributes.strokeWidth "1.5", Svg.Attributes.stroke "currentColor" ] [ Svg.path [ Svg.Attributes.strokeLinecap "round", Svg.Attributes.strokeLinejoin "round", Svg.Attributes.d "M11.412 15.655 9.75 21.75l3.745-4.012M9.257 13.5H3.75l2.659-2.849m2.048-2.194L14.25 2.25 12 10.5h8.25l-4.707 5.043M8.457 8.457 3 3m5.457 5.457 7.086 7.086m0 0L21 21" ] [] ]
@@ -1363,6 +1507,22 @@ model =
                     [ XmlTree
                         { tag = "path"
                         , attributes = [ ( "strokeLinecap", "round" ), ( "strokeLinejoin", "round" ), ( "d", "M15.75 15.75V18m-7.5-6.75h.008v.008H8.25v-.008Zm0 2.25h.008v.008H8.25V13.5Zm0 2.25h.008v.008H8.25v-.008Zm0 2.25h.008v.008H8.25V18Zm2.498-6.75h.007v.008h-.007v-.008Zm0 2.25h.007v.008h-.007V13.5Zm0 2.25h.007v.008h-.007v-.008Zm0 2.25h.007v.008h-.007V18Zm2.504-6.75h.008v.008h-.008v-.008Zm0 2.25h.008v.008h-.008V13.5Zm0 2.25h.008v.008h-.008v-.008Zm0 2.25h.008v.008h-.008V18Zm2.498-6.75h.008v.008h-.008v-.008Zm0 2.25h.008v.008h-.008V13.5ZM8.25 6h7.5v2.25h-7.5V6ZM12 2.25c-1.892 0-3.758.11-5.593.322C5.307 2.7 4.5 3.65 4.5 4.757V19.5a2.25 2.25 0 0 0 2.25 2.25h10.5a2.25 2.25 0 0 0 2.25-2.25V4.757c0-1.108-.806-2.057-1.907-2.185A48.507 48.507 0 0 0 12 2.25Z" ) ]
+                        , children = []
+                        }
+                    ]
+                }
+      }
+    , { name = "calendar-date-range"
+      , tags = []
+      , viewIcon = Svg.svg [ Svg.Attributes.fill "none", Svg.Attributes.viewBox "0 0 24 24", Svg.Attributes.strokeWidth "1.5", Svg.Attributes.stroke "currentColor" ] [ Svg.path [ Svg.Attributes.strokeLinecap "round", Svg.Attributes.strokeLinejoin "round", Svg.Attributes.d "M6.75 2.994v2.25m10.5-2.25v2.25m-14.252 13.5V7.491a2.25 2.25 0 0 1 2.25-2.25h13.5a2.25 2.25 0 0 1 2.25 2.25v11.251m-18 0a2.25 2.25 0 0 0 2.25 2.25h13.5a2.25 2.25 0 0 0 2.25-2.25m-18 0v-7.5a2.25 2.25 0 0 1 2.25-2.25h13.5a2.25 2.25 0 0 1 2.25 2.25v7.5m-6.75-6h2.25m-9 2.25h4.5m.002-2.25h.005v.006H12v-.006Zm-.001 4.5h.006v.006h-.006v-.005Zm-2.25.001h.005v.006H9.75v-.006Zm-2.25 0h.005v.005h-.006v-.005Zm6.75-2.247h.005v.005h-.005v-.005Zm0 2.247h.006v.006h-.006v-.006Zm2.25-2.248h.006V15H16.5v-.005Z" ] [] ]
+      , tree =
+            XmlTree
+                { tag = "svg"
+                , attributes = [ ( "fill", "none" ), ( "viewBox", "0 0 24 24" ), ( "strokeWidth", "1.5" ), ( "stroke", "currentColor" ) ]
+                , children =
+                    [ XmlTree
+                        { tag = "path"
+                        , attributes = [ ( "strokeLinecap", "round" ), ( "strokeLinejoin", "round" ), ( "d", "M6.75 2.994v2.25m10.5-2.25v2.25m-14.252 13.5V7.491a2.25 2.25 0 0 1 2.25-2.25h13.5a2.25 2.25 0 0 1 2.25 2.25v11.251m-18 0a2.25 2.25 0 0 0 2.25 2.25h13.5a2.25 2.25 0 0 0 2.25-2.25m-18 0v-7.5a2.25 2.25 0 0 1 2.25-2.25h13.5a2.25 2.25 0 0 1 2.25 2.25v7.5m-6.75-6h2.25m-9 2.25h4.5m.002-2.25h.005v.006H12v-.006Zm-.001 4.5h.006v.006h-.006v-.005Zm-2.25.001h.005v.006H9.75v-.006Zm-2.25 0h.005v.005h-.006v-.005Zm6.75-2.247h.005v.005h-.005v-.005Zm0 2.247h.006v.006h-.006v-.006Zm2.25-2.248h.006V15H16.5v-.005Z" ) ]
                         , children = []
                         }
                     ]
@@ -2273,6 +2433,22 @@ model =
                     ]
                 }
       }
+    , { name = "divide"
+      , tags = []
+      , viewIcon = Svg.svg [ Svg.Attributes.fill "none", Svg.Attributes.viewBox "0 0 24 24", Svg.Attributes.strokeWidth "1.5", Svg.Attributes.stroke "currentColor" ] [ Svg.path [ Svg.Attributes.strokeLinecap "round", Svg.Attributes.strokeLinejoin "round", Svg.Attributes.d "M4.499 11.998h15m-7.5-6.75h.008v.008h-.008v-.008Zm.375 0a.375.375 0 1 1-.75 0 .375.375 0 0 1 .75 0ZM12 18.751h.007v.007H12v-.007Zm.375 0a.375.375 0 1 1-.75 0 .375.375 0 0 1 .75 0Z" ] [] ]
+      , tree =
+            XmlTree
+                { tag = "svg"
+                , attributes = [ ( "fill", "none" ), ( "viewBox", "0 0 24 24" ), ( "strokeWidth", "1.5" ), ( "stroke", "currentColor" ) ]
+                , children =
+                    [ XmlTree
+                        { tag = "path"
+                        , attributes = [ ( "strokeLinecap", "round" ), ( "strokeLinejoin", "round" ), ( "d", "M4.499 11.998h15m-7.5-6.75h.008v.008h-.008v-.008Zm.375 0a.375.375 0 1 1-.75 0 .375.375 0 0 1 .75 0ZM12 18.751h.007v.007H12v-.007Zm.375 0a.375.375 0 1 1-.75 0 .375.375 0 0 1 .75 0Z" ) ]
+                        , children = []
+                        }
+                    ]
+                }
+      }
     , { name = "document-arrow-down"
       , tags = []
       , viewIcon = Svg.svg [ Svg.Attributes.fill "none", Svg.Attributes.viewBox "0 0 24 24", Svg.Attributes.strokeWidth "1.5", Svg.Attributes.stroke "currentColor" ] [ Svg.path [ Svg.Attributes.strokeLinecap "round", Svg.Attributes.strokeLinejoin "round", Svg.Attributes.d "M19.5 14.25v-2.625a3.375 3.375 0 0 0-3.375-3.375h-1.5A1.125 1.125 0 0 1 13.5 7.125v-1.5a3.375 3.375 0 0 0-3.375-3.375H8.25m.75 12 3 3m0 0 3-3m-3 3v-6m-1.5-9H5.625c-.621 0-1.125.504-1.125 1.125v17.25c0 .621.504 1.125 1.125 1.125h12.75c.621 0 1.125-.504 1.125-1.125V11.25a9 9 0 0 0-9-9Z" ] [] ]
@@ -2332,6 +2508,102 @@ model =
                     [ XmlTree
                         { tag = "path"
                         , attributes = [ ( "strokeLinecap", "round" ), ( "strokeLinejoin", "round" ), ( "d", "M10.125 2.25h-4.5c-.621 0-1.125.504-1.125 1.125v17.25c0 .621.504 1.125 1.125 1.125h12.75c.621 0 1.125-.504 1.125-1.125v-9M10.125 2.25h.375a9 9 0 0 1 9 9v.375M10.125 2.25A3.375 3.375 0 0 1 13.5 5.625v1.5c0 .621.504 1.125 1.125 1.125h1.5a3.375 3.375 0 0 1 3.375 3.375M9 15l2.25 2.25L15 12" ) ]
+                        , children = []
+                        }
+                    ]
+                }
+      }
+    , { name = "document-currency-bangladeshi"
+      , tags = []
+      , viewIcon = Svg.svg [ Svg.Attributes.fill "none", Svg.Attributes.viewBox "0 0 24 24", Svg.Attributes.strokeWidth "1.5", Svg.Attributes.stroke "currentColor" ] [ Svg.path [ Svg.Attributes.strokeLinecap "round", Svg.Attributes.strokeLinejoin "round", Svg.Attributes.d "M19.5 14.25v-2.625a3.375 3.375 0 0 0-3.375-3.375h-1.5A1.125 1.125 0 0 1 13.5 7.125v-1.5a3.375 3.375 0 0 0-3.375-3.375H8.25m0 8.25.22-.22a.75.75 0 0 1 1.28.53v6.441c0 .472.214.934.64 1.137a3.75 3.75 0 0 0 4.994-1.77c.205-.428-.152-.868-.627-.868h-.507m-6-2.25h7.5M10.5 2.25H5.625c-.621 0-1.125.504-1.125 1.125v17.25c0 .621.504 1.125 1.125 1.125h12.75c.621 0 1.125-.504 1.125-1.125V11.25a9 9 0 0 0-9-9Z" ] [] ]
+      , tree =
+            XmlTree
+                { tag = "svg"
+                , attributes = [ ( "fill", "none" ), ( "viewBox", "0 0 24 24" ), ( "strokeWidth", "1.5" ), ( "stroke", "currentColor" ) ]
+                , children =
+                    [ XmlTree
+                        { tag = "path"
+                        , attributes = [ ( "strokeLinecap", "round" ), ( "strokeLinejoin", "round" ), ( "d", "M19.5 14.25v-2.625a3.375 3.375 0 0 0-3.375-3.375h-1.5A1.125 1.125 0 0 1 13.5 7.125v-1.5a3.375 3.375 0 0 0-3.375-3.375H8.25m0 8.25.22-.22a.75.75 0 0 1 1.28.53v6.441c0 .472.214.934.64 1.137a3.75 3.75 0 0 0 4.994-1.77c.205-.428-.152-.868-.627-.868h-.507m-6-2.25h7.5M10.5 2.25H5.625c-.621 0-1.125.504-1.125 1.125v17.25c0 .621.504 1.125 1.125 1.125h12.75c.621 0 1.125-.504 1.125-1.125V11.25a9 9 0 0 0-9-9Z" ) ]
+                        , children = []
+                        }
+                    ]
+                }
+      }
+    , { name = "document-currency-dollar"
+      , tags = []
+      , viewIcon = Svg.svg [ Svg.Attributes.fill "none", Svg.Attributes.viewBox "0 0 24 24", Svg.Attributes.strokeWidth "1.5", Svg.Attributes.stroke "currentColor" ] [ Svg.path [ Svg.Attributes.strokeLinecap "round", Svg.Attributes.strokeLinejoin "round", Svg.Attributes.d "M19.5 14.25v-2.625a3.375 3.375 0 0 0-3.375-3.375h-1.5A1.125 1.125 0 0 1 13.5 7.125v-1.5a3.375 3.375 0 0 0-3.375-3.375H8.25m3.75 9v7.5m2.25-6.466a9.016 9.016 0 0 0-3.461-.203c-.536.072-.974.478-1.021 1.017a4.559 4.559 0 0 0-.018.402c0 .464.336.844.775.994l2.95 1.012c.44.15.775.53.775.994 0 .136-.006.27-.018.402-.047.539-.485.945-1.021 1.017a9.077 9.077 0 0 1-3.461-.203M10.5 2.25H5.625c-.621 0-1.125.504-1.125 1.125v17.25c0 .621.504 1.125 1.125 1.125h12.75c.621 0 1.125-.504 1.125-1.125V11.25a9 9 0 0 0-9-9Z" ] [] ]
+      , tree =
+            XmlTree
+                { tag = "svg"
+                , attributes = [ ( "fill", "none" ), ( "viewBox", "0 0 24 24" ), ( "strokeWidth", "1.5" ), ( "stroke", "currentColor" ) ]
+                , children =
+                    [ XmlTree
+                        { tag = "path"
+                        , attributes = [ ( "strokeLinecap", "round" ), ( "strokeLinejoin", "round" ), ( "d", "M19.5 14.25v-2.625a3.375 3.375 0 0 0-3.375-3.375h-1.5A1.125 1.125 0 0 1 13.5 7.125v-1.5a3.375 3.375 0 0 0-3.375-3.375H8.25m3.75 9v7.5m2.25-6.466a9.016 9.016 0 0 0-3.461-.203c-.536.072-.974.478-1.021 1.017a4.559 4.559 0 0 0-.018.402c0 .464.336.844.775.994l2.95 1.012c.44.15.775.53.775.994 0 .136-.006.27-.018.402-.047.539-.485.945-1.021 1.017a9.077 9.077 0 0 1-3.461-.203M10.5 2.25H5.625c-.621 0-1.125.504-1.125 1.125v17.25c0 .621.504 1.125 1.125 1.125h12.75c.621 0 1.125-.504 1.125-1.125V11.25a9 9 0 0 0-9-9Z" ) ]
+                        , children = []
+                        }
+                    ]
+                }
+      }
+    , { name = "document-currency-euro"
+      , tags = []
+      , viewIcon = Svg.svg [ Svg.Attributes.fill "none", Svg.Attributes.viewBox "0 0 24 24", Svg.Attributes.strokeWidth "1.5", Svg.Attributes.stroke "currentColor" ] [ Svg.path [ Svg.Attributes.strokeLinecap "round", Svg.Attributes.strokeLinejoin "round", Svg.Attributes.d "M19.5 14.25v-2.625a3.375 3.375 0 0 0-3.375-3.375h-1.5A1.125 1.125 0 0 1 13.5 7.125v-1.5a3.375 3.375 0 0 0-3.375-3.375H8.25m0 11.625h4.5m-4.5 2.25h4.5m2.121 1.527c-1.171 1.464-3.07 1.464-4.242 0-1.172-1.465-1.172-3.84 0-5.304 1.171-1.464 3.07-1.464 4.242 0M10.5 2.25H5.625c-.621 0-1.125.504-1.125 1.125v17.25c0 .621.504 1.125 1.125 1.125h12.75c.621 0 1.125-.504 1.125-1.125V11.25a9 9 0 0 0-9-9Z" ] [] ]
+      , tree =
+            XmlTree
+                { tag = "svg"
+                , attributes = [ ( "fill", "none" ), ( "viewBox", "0 0 24 24" ), ( "strokeWidth", "1.5" ), ( "stroke", "currentColor" ) ]
+                , children =
+                    [ XmlTree
+                        { tag = "path"
+                        , attributes = [ ( "strokeLinecap", "round" ), ( "strokeLinejoin", "round" ), ( "d", "M19.5 14.25v-2.625a3.375 3.375 0 0 0-3.375-3.375h-1.5A1.125 1.125 0 0 1 13.5 7.125v-1.5a3.375 3.375 0 0 0-3.375-3.375H8.25m0 11.625h4.5m-4.5 2.25h4.5m2.121 1.527c-1.171 1.464-3.07 1.464-4.242 0-1.172-1.465-1.172-3.84 0-5.304 1.171-1.464 3.07-1.464 4.242 0M10.5 2.25H5.625c-.621 0-1.125.504-1.125 1.125v17.25c0 .621.504 1.125 1.125 1.125h12.75c.621 0 1.125-.504 1.125-1.125V11.25a9 9 0 0 0-9-9Z" ) ]
+                        , children = []
+                        }
+                    ]
+                }
+      }
+    , { name = "document-currency-pound"
+      , tags = []
+      , viewIcon = Svg.svg [ Svg.Attributes.fill "none", Svg.Attributes.viewBox "0 0 24 24", Svg.Attributes.strokeWidth "1.5", Svg.Attributes.stroke "currentColor" ] [ Svg.path [ Svg.Attributes.strokeLinecap "round", Svg.Attributes.strokeLinejoin "round", Svg.Attributes.d "M19.5 14.25v-2.625a3.375 3.375 0 0 0-3.375-3.375h-1.5A1.125 1.125 0 0 1 13.5 7.125v-1.5a3.375 3.375 0 0 0-3.375-3.375H8.25m6.621 9.879a3 3 0 0 0-5.02 2.897l.164.609a4.5 4.5 0 0 1-.108 2.676l-.157.439.44-.22a2.863 2.863 0 0 1 2.185-.155c.72.24 1.507.184 2.186-.155L15 18M8.25 15.75H12m-1.5-13.5H5.625c-.621 0-1.125.504-1.125 1.125v17.25c0 .621.504 1.125 1.125 1.125h12.75c.621 0 1.125-.504 1.125-1.125V11.25a9 9 0 0 0-9-9Z" ] [] ]
+      , tree =
+            XmlTree
+                { tag = "svg"
+                , attributes = [ ( "fill", "none" ), ( "viewBox", "0 0 24 24" ), ( "strokeWidth", "1.5" ), ( "stroke", "currentColor" ) ]
+                , children =
+                    [ XmlTree
+                        { tag = "path"
+                        , attributes = [ ( "strokeLinecap", "round" ), ( "strokeLinejoin", "round" ), ( "d", "M19.5 14.25v-2.625a3.375 3.375 0 0 0-3.375-3.375h-1.5A1.125 1.125 0 0 1 13.5 7.125v-1.5a3.375 3.375 0 0 0-3.375-3.375H8.25m6.621 9.879a3 3 0 0 0-5.02 2.897l.164.609a4.5 4.5 0 0 1-.108 2.676l-.157.439.44-.22a2.863 2.863 0 0 1 2.185-.155c.72.24 1.507.184 2.186-.155L15 18M8.25 15.75H12m-1.5-13.5H5.625c-.621 0-1.125.504-1.125 1.125v17.25c0 .621.504 1.125 1.125 1.125h12.75c.621 0 1.125-.504 1.125-1.125V11.25a9 9 0 0 0-9-9Z" ) ]
+                        , children = []
+                        }
+                    ]
+                }
+      }
+    , { name = "document-currency-rupee"
+      , tags = []
+      , viewIcon = Svg.svg [ Svg.Attributes.fill "none", Svg.Attributes.viewBox "0 0 24 24", Svg.Attributes.strokeWidth "1.5", Svg.Attributes.stroke "currentColor" ] [ Svg.path [ Svg.Attributes.strokeLinecap "round", Svg.Attributes.strokeLinejoin "round", Svg.Attributes.d "M19.5 14.25v-2.625a3.375 3.375 0 0 0-3.375-3.375h-1.5A1.125 1.125 0 0 1 13.5 7.125v-1.5a3.375 3.375 0 0 0-3.375-3.375H8.25m2.25 9h3.75m-4.5 2.625h4.5M12 18.75 9.75 16.5h.375a2.625 2.625 0 0 0 0-5.25H9.75m.75-9H5.625c-.621 0-1.125.504-1.125 1.125v17.25c0 .621.504 1.125 1.125 1.125h12.75c.621 0 1.125-.504 1.125-1.125V11.25a9 9 0 0 0-9-9Z" ] [] ]
+      , tree =
+            XmlTree
+                { tag = "svg"
+                , attributes = [ ( "fill", "none" ), ( "viewBox", "0 0 24 24" ), ( "strokeWidth", "1.5" ), ( "stroke", "currentColor" ) ]
+                , children =
+                    [ XmlTree
+                        { tag = "path"
+                        , attributes = [ ( "strokeLinecap", "round" ), ( "strokeLinejoin", "round" ), ( "d", "M19.5 14.25v-2.625a3.375 3.375 0 0 0-3.375-3.375h-1.5A1.125 1.125 0 0 1 13.5 7.125v-1.5a3.375 3.375 0 0 0-3.375-3.375H8.25m2.25 9h3.75m-4.5 2.625h4.5M12 18.75 9.75 16.5h.375a2.625 2.625 0 0 0 0-5.25H9.75m.75-9H5.625c-.621 0-1.125.504-1.125 1.125v17.25c0 .621.504 1.125 1.125 1.125h12.75c.621 0 1.125-.504 1.125-1.125V11.25a9 9 0 0 0-9-9Z" ) ]
+                        , children = []
+                        }
+                    ]
+                }
+      }
+    , { name = "document-currency-yen"
+      , tags = []
+      , viewIcon = Svg.svg [ Svg.Attributes.fill "none", Svg.Attributes.viewBox "0 0 24 24", Svg.Attributes.strokeWidth "1.5", Svg.Attributes.stroke "currentColor" ] [ Svg.path [ Svg.Attributes.strokeLinecap "round", Svg.Attributes.strokeLinejoin "round", Svg.Attributes.d "M19.5 14.25v-2.625a3.375 3.375 0 0 0-3.375-3.375h-1.5A1.125 1.125 0 0 1 13.5 7.125v-1.5a3.375 3.375 0 0 0-3.375-3.375H8.25m1.5 9 2.25 3m0 0 2.25-3m-2.25 3v4.5M9.75 15h4.5m-4.5 2.25h4.5m-3.75-15H5.625c-.621 0-1.125.504-1.125 1.125v17.25c0 .621.504 1.125 1.125 1.125h12.75c.621 0 1.125-.504 1.125-1.125V11.25a9 9 0 0 0-9-9Z" ] [] ]
+      , tree =
+            XmlTree
+                { tag = "svg"
+                , attributes = [ ( "fill", "none" ), ( "viewBox", "0 0 24 24" ), ( "strokeWidth", "1.5" ), ( "stroke", "currentColor" ) ]
+                , children =
+                    [ XmlTree
+                        { tag = "path"
+                        , attributes = [ ( "strokeLinecap", "round" ), ( "strokeLinejoin", "round" ), ( "d", "M19.5 14.25v-2.625a3.375 3.375 0 0 0-3.375-3.375h-1.5A1.125 1.125 0 0 1 13.5 7.125v-1.5a3.375 3.375 0 0 0-3.375-3.375H8.25m1.5 9 2.25 3m0 0 2.25-3m-2.25 3v4.5M9.75 15h4.5m-4.5 2.25h4.5m-3.75-15H5.625c-.621 0-1.125.504-1.125 1.125v17.25c0 .621.504 1.125 1.125 1.125h12.75c.621 0 1.125-.504 1.125-1.125V11.25a9 9 0 0 0-9-9Z" ) ]
                         , children = []
                         }
                     ]
@@ -2508,6 +2780,22 @@ model =
                     [ XmlTree
                         { tag = "path"
                         , attributes = [ ( "strokeLinecap", "round" ), ( "strokeLinejoin", "round" ), ( "d", "M21.75 6.75v10.5a2.25 2.25 0 0 1-2.25 2.25h-15a2.25 2.25 0 0 1-2.25-2.25V6.75m19.5 0A2.25 2.25 0 0 0 19.5 4.5h-15a2.25 2.25 0 0 0-2.25 2.25m19.5 0v.243a2.25 2.25 0 0 1-1.07 1.916l-7.5 4.615a2.25 2.25 0 0 1-2.36 0L3.32 8.91a2.25 2.25 0 0 1-1.07-1.916V6.75" ) ]
+                        , children = []
+                        }
+                    ]
+                }
+      }
+    , { name = "equals"
+      , tags = []
+      , viewIcon = Svg.svg [ Svg.Attributes.fill "none", Svg.Attributes.viewBox "0 0 24 24", Svg.Attributes.strokeWidth "1.5", Svg.Attributes.stroke "currentColor" ] [ Svg.path [ Svg.Attributes.strokeLinecap "round", Svg.Attributes.strokeLinejoin "round", Svg.Attributes.d "M4.499 8.248h15m-15 7.501h15" ] [] ]
+      , tree =
+            XmlTree
+                { tag = "svg"
+                , attributes = [ ( "fill", "none" ), ( "viewBox", "0 0 24 24" ), ( "strokeWidth", "1.5" ), ( "stroke", "currentColor" ) ]
+                , children =
+                    [ XmlTree
+                        { tag = "path"
+                        , attributes = [ ( "strokeLinecap", "round" ), ( "strokeLinejoin", "round" ), ( "d", "M4.499 8.248h15m-15 7.501h15" ) ]
                         , children = []
                         }
                     ]
@@ -2923,6 +3211,54 @@ model =
                     ]
                 }
       }
+    , { name = "h1"
+      , tags = []
+      , viewIcon = Svg.svg [ Svg.Attributes.fill "none", Svg.Attributes.viewBox "0 0 24 24", Svg.Attributes.strokeWidth "1.5", Svg.Attributes.stroke "currentColor" ] [ Svg.path [ Svg.Attributes.strokeLinecap "round", Svg.Attributes.strokeLinejoin "round", Svg.Attributes.d "M2.243 4.493v7.5m0 0v7.502m0-7.501h10.5m0-7.5v7.5m0 0v7.501m4.501-8.627 2.25-1.5v10.126m0 0h-2.25m2.25 0h2.25" ] [] ]
+      , tree =
+            XmlTree
+                { tag = "svg"
+                , attributes = [ ( "fill", "none" ), ( "viewBox", "0 0 24 24" ), ( "strokeWidth", "1.5" ), ( "stroke", "currentColor" ) ]
+                , children =
+                    [ XmlTree
+                        { tag = "path"
+                        , attributes = [ ( "strokeLinecap", "round" ), ( "strokeLinejoin", "round" ), ( "d", "M2.243 4.493v7.5m0 0v7.502m0-7.501h10.5m0-7.5v7.5m0 0v7.501m4.501-8.627 2.25-1.5v10.126m0 0h-2.25m2.25 0h2.25" ) ]
+                        , children = []
+                        }
+                    ]
+                }
+      }
+    , { name = "h2"
+      , tags = []
+      , viewIcon = Svg.svg [ Svg.Attributes.fill "none", Svg.Attributes.viewBox "0 0 24 24", Svg.Attributes.strokeWidth "1.5", Svg.Attributes.stroke "currentColor" ] [ Svg.path [ Svg.Attributes.strokeLinecap "round", Svg.Attributes.strokeLinejoin "round", Svg.Attributes.d "M21.75 19.5H16.5v-1.609a2.25 2.25 0 0 1 1.244-2.012l2.89-1.445c.651-.326 1.116-.955 1.116-1.683 0-.498-.04-.987-.118-1.463-.135-.825-.835-1.422-1.668-1.489a15.202 15.202 0 0 0-3.464.12M2.243 4.492v7.5m0 0v7.502m0-7.501h10.5m0-7.5v7.5m0 0v7.501" ] [] ]
+      , tree =
+            XmlTree
+                { tag = "svg"
+                , attributes = [ ( "fill", "none" ), ( "viewBox", "0 0 24 24" ), ( "strokeWidth", "1.5" ), ( "stroke", "currentColor" ) ]
+                , children =
+                    [ XmlTree
+                        { tag = "path"
+                        , attributes = [ ( "strokeLinecap", "round" ), ( "strokeLinejoin", "round" ), ( "d", "M21.75 19.5H16.5v-1.609a2.25 2.25 0 0 1 1.244-2.012l2.89-1.445c.651-.326 1.116-.955 1.116-1.683 0-.498-.04-.987-.118-1.463-.135-.825-.835-1.422-1.668-1.489a15.202 15.202 0 0 0-3.464.12M2.243 4.492v7.5m0 0v7.502m0-7.501h10.5m0-7.5v7.5m0 0v7.501" ) ]
+                        , children = []
+                        }
+                    ]
+                }
+      }
+    , { name = "h3"
+      , tags = []
+      , viewIcon = Svg.svg [ Svg.Attributes.fill "none", Svg.Attributes.viewBox "0 0 24 24", Svg.Attributes.strokeWidth "1.5", Svg.Attributes.stroke "currentColor" ] [ Svg.path [ Svg.Attributes.strokeLinecap "round", Svg.Attributes.strokeLinejoin "round", Svg.Attributes.d "M20.905 14.626a4.52 4.52 0 0 1 .738 3.603c-.154.695-.794 1.143-1.504 1.208a15.194 15.194 0 0 1-3.639-.104m4.405-4.707a4.52 4.52 0 0 0 .738-3.603c-.154-.696-.794-1.144-1.504-1.209a15.19 15.19 0 0 0-3.639.104m4.405 4.708H18M2.243 4.493v7.5m0 0v7.502m0-7.501h10.5m0-7.5v7.5m0 0v7.501" ] [] ]
+      , tree =
+            XmlTree
+                { tag = "svg"
+                , attributes = [ ( "fill", "none" ), ( "viewBox", "0 0 24 24" ), ( "strokeWidth", "1.5" ), ( "stroke", "currentColor" ) ]
+                , children =
+                    [ XmlTree
+                        { tag = "path"
+                        , attributes = [ ( "strokeLinecap", "round" ), ( "strokeLinejoin", "round" ), ( "d", "M20.905 14.626a4.52 4.52 0 0 1 .738 3.603c-.154.695-.794 1.143-1.504 1.208a15.194 15.194 0 0 1-3.639-.104m4.405-4.707a4.52 4.52 0 0 0 .738-3.603c-.154-.696-.794-1.144-1.504-1.209a15.19 15.19 0 0 0-3.639.104m4.405 4.708H18M2.243 4.493v7.5m0 0v7.502m0-7.501h10.5m0-7.5v7.5m0 0v7.501" ) ]
+                        , children = []
+                        }
+                    ]
+                }
+      }
     , { name = "hand-raised"
       , tags = [ "grab" ]
       , viewIcon = Svg.svg [ Svg.Attributes.fill "none", Svg.Attributes.viewBox "0 0 24 24", Svg.Attributes.strokeWidth "1.5", Svg.Attributes.stroke "currentColor" ] [ Svg.path [ Svg.Attributes.strokeLinecap "round", Svg.Attributes.strokeLinejoin "round", Svg.Attributes.d "M10.05 4.575a1.575 1.575 0 1 0-3.15 0v3m3.15-3v-1.5a1.575 1.575 0 0 1 3.15 0v1.5m-3.15 0 .075 5.925m3.075.75V4.575m0 0a1.575 1.575 0 0 1 3.15 0V15M6.9 7.575a1.575 1.575 0 1 0-3.15 0v8.175a6.75 6.75 0 0 0 6.75 6.75h2.018a5.25 5.25 0 0 0 3.712-1.538l1.732-1.732a5.25 5.25 0 0 0 1.538-3.712l.003-2.024a.668.668 0 0 1 .198-.471 1.575 1.575 0 1 0-2.228-2.228 3.818 3.818 0 0 0-1.12 2.687M6.9 7.575V12m6.27 4.318A4.49 4.49 0 0 1 16.35 15m.002 0h-.002" ] [] ]
@@ -3115,6 +3451,22 @@ model =
                     ]
                 }
       }
+    , { name = "italic"
+      , tags = []
+      , viewIcon = Svg.svg [ Svg.Attributes.fill "none", Svg.Attributes.viewBox "0 0 24 24", Svg.Attributes.strokeWidth "1.5", Svg.Attributes.stroke "currentColor" ] [ Svg.path [ Svg.Attributes.strokeLinecap "round", Svg.Attributes.strokeLinejoin "round", Svg.Attributes.d "M5.248 20.246H9.05m0 0h3.696m-3.696 0 5.893-16.502m0 0h-3.697m3.697 0h3.803" ] [] ]
+      , tree =
+            XmlTree
+                { tag = "svg"
+                , attributes = [ ( "fill", "none" ), ( "viewBox", "0 0 24 24" ), ( "strokeWidth", "1.5" ), ( "stroke", "currentColor" ) ]
+                , children =
+                    [ XmlTree
+                        { tag = "path"
+                        , attributes = [ ( "strokeLinecap", "round" ), ( "strokeLinejoin", "round" ), ( "d", "M5.248 20.246H9.05m0 0h3.696m-3.696 0 5.893-16.502m0 0h-3.697m3.697 0h3.803" ) ]
+                        , children = []
+                        }
+                    ]
+                }
+      }
     , { name = "key"
       , tags = []
       , viewIcon = Svg.svg [ Svg.Attributes.fill "none", Svg.Attributes.viewBox "0 0 24 24", Svg.Attributes.strokeWidth "1.5", Svg.Attributes.stroke "currentColor" ] [ Svg.path [ Svg.Attributes.strokeLinecap "round", Svg.Attributes.strokeLinejoin "round", Svg.Attributes.d "M15.75 5.25a3 3 0 0 1 3 3m3 0a6 6 0 0 1-7.029 5.912c-.563-.097-1.159.026-1.563.43L10.5 17.25H8.25v2.25H6v2.25H2.25v-2.818c0-.597.237-1.17.659-1.591l6.499-6.499c.404-.404.527-1 .43-1.563A6 6 0 1 1 21.75 8.25Z" ] [] ]
@@ -3174,6 +3526,22 @@ model =
                     [ XmlTree
                         { tag = "path"
                         , attributes = [ ( "strokeLinecap", "round" ), ( "strokeLinejoin", "round" ), ( "d", "M12 18v-5.25m0 0a6.01 6.01 0 0 0 1.5-.189m-1.5.189a6.01 6.01 0 0 1-1.5-.189m3.75 7.478a12.06 12.06 0 0 1-4.5 0m3.75 2.383a14.406 14.406 0 0 1-3 0M14.25 18v-.192c0-.983.658-1.823 1.508-2.316a7.5 7.5 0 1 0-7.517 0c.85.493 1.509 1.333 1.509 2.316V18" ) ]
+                        , children = []
+                        }
+                    ]
+                }
+      }
+    , { name = "link-slash"
+      , tags = []
+      , viewIcon = Svg.svg [ Svg.Attributes.fill "none", Svg.Attributes.viewBox "0 0 24 24", Svg.Attributes.strokeWidth "1.5", Svg.Attributes.stroke "currentColor" ] [ Svg.path [ Svg.Attributes.strokeLinecap "round", Svg.Attributes.strokeLinejoin "round", Svg.Attributes.d "M13.181 8.68a4.503 4.503 0 0 1 1.903 6.405m-9.768-2.782L3.56 14.06a4.5 4.5 0 0 0 6.364 6.365l3.129-3.129m5.614-5.615 1.757-1.757a4.5 4.5 0 0 0-6.364-6.365l-4.5 4.5c-.258.26-.479.541-.661.84m1.903 6.405a4.495 4.495 0 0 1-1.242-.88 4.483 4.483 0 0 1-1.062-1.683m6.587 2.345 5.907 5.907m-5.907-5.907L8.898 8.898M2.991 2.99 8.898 8.9" ] [] ]
+      , tree =
+            XmlTree
+                { tag = "svg"
+                , attributes = [ ( "fill", "none" ), ( "viewBox", "0 0 24 24" ), ( "strokeWidth", "1.5" ), ( "stroke", "currentColor" ) ]
+                , children =
+                    [ XmlTree
+                        { tag = "path"
+                        , attributes = [ ( "strokeLinecap", "round" ), ( "strokeLinejoin", "round" ), ( "d", "M13.181 8.68a4.503 4.503 0 0 1 1.903 6.405m-9.768-2.782L3.56 14.06a4.5 4.5 0 0 0 6.364 6.365l3.129-3.129m5.614-5.615 1.757-1.757a4.5 4.5 0 0 0-6.364-6.365l-4.5 4.5c-.258.26-.479.541-.661.84m1.903 6.405a4.495 4.495 0 0 1-1.242-.88 4.483 4.483 0 0 1-1.062-1.683m6.587 2.345 5.907 5.907m-5.907-5.907L8.898 8.898M2.991 2.99 8.898 8.9" ) ]
                         , children = []
                         }
                     ]
@@ -3488,6 +3856,22 @@ model =
                     ]
                 }
       }
+    , { name = "numbered-list"
+      , tags = []
+      , viewIcon = Svg.svg [ Svg.Attributes.fill "none", Svg.Attributes.viewBox "0 0 24 24", Svg.Attributes.strokeWidth "1.5", Svg.Attributes.stroke "currentColor" ] [ Svg.path [ Svg.Attributes.strokeLinecap "round", Svg.Attributes.strokeLinejoin "round", Svg.Attributes.d "M8.242 5.992h12m-12 6.003H20.24m-12 5.999h12M4.117 7.495v-3.75H2.99m1.125 3.75H2.99m1.125 0H5.24m-1.92 2.577a1.125 1.125 0 1 1 1.591 1.59l-1.83 1.83h2.16M2.99 15.745h1.125a1.125 1.125 0 0 1 0 2.25H3.74m0-.002h.375a1.125 1.125 0 0 1 0 2.25H2.99" ] [] ]
+      , tree =
+            XmlTree
+                { tag = "svg"
+                , attributes = [ ( "fill", "none" ), ( "viewBox", "0 0 24 24" ), ( "strokeWidth", "1.5" ), ( "stroke", "currentColor" ) ]
+                , children =
+                    [ XmlTree
+                        { tag = "path"
+                        , attributes = [ ( "strokeLinecap", "round" ), ( "strokeLinejoin", "round" ), ( "d", "M8.242 5.992h12m-12 6.003H20.24m-12 5.999h12M4.117 7.495v-3.75H2.99m1.125 3.75H2.99m1.125 0H5.24m-1.92 2.577a1.125 1.125 0 1 1 1.591 1.59l-1.83 1.83h2.16M2.99 15.745h1.125a1.125 1.125 0 0 1 0 2.25H3.74m0-.002h.375a1.125 1.125 0 0 1 0 2.25H2.99" ) ]
+                        , children = []
+                        }
+                    ]
+                }
+      }
     , { name = "paint-brush"
       , tags = []
       , viewIcon = Svg.svg [ Svg.Attributes.fill "none", Svg.Attributes.viewBox "0 0 24 24", Svg.Attributes.strokeWidth "1.5", Svg.Attributes.stroke "currentColor" ] [ Svg.path [ Svg.Attributes.strokeLinecap "round", Svg.Attributes.strokeLinejoin "round", Svg.Attributes.d "M9.53 16.122a3 3 0 0 0-5.78 1.128 2.25 2.25 0 0 1-2.4 2.245 4.5 4.5 0 0 0 8.4-2.245c0-.399-.078-.78-.22-1.128Zm0 0a15.998 15.998 0 0 0 3.388-1.62m-5.043-.025a15.994 15.994 0 0 1 1.622-3.395m3.42 3.42a15.995 15.995 0 0 0 4.764-4.648l3.876-5.814a1.151 1.151 0 0 0-1.597-1.597L14.146 6.32a15.996 15.996 0 0 0-4.649 4.763m3.42 3.42a6.776 6.776 0 0 0-3.42-3.42" ] [] ]
@@ -3595,6 +3979,22 @@ model =
                     [ XmlTree
                         { tag = "path"
                         , attributes = [ ( "strokeLinecap", "round" ), ( "strokeLinejoin", "round" ), ( "d", "m16.862 4.487 1.687-1.688a1.875 1.875 0 1 1 2.652 2.652L6.832 19.82a4.5 4.5 0 0 1-1.897 1.13l-2.685.8.8-2.685a4.5 4.5 0 0 1 1.13-1.897L16.863 4.487Zm0 0L19.5 7.125" ) ]
+                        , children = []
+                        }
+                    ]
+                }
+      }
+    , { name = "percent-badge"
+      , tags = []
+      , viewIcon = Svg.svg [ Svg.Attributes.fill "none", Svg.Attributes.viewBox "0 0 24 24", Svg.Attributes.strokeWidth "1.5", Svg.Attributes.stroke "currentColor" ] [ Svg.path [ Svg.Attributes.strokeLinecap "round", Svg.Attributes.strokeLinejoin "round", Svg.Attributes.d "m8.99 14.993 6-6m6 3.001c0 1.268-.63 2.39-1.593 3.069a3.746 3.746 0 0 1-1.043 3.296 3.745 3.745 0 0 1-3.296 1.043 3.745 3.745 0 0 1-3.068 1.593c-1.268 0-2.39-.63-3.068-1.593a3.745 3.745 0 0 1-3.296-1.043 3.746 3.746 0 0 1-1.043-3.297 3.746 3.746 0 0 1-1.593-3.068c0-1.268.63-2.39 1.593-3.068a3.746 3.746 0 0 1 1.043-3.297 3.745 3.745 0 0 1 3.296-1.042 3.745 3.745 0 0 1 3.068-1.594c1.268 0 2.39.63 3.068 1.593a3.745 3.745 0 0 1 3.296 1.043 3.746 3.746 0 0 1 1.043 3.297 3.746 3.746 0 0 1 1.593 3.068ZM9.74 9.743h.008v.007H9.74v-.007Zm.375 0a.375.375 0 1 1-.75 0 .375.375 0 0 1 .75 0Zm4.125 4.5h.008v.008h-.008v-.008Zm.375 0a.375.375 0 1 1-.75 0 .375.375 0 0 1 .75 0Z" ] [] ]
+      , tree =
+            XmlTree
+                { tag = "svg"
+                , attributes = [ ( "fill", "none" ), ( "viewBox", "0 0 24 24" ), ( "strokeWidth", "1.5" ), ( "stroke", "currentColor" ) ]
+                , children =
+                    [ XmlTree
+                        { tag = "path"
+                        , attributes = [ ( "strokeLinecap", "round" ), ( "strokeLinejoin", "round" ), ( "d", "m8.99 14.993 6-6m6 3.001c0 1.268-.63 2.39-1.593 3.069a3.746 3.746 0 0 1-1.043 3.296 3.745 3.745 0 0 1-3.296 1.043 3.745 3.745 0 0 1-3.068 1.593c-1.268 0-2.39-.63-3.068-1.593a3.745 3.745 0 0 1-3.296-1.043 3.746 3.746 0 0 1-1.043-3.297 3.746 3.746 0 0 1-1.593-3.068c0-1.268.63-2.39 1.593-3.068a3.746 3.746 0 0 1 1.043-3.297 3.745 3.745 0 0 1 3.296-1.042 3.745 3.745 0 0 1 3.068-1.594c1.268 0 2.39.63 3.068 1.593a3.745 3.745 0 0 1 3.296 1.043 3.746 3.746 0 0 1 1.043 3.297 3.746 3.746 0 0 1 1.593 3.068ZM9.74 9.743h.008v.007H9.74v-.007Zm.375 0a.375.375 0 1 1-.75 0 .375.375 0 0 1 .75 0Zm4.125 4.5h.008v.008h-.008v-.008Zm.375 0a.375.375 0 1 1-.75 0 .375.375 0 0 1 .75 0Z" ) ]
                         , children = []
                         }
                     ]
@@ -4202,6 +4602,22 @@ model =
                     ]
                 }
       }
+    , { name = "slash"
+      , tags = []
+      , viewIcon = Svg.svg [ Svg.Attributes.fill "none", Svg.Attributes.viewBox "0 0 24 24", Svg.Attributes.strokeWidth "1.5", Svg.Attributes.stroke "currentColor" ] [ Svg.path [ Svg.Attributes.strokeLinecap "round", Svg.Attributes.strokeLinejoin "round", Svg.Attributes.d "m9 20.247 6-16.5" ] [] ]
+      , tree =
+            XmlTree
+                { tag = "svg"
+                , attributes = [ ( "fill", "none" ), ( "viewBox", "0 0 24 24" ), ( "strokeWidth", "1.5" ), ( "stroke", "currentColor" ) ]
+                , children =
+                    [ XmlTree
+                        { tag = "path"
+                        , attributes = [ ( "strokeLinecap", "round" ), ( "strokeLinejoin", "round" ), ( "d", "m9 20.247 6-16.5" ) ]
+                        , children = []
+                        }
+                    ]
+                }
+      }
     , { name = "sparkles"
       , tags = [ "glitter", "stars" ]
       , viewIcon = Svg.svg [ Svg.Attributes.fill "none", Svg.Attributes.viewBox "0 0 24 24", Svg.Attributes.strokeWidth "1.5", Svg.Attributes.stroke "currentColor" ] [ Svg.path [ Svg.Attributes.strokeLinecap "round", Svg.Attributes.strokeLinejoin "round", Svg.Attributes.d "M9.813 15.904 9 18.75l-.813-2.846a4.5 4.5 0 0 0-3.09-3.09L2.25 12l2.846-.813a4.5 4.5 0 0 0 3.09-3.09L9 5.25l.813 2.846a4.5 4.5 0 0 0 3.09 3.09L15.75 12l-2.846.813a4.5 4.5 0 0 0-3.09 3.09ZM18.259 8.715 18 9.75l-.259-1.035a3.375 3.375 0 0 0-2.455-2.456L14.25 6l1.036-.259a3.375 3.375 0 0 0 2.455-2.456L18 2.25l.259 1.035a3.375 3.375 0 0 0 2.456 2.456L21.75 6l-1.035.259a3.375 3.375 0 0 0-2.456 2.456ZM16.894 20.567 16.5 21.75l-.394-1.183a2.25 2.25 0 0 0-1.423-1.423L13.5 18.75l1.183-.394a2.25 2.25 0 0 0 1.423-1.423l.394-1.183.394 1.183a2.25 2.25 0 0 0 1.423 1.423l1.183.394-1.183.394a2.25 2.25 0 0 0-1.423 1.423Z" ] [] ]
@@ -4367,6 +4783,22 @@ model =
                     ]
                 }
       }
+    , { name = "strikethrough"
+      , tags = []
+      , viewIcon = Svg.svg [ Svg.Attributes.fill "none", Svg.Attributes.viewBox "0 0 24 24", Svg.Attributes.strokeWidth "1.5", Svg.Attributes.stroke "currentColor" ] [ Svg.path [ Svg.Attributes.strokeLinecap "round", Svg.Attributes.strokeLinejoin "round", Svg.Attributes.d "M12 12a8.912 8.912 0 0 1-.318-.079c-1.585-.424-2.904-1.247-3.76-2.236-.873-1.009-1.265-2.19-.968-3.301.59-2.2 3.663-3.29 6.863-2.432A8.186 8.186 0 0 1 16.5 5.21M6.42 17.81c.857.99 2.176 1.812 3.761 2.237 3.2.858 6.274-.23 6.863-2.431.233-.868.044-1.779-.465-2.617M3.75 12h16.5" ] [] ]
+      , tree =
+            XmlTree
+                { tag = "svg"
+                , attributes = [ ( "fill", "none" ), ( "viewBox", "0 0 24 24" ), ( "strokeWidth", "1.5" ), ( "stroke", "currentColor" ) ]
+                , children =
+                    [ XmlTree
+                        { tag = "path"
+                        , attributes = [ ( "strokeLinecap", "round" ), ( "strokeLinejoin", "round" ), ( "d", "M12 12a8.912 8.912 0 0 1-.318-.079c-1.585-.424-2.904-1.247-3.76-2.236-.873-1.009-1.265-2.19-.968-3.301.59-2.2 3.663-3.29 6.863-2.432A8.186 8.186 0 0 1 16.5 5.21M6.42 17.81c.857.99 2.176 1.812 3.761 2.237 3.2.858 6.274-.23 6.863-2.431.233-.868.044-1.779-.465-2.617M3.75 12h16.5" ) ]
+                        , children = []
+                        }
+                    ]
+                }
+      }
     , { name = "sun"
       , tags = [ "brightness", "day", "light" ]
       , viewIcon = Svg.svg [ Svg.Attributes.fill "none", Svg.Attributes.viewBox "0 0 24 24", Svg.Attributes.strokeWidth "1.5", Svg.Attributes.stroke "currentColor" ] [ Svg.path [ Svg.Attributes.strokeLinecap "round", Svg.Attributes.strokeLinejoin "round", Svg.Attributes.d "M12 3v2.25m6.364.386-1.591 1.591M21 12h-2.25m-.386 6.364-1.591-1.591M12 18.75V21m-4.773-4.227-1.591 1.591M5.25 12H3m4.227-4.773L5.636 5.636M15.75 12a3.75 3.75 0 1 1-7.5 0 3.75 3.75 0 0 1 7.5 0Z" ] [] ]
@@ -4511,6 +4943,22 @@ model =
                     [ XmlTree
                         { tag = "path"
                         , attributes = [ ( "strokeLinecap", "round" ), ( "strokeLinejoin", "round" ), ( "d", "M6 20.25h12m-7.5-3v3m3-3v3m-10.125-3h17.25c.621 0 1.125-.504 1.125-1.125V4.875c0-.621-.504-1.125-1.125-1.125H3.375c-.621 0-1.125.504-1.125 1.125v11.25c0 .621.504 1.125 1.125 1.125Z" ) ]
+                        , children = []
+                        }
+                    ]
+                }
+      }
+    , { name = "underline"
+      , tags = []
+      , viewIcon = Svg.svg [ Svg.Attributes.fill "none", Svg.Attributes.viewBox "0 0 24 24", Svg.Attributes.strokeWidth "1.5", Svg.Attributes.stroke "currentColor" ] [ Svg.path [ Svg.Attributes.strokeLinecap "round", Svg.Attributes.strokeLinejoin "round", Svg.Attributes.d "M17.995 3.744v7.5a6 6 0 1 1-12 0v-7.5m-2.25 16.502h16.5" ] [] ]
+      , tree =
+            XmlTree
+                { tag = "svg"
+                , attributes = [ ( "fill", "none" ), ( "viewBox", "0 0 24 24" ), ( "strokeWidth", "1.5" ), ( "stroke", "currentColor" ) ]
+                , children =
+                    [ XmlTree
+                        { tag = "path"
+                        , attributes = [ ( "strokeLinecap", "round" ), ( "strokeLinejoin", "round" ), ( "d", "M17.995 3.744v7.5a6 6 0 1 1-12 0v-7.5m-2.25 16.502h16.5" ) ]
                         , children = []
                         }
                     ]

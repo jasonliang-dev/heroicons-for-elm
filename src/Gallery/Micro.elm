@@ -533,6 +533,134 @@ model =
                     ]
                 }
       }
+    , { name = "arrow-turn-down-left"
+      , tags = []
+      , viewIcon = Svg.svg [ Svg.Attributes.viewBox "0 0 16 16", Svg.Attributes.fill "currentColor" ] [ Svg.path [ Svg.Attributes.fillRule "evenodd", Svg.Attributes.d "M13.25 2a.75.75 0 0 0-.75.75v6.5H4.56l.97-.97a.75.75 0 0 0-1.06-1.06L2.22 9.47a.75.75 0 0 0 0 1.06l2.25 2.25a.75.75 0 0 0 1.06-1.06l-.97-.97h8.69A.75.75 0 0 0 14 10V2.75a.75.75 0 0 0-.75-.75Z", Svg.Attributes.clipRule "evenodd" ] [] ]
+      , tree =
+            XmlTree
+                { tag = "svg"
+                , attributes = [ ( "viewBox", "0 0 16 16" ), ( "fill", "currentColor" ) ]
+                , children =
+                    [ XmlTree
+                        { tag = "path"
+                        , attributes = [ ( "fillRule", "evenodd" ), ( "d", "M13.25 2a.75.75 0 0 0-.75.75v6.5H4.56l.97-.97a.75.75 0 0 0-1.06-1.06L2.22 9.47a.75.75 0 0 0 0 1.06l2.25 2.25a.75.75 0 0 0 1.06-1.06l-.97-.97h8.69A.75.75 0 0 0 14 10V2.75a.75.75 0 0 0-.75-.75Z" ), ( "clipRule", "evenodd" ) ]
+                        , children = []
+                        }
+                    ]
+                }
+      }
+    , { name = "arrow-turn-down-right"
+      , tags = []
+      , viewIcon = Svg.svg [ Svg.Attributes.viewBox "0 0 16 16", Svg.Attributes.fill "currentColor" ] [ Svg.path [ Svg.Attributes.fillRule "evenodd", Svg.Attributes.d "M2.75 2a.75.75 0 0 1 .75.75v6.5h7.94l-.97-.97a.75.75 0 0 1 1.06-1.06l2.25 2.25a.75.75 0 0 1 0 1.06l-2.25 2.25a.75.75 0 1 1-1.06-1.06l.97-.97H2.75A.75.75 0 0 1 2 10V2.75A.75.75 0 0 1 2.75 2Z", Svg.Attributes.clipRule "evenodd" ] [] ]
+      , tree =
+            XmlTree
+                { tag = "svg"
+                , attributes = [ ( "viewBox", "0 0 16 16" ), ( "fill", "currentColor" ) ]
+                , children =
+                    [ XmlTree
+                        { tag = "path"
+                        , attributes = [ ( "fillRule", "evenodd" ), ( "d", "M2.75 2a.75.75 0 0 1 .75.75v6.5h7.94l-.97-.97a.75.75 0 0 1 1.06-1.06l2.25 2.25a.75.75 0 0 1 0 1.06l-2.25 2.25a.75.75 0 1 1-1.06-1.06l.97-.97H2.75A.75.75 0 0 1 2 10V2.75A.75.75 0 0 1 2.75 2Z" ), ( "clipRule", "evenodd" ) ]
+                        , children = []
+                        }
+                    ]
+                }
+      }
+    , { name = "arrow-turn-left-down"
+      , tags = []
+      , viewIcon = Svg.svg [ Svg.Attributes.viewBox "0 0 16 16", Svg.Attributes.fill "currentColor" ] [ Svg.path [ Svg.Attributes.fillRule "evenodd", Svg.Attributes.d "M5.47 2.22A.75.75 0 0 1 6 2h7.25a.75.75 0 0 1 0 1.5h-6.5v7.94l.97-.97a.75.75 0 0 1 1.06 1.06l-2.25 2.25a.75.75 0 0 1-1.06 0l-2.25-2.25a.75.75 0 1 1 1.06-1.06l.97.97V2.75a.75.75 0 0 1 .22-.53Z", Svg.Attributes.clipRule "evenodd" ] [] ]
+      , tree =
+            XmlTree
+                { tag = "svg"
+                , attributes = [ ( "viewBox", "0 0 16 16" ), ( "fill", "currentColor" ) ]
+                , children =
+                    [ XmlTree
+                        { tag = "path"
+                        , attributes = [ ( "fillRule", "evenodd" ), ( "d", "M5.47 2.22A.75.75 0 0 1 6 2h7.25a.75.75 0 0 1 0 1.5h-6.5v7.94l.97-.97a.75.75 0 0 1 1.06 1.06l-2.25 2.25a.75.75 0 0 1-1.06 0l-2.25-2.25a.75.75 0 1 1 1.06-1.06l.97.97V2.75a.75.75 0 0 1 .22-.53Z" ), ( "clipRule", "evenodd" ) ]
+                        , children = []
+                        }
+                    ]
+                }
+      }
+    , { name = "arrow-turn-left-up"
+      , tags = []
+      , viewIcon = Svg.svg [ Svg.Attributes.viewBox "0 0 16 16", Svg.Attributes.fill "currentColor" ] [ Svg.path [ Svg.Attributes.fillRule "evenodd", Svg.Attributes.d "M14 13.25a.75.75 0 0 0-.75-.75h-6.5V4.56l.97.97a.75.75 0 0 0 1.06-1.06L6.53 2.22a.75.75 0 0 0-1.06 0L3.22 4.47a.75.75 0 0 0 1.06 1.06l.97-.97v8.69c0 .414.336.75.75.75h7.25a.75.75 0 0 0 .75-.75Z", Svg.Attributes.clipRule "evenodd" ] [] ]
+      , tree =
+            XmlTree
+                { tag = "svg"
+                , attributes = [ ( "viewBox", "0 0 16 16" ), ( "fill", "currentColor" ) ]
+                , children =
+                    [ XmlTree
+                        { tag = "path"
+                        , attributes = [ ( "fillRule", "evenodd" ), ( "d", "M14 13.25a.75.75 0 0 0-.75-.75h-6.5V4.56l.97.97a.75.75 0 0 0 1.06-1.06L6.53 2.22a.75.75 0 0 0-1.06 0L3.22 4.47a.75.75 0 0 0 1.06 1.06l.97-.97v8.69c0 .414.336.75.75.75h7.25a.75.75 0 0 0 .75-.75Z" ), ( "clipRule", "evenodd" ) ]
+                        , children = []
+                        }
+                    ]
+                }
+      }
+    , { name = "arrow-turn-right-down"
+      , tags = []
+      , viewIcon = Svg.svg [ Svg.Attributes.viewBox "0 0 16 16", Svg.Attributes.fill "currentColor" ] [ Svg.path [ Svg.Attributes.fillRule "evenodd", Svg.Attributes.d "M2 2.75c0 .414.336.75.75.75h6.5v7.94l-.97-.97a.75.75 0 0 0-1.06 1.06l2.25 2.25a.75.75 0 0 0 1.06 0l2.25-2.25a.75.75 0 1 0-1.06-1.06l-.97.97V2.75A.75.75 0 0 0 10 2H2.75a.75.75 0 0 0-.75.75Z", Svg.Attributes.clipRule "evenodd" ] [] ]
+      , tree =
+            XmlTree
+                { tag = "svg"
+                , attributes = [ ( "viewBox", "0 0 16 16" ), ( "fill", "currentColor" ) ]
+                , children =
+                    [ XmlTree
+                        { tag = "path"
+                        , attributes = [ ( "fillRule", "evenodd" ), ( "d", "M2 2.75c0 .414.336.75.75.75h6.5v7.94l-.97-.97a.75.75 0 0 0-1.06 1.06l2.25 2.25a.75.75 0 0 0 1.06 0l2.25-2.25a.75.75 0 1 0-1.06-1.06l-.97.97V2.75A.75.75 0 0 0 10 2H2.75a.75.75 0 0 0-.75.75Z" ), ( "clipRule", "evenodd" ) ]
+                        , children = []
+                        }
+                    ]
+                }
+      }
+    , { name = "arrow-turn-right-up"
+      , tags = []
+      , viewIcon = Svg.svg [ Svg.Attributes.viewBox "0 0 16 16", Svg.Attributes.fill "currentColor" ] [ Svg.path [ Svg.Attributes.fillRule "evenodd", Svg.Attributes.d "M2 13.25a.75.75 0 0 1 .75-.75h6.5V4.56l-.97.97a.75.75 0 0 1-1.06-1.06l2.25-2.25a.75.75 0 0 1 1.06 0l2.25 2.25a.75.75 0 0 1-1.06 1.06l-.97-.97v8.69A.75.75 0 0 1 10 14H2.75a.75.75 0 0 1-.75-.75Z", Svg.Attributes.clipRule "evenodd" ] [] ]
+      , tree =
+            XmlTree
+                { tag = "svg"
+                , attributes = [ ( "viewBox", "0 0 16 16" ), ( "fill", "currentColor" ) ]
+                , children =
+                    [ XmlTree
+                        { tag = "path"
+                        , attributes = [ ( "fillRule", "evenodd" ), ( "d", "M2 13.25a.75.75 0 0 1 .75-.75h6.5V4.56l-.97.97a.75.75 0 0 1-1.06-1.06l2.25-2.25a.75.75 0 0 1 1.06 0l2.25 2.25a.75.75 0 0 1-1.06 1.06l-.97-.97v8.69A.75.75 0 0 1 10 14H2.75a.75.75 0 0 1-.75-.75Z" ), ( "clipRule", "evenodd" ) ]
+                        , children = []
+                        }
+                    ]
+                }
+      }
+    , { name = "arrow-turn-up-left"
+      , tags = []
+      , viewIcon = Svg.svg [ Svg.Attributes.viewBox "0 0 16 16", Svg.Attributes.fill "currentColor" ] [ Svg.path [ Svg.Attributes.fillRule "evenodd", Svg.Attributes.d "M13.25 14a.75.75 0 0 1-.75-.75v-6.5H4.56l.97.97a.75.75 0 0 1-1.06 1.06L2.22 6.53a.75.75 0 0 1 0-1.06l2.25-2.25a.75.75 0 0 1 1.06 1.06l-.97.97h8.69A.75.75 0 0 1 14 6v7.25a.75.75 0 0 1-.75.75Z", Svg.Attributes.clipRule "evenodd" ] [] ]
+      , tree =
+            XmlTree
+                { tag = "svg"
+                , attributes = [ ( "viewBox", "0 0 16 16" ), ( "fill", "currentColor" ) ]
+                , children =
+                    [ XmlTree
+                        { tag = "path"
+                        , attributes = [ ( "fillRule", "evenodd" ), ( "d", "M13.25 14a.75.75 0 0 1-.75-.75v-6.5H4.56l.97.97a.75.75 0 0 1-1.06 1.06L2.22 6.53a.75.75 0 0 1 0-1.06l2.25-2.25a.75.75 0 0 1 1.06 1.06l-.97.97h8.69A.75.75 0 0 1 14 6v7.25a.75.75 0 0 1-.75.75Z" ), ( "clipRule", "evenodd" ) ]
+                        , children = []
+                        }
+                    ]
+                }
+      }
+    , { name = "arrow-turn-up-right"
+      , tags = []
+      , viewIcon = Svg.svg [ Svg.Attributes.viewBox "0 0 16 16", Svg.Attributes.fill "currentColor" ] [ Svg.path [ Svg.Attributes.fillRule "evenodd", Svg.Attributes.d "M2.75 14a.75.75 0 0 0 .75-.75v-6.5h7.94l-.97.97a.75.75 0 0 0 1.06 1.06l2.25-2.25a.75.75 0 0 0 0-1.06l-2.25-2.25a.75.75 0 1 0-1.06 1.06l.97.97H2.75A.75.75 0 0 0 2 6v7.25c0 .414.336.75.75.75Z", Svg.Attributes.clipRule "evenodd" ] [] ]
+      , tree =
+            XmlTree
+                { tag = "svg"
+                , attributes = [ ( "viewBox", "0 0 16 16" ), ( "fill", "currentColor" ) ]
+                , children =
+                    [ XmlTree
+                        { tag = "path"
+                        , attributes = [ ( "fillRule", "evenodd" ), ( "d", "M2.75 14a.75.75 0 0 0 .75-.75v-6.5h7.94l-.97.97a.75.75 0 0 0 1.06 1.06l2.25-2.25a.75.75 0 0 0 0-1.06l-2.25-2.25a.75.75 0 1 0-1.06 1.06l.97.97H2.75A.75.75 0 0 0 2 6v7.25c0 .414.336.75.75.75Z" ), ( "clipRule", "evenodd" ) ]
+                        , children = []
+                        }
+                    ]
+                }
+      }
     , { name = "arrow-up-circle"
       , tags = []
       , viewIcon = Svg.svg [ Svg.Attributes.viewBox "0 0 16 16", Svg.Attributes.fill "currentColor" ] [ Svg.path [ Svg.Attributes.fillRule "evenodd", Svg.Attributes.d "M8 1a7 7 0 1 0 0 14A7 7 0 0 0 8 1Zm-.75 10.25a.75.75 0 0 0 1.5 0V6.56l1.22 1.22a.75.75 0 1 0 1.06-1.06l-2.5-2.5a.75.75 0 0 0-1.06 0l-2.5 2.5a.75.75 0 0 0 1.06 1.06l1.22-1.22v4.69Z", Svg.Attributes.clipRule "evenodd" ] [] ]
@@ -1128,6 +1256,22 @@ model =
                     ]
                 }
       }
+    , { name = "bold"
+      , tags = []
+      , viewIcon = Svg.svg [ Svg.Attributes.viewBox "0 0 16 16", Svg.Attributes.fill "currentColor" ] [ Svg.path [ Svg.Attributes.fillRule "evenodd", Svg.Attributes.d "M3 3a1 1 0 0 1 1-1h5a3.5 3.5 0 0 1 2.843 5.541A3.75 3.75 0 0 1 9.25 14H4a1 1 0 0 1-1-1V3Zm2.5 3.5v-2H9a1 1 0 0 1 0 2H5.5Zm0 2.5v2.5h3.75a1.25 1.25 0 1 0 0-2.5H5.5Z", Svg.Attributes.clipRule "evenodd" ] [] ]
+      , tree =
+            XmlTree
+                { tag = "svg"
+                , attributes = [ ( "viewBox", "0 0 16 16" ), ( "fill", "currentColor" ) ]
+                , children =
+                    [ XmlTree
+                        { tag = "path"
+                        , attributes = [ ( "fillRule", "evenodd" ), ( "d", "M3 3a1 1 0 0 1 1-1h5a3.5 3.5 0 0 1 2.843 5.541A3.75 3.75 0 0 1 9.25 14H4a1 1 0 0 1-1-1V3Zm2.5 3.5v-2H9a1 1 0 0 1 0 2H5.5Zm0 2.5v2.5h3.75a1.25 1.25 0 1 0 0-2.5H5.5Z" ), ( "clipRule", "evenodd" ) ]
+                        , children = []
+                        }
+                    ]
+                }
+      }
     , { name = "bolt-slash"
       , tags = [ "electric", "electricity", "flash", "lightning", "power", "zap" ]
       , viewIcon = Svg.svg [ Svg.Attributes.viewBox "0 0 16 16", Svg.Attributes.fill "currentColor" ] [ Svg.path [ Svg.Attributes.d "M9.58 1.077a.75.75 0 0 1 .405.82L9.165 6h4.085a.75.75 0 0 1 .567 1.241l-1.904 2.197L6.385 3.91 8.683 1.26a.75.75 0 0 1 .897-.182ZM4.087 6.562l5.528 5.528-2.298 2.651a.75.75 0 0 1-1.302-.638L6.835 10H2.75a.75.75 0 0 1-.567-1.241l1.904-2.197ZM2.22 2.22a.75.75 0 0 1 1.06 0l10.5 10.5a.75.75 0 1 1-1.06 1.06L2.22 3.28a.75.75 0 0 1 0-1.06Z" ] [] ]
@@ -1352,6 +1496,27 @@ model =
                     [ XmlTree
                         { tag = "path"
                         , attributes = [ ( "fillRule", "evenodd" ), ( "d", "M5 1a2 2 0 0 0-2 2v10a2 2 0 0 0 2 2h6a2 2 0 0 0 2-2V3a2 2 0 0 0-2-2H5Zm.75 6a.75.75 0 1 0 0 1.5.75.75 0 0 0 0-1.5ZM5 3.75A.75.75 0 0 1 5.75 3h4.5a.75.75 0 0 1 0 1.5h-4.5A.75.75 0 0 1 5 3.75Zm.75 7.75a.75.75 0 1 0 0 1.5.75.75 0 0 0 0-1.5ZM5 10a.75.75 0 1 1 1.5 0A.75.75 0 0 1 5 10Zm5.25-3a.75.75 0 1 0 0 1.5.75.75 0 0 0 0-1.5Zm-.75 3a.75.75 0 0 1 1.5 0v2.25a.75.75 0 0 1-1.5 0V10ZM8 7a.75.75 0 1 0 0 1.5A.75.75 0 0 0 8 7Zm-.75 5.25a.75.75 0 1 1 1.5 0 .75.75 0 0 1-1.5 0Zm.75-3a.75.75 0 1 0 0 1.5.75.75 0 0 0 0-1.5Z" ), ( "clipRule", "evenodd" ) ]
+                        , children = []
+                        }
+                    ]
+                }
+      }
+    , { name = "calendar-date-range"
+      , tags = []
+      , viewIcon = Svg.svg [ Svg.Attributes.viewBox "0 0 16 16", Svg.Attributes.fill "currentColor" ] [ Svg.path [ Svg.Attributes.d "M5.75 7.5a.75.75 0 1 0 0 1.5.75.75 0 0 0 0-1.5ZM7.25 8.25A.75.75 0 0 1 8 7.5h2.25a.75.75 0 0 1 0 1.5H8a.75.75 0 0 1-.75-.75ZM5.75 9.5a.75.75 0 0 0 0 1.5H8a.75.75 0 0 0 0-1.5H5.75Z" ] [], Svg.path [ Svg.Attributes.fillRule "evenodd", Svg.Attributes.d "M4.75 1a.75.75 0 0 0-.75.75V3a2 2 0 0 0-2 2v7a2 2 0 0 0 2 2h8a2 2 0 0 0 2-2V5a2 2 0 0 0-2-2V1.75a.75.75 0 0 0-1.5 0V3h-5V1.75A.75.75 0 0 0 4.75 1ZM3.5 7a1 1 0 0 1 1-1h7a1 1 0 0 1 1 1v4.5a1 1 0 0 1-1 1h-7a1 1 0 0 1-1-1V7Z", Svg.Attributes.clipRule "evenodd" ] [] ]
+      , tree =
+            XmlTree
+                { tag = "svg"
+                , attributes = [ ( "viewBox", "0 0 16 16" ), ( "fill", "currentColor" ) ]
+                , children =
+                    [ XmlTree
+                        { tag = "path"
+                        , attributes = [ ( "d", "M5.75 7.5a.75.75 0 1 0 0 1.5.75.75 0 0 0 0-1.5ZM7.25 8.25A.75.75 0 0 1 8 7.5h2.25a.75.75 0 0 1 0 1.5H8a.75.75 0 0 1-.75-.75ZM5.75 9.5a.75.75 0 0 0 0 1.5H8a.75.75 0 0 0 0-1.5H5.75Z" ) ]
+                        , children = []
+                        }
+                    , XmlTree
+                        { tag = "path"
+                        , attributes = [ ( "fillRule", "evenodd" ), ( "d", "M4.75 1a.75.75 0 0 0-.75.75V3a2 2 0 0 0-2 2v7a2 2 0 0 0 2 2h8a2 2 0 0 0 2-2V5a2 2 0 0 0-2-2V1.75a.75.75 0 0 0-1.5 0V3h-5V1.75A.75.75 0 0 0 4.75 1ZM3.5 7a1 1 0 0 1 1-1h7a1 1 0 0 1 1 1v4.5a1 1 0 0 1-1 1h-7a1 1 0 0 1-1-1V7Z" ), ( "clipRule", "evenodd" ) ]
                         , children = []
                         }
                     ]
@@ -2317,6 +2482,27 @@ model =
                     ]
                 }
       }
+    , { name = "divide"
+      , tags = []
+      , viewIcon = Svg.svg [ Svg.Attributes.viewBox "0 0 16 16", Svg.Attributes.fill "currentColor" ] [ Svg.path [ Svg.Attributes.fillRule "evenodd", Svg.Attributes.d "M2 8a.75.75 0 0 1 .75-.75h10.5a.75.75 0 0 1 0 1.5H2.75A.75.75 0 0 1 2 8Z", Svg.Attributes.clipRule "evenodd" ] [], Svg.path [ Svg.Attributes.d "M9 3a1 1 0 1 1-2 0 1 1 0 0 1 2 0ZM9 13a1 1 0 1 1-2 0 1 1 0 0 1 2 0Z" ] [] ]
+      , tree =
+            XmlTree
+                { tag = "svg"
+                , attributes = [ ( "viewBox", "0 0 16 16" ), ( "fill", "currentColor" ) ]
+                , children =
+                    [ XmlTree
+                        { tag = "path"
+                        , attributes = [ ( "fillRule", "evenodd" ), ( "d", "M2 8a.75.75 0 0 1 .75-.75h10.5a.75.75 0 0 1 0 1.5H2.75A.75.75 0 0 1 2 8Z" ), ( "clipRule", "evenodd" ) ]
+                        , children = []
+                        }
+                    , XmlTree
+                        { tag = "path"
+                        , attributes = [ ( "d", "M9 3a1 1 0 1 1-2 0 1 1 0 0 1 2 0ZM9 13a1 1 0 1 1-2 0 1 1 0 0 1 2 0Z" ) ]
+                        , children = []
+                        }
+                    ]
+                }
+      }
     , { name = "document-arrow-down"
       , tags = []
       , viewIcon = Svg.svg [ Svg.Attributes.viewBox "0 0 16 16", Svg.Attributes.fill "currentColor" ] [ Svg.path [ Svg.Attributes.fillRule "evenodd", Svg.Attributes.d "M4 2a1.5 1.5 0 0 0-1.5 1.5v9A1.5 1.5 0 0 0 4 14h8a1.5 1.5 0 0 0 1.5-1.5V6.621a1.5 1.5 0 0 0-.44-1.06L9.94 2.439A1.5 1.5 0 0 0 8.878 2H4Zm4 3.5a.75.75 0 0 1 .75.75v2.69l.72-.72a.75.75 0 1 1 1.06 1.06l-2 2a.75.75 0 0 1-1.06 0l-2-2a.75.75 0 0 1 1.06-1.06l.72.72V6.25A.75.75 0 0 1 8 5.5Z", Svg.Attributes.clipRule "evenodd" ] [] ]
@@ -2376,6 +2562,107 @@ model =
                     [ XmlTree
                         { tag = "path"
                         , attributes = [ ( "fillRule", "evenodd" ), ( "d", "M4 2a1.5 1.5 0 0 0-1.5 1.5v9A1.5 1.5 0 0 0 4 14h8a1.5 1.5 0 0 0 1.5-1.5V6.621a1.5 1.5 0 0 0-.44-1.06L9.94 2.439A1.5 1.5 0 0 0 8.878 2H4Zm6.713 4.16a.75.75 0 0 1 .127 1.053l-2.75 3.5a.75.75 0 0 1-1.078.106l-1.75-1.5a.75.75 0 1 1 .976-1.138l1.156.99L9.66 6.287a.75.75 0 0 1 1.053-.127Z" ), ( "clipRule", "evenodd" ) ]
+                        , children = []
+                        }
+                    ]
+                }
+      }
+    , { name = "document-currency-bangladeshi"
+      , tags = []
+      , viewIcon = Svg.svg [ Svg.Attributes.viewBox "0 0 16 16", Svg.Attributes.fill "currentColor" ] [ Svg.path [ Svg.Attributes.fillRule "evenodd", Svg.Attributes.d "M2.5 3.5A1.5 1.5 0 0 1 4 2h4.879a1.5 1.5 0 0 1 1.06.44l3.122 3.12a1.5 1.5 0 0 1 .439 1.061V12.5A1.5 1.5 0 0 1 12 14H4a1.5 1.5 0 0 1-1.5-1.5v-9ZM6 5.207a.75.75 0 0 1-.585-1.378A1.441 1.441 0 0 1 7.5 5.118V6h3.75a.75.75 0 0 1 0 1.5H7.5v3.25c0 .212.089.39.2.49.098.092.206.12.33.085.6-.167 1.151-.449 1.63-.821H9.5a.75.75 0 1 1 0-1.5h1.858a.75.75 0 0 1 .628 1.16 6.26 6.26 0 0 1-3.552 2.606 1.825 1.825 0 0 1-1.75-.425A2.17 2.17 0 0 1 6 10.75V7.5H4.75a.75.75 0 0 1 0-1.5H6v-.793Z", Svg.Attributes.clipRule "evenodd" ] [] ]
+      , tree =
+            XmlTree
+                { tag = "svg"
+                , attributes = [ ( "viewBox", "0 0 16 16" ), ( "fill", "currentColor" ) ]
+                , children =
+                    [ XmlTree
+                        { tag = "path"
+                        , attributes = [ ( "fillRule", "evenodd" ), ( "d", "M2.5 3.5A1.5 1.5 0 0 1 4 2h4.879a1.5 1.5 0 0 1 1.06.44l3.122 3.12a1.5 1.5 0 0 1 .439 1.061V12.5A1.5 1.5 0 0 1 12 14H4a1.5 1.5 0 0 1-1.5-1.5v-9ZM6 5.207a.75.75 0 0 1-.585-1.378A1.441 1.441 0 0 1 7.5 5.118V6h3.75a.75.75 0 0 1 0 1.5H7.5v3.25c0 .212.089.39.2.49.098.092.206.12.33.085.6-.167 1.151-.449 1.63-.821H9.5a.75.75 0 1 1 0-1.5h1.858a.75.75 0 0 1 .628 1.16 6.26 6.26 0 0 1-3.552 2.606 1.825 1.825 0 0 1-1.75-.425A2.17 2.17 0 0 1 6 10.75V7.5H4.75a.75.75 0 0 1 0-1.5H6v-.793Z" ), ( "clipRule", "evenodd" ) ]
+                        , children = []
+                        }
+                    ]
+                }
+      }
+    , { name = "document-currency-dollar"
+      , tags = []
+      , viewIcon = Svg.svg [ Svg.Attributes.viewBox "0 0 16 16", Svg.Attributes.fill "currentColor" ] [ Svg.path [ Svg.Attributes.d "M6.621 6.584c.208-.026.418-.046.629-.06v1.034l-.598-.138a.227.227 0 0 1-.116-.065.094.094 0 0 1-.028-.06 5.345 5.345 0 0 1 .002-.616.082.082 0 0 1 .025-.055.144.144 0 0 1 .086-.04ZM8.75 10.475V9.443l.594.137a.227.227 0 0 1 .116.065.094.094 0 0 1 .028.06 5.355 5.355 0 0 1-.002.616.082.082 0 0 1-.025.055.144.144 0 0 1-.086.04c-.207.026-.415.045-.625.06Z" ] [], Svg.path [ Svg.Attributes.fillRule "evenodd", Svg.Attributes.d "M2.5 3.5A1.5 1.5 0 0 1 4 2h4.879a1.5 1.5 0 0 1 1.06.44l3.122 3.12a1.5 1.5 0 0 1 .439 1.061V12.5A1.5 1.5 0 0 1 12 14H4a1.5 1.5 0 0 1-1.5-1.5v-9Zm6.25 1.25a.75.75 0 0 0-1.5 0v.272c-.273.016-.543.04-.81.073-.748.09-1.38.689-1.428 1.494a6.836 6.836 0 0 0-.002.789c.044.785.635 1.348 1.305 1.503l.935.216v1.379a11.27 11.27 0 0 1-1.36-.173.75.75 0 1 0-.28 1.474c.536.102 1.084.17 1.64.202v.271a.75.75 0 0 0 1.5 0v-.272c.271-.016.54-.04.807-.073.747-.09 1.378-.689 1.427-1.494a6.843 6.843 0 0 0 .002-.789c-.044-.785-.635-1.348-1.305-1.503l-.931-.215v-1.38c.46.03.913.089 1.356.173a.75.75 0 0 0 .28-1.474 12.767 12.767 0 0 0-1.636-.201V4.75Z", Svg.Attributes.clipRule "evenodd" ] [] ]
+      , tree =
+            XmlTree
+                { tag = "svg"
+                , attributes = [ ( "viewBox", "0 0 16 16" ), ( "fill", "currentColor" ) ]
+                , children =
+                    [ XmlTree
+                        { tag = "path"
+                        , attributes = [ ( "d", "M6.621 6.584c.208-.026.418-.046.629-.06v1.034l-.598-.138a.227.227 0 0 1-.116-.065.094.094 0 0 1-.028-.06 5.345 5.345 0 0 1 .002-.616.082.082 0 0 1 .025-.055.144.144 0 0 1 .086-.04ZM8.75 10.475V9.443l.594.137a.227.227 0 0 1 .116.065.094.094 0 0 1 .028.06 5.355 5.355 0 0 1-.002.616.082.082 0 0 1-.025.055.144.144 0 0 1-.086.04c-.207.026-.415.045-.625.06Z" ) ]
+                        , children = []
+                        }
+                    , XmlTree
+                        { tag = "path"
+                        , attributes = [ ( "fillRule", "evenodd" ), ( "d", "M2.5 3.5A1.5 1.5 0 0 1 4 2h4.879a1.5 1.5 0 0 1 1.06.44l3.122 3.12a1.5 1.5 0 0 1 .439 1.061V12.5A1.5 1.5 0 0 1 12 14H4a1.5 1.5 0 0 1-1.5-1.5v-9Zm6.25 1.25a.75.75 0 0 0-1.5 0v.272c-.273.016-.543.04-.81.073-.748.09-1.38.689-1.428 1.494a6.836 6.836 0 0 0-.002.789c.044.785.635 1.348 1.305 1.503l.935.216v1.379a11.27 11.27 0 0 1-1.36-.173.75.75 0 1 0-.28 1.474c.536.102 1.084.17 1.64.202v.271a.75.75 0 0 0 1.5 0v-.272c.271-.016.54-.04.807-.073.747-.09 1.378-.689 1.427-1.494a6.843 6.843 0 0 0 .002-.789c-.044-.785-.635-1.348-1.305-1.503l-.931-.215v-1.38c.46.03.913.089 1.356.173a.75.75 0 0 0 .28-1.474 12.767 12.767 0 0 0-1.636-.201V4.75Z" ), ( "clipRule", "evenodd" ) ]
+                        , children = []
+                        }
+                    ]
+                }
+      }
+    , { name = "document-currency-euro"
+      , tags = []
+      , viewIcon = Svg.svg [ Svg.Attributes.viewBox "0 0 16 16", Svg.Attributes.fill "currentColor" ] [ Svg.path [ Svg.Attributes.fillRule "evenodd", Svg.Attributes.d "M2.5 3.5A1.5 1.5 0 0 1 4 2h4.879a1.5 1.5 0 0 1 1.06.44l3.122 3.12a1.5 1.5 0 0 1 .439 1.061V12.5A1.5 1.5 0 0 1 12 14H4a1.5 1.5 0 0 1-1.5-1.5v-9Zm4.552 2.734c.354-.59.72-.734.948-.734.228 0 .594.145.948.734a.75.75 0 1 0 1.286-.772C9.71 4.588 8.924 4 8 4c-.924 0-1.71.588-2.234 1.462-.192.32-.346.67-.464 1.038H4.75a.75.75 0 0 0 0 1.5h.268a7.003 7.003 0 0 0 0 1H4.75a.75.75 0 0 0 0 1.5h.552c.118.367.272.717.464 1.037C6.29 12.412 7.076 13 8 13c.924 0 1.71-.588 2.234-1.463a.75.75 0 0 0-1.286-.771c-.354.59-.72.734-.948.734-.228 0-.594-.145-.948-.734a3.078 3.078 0 0 1-.142-.266h.34a.75.75 0 0 0 0-1.5h-.727a5.496 5.496 0 0 1 0-1h.727a.75.75 0 0 0 0-1.5h-.34a3.08 3.08 0 0 1 .142-.266Z", Svg.Attributes.clipRule "evenodd" ] [] ]
+      , tree =
+            XmlTree
+                { tag = "svg"
+                , attributes = [ ( "viewBox", "0 0 16 16" ), ( "fill", "currentColor" ) ]
+                , children =
+                    [ XmlTree
+                        { tag = "path"
+                        , attributes = [ ( "fillRule", "evenodd" ), ( "d", "M2.5 3.5A1.5 1.5 0 0 1 4 2h4.879a1.5 1.5 0 0 1 1.06.44l3.122 3.12a1.5 1.5 0 0 1 .439 1.061V12.5A1.5 1.5 0 0 1 12 14H4a1.5 1.5 0 0 1-1.5-1.5v-9Zm4.552 2.734c.354-.59.72-.734.948-.734.228 0 .594.145.948.734a.75.75 0 1 0 1.286-.772C9.71 4.588 8.924 4 8 4c-.924 0-1.71.588-2.234 1.462-.192.32-.346.67-.464 1.038H4.75a.75.75 0 0 0 0 1.5h.268a7.003 7.003 0 0 0 0 1H4.75a.75.75 0 0 0 0 1.5h.552c.118.367.272.717.464 1.037C6.29 12.412 7.076 13 8 13c.924 0 1.71-.588 2.234-1.463a.75.75 0 0 0-1.286-.771c-.354.59-.72.734-.948.734-.228 0-.594-.145-.948-.734a3.078 3.078 0 0 1-.142-.266h.34a.75.75 0 0 0 0-1.5h-.727a5.496 5.496 0 0 1 0-1h.727a.75.75 0 0 0 0-1.5h-.34a3.08 3.08 0 0 1 .142-.266Z" ), ( "clipRule", "evenodd" ) ]
+                        , children = []
+                        }
+                    ]
+                }
+      }
+    , { name = "document-currency-pound"
+      , tags = []
+      , viewIcon = Svg.svg [ Svg.Attributes.viewBox "0 0 16 16", Svg.Attributes.fill "currentColor" ] [ Svg.path [ Svg.Attributes.fillRule "evenodd", Svg.Attributes.d "M2.5 3.5A1.5 1.5 0 0 1 4 2h4.879a1.5 1.5 0 0 1 1.06.44l3.122 3.12a1.5 1.5 0 0 1 .439 1.061V12.5A1.5 1.5 0 0 1 12 14H4a1.5 1.5 0 0 1-1.5-1.5v-9Zm5.44 3.44a1.5 1.5 0 0 1 2.12 0 .75.75 0 1 0 1.061-1.061A3 3 0 0 0 6 7.999H4.75a.75.75 0 0 0 0 1.5h1.225c-.116.571-.62 1-1.225 1a.75.75 0 1 0 0 1.5h5.5a.75.75 0 0 0 0-1.5H7.2c.156-.304.257-.642.289-1H9.25a.75.75 0 0 0 0-1.5H7.5c0-.384.146-.767.44-1.06Z", Svg.Attributes.clipRule "evenodd" ] [] ]
+      , tree =
+            XmlTree
+                { tag = "svg"
+                , attributes = [ ( "viewBox", "0 0 16 16" ), ( "fill", "currentColor" ) ]
+                , children =
+                    [ XmlTree
+                        { tag = "path"
+                        , attributes = [ ( "fillRule", "evenodd" ), ( "d", "M2.5 3.5A1.5 1.5 0 0 1 4 2h4.879a1.5 1.5 0 0 1 1.06.44l3.122 3.12a1.5 1.5 0 0 1 .439 1.061V12.5A1.5 1.5 0 0 1 12 14H4a1.5 1.5 0 0 1-1.5-1.5v-9Zm5.44 3.44a1.5 1.5 0 0 1 2.12 0 .75.75 0 1 0 1.061-1.061A3 3 0 0 0 6 7.999H4.75a.75.75 0 0 0 0 1.5h1.225c-.116.571-.62 1-1.225 1a.75.75 0 1 0 0 1.5h5.5a.75.75 0 0 0 0-1.5H7.2c.156-.304.257-.642.289-1H9.25a.75.75 0 0 0 0-1.5H7.5c0-.384.146-.767.44-1.06Z" ), ( "clipRule", "evenodd" ) ]
+                        , children = []
+                        }
+                    ]
+                }
+      }
+    , { name = "document-currency-rupee"
+      , tags = []
+      , viewIcon = Svg.svg [ Svg.Attributes.viewBox "0 0 16 16", Svg.Attributes.fill "currentColor" ] [ Svg.path [ Svg.Attributes.fillRule "evenodd", Svg.Attributes.d "M2.5 3.5A1.5 1.5 0 0 1 4 2h4.879a1.5 1.5 0 0 1 1.06.44l3.122 3.12a1.5 1.5 0 0 1 .439 1.061V12.5A1.5 1.5 0 0 1 12 14H4a1.5 1.5 0 0 1-1.5-1.5v-9ZM5.75 5a.75.75 0 0 0 0 1.5c.698 0 1.3.409 1.582 1H5.75a.75.75 0 0 0 0 1.5h1.582c-.281.591-.884 1-1.582 1a.75.75 0 0 0-.53 1.28l1.5 1.5a.75.75 0 0 0 1.06-1.06l-.567-.567A3.256 3.256 0 0 0 8.913 9h1.337a.75.75 0 0 0 0-1.5H8.913a3.232 3.232 0 0 0-.424-1h1.761a.75.75 0 0 0 0-1.5h-4.5Z", Svg.Attributes.clipRule "evenodd" ] [] ]
+      , tree =
+            XmlTree
+                { tag = "svg"
+                , attributes = [ ( "viewBox", "0 0 16 16" ), ( "fill", "currentColor" ) ]
+                , children =
+                    [ XmlTree
+                        { tag = "path"
+                        , attributes = [ ( "fillRule", "evenodd" ), ( "d", "M2.5 3.5A1.5 1.5 0 0 1 4 2h4.879a1.5 1.5 0 0 1 1.06.44l3.122 3.12a1.5 1.5 0 0 1 .439 1.061V12.5A1.5 1.5 0 0 1 12 14H4a1.5 1.5 0 0 1-1.5-1.5v-9ZM5.75 5a.75.75 0 0 0 0 1.5c.698 0 1.3.409 1.582 1H5.75a.75.75 0 0 0 0 1.5h1.582c-.281.591-.884 1-1.582 1a.75.75 0 0 0-.53 1.28l1.5 1.5a.75.75 0 0 0 1.06-1.06l-.567-.567A3.256 3.256 0 0 0 8.913 9h1.337a.75.75 0 0 0 0-1.5H8.913a3.232 3.232 0 0 0-.424-1h1.761a.75.75 0 0 0 0-1.5h-4.5Z" ), ( "clipRule", "evenodd" ) ]
+                        , children = []
+                        }
+                    ]
+                }
+      }
+    , { name = "document-currency-yen"
+      , tags = []
+      , viewIcon = Svg.svg [ Svg.Attributes.viewBox "0 0 16 16", Svg.Attributes.fill "currentColor" ] [ Svg.path [ Svg.Attributes.fillRule "evenodd", Svg.Attributes.d "M2.5 3.5A1.5 1.5 0 0 1 4 2h4.879a1.5 1.5 0 0 1 1.06.44l3.122 3.12a1.5 1.5 0 0 1 .439 1.061V12.5A1.5 1.5 0 0 1 12 14H4a1.5 1.5 0 0 1-1.5-1.5v-9Zm3.663 1.801a.75.75 0 1 0-1.2.9L6.313 8H5a.75.75 0 0 0 0 1.5h2.25v1H5A.75.75 0 0 0 5 12h2.25v.25a.75.75 0 0 0 1.5 0V12H11a.75.75 0 0 0 0-1.5H8.75v-1H11A.75.75 0 0 0 11 8H9.687l1.35-1.799a.75.75 0 0 0-1.2-.9L8 7.75 6.163 5.3Z", Svg.Attributes.clipRule "evenodd" ] [] ]
+      , tree =
+            XmlTree
+                { tag = "svg"
+                , attributes = [ ( "viewBox", "0 0 16 16" ), ( "fill", "currentColor" ) ]
+                , children =
+                    [ XmlTree
+                        { tag = "path"
+                        , attributes = [ ( "fillRule", "evenodd" ), ( "d", "M2.5 3.5A1.5 1.5 0 0 1 4 2h4.879a1.5 1.5 0 0 1 1.06.44l3.122 3.12a1.5 1.5 0 0 1 .439 1.061V12.5A1.5 1.5 0 0 1 12 14H4a1.5 1.5 0 0 1-1.5-1.5v-9Zm3.663 1.801a.75.75 0 1 0-1.2.9L6.313 8H5a.75.75 0 0 0 0 1.5h2.25v1H5A.75.75 0 0 0 5 12h2.25v.25a.75.75 0 0 0 1.5 0V12H11a.75.75 0 0 0 0-1.5H8.75v-1H11A.75.75 0 0 0 11 8H9.687l1.35-1.799a.75.75 0 0 0-1.2-.9L8 7.75 6.163 5.3Z" ), ( "clipRule", "evenodd" ) ]
                         , children = []
                         }
                     ]
@@ -2567,6 +2854,22 @@ model =
                     , XmlTree
                         { tag = "path"
                         , attributes = [ ( "d", "M15 6.954 8.978 9.86a2.25 2.25 0 0 1-1.956 0L1 6.954V11.5A1.5 1.5 0 0 0 2.5 13h11a1.5 1.5 0 0 0 1.5-1.5V6.954Z" ) ]
+                        , children = []
+                        }
+                    ]
+                }
+      }
+    , { name = "equals"
+      , tags = []
+      , viewIcon = Svg.svg [ Svg.Attributes.viewBox "0 0 16 16", Svg.Attributes.fill "currentColor" ] [ Svg.path [ Svg.Attributes.fillRule "evenodd", Svg.Attributes.d "M2 4.75A.75.75 0 0 1 2.75 4h10.5a.75.75 0 0 1 0 1.5H2.75A.75.75 0 0 1 2 4.75ZM2 11.25a.75.75 0 0 1 .75-.75h10.5a.75.75 0 0 1 0 1.5H2.75a.75.75 0 0 1-.75-.75Z", Svg.Attributes.clipRule "evenodd" ] [] ]
+      , tree =
+            XmlTree
+                { tag = "svg"
+                , attributes = [ ( "viewBox", "0 0 16 16" ), ( "fill", "currentColor" ) ]
+                , children =
+                    [ XmlTree
+                        { tag = "path"
+                        , attributes = [ ( "fillRule", "evenodd" ), ( "d", "M2 4.75A.75.75 0 0 1 2.75 4h10.5a.75.75 0 0 1 0 1.5H2.75A.75.75 0 0 1 2 4.75ZM2 11.25a.75.75 0 0 1 .75-.75h10.5a.75.75 0 0 1 0 1.5H2.75a.75.75 0 0 1-.75-.75Z" ), ( "clipRule", "evenodd" ) ]
                         , children = []
                         }
                     ]
@@ -2992,6 +3295,54 @@ model =
                     ]
                 }
       }
+    , { name = "h1"
+      , tags = []
+      , viewIcon = Svg.svg [ Svg.Attributes.viewBox "0 0 16 16", Svg.Attributes.fill "currentColor" ] [ Svg.path [ Svg.Attributes.fillRule "evenodd", Svg.Attributes.d "M1.75 3a.75.75 0 0 1 .75.75v3.5h4v-3.5a.75.75 0 0 1 1.5 0v8.5a.75.75 0 0 1-1.5 0v-3.5h-4v3.5a.75.75 0 0 1-1.5 0v-8.5A.75.75 0 0 1 1.75 3ZM10 6.75a.75.75 0 0 1 .75-.75h1.75a.75.75 0 0 1 .75.75v4.75h1a.75.75 0 0 1 0 1.5h-3.5a.75.75 0 0 1 0-1.5h1v-4h-1a.75.75 0 0 1-.75-.75Z", Svg.Attributes.clipRule "evenodd" ] [] ]
+      , tree =
+            XmlTree
+                { tag = "svg"
+                , attributes = [ ( "viewBox", "0 0 16 16" ), ( "fill", "currentColor" ) ]
+                , children =
+                    [ XmlTree
+                        { tag = "path"
+                        , attributes = [ ( "fillRule", "evenodd" ), ( "d", "M1.75 3a.75.75 0 0 1 .75.75v3.5h4v-3.5a.75.75 0 0 1 1.5 0v8.5a.75.75 0 0 1-1.5 0v-3.5h-4v3.5a.75.75 0 0 1-1.5 0v-8.5A.75.75 0 0 1 1.75 3ZM10 6.75a.75.75 0 0 1 .75-.75h1.75a.75.75 0 0 1 .75.75v4.75h1a.75.75 0 0 1 0 1.5h-3.5a.75.75 0 0 1 0-1.5h1v-4h-1a.75.75 0 0 1-.75-.75Z" ), ( "clipRule", "evenodd" ) ]
+                        , children = []
+                        }
+                    ]
+                }
+      }
+    , { name = "h2"
+      , tags = []
+      , viewIcon = Svg.svg [ Svg.Attributes.viewBox "0 0 16 16", Svg.Attributes.fill "currentColor" ] [ Svg.path [ Svg.Attributes.fillRule "evenodd", Svg.Attributes.d "M1.75 3a.75.75 0 0 1 .75.75v3.5h4v-3.5a.75.75 0 0 1 1.5 0v8.5a.75.75 0 0 1-1.5 0v-3.5h-4v3.5a.75.75 0 0 1-1.5 0v-8.5A.75.75 0 0 1 1.75 3ZM12.5 7.5c-.558 0-1.106.04-1.642.119a.75.75 0 0 1-.216-1.484 12.848 12.848 0 0 1 2.836-.098A1.629 1.629 0 0 1 14.99 7.58a8.884 8.884 0 0 1-.021 1.166c-.06.702-.553 1.24-1.159 1.441l-2.14.713a.25.25 0 0 0-.17.237v.363h2.75a.75.75 0 0 1 0 1.5h-3.5a.75.75 0 0 1-.75-.75v-1.113a1.75 1.75 0 0 1 1.197-1.66l2.139-.713c.1-.033.134-.103.138-.144a7.344 7.344 0 0 0 .018-.97c-.003-.052-.046-.111-.128-.117A11.417 11.417 0 0 0 12.5 7.5Z", Svg.Attributes.clipRule "evenodd" ] [] ]
+      , tree =
+            XmlTree
+                { tag = "svg"
+                , attributes = [ ( "viewBox", "0 0 16 16" ), ( "fill", "currentColor" ) ]
+                , children =
+                    [ XmlTree
+                        { tag = "path"
+                        , attributes = [ ( "fillRule", "evenodd" ), ( "d", "M1.75 3a.75.75 0 0 1 .75.75v3.5h4v-3.5a.75.75 0 0 1 1.5 0v8.5a.75.75 0 0 1-1.5 0v-3.5h-4v3.5a.75.75 0 0 1-1.5 0v-8.5A.75.75 0 0 1 1.75 3ZM12.5 7.5c-.558 0-1.106.04-1.642.119a.75.75 0 0 1-.216-1.484 12.848 12.848 0 0 1 2.836-.098A1.629 1.629 0 0 1 14.99 7.58a8.884 8.884 0 0 1-.021 1.166c-.06.702-.553 1.24-1.159 1.441l-2.14.713a.25.25 0 0 0-.17.237v.363h2.75a.75.75 0 0 1 0 1.5h-3.5a.75.75 0 0 1-.75-.75v-1.113a1.75 1.75 0 0 1 1.197-1.66l2.139-.713c.1-.033.134-.103.138-.144a7.344 7.344 0 0 0 .018-.97c-.003-.052-.046-.111-.128-.117A11.417 11.417 0 0 0 12.5 7.5Z" ), ( "clipRule", "evenodd" ) ]
+                        , children = []
+                        }
+                    ]
+                }
+      }
+    , { name = "h3"
+      , tags = []
+      , viewIcon = Svg.svg [ Svg.Attributes.viewBox "0 0 16 16", Svg.Attributes.fill "currentColor" ] [ Svg.path [ Svg.Attributes.fillRule "evenodd", Svg.Attributes.d "M1.75 3a.75.75 0 0 1 .75.75v3.5h4v-3.5a.75.75 0 0 1 1.5 0v8.5a.75.75 0 0 1-1.5 0v-3.5h-4v3.5a.75.75 0 0 1-1.5 0v-8.5A.75.75 0 0 1 1.75 3ZM12.5 7.5c-.558 0-1.107.04-1.642.119a.75.75 0 0 1-.217-1.484 12.851 12.851 0 0 1 2.856-.097c.696.054 1.363.561 1.464 1.353a4.805 4.805 0 0 1-.203 2.109 4.745 4.745 0 0 1 .203 2.109c-.101.792-.768 1.299-1.464 1.353a12.955 12.955 0 0 1-2.856-.097.75.75 0 0 1 .217-1.484 11.351 11.351 0 0 0 2.523.085.14.14 0 0 0 .08-.03c.007-.006.01-.012.01-.012l.002-.003v-.003a3.29 3.29 0 0 0-.06-1.168H11.75a.75.75 0 0 1 0-1.5h1.663a3.262 3.262 0 0 0 .06-1.168l-.001-.006-.01-.012a.14.14 0 0 0-.08-.03c-.291-.023-.585-.034-.882-.034Z", Svg.Attributes.clipRule "evenodd" ] [] ]
+      , tree =
+            XmlTree
+                { tag = "svg"
+                , attributes = [ ( "viewBox", "0 0 16 16" ), ( "fill", "currentColor" ) ]
+                , children =
+                    [ XmlTree
+                        { tag = "path"
+                        , attributes = [ ( "fillRule", "evenodd" ), ( "d", "M1.75 3a.75.75 0 0 1 .75.75v3.5h4v-3.5a.75.75 0 0 1 1.5 0v8.5a.75.75 0 0 1-1.5 0v-3.5h-4v3.5a.75.75 0 0 1-1.5 0v-8.5A.75.75 0 0 1 1.75 3ZM12.5 7.5c-.558 0-1.107.04-1.642.119a.75.75 0 0 1-.217-1.484 12.851 12.851 0 0 1 2.856-.097c.696.054 1.363.561 1.464 1.353a4.805 4.805 0 0 1-.203 2.109 4.745 4.745 0 0 1 .203 2.109c-.101.792-.768 1.299-1.464 1.353a12.955 12.955 0 0 1-2.856-.097.75.75 0 0 1 .217-1.484 11.351 11.351 0 0 0 2.523.085.14.14 0 0 0 .08-.03c.007-.006.01-.012.01-.012l.002-.003v-.003a3.29 3.29 0 0 0-.06-1.168H11.75a.75.75 0 0 1 0-1.5h1.663a3.262 3.262 0 0 0 .06-1.168l-.001-.006-.01-.012a.14.14 0 0 0-.08-.03c-.291-.023-.585-.034-.882-.034Z" ), ( "clipRule", "evenodd" ) ]
+                        , children = []
+                        }
+                    ]
+                }
+      }
     , { name = "hand-raised"
       , tags = [ "grab" ]
       , viewIcon = Svg.svg [ Svg.Attributes.viewBox "0 0 16 16", Svg.Attributes.fill "currentColor" ] [ Svg.path [ Svg.Attributes.d "M8.5 1a.75.75 0 0 0-.75.75V6.5a.5.5 0 0 1-1 0V2.75a.75.75 0 0 0-1.5 0V7.5a.5.5 0 0 1-1 0V4.75a.75.75 0 0 0-1.5 0v4.5a5.75 5.75 0 0 0 11.5 0v-2.5a.75.75 0 0 0-1.5 0V9.5a.5.5 0 0 1-1 0V2.75a.75.75 0 0 0-1.5 0V6.5a.5.5 0 0 1-1 0V1.75A.75.75 0 0 0 8.5 1Z" ] [] ]
@@ -3194,6 +3545,22 @@ model =
                     ]
                 }
       }
+    , { name = "italic"
+      , tags = []
+      , viewIcon = Svg.svg [ Svg.Attributes.viewBox "0 0 16 16", Svg.Attributes.fill "currentColor" ] [ Svg.path [ Svg.Attributes.fillRule "evenodd", Svg.Attributes.d "M6.25 2.75A.75.75 0 0 1 7 2h6a.75.75 0 0 1 0 1.5h-2.483l-3.429 9H9A.75.75 0 0 1 9 14H3a.75.75 0 0 1 0-1.5h2.483l3.429-9H7a.75.75 0 0 1-.75-.75Z", Svg.Attributes.clipRule "evenodd" ] [] ]
+      , tree =
+            XmlTree
+                { tag = "svg"
+                , attributes = [ ( "viewBox", "0 0 16 16" ), ( "fill", "currentColor" ) ]
+                , children =
+                    [ XmlTree
+                        { tag = "path"
+                        , attributes = [ ( "fillRule", "evenodd" ), ( "d", "M6.25 2.75A.75.75 0 0 1 7 2h6a.75.75 0 0 1 0 1.5h-2.483l-3.429 9H9A.75.75 0 0 1 9 14H3a.75.75 0 0 1 0-1.5h2.483l3.429-9H7a.75.75 0 0 1-.75-.75Z" ), ( "clipRule", "evenodd" ) ]
+                        , children = []
+                        }
+                    ]
+                }
+      }
     , { name = "key"
       , tags = []
       , viewIcon = Svg.svg [ Svg.Attributes.viewBox "0 0 16 16", Svg.Attributes.fill "currentColor" ] [ Svg.path [ Svg.Attributes.fillRule "evenodd", Svg.Attributes.d "M14 6a4 4 0 0 1-4.899 3.899l-1.955 1.955a.5.5 0 0 1-.353.146H5v1.5a.5.5 0 0 1-.5.5h-2a.5.5 0 0 1-.5-.5v-2.293a.5.5 0 0 1 .146-.353l3.955-3.955A4 4 0 1 1 14 6Zm-4-2a.75.75 0 0 0 0 1.5.5.5 0 0 1 .5.5.75.75 0 0 0 1.5 0 2 2 0 0 0-2-2Z", Svg.Attributes.clipRule "evenodd" ] [] ]
@@ -3253,6 +3620,22 @@ model =
                     [ XmlTree
                         { tag = "path"
                         , attributes = [ ( "d", "M10.618 10.26c-.361.223-.618.598-.618 1.022 0 .226-.142.43-.36.49A6.006 6.006 0 0 1 8 12c-.569 0-1.12-.08-1.64-.227a.504.504 0 0 1-.36-.491c0-.424-.257-.799-.618-1.021a5 5 0 1 1 5.235 0ZM6.867 13.415a.75.75 0 1 0-.225 1.483 9.065 9.065 0 0 0 2.716 0 .75.75 0 1 0-.225-1.483 7.563 7.563 0 0 1-2.266 0Z" ) ]
+                        , children = []
+                        }
+                    ]
+                }
+      }
+    , { name = "link-slash"
+      , tags = []
+      , viewIcon = Svg.svg [ Svg.Attributes.viewBox "0 0 16 16", Svg.Attributes.fill "currentColor" ] [ Svg.path [ Svg.Attributes.d "M3.28 2.22a.75.75 0 0 0-1.06 1.06l10.5 10.5a.75.75 0 1 0 1.06-1.06l-2.999-3a3.5 3.5 0 0 0-.806-3.695.75.75 0 0 0-1.06 1.061c.374.374.569.861.584 1.352L7.116 6.055l1.97-1.97a2 2 0 0 1 3.208 2.3.75.75 0 0 0 1.346.662 3.501 3.501 0 0 0-5.615-4.022l-1.97 1.97L3.28 2.22ZM3.705 9.616a.75.75 0 0 0-1.345-.663 3.501 3.501 0 0 0 5.615 4.022l.379-.379a.75.75 0 0 0-1.061-1.06l-.379.378a2 2 0 0 1-3.209-2.298Z" ] [] ]
+      , tree =
+            XmlTree
+                { tag = "svg"
+                , attributes = [ ( "viewBox", "0 0 16 16" ), ( "fill", "currentColor" ) ]
+                , children =
+                    [ XmlTree
+                        { tag = "path"
+                        , attributes = [ ( "d", "M3.28 2.22a.75.75 0 0 0-1.06 1.06l10.5 10.5a.75.75 0 1 0 1.06-1.06l-2.999-3a3.5 3.5 0 0 0-.806-3.695.75.75 0 0 0-1.06 1.061c.374.374.569.861.584 1.352L7.116 6.055l1.97-1.97a2 2 0 0 1 3.208 2.3.75.75 0 0 0 1.346.662 3.501 3.501 0 0 0-5.615-4.022l-1.97 1.97L3.28 2.22ZM3.705 9.616a.75.75 0 0 0-1.345-.663 3.501 3.501 0 0 0 5.615 4.022l.379-.379a.75.75 0 0 0-1.061-1.06l-.379.378a2 2 0 0 1-3.209-2.298Z" ) ]
                         , children = []
                         }
                     ]
@@ -3576,6 +3959,22 @@ model =
                     ]
                 }
       }
+    , { name = "numbered-list"
+      , tags = []
+      , viewIcon = Svg.svg [ Svg.Attributes.viewBox "0 0 16 16", Svg.Attributes.fill "currentColor" ] [ Svg.path [ Svg.Attributes.d "M2.995 1a.625.625 0 1 0 0 1.25h.38v2.125a.625.625 0 1 0 1.25 0v-2.75A.625.625 0 0 0 4 1H2.995ZM3.208 7.385a2.37 2.37 0 0 1 1.027-.124L2.573 8.923a.625.625 0 0 0 .439 1.067l1.987.011a.625.625 0 0 0 .006-1.25l-.49-.003.777-.776c.215-.215.335-.506.335-.809 0-.465-.297-.957-.842-1.078a3.636 3.636 0 0 0-1.993.121.625.625 0 1 0 .416 1.179ZM2.625 11a.625.625 0 1 0 0 1.25H4.25a.125.125 0 0 1 0 .25H3.5a.625.625 0 1 0 0 1.25h.75a.125.125 0 0 1 0 .25H2.625a.625.625 0 1 0 0 1.25H4.25a1.375 1.375 0 0 0 1.153-2.125A1.375 1.375 0 0 0 4.25 11H2.625ZM7.25 2a.75.75 0 0 0 0 1.5h6a.75.75 0 0 0 0-1.5h-6ZM7.25 7.25a.75.75 0 0 0 0 1.5h6a.75.75 0 0 0 0-1.5h-6ZM6.5 13.25a.75.75 0 0 1 .75-.75h6a.75.75 0 0 1 0 1.5h-6a.75.75 0 0 1-.75-.75Z" ] [] ]
+      , tree =
+            XmlTree
+                { tag = "svg"
+                , attributes = [ ( "viewBox", "0 0 16 16" ), ( "fill", "currentColor" ) ]
+                , children =
+                    [ XmlTree
+                        { tag = "path"
+                        , attributes = [ ( "d", "M2.995 1a.625.625 0 1 0 0 1.25h.38v2.125a.625.625 0 1 0 1.25 0v-2.75A.625.625 0 0 0 4 1H2.995ZM3.208 7.385a2.37 2.37 0 0 1 1.027-.124L2.573 8.923a.625.625 0 0 0 .439 1.067l1.987.011a.625.625 0 0 0 .006-1.25l-.49-.003.777-.776c.215-.215.335-.506.335-.809 0-.465-.297-.957-.842-1.078a3.636 3.636 0 0 0-1.993.121.625.625 0 1 0 .416 1.179ZM2.625 11a.625.625 0 1 0 0 1.25H4.25a.125.125 0 0 1 0 .25H3.5a.625.625 0 1 0 0 1.25h.75a.125.125 0 0 1 0 .25H2.625a.625.625 0 1 0 0 1.25H4.25a1.375 1.375 0 0 0 1.153-2.125A1.375 1.375 0 0 0 4.25 11H2.625ZM7.25 2a.75.75 0 0 0 0 1.5h6a.75.75 0 0 0 0-1.5h-6ZM7.25 7.25a.75.75 0 0 0 0 1.5h6a.75.75 0 0 0 0-1.5h-6ZM6.5 13.25a.75.75 0 0 1 .75-.75h6a.75.75 0 0 1 0 1.5h-6a.75.75 0 0 1-.75-.75Z" ) ]
+                        , children = []
+                        }
+                    ]
+                }
+      }
     , { name = "paint-brush"
       , tags = []
       , viewIcon = Svg.svg [ Svg.Attributes.viewBox "0 0 16 16", Svg.Attributes.fill "currentColor" ] [ Svg.path [ Svg.Attributes.d "M12.613 1.258a1.535 1.535 0 0 1 2.13 2.129l-1.905 2.856a8 8 0 0 1-3.56 2.939 4.011 4.011 0 0 0-2.46-2.46 8 8 0 0 1 2.94-3.56l2.855-1.904ZM5.5 8A2.5 2.5 0 0 0 3 10.5a.5.5 0 0 1-.7.459.75.75 0 0 0-.983 1A3.5 3.5 0 0 0 8 10.5 2.5 2.5 0 0 0 5.5 8Z" ] [] ]
@@ -3688,6 +4087,22 @@ model =
                     [ XmlTree
                         { tag = "path"
                         , attributes = [ ( "fillRule", "evenodd" ), ( "d", "M11.013 2.513a1.75 1.75 0 0 1 2.475 2.474L6.226 12.25a2.751 2.751 0 0 1-.892.596l-2.047.848a.75.75 0 0 1-.98-.98l.848-2.047a2.75 2.75 0 0 1 .596-.892l7.262-7.261Z" ), ( "clipRule", "evenodd" ) ]
+                        , children = []
+                        }
+                    ]
+                }
+      }
+    , { name = "percent-badge"
+      , tags = []
+      , viewIcon = Svg.svg [ Svg.Attributes.viewBox "0 0 16 16", Svg.Attributes.fill "currentColor" ] [ Svg.path [ Svg.Attributes.fillRule "evenodd", Svg.Attributes.d "M3.396 6.093a2 2 0 0 0 0 3.814 2 2 0 0 0 2.697 2.697 2 2 0 0 0 3.814 0 2.001 2.001 0 0 0 2.698-2.697 2 2 0 0 0-.001-3.814 2.001 2.001 0 0 0-2.697-2.698 2 2 0 0 0-3.814.001 2 2 0 0 0-2.697 2.697ZM6 7a1 1 0 1 0 0-2 1 1 0 0 0 0 2Zm3.47-1.53a.75.75 0 1 1 1.06 1.06l-4 4a.75.75 0 1 1-1.06-1.06l4-4ZM11 10a1 1 0 1 1-2 0 1 1 0 0 1 2 0Z", Svg.Attributes.clipRule "evenodd" ] [] ]
+      , tree =
+            XmlTree
+                { tag = "svg"
+                , attributes = [ ( "viewBox", "0 0 16 16" ), ( "fill", "currentColor" ) ]
+                , children =
+                    [ XmlTree
+                        { tag = "path"
+                        , attributes = [ ( "fillRule", "evenodd" ), ( "d", "M3.396 6.093a2 2 0 0 0 0 3.814 2 2 0 0 0 2.697 2.697 2 2 0 0 0 3.814 0 2.001 2.001 0 0 0 2.698-2.697 2 2 0 0 0-.001-3.814 2.001 2.001 0 0 0-2.697-2.698 2 2 0 0 0-3.814.001 2 2 0 0 0-2.697 2.697ZM6 7a1 1 0 1 0 0-2 1 1 0 0 0 0 2Zm3.47-1.53a.75.75 0 1 1 1.06 1.06l-4 4a.75.75 0 1 1-1.06-1.06l4-4ZM11 10a1 1 0 1 1-2 0 1 1 0 0 1 2 0Z" ), ( "clipRule", "evenodd" ) ]
                         , children = []
                         }
                     ]
@@ -4344,6 +4759,22 @@ model =
                     ]
                 }
       }
+    , { name = "slash"
+      , tags = []
+      , viewIcon = Svg.svg [ Svg.Attributes.viewBox "0 0 16 16", Svg.Attributes.fill "currentColor" ] [ Svg.path [ Svg.Attributes.fillRule "evenodd", Svg.Attributes.d "M10.074 2.047a.75.75 0 0 1 .449.961L6.705 13.507a.75.75 0 0 1-1.41-.513L9.113 2.496a.75.75 0 0 1 .961-.449Z", Svg.Attributes.clipRule "evenodd" ] [] ]
+      , tree =
+            XmlTree
+                { tag = "svg"
+                , attributes = [ ( "viewBox", "0 0 16 16" ), ( "fill", "currentColor" ) ]
+                , children =
+                    [ XmlTree
+                        { tag = "path"
+                        , attributes = [ ( "fillRule", "evenodd" ), ( "d", "M10.074 2.047a.75.75 0 0 1 .449.961L6.705 13.507a.75.75 0 0 1-1.41-.513L9.113 2.496a.75.75 0 0 1 .961-.449Z" ), ( "clipRule", "evenodd" ) ]
+                        , children = []
+                        }
+                    ]
+                }
+      }
     , { name = "sparkles"
       , tags = [ "glitter", "stars" ]
       , viewIcon = Svg.svg [ Svg.Attributes.viewBox "0 0 16 16", Svg.Attributes.fill "currentColor" ] [ Svg.path [ Svg.Attributes.fillRule "evenodd", Svg.Attributes.d "M5 4a.75.75 0 0 1 .738.616l.252 1.388A1.25 1.25 0 0 0 6.996 7.01l1.388.252a.75.75 0 0 1 0 1.476l-1.388.252A1.25 1.25 0 0 0 5.99 9.996l-.252 1.388a.75.75 0 0 1-1.476 0L4.01 9.996A1.25 1.25 0 0 0 3.004 8.99l-1.388-.252a.75.75 0 0 1 0-1.476l1.388-.252A1.25 1.25 0 0 0 4.01 6.004l.252-1.388A.75.75 0 0 1 5 4ZM12 1a.75.75 0 0 1 .721.544l.195.682c.118.415.443.74.858.858l.682.195a.75.75 0 0 1 0 1.442l-.682.195a1.25 1.25 0 0 0-.858.858l-.195.682a.75.75 0 0 1-1.442 0l-.195-.682a1.25 1.25 0 0 0-.858-.858l-.682-.195a.75.75 0 0 1 0-1.442l.682-.195a1.25 1.25 0 0 0 .858-.858l.195-.682A.75.75 0 0 1 12 1ZM10 11a.75.75 0 0 1 .728.568.968.968 0 0 0 .704.704.75.75 0 0 1 0 1.456.968.968 0 0 0-.704.704.75.75 0 0 1-1.456 0 .968.968 0 0 0-.704-.704.75.75 0 0 1 0-1.456.968.968 0 0 0 .704-.704A.75.75 0 0 1 10 11Z", Svg.Attributes.clipRule "evenodd" ] [] ]
@@ -4524,6 +4955,22 @@ model =
                     ]
                 }
       }
+    , { name = "strikethrough"
+      , tags = []
+      , viewIcon = Svg.svg [ Svg.Attributes.viewBox "0 0 16 16", Svg.Attributes.fill "currentColor" ] [ Svg.path [ Svg.Attributes.fillRule "evenodd", Svg.Attributes.d "M9.165 3.654c-.95-.255-1.921-.273-2.693-.042-.769.231-1.087.624-1.173.947-.087.323-.008.822.543 1.407.389.412.927.77 1.55 1.034H13a.75.75 0 0 1 0 1.5H3A.75.75 0 0 1 3 7h1.756l-.006-.006c-.787-.835-1.161-1.849-.9-2.823.26-.975 1.092-1.666 2.191-1.995 1.097-.33 2.36-.28 3.512.029.75.2 1.478.518 2.11.939a.75.75 0 0 1-.833 1.248 5.682 5.682 0 0 0-1.665-.738Zm2.074 6.365a.75.75 0 0 1 .91.543 2.44 2.44 0 0 1-.35 2.024c-.405.585-1.052 1.003-1.84 1.24-1.098.329-2.36.279-3.512-.03-1.152-.308-2.27-.897-3.056-1.73a.75.75 0 0 1 1.092-1.029c.552.586 1.403 1.056 2.352 1.31.95.255 1.92.273 2.692.042.55-.165.873-.417 1.038-.656a.942.942 0 0 0 .13-.803.75.75 0 0 1 .544-.91Z", Svg.Attributes.clipRule "evenodd" ] [] ]
+      , tree =
+            XmlTree
+                { tag = "svg"
+                , attributes = [ ( "viewBox", "0 0 16 16" ), ( "fill", "currentColor" ) ]
+                , children =
+                    [ XmlTree
+                        { tag = "path"
+                        , attributes = [ ( "fillRule", "evenodd" ), ( "d", "M9.165 3.654c-.95-.255-1.921-.273-2.693-.042-.769.231-1.087.624-1.173.947-.087.323-.008.822.543 1.407.389.412.927.77 1.55 1.034H13a.75.75 0 0 1 0 1.5H3A.75.75 0 0 1 3 7h1.756l-.006-.006c-.787-.835-1.161-1.849-.9-2.823.26-.975 1.092-1.666 2.191-1.995 1.097-.33 2.36-.28 3.512.029.75.2 1.478.518 2.11.939a.75.75 0 0 1-.833 1.248 5.682 5.682 0 0 0-1.665-.738Zm2.074 6.365a.75.75 0 0 1 .91.543 2.44 2.44 0 0 1-.35 2.024c-.405.585-1.052 1.003-1.84 1.24-1.098.329-2.36.279-3.512-.03-1.152-.308-2.27-.897-3.056-1.73a.75.75 0 0 1 1.092-1.029c.552.586 1.403 1.056 2.352 1.31.95.255 1.92.273 2.692.042.55-.165.873-.417 1.038-.656a.942.942 0 0 0 .13-.803.75.75 0 0 1 .544-.91Z" ), ( "clipRule", "evenodd" ) ]
+                        , children = []
+                        }
+                    ]
+                }
+      }
     , { name = "sun"
       , tags = [ "brightness", "day", "light" ]
       , viewIcon = Svg.svg [ Svg.Attributes.viewBox "0 0 16 16", Svg.Attributes.fill "currentColor" ] [ Svg.path [ Svg.Attributes.d "M8 1a.75.75 0 0 1 .75.75v1.5a.75.75 0 0 1-1.5 0v-1.5A.75.75 0 0 1 8 1ZM10.5 8a2.5 2.5 0 1 1-5 0 2.5 2.5 0 0 1 5 0ZM12.95 4.11a.75.75 0 1 0-1.06-1.06l-1.062 1.06a.75.75 0 0 0 1.061 1.062l1.06-1.061ZM15 8a.75.75 0 0 1-.75.75h-1.5a.75.75 0 0 1 0-1.5h1.5A.75.75 0 0 1 15 8ZM11.89 12.95a.75.75 0 0 0 1.06-1.06l-1.06-1.062a.75.75 0 0 0-1.062 1.061l1.061 1.06ZM8 12a.75.75 0 0 1 .75.75v1.5a.75.75 0 0 1-1.5 0v-1.5A.75.75 0 0 1 8 12ZM5.172 11.89a.75.75 0 0 0-1.061-1.062L3.05 11.89a.75.75 0 1 0 1.06 1.06l1.06-1.06ZM4 8a.75.75 0 0 1-.75.75h-1.5a.75.75 0 0 1 0-1.5h1.5A.75.75 0 0 1 4 8ZM4.11 5.172A.75.75 0 0 0 5.173 4.11L4.11 3.05a.75.75 0 1 0-1.06 1.06l1.06 1.06Z" ] [] ]
@@ -4683,6 +5130,22 @@ model =
                     , XmlTree
                         { tag = "path"
                         , attributes = [ ( "fillRule", "evenodd" ), ( "d", "M1 3a1 1 0 0 1 1-1h12a1 1 0 0 1 1 1v8a1 1 0 0 1-1 1h-4v1.5h2.25a.75.75 0 0 1 0 1.5h-8.5a.75.75 0 0 1 0-1.5H6V12H2a1 1 0 0 1-1-1V3Zm1.5 7.5v-7h11v7h-11Z" ), ( "clipRule", "evenodd" ) ]
+                        , children = []
+                        }
+                    ]
+                }
+      }
+    , { name = "underline"
+      , tags = []
+      , viewIcon = Svg.svg [ Svg.Attributes.viewBox "0 0 16 16", Svg.Attributes.fill "currentColor" ] [ Svg.path [ Svg.Attributes.fillRule "evenodd", Svg.Attributes.d "M4.75 2a.75.75 0 0 1 .75.75V7a2.5 2.5 0 0 0 5 0V2.75a.75.75 0 0 1 1.5 0V7a4 4 0 0 1-8 0V2.75A.75.75 0 0 1 4.75 2ZM2 13.25a.75.75 0 0 1 .75-.75h10.5a.75.75 0 0 1 0 1.5H2.75a.75.75 0 0 1-.75-.75Z", Svg.Attributes.clipRule "evenodd" ] [] ]
+      , tree =
+            XmlTree
+                { tag = "svg"
+                , attributes = [ ( "viewBox", "0 0 16 16" ), ( "fill", "currentColor" ) ]
+                , children =
+                    [ XmlTree
+                        { tag = "path"
+                        , attributes = [ ( "fillRule", "evenodd" ), ( "d", "M4.75 2a.75.75 0 0 1 .75.75V7a2.5 2.5 0 0 0 5 0V2.75a.75.75 0 0 1 1.5 0V7a4 4 0 0 1-8 0V2.75A.75.75 0 0 1 4.75 2ZM2 13.25a.75.75 0 0 1 .75-.75h10.5a.75.75 0 0 1 0 1.5H2.75a.75.75 0 0 1-.75-.75Z" ), ( "clipRule", "evenodd" ) ]
                         , children = []
                         }
                     ]
